@@ -15,9 +15,9 @@ const catalogEntries=[
  ['framery-one-premium','FRAMERY ONE','Smart Pods',0,'https://framery.com/wp-content/uploads/2026/01/framery-one-white-1.webp','framery-one'],
  ['framery-four','FRAMERY FOUR','Smart Pods',0,'https://framery.com/wp-content/uploads/2026/01/four-white-1.png','framery-four'],
  ['framery-six','FRAMERY SIX','Smart Pods',0,'https://framery.com/wp-content/uploads/2026/01/framery-six-white.png','framery-six','Mới'],
- ['spod3','SPOD 3.0 (PLUS SERIES)','Smart Pods',220000000,'https://product.hstatic.net/200000617147/product/website_07feb25__2__294404db25b84d1ab5fe37ec58d398aa_large.png','s-pod-3-0-plus-series','Mới'],
- ['wpod3','WPOD 3.0 (PLUS SERIES)','Smart Pods',295000000,'https://product.hstatic.net/200000617147/product/website_07feb25__1__92ac537964cf428f836b83972bc0e5b6_large.png','w-pod-3-0-plus-series'],
- ['dpod3','DPOD 3.0 (PLUS SERIES)','Smart Pods',346700000,'https://product.hstatic.net/200000617147/product/website_07feb25_8b8529fb8c374fae8b5b89e9ac9c1a82_large.png','d-pod3-0-plus-series'],
+ ['spod3','S POD 3.0 PLUS','Smart Pods',220000000,'https://winpodacoustics.com/wp-content/uploads/2026/06/S-Pod-3.0-Plus_White_Certification-1-1024x1024.avif','s-pod-3-0-plus-series','Mới'],
+ ['wpod3','W POD 3.0 PLUS','Smart Pods',295000000,'https://winpodacoustics.com/wp-content/uploads/2026/06/W-Pod-3.0-Plus_Middle_Logo-1024x1024.avif','w-pod-3-0-plus-series'],
+ ['dpod3','D POD 3.0 PLUS','Smart Pods',346700000,'https://winpodacoustics.com/wp-content/uploads/2026/06/D-Pod-3.0-Plus_Logo-1024x1024.avif','d-pod3-0-plus-series'],
  ['parco','Parco Series','Loose Furniture',19500000,'https://cdn.hstatic.net/products/200000617147/single_semi_pod_03_1b0a0bd782cb4023a5ed976e60f0e7ad_large.jpg','parco-series'],
  ['easychair','Easy Chair','Loose Furniture',3300000,'https://cdn.hstatic.net/products/200000617147/6_19__171b6d7811424588bb4a02ab3c7a6a4e_large.png','easy-chair'],
  ['maris','MARIS HIGH BACK SOFA','Loose Furniture',35000000,'https://cdn.hstatic.net/products/200000617147/22_5ebaa9b15be546f094c209d6deb7ccbe_large.png','maris-high-back-sofa'],
@@ -32,14 +32,14 @@ const catalogEntries=[
  ['repo-tambour','REPO tambour','Storage Solutions',7700000,'https://cdn.hstatic.net/products/200000617147/2_1__7d76c51930304449acbf8a64137b77de_large.png','repo-tambour-2'],
  ['cableriser','Cable Riser / Sâu Điện','System Furniture',350000,'https://cdn.hstatic.net/products/200000617147/s_u_di_n_02_549028b7c34f435e8bf1b74e80308255_large.png','cable-riser-sau-dien'],
  ['cabletray','Cable Tray / Máng Điện','System Furniture',650000,'https://cdn.hstatic.net/products/200000617147/chatgpt_image_jul_20__2026__03_54_08_pm__2__3c3fc56466424e98a2f1a320411e0633_large.png','cable-tray-mang-dien'],
- ['tabletop','Table Top / Mặt bàn','System Furniture',1600000,'https://cdn.hstatic.net/products/200000617147/m_t_b_n_04_f9620ec58a0d449cac72344cc8878264_large.jpg','table-top'],
+ ['tabletop','ACTIFORCE TABLE TOP','System Furniture',1600000,'https://cdn.hstatic.net/products/200000617147/m_t_b_n_04_f9620ec58a0d449cac72344cc8878264_large.jpg','table-top'],
  ['meeting','Meeting Table Genese / Bàn Họp','System Furniture',56000000,'https://cdn.hstatic.net/products/200000617147/3_15__e297a1b72ee540baa111378536937a96_large.png','genese'],
  ['q20','Q20 / Holmris B8','System Furniture',24000000,'https://cdn.hstatic.net/products/200000617147/website_ergogen__9__2997fc9d0f154984b928b58494b2169b_large.png','q20-recrafted'],
  ['sls1050','Steelforce 1050 - thefirstworkshop','System Furniture',12000000,'https://cdn.hstatic.net/products/200000617147/website_ergogen__9__e499c03a86e54e6fbbdb07389ea82904_large.png','steelforce-1050-tfw'],
- ['sls770','SLS 770 PRO - thefirstworkshop','System Furniture',13000000,'https://cdn.hstatic.net/products/200000617147/website_ergogen__8__526e52550344473690b6add29e3cb468_large.png','sls-770-pro-tfw','Nổi bật'],
+ ['sls770','SLS 770 PRO','System Furniture',13000000,'https://cdn.hstatic.net/products/200000617147/website_ergogen__8__526e52550344473690b6add29e3cb468_large.png','sls-770-pro-tfw','Nổi bật'],
  ['quantum','QUANTUM workstation','System Furniture',8500000,'https://cdn.hstatic.net/products/200000617147/24_2ab876c8cd7a4cd3826ec390e2983c1c_large.png','quantum-workstation'],
- ['sls470bench','SLS 670 Bench PRO - thefirstworkshop','System Furniture',30000000,'https://product.hstatic.net/200000617147/product/sls_670_bench_bf_oakt_1-scaled_04915ccfe2fb41e489d8307259fdeb73_large.jpg','sls-670-pro-bench'],
- ['sls470','SLS 670 PRO - thefirstworkshop','System Furniture',15000000,'https://product.hstatic.net/200000617147/product/54_f198c19fea50400da9c0fe84500fbe1a_large.png','sls-470-pro','Bán chạy'],
+ ['sls470bench','SLS 670 BENCH PRO','System Furniture',30000000,'https://product.hstatic.net/200000617147/product/sls_670_bench_bf_oakt_1-scaled_04915ccfe2fb41e489d8307259fdeb73_large.jpg','sls-670-pro-bench'],
+ ['sls470','SLS 670 PRO','System Furniture',15000000,'https://product.hstatic.net/200000617147/product/54_f198c19fea50400da9c0fe84500fbe1a_large.png','sls-470-pro','Bán chạy'],
  ['at-chair','AT Chair / Wilkhahn','Seatings',36980000,'https://product.hstatic.net/200000617147/product/fixed_1_4x-100_3b907028760740b9bed4f27bc11e9f8e_large.jpg','at-chair'],
  ['freedom','Freedom Chair / Humanscale','Seatings',36600000,'https://product.hstatic.net/200000617147/product/1_4x-100_e5507a410b524b5aa48fafeff583e49d_large.jpg','freedom-chair'],
  ['smart-chair','Smart Chair / Humanscale','Seatings',33000000,'https://product.hstatic.net/200000617147/product/them_tieu_de__1__4be2295487f44317b743d75a04b7e852_large.png','smart-chair'],
@@ -109,11 +109,25 @@ const wpodExperience={
  }
 };
 const manufacturerOverrides={
- spod3:podReference,wpod3:wpodExperience,dpod3:podReference,
+ wpod3:{experience:wpodExperience.experience},
+ tabletop:{
+  imageScale:88,
+  swatches:['#f5f5f2','#c9c9c2','#b18a61'],
+  brand:'Actiforce',productType:'Mặt bàn làm việc',
+  description:'Mặt bàn Actiforce là bề mặt làm việc bền chắc, có nguồn gỗ được chứng nhận FSC và phù hợp cho văn phòng, home office hoặc bàn ăn. Ba chiều dài tiêu chuẩn cùng độ sâu 800 mm tạo lựa chọn linh hoạt cho bàn cá nhân, trong khi bề mặt trắng, xám nhạt và sồi dễ phối với các khung bàn SLS màu đen, bạc hoặc trắng.',
+  specifications:'Kích thước tiêu chuẩn: 1600 × 800 mm; 1800 × 800 mm; 2000 × 800 mm\nĐộ dày: 25 mm\nMàu bề mặt: Trắng, Xám nhạt, Sồi\nVật liệu: gỗ bán đặc\nChứng nhận nguồn gỗ: FSC và PEFC\nKhối lượng tham khảo: 22 kg (1800 × 800 mm); 27 kg (2000 × 800 mm)\nỨng dụng: bàn làm việc, home office, bàn ăn\nLắp đặt: sử dụng với khung bàn tương thích; tải trọng tổng tuân theo giới hạn của khung bàn',
+  highlights:['Ba kích thước tiêu chuẩn','Gỗ chứng nhận FSC & PEFC','Phối đồng bộ với khung bàn SLS'],
+  optionGroups:[
+   {label:'Kích thước',values:['1600 × 800 × 25 mm','1800 × 800 × 25 mm','2000 × 800 × 25 mm']},
+   {label:'Màu mặt bàn',values:['Trắng','Xám nhạt','Sồi']}
+  ],
+  bundleItems:[{id:'sls470'},{id:'sls470bench'},{id:'cabletray'},{id:'cableriser'}],
+  sourceUrl:'https://actiforce.com/en/shop-cat/accessories/tabletops/'
+ },
  sls470:{
   imageScale:82,
   swatches:['#111312','#a7aaa8','#f4f5f3'],
-  brand:'Actiforce',productType:'Khung bàn nâng hạ điện',
+  brand:'Actiforce · SLS Collection',productType:'Khung bàn nâng hạ điện',
   description:'SLS 670 PRO là khung bàn nâng hạ điện cao cấp dành cho không gian làm việc chuyên nghiệp. Kết cấu thép ổn định, vận hành êm và điều chỉnh độ cao liên tục giúp chuyển đổi linh hoạt giữa tư thế ngồi và đứng. Bộ điều khiển ActiSwitch Eco-Memory, chức năng ghi nhớ độ cao, chống va chạm và tùy chọn quản lý dây cáp tạo nên một trạm làm việc gọn gàng, an toàn và dễ sử dụng.',
   specifications:'Khối lượng: 31 kg\nKích thước khung: 110 × 75 × 61 cm\nKích thước cột: 6 × 9 cm\nChiều cao điều chỉnh: 61,5–127,5 cm\nChiều rộng điều chỉnh: 110–170 cm\nHành trình nâng: 66 cm\nTốc độ nâng: 39 mm/s\nTải trọng nâng động: 120 kg\nTruyền động: động cơ điện\nHệ chống va chạm: có\nỔ cắm tích hợp: không\nQuản lý dây cáp: tùy chọn\nVật liệu: kim loại\nBộ điều khiển: ActiSwitch Eco-Memory',
   highlights:['Điều chỉnh điện êm và chính xác','Tải trọng nâng động 120 kg','ActiSwitch Eco-Memory đi kèm'],
@@ -124,7 +138,7 @@ const manufacturerOverrides={
  sls470bench:{
   imageScale:90,
   swatches:['#111312','#a7aaa8','#f4f5f3'],
-  brand:'Actiforce',productType:'Khung bàn bench nâng hạ điện',
+  brand:'Actiforce · SLS Collection',productType:'Khung bàn bench nâng hạ điện',
   description:'SLS 670 Bench PRO là hệ khung bàn đôi nâng hạ điện dành cho văn phòng hiện đại và không gian coworking. Hai vị trí làm việc được tổ chức trên một kết cấu chung để tiết kiệm diện tích, trong khi mỗi người dùng vẫn có thể điều chỉnh độ cao phù hợp với tư thế ngồi hoặc đứng. Kết cấu thép chắc chắn, chống va chạm và bộ điều khiển ActiSwitch Eco-Memory hỗ trợ vận hành an toàn, linh hoạt.',
   specifications:'Khối lượng: 70 kg\nKích thước khung: 110 × 140 × 61 cm\nKích thước cột: 6 × 9 cm\nTải trọng nâng động: 120 kg\nTruyền động: động cơ điện\nHệ chống va chạm: có\nỔ cắm tích hợp: không\nQuản lý dây cáp: tùy chọn\nVật liệu: kim loại\nBộ điều khiển: ActiSwitch Eco-Memory',
   highlights:['Hệ bench tiết kiệm diện tích','Điều chỉnh độ cao cho từng vị trí','Tải trọng nâng động 120 kg'],
@@ -138,7 +152,7 @@ const manufacturerOverrides={
  sls770:{
   imageScale:86,
   swatches:['#111312','#a7aaa8','#f4f5f3'],
-  brand:'Actiforce',productType:'Khung bàn nâng hạ điện',
+  brand:'Actiforce · SLS Collection',productType:'Khung bàn nâng hạ điện',
   description:'SLS 770 PRO là khung bàn nâng hạ điện một tầng, phù hợp cho trạm làm việc công thái học có dải chiều cao tiêu chuẩn. Khung thép ổn định, vận hành điện êm và có chống va chạm, cho phép người dùng thay đổi tư thế làm việc thuận tiện trong ngày. Chiều rộng khung linh hoạt hỗ trợ nhiều kích thước mặt bàn văn phòng.',
   specifications:'Khối lượng khung: khoảng 27 kg\nChiều cao điều chỉnh: 68,5–115,5 cm\nChiều rộng điều chỉnh: 110–170 cm\nKích thước mặt bàn khuyến nghị: 120–200 × 80 cm\nHành trình nâng: 47 cm\nTốc độ nâng: khoảng 39 mm/s\nTải trọng nâng động: tối đa 120 kg, tùy bộ điều khiển\nĐộ ồn: dưới 50 dB(A)\nTruyền động: động cơ điện\nHệ chống va chạm: có\nVật liệu: thép, nhựa và nhôm\nXuất xứ sản xuất: Malaysia',
   highlights:['Dải cao 68,5–115,5 cm','Tải trọng tối đa 120 kg','Vận hành dưới 50 dB(A)'],

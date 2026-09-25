@@ -1527,3 +1527,80 @@ Object.assign(window.productDetails,{
     "sourceUrl": "https://framery.com/en/office-pods-and-booths/framery-six/"
   }
 });
+
+// Winpod Pod 3.0 Plus products, sourced from official Winpod product pages.
+Object.assign(window.productDetails,{
+  "spod3": {
+    "brand": "Winpod",
+    "productType": "Buồng điện thoại cách âm cho 1 người",
+    "imageScale": 66,
+    "swatches": ["#f3f2ed","#a9aaac","#404346","#111312","#53624c","#a89278","#3e7180","#a67f83"],
+    "description": "S Pod 3.0 Plus là buồng làm việc riêng tư cho một người, dành cho cuộc gọi, họp video, ký kết tài liệu và những tác vụ cần tập trung cao. Kết cấu thép mạ kẽm, kính an toàn nhiều lớp và tấm tiêu âm polyester tạo không gian yên tĩnh, trong khi bảng điều khiển cho phép chỉnh độ sáng, tốc độ quạt, thời gian cảm biến và chế độ đèn báo sử dụng.",
+    "specifications": "Xuất xứ thương hiệu: Malaysia\nSức chứa: 1 người\nKích thước ngoài (R × S × C): 1000 × 1000 × 2280 mm\nKích thước trong (R × S × C): 830 × 910 × 2030 mm\nTrọng lượng tịnh: 266 kg\nCách âm: giảm mức tiếng nói 30,1 dB DS,A theo ISO 23351-1\nKhả năng tái chế: 95% theo UL ECVP 2789\nCông suất tiêu thụ: 0,18 A\nThông gió: 2 quạt, 118 CFM mỗi quạt\nChiếu sáng: LED 4000K, 1 × 11 W\nLọc khí: 1 bộ lọc HEPA\nNguồn và dữ liệu: ổ điện, USB-A + USB-C tối đa 65 W, CAT6 LAN\nDi chuyển: 4 bánh xe chịu tải",
+    "highlights": ["Giảm tiếng nói 30,1 dB","Điều khiển ánh sáng và thông gió","HEPA, USB-C 65 W và CAT6"],
+    "optionGroups": [
+      {"label":"Màu ngoại thất","values":["Smoke White","Silver","Space Grey","Charcoal Black","Olive Green","Mocha","Lagoon Blue","Rose Pink"]},
+      {"label":"Màu tiêu âm","values":["Dark Grey","Light Grey"]},
+      {"label":"Màu thảm","values":["Black","Silver"]}
+    ],
+    "images": [
+      "https://winpodacoustics.com/wp-content/uploads/2026/06/S-Pod-3.0-Plus_White_Certification-1-1024x1024.avif",
+      "https://product.hstatic.net/200000617147/product/website_07feb25__2__294404db25b84d1ab5fe37ec58d398aa_master.png",
+      "https://product.hstatic.net/200000617147/product/44_e41a9cf80ac644eba76f373f2402f4c3_master.png",
+      "https://product.hstatic.net/200000617147/product/43_61334e9b574542beb8bdbce582162449_master.png",
+      "https://product.hstatic.net/200000617147/product/45_366d6070dcb946ea936605cf4ef08ce7_master.png",
+      "https://product.hstatic.net/200000617147/product/46_cdefece188f34a1e9d068bbbf4f0a725_master.png",
+      "https://product.hstatic.net/200000617147/product/47_50dd238126bf4c679151c24a643b6268_master.png",
+      "https://product.hstatic.net/200000617147/product/48_ae3651297e9c4e46b795d0ea98f4c035_master.png"
+    ],
+    "sourceUrl": "https://winpodacoustics.com/office-phone-booth-single-pod-for-phone-calls-and-conferences/"
+  },
+  "wpod3": {
+    "brand": "Winpod",
+    "productType": "Pod làm việc cách âm cho 1 người",
+    "imageScale": 74,
+    "swatches": ["#f3f2ed","#a9aaac","#404346","#111312","#53624c","#a89278","#3e7180","#a67f83"],
+    "description": "W Pod 3.0 Plus là pod công thái học dành cho những phiên làm việc dài. Bàn trượt mở rộng và khoang lưu trữ tích hợp tạo nên một trạm làm việc riêng tư, thoải mái cho công việc tập trung và họp trực tuyến. Bảng điều khiển trung tâm quản lý ánh sáng, thông gió, cảm biến và đèn báo sử dụng.",
+    "specifications": "Xuất xứ thương hiệu: Malaysia\nSức chứa: 1 người\nKích thước ngoài (R × S × C): 1400 × 1250 × 2280 mm\nKích thước trong (R × S × C): 1230 × 1160 × 2030 mm\nTrọng lượng tịnh: 364 kg\nCách âm: giảm mức tiếng nói 28,9 dB DS,A theo ISO 23351-1\nKhả năng tái chế: 95% theo UL ECVP 2789\nCông suất tiêu thụ: 0,18 A\nBàn trượt: 1140 × 400 × 25 mm\nThông gió: 2 quạt, 118 CFM mỗi quạt\nChiếu sáng: LED 4000K, 1 × 11 W\nLọc khí: 1 bộ lọc HEPA\nNguồn và dữ liệu: ổ điện, USB-A + USB-C tối đa 65 W, CAT6 LAN\nDi chuyển: 4 bánh xe chịu tải và 4 chân tăng chỉnh",
+    "highlights": ["Bàn trượt và lưu trữ tích hợp","Giảm tiếng nói 28,9 dB","HEPA, USB-C 65 W và CAT6"],
+    "optionGroups": [
+      {"label":"Màu ngoại thất","values":["Smoke White","Silver","Space Grey","Charcoal Black","Olive Green","Mocha","Lagoon Blue","Rose Pink"]},
+      {"label":"Màu tiêu âm","values":["Dark Grey","Light Grey"]},
+      {"label":"Màu thảm","values":["Black","Silver"]}
+    ],
+    "images": [
+      "https://winpodacoustics.com/wp-content/uploads/2026/06/W-Pod-3.0-Plus_Middle_Logo-1024x1024.avif",
+      "https://product.hstatic.net/200000617147/product/website_07feb25__1__92ac537964cf428f836b83972bc0e5b6_master.png",
+      "https://product.hstatic.net/200000617147/product/51_25bb4c609f2e4170974f3284c86580b9_master.png",
+      "https://product.hstatic.net/200000617147/product/52_923ee92c7af74f9ea514934f7083ee2e_master.png",
+      "https://product.hstatic.net/200000617147/product/53_64f67844126043788f6b343e175444f8_master.png",
+      "https://product.hstatic.net/200000617147/product/54_e995289acabb410689dd9bf2aedd9ef9_master.png",
+      "https://product.hstatic.net/200000617147/product/49_dc971e9c242e48f19f766e7cd88bce64_master.png"
+    ],
+    "sourceUrl": "https://winpodacoustics.com/w-pod-3-0-plus/"
+  },
+  "dpod3": {
+    "brand": "Winpod",
+    "productType": "Pod họp cách âm cho 2–4 người",
+    "imageScale": 84,
+    "swatches": ["#f3f2ed","#a9aaac","#404346","#111312","#53624c","#a89278","#3e7180","#a67f83"],
+    "description": "D Pod 3.0 Plus là pod họp riêng tư cho hai đến bốn người, được thiết kế cho thảo luận, cộng tác và họp trực tuyến. Hai dãy ghế đối diện, bàn trung tâm, hệ thống thông gió bốn quạt và hai bộ lọc HEPA tạo không gian họp thoải mái, tập trung mà không cần xây phòng cố định.",
+    "specifications": "Xuất xứ thương hiệu: Malaysia\nSức chứa: 2–4 người\nKích thước ngoài (R × S × C): 2200 × 1250 × 2280 mm\nKích thước trong (R × S × C): 2030 × 1160 × 2030 mm\nTrọng lượng tịnh: 498 kg\nCách âm: giảm mức tiếng nói 27,6 dB DS,A theo ISO 23351-1\nKhả năng tái chế: 96% theo UL ECVP 2789\nCông suất tiêu thụ: 0,33 A\nBàn: 700 × 550 × 25 mm, cao 740 mm\nThông gió: 4 quạt, 118 CFM mỗi quạt\nChiếu sáng: LED 4000K, 2 × 11 W\nLọc khí: 2 bộ lọc HEPA\nNguồn và dữ liệu: ổ điện, USB-A + USB-C tối đa 65 W, CAT6 LAN\nDi chuyển: 4 bánh xe chịu tải và 6 chân tăng chỉnh",
+    "highlights": ["Không gian họp cho 2–4 người","Bốn quạt và hai bộ lọc HEPA","Nguồn, USB-C 65 W và CAT6 tích hợp"],
+    "optionGroups": [
+      {"label":"Màu ngoại thất","values":["Smoke White","Silver","Space Grey","Charcoal Black","Olive Green","Mocha","Lagoon Blue","Rose Pink"]},
+      {"label":"Màu tiêu âm","values":["Dark Grey","Light Grey"]},
+      {"label":"Màu thảm","values":["Black","Silver"]}
+    ],
+    "images": [
+      "https://winpodacoustics.com/wp-content/uploads/2026/06/D-Pod-3.0-Plus_Logo-1024x1024.avif",
+      "https://product.hstatic.net/200000617147/product/website_07feb25_8b8529fb8c374fae8b5b89e9ac9c1a82_master.png",
+      "https://product.hstatic.net/200000617147/product/lauching_phonebooth__23__2e5528bac9514c5ead3f1e587a173cc5_master.png",
+      "https://product.hstatic.net/200000617147/product/57_d9fe664a9ace49b094c4140b96fa6a40_master.png",
+      "https://product.hstatic.net/200000617147/product/56_610dc953d8224578a9d557ef399329ea_master.png",
+      "https://product.hstatic.net/200000617147/product/58_36ec19f183b5493db9a7de29aeb5ddbc_master.png",
+      "https://product.hstatic.net/200000617147/product/59_c924358f45c74f3f84b31447a27a8653_master.png"
+    ],
+    "sourceUrl": "https://winpodacoustics.com/d-pod-3-0-plus/"
+  }
+});
