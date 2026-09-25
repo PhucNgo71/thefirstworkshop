@@ -1,4 +1,4 @@
-// Generated from public product pages at tfw.space.
+// Product details compiled from public TFW and manufacturer product pages.
 window.productDetails={
   "framery-one-compact": {
     "brand": "Framery",
@@ -1427,3 +1427,103 @@ window.productDetails={
     "sourceUrl": "https://tfw.space/products/zeus"
   }
 };
+
+// Official Framery smart-pod range, sourced from framery.com (September 2026).
+Object.assign(window.productDetails,{
+  "framery-one-compact": {
+    "brand": "Framery",
+    "productType": "Buồng điện thoại cách âm cho 1 người",
+    "imageScale": 72,
+    "swatches": ["#eeeeee","#111111","#6f706d","#14324a","#8395ab","#485649","#cebb9d","#b48689"],
+    "description": "Framery One Compact là buồng điện thoại thông minh, cách âm dành cho một người, được tối ưu cho cuộc gọi thoại và video trong văn phòng mở. Kết cấu âm học đạt Class A giúp bảo đảm riêng tư hội thoại; thông gió thích ứng, hai nguồn sáng 4000K và cảm biến hiện diện mmWave tự động tạo môi trường thoải mái ngay khi người dùng bước vào. Màn hình cảm ứng 8 inch hỗ trợ điều khiển ánh sáng, luồng khí và lịch đặt phòng.",
+    "specifications": "Xuất xứ thương hiệu: Phần Lan\nSức chứa: 1 người\nKích thước ngoài (C × R × S): 225 × 103 × 100 cm\nTrọng lượng: 253 kg\nCách âm: Class A, giảm mức tiếng nói 30 dB DS,A theo ISO 23351-1\nThông gió tối đa: 36 l/s (129,6 m³/h)\nChiếu sáng: 4000K; tối đa 500 lux trên mặt bàn và 400 lux trên khuôn mặt\nCảm biến: mmWave radar\nCông suất: 27 W mặc định; 40 W tối đa; 14 W chờ\nGóc mở cửa: 180°\nMặt bàn: plywood bạch dương, laminate hoặc veneer sồi\nKết nối: 4G tích hợp, Wi-Fi và cập nhật phần mềm tự động\nNguồn điện: 1 ổ AC; tùy chọn USB-C PD 65 W hoặc LAN",
+    "highlights": ["Class A — giảm tiếng nói 30 dB","Thông gió tối đa 36 l/s","Cảm biến mmWave và màn hình cảm ứng 8 inch"],
+    "optionGroups": [
+      {"label":"Cấu hình","values":["Base","Essentials"]},
+      {"label":"Màu vỏ","values":["White","Black","Gray","Navy","Powder Blue","Winter Moss","Sand","Blush"]}
+    ],
+    "images": [
+      "https://framery.com/wp-content/uploads/2024/03/framery-one-compact-smart-office-phone-booth-product-card.webp",
+      "https://framery.com/wp-content/uploads/2024/03/framery-one-compact-smart-soundproof-office-phone-booth.webp",
+      "https://framery.com/wp-content/uploads/2024/03/framery-one-compact-in-open-plan-office.jpg",
+      "https://framery.com/wp-content/uploads/2024/03/framery-one-compact-finnair-lounge-2.webp",
+      "https://framery.com/wp-content/uploads/2025/12/framery-one-compact-supercell-hq-2.webp",
+      "https://framery.com/wp-content/uploads/2024/03/framery-one-compact-interior-details.webp",
+      "https://framery.com/wp-content/uploads/2024/03/framery-one-compact-office-phone-booth-intuitive-controls.jpg",
+      "https://framery.com/wp-content/uploads/2025/12/framery-one-compact-detail-table-chair-1.webp"
+    ],
+    "sourceUrl": "https://framery.com/en/office-pods-and-booths/framery-one-compact/"
+  },
+  "framery-one-premium": {
+    "brand": "Framery",
+    "productType": "Pod làm việc cách âm cho 1 người",
+    "imageScale": 74,
+    "swatches": ["#eeeeee","#111111","#6f706d","#14324a","#8395ab","#485649","#cebb9d","#b48689"],
+    "description": "Framery One là pod làm việc thông minh và rộng rãi cho một người, phù hợp với cuộc gọi video và công việc tập trung kéo dài. Không gian có âm học không vang, độ riêng tư hội thoại Class A, bàn điều chỉnh độ cao và hai chế độ ánh sáng dành cho làm việc hoặc video. Cảm biến siêu âm tự động điều khiển chiếu sáng và thông gió, trong khi kết nối 4G cho phép cập nhật tính năng từ xa.",
+    "specifications": "Xuất xứ thương hiệu: Phần Lan\nSức chứa: 1 người\nKích thước ngoài (C × R × S): 225,5 × 122 × 100 cm\nTrọng lượng: 357 kg; phiên bản Lounge 370 kg\nCách âm: Class A, giảm mức tiếng nói 30 dB DS,A theo ISO 23351-1\nThông gió mặc định: 26 l/s (94 m³/h), điều chỉnh thủ công\nChiếu sáng: 4000K; tối đa 500 lux trên mặt bàn và 400 lux trên khuôn mặt\nCảm biến: siêu âm\nCông suất: 28 W mặc định; 37 W tối đa; 6 W chờ\nGóc mở cửa: 90°\nBàn: 76,5 × 46 cm; cao điều chỉnh 74–116 cm\nKết nối: 4G tích hợp và cập nhật phần mềm tự động\nNguồn điện: 1 ổ AC, 1 cổng USB-C 15 W; tùy chọn LAN",
+    "highlights": ["Không gian rộng cho công việc tập trung","Class A — giảm tiếng nói 30 dB","Bàn và ánh sáng tối ưu cho video call"],
+    "optionGroups": [
+      {"label":"Cấu hình","values":["Base","Essentials","Lounge"]},
+      {"label":"Màu vỏ","values":["White","Black","Gray","Navy","Powder Blue","Winter Moss","Sand","Blush"]}
+    ],
+    "images": [
+      "https://framery.com/wp-content/uploads/2025/12/framery-one-premium-sand-1.webp",
+      "https://framery.com/wp-content/uploads/2024/03/framery-one-smart-soundproof-office-pod.webp",
+      "https://framery.com/wp-content/uploads/2025/12/framery-one-in-stylish-office-1.webp",
+      "https://framery.com/wp-content/uploads/2025/12/framery-one-at-posten-bring-office-1.webp",
+      "https://framery.com/wp-content/uploads/2025/12/framery-one-lounge-person-in-office-1.webp",
+      "https://framery.com/wp-content/uploads/2025/12/framery-one-lounge-blush-1.webp",
+      "https://framery.com/wp-content/uploads/2024/03/framery-one-office-pod-intuitive-controls.webp",
+      "https://framery.com/wp-content/uploads/2024/03/framery-one-office-pod-stay-connected.webp"
+    ],
+    "sourceUrl": "https://framery.com/en/office-pods-and-booths/framery-one/"
+  },
+  "framery-four": {
+    "brand": "Framery",
+    "productType": "Pod họp cách âm cho tối đa 4 người",
+    "imageScale": 82,
+    "swatches": ["#eeeeee","#111111","#6f706d","#14324a","#8395ab","#485649","#cebb9d","#b48689"],
+    "description": "Framery Four là pod họp thông minh cho tối đa bốn người, phù hợp cho họp trực tiếp và hybrid. Hệ âm học được tinh chỉnh giảm tiếng nói 30 dB, thông gió thích ứng theo cả lưu lượng lẫn hướng gió, cùng chế độ ánh sáng video tự động giúp các cuộc họp riêng tư, rõ ràng và thoải mái. Bốn cấu hình nội thất đáp ứng từ không gian trống linh hoạt đến phiên bản tiếp cận đầy đủ.",
+    "specifications": "Xuất xứ thương hiệu: Phần Lan\nSức chứa: tối đa 4 người\nKích thước ngoài có hộp lọc khí (C × R × S): 232,9 × 235,2 × 129,2 cm\nTrọng lượng: 520 kg; Base 460 kg; Accessible 560 kg\nCách âm: Class A, giảm mức tiếng nói 30 dB DS,A theo ISO 23351-1\nThông gió tối đa: 100 l/s (360,2 m³/h), điều chỉnh hướng trực tiếp hoặc gián tiếp\nChiếu sáng: 4000K; tối đa 500 lux trên mặt bàn và 350 lux trên khuôn mặt\nCảm biến: mmWave radar\nCông suất: 52 W mặc định; 115 W tối đa; 20 W chờ\nGóc mở cửa: 180°\nBàn: 70,6 × 90 cm; cao cố định 71,9 cm\nKết nối: 4G tích hợp và cập nhật phần mềm tự động\nNguồn điện: cấu hình theo Base, Lite, Essentials hoặc Accessible; hỗ trợ USB-C PD 65 W, LAN và HDMI tùy chọn",
+    "highlights": ["Tối đa 4 người","Thông gió tối đa 100 l/s","Bốn cấu hình gồm phiên bản Accessible"],
+    "optionGroups": [
+      {"label":"Cấu hình","values":["Base","Lite","Essentials","Accessible"]},
+      {"label":"Màu vỏ","values":["White","Black","Gray","Navy","Powder Blue","Winter Moss","Sand","Blush"]}
+    ],
+    "images": [
+      "https://framery.com/wp-content/uploads/2024/03/framery-four-meeting-pod-product-card.webp",
+      "https://framery.com/wp-content/uploads/2024/03/framery-four-smart-soundproof-meeting-pod.webp",
+      "https://framery.com/wp-content/uploads/2024/03/framery-four-in-open-plan-office.webp",
+      "https://framery.com/wp-content/uploads/2024/12/framery_four-people_office_07_hires-1.jpg",
+      "https://framery.com/wp-content/uploads/2025/12/framery-four-interior-blue-1.webp",
+      "https://framery.com/wp-content/uploads/2025/12/framery-four-pepsico-case-photo-1.webp",
+      "https://framery.com/wp-content/uploads/2025/12/framery-four-kangasala-library-1.webp",
+      "https://framery.com/wp-content/uploads/2026/01/framery-four-essentials-1.webp"
+    ],
+    "sourceUrl": "https://framery.com/en/office-pods-and-booths/framery-four/"
+  },
+  "framery-six": {
+    "brand": "Framery",
+    "productType": "Phòng họp cách âm cho tối đa 6 người",
+    "imageScale": 86,
+    "swatches": ["#eeeeee","#111111","#6f706d","#14324a","#8395ab","#485649","#cebb9d","#b48689"],
+    "description": "Framery Six là phòng họp thông minh, cách âm dành cho nhóm tối đa sáu người. Chiều sâu lớn tạo không gian hợp tác thoải mái cho họp trực tiếp, làm việc nhóm và họp hybrid. Hệ thống thông gió thích ứng lưu lượng cao, âm học Class A, ánh sáng tự động tối ưu cho video và cảm biến mmWave vận hành liền mạch trong văn phòng hiện đại.",
+    "specifications": "Xuất xứ thương hiệu: Phần Lan\nSức chứa: tối đa 6 người\nKích thước ngoài có hộp lọc khí (C × R × S): 232,9 × 235,2 × 263,2 cm\nTrọng lượng: 718 kg; Base 693 kg\nCách âm: Class A, giảm mức tiếng nói 30 dB DS,A theo ISO 23351-1\nThông gió tối đa: 187 l/s (674,6 m³/h), điều chỉnh hướng trực tiếp hoặc gián tiếp\nChiếu sáng: 4000K; tối đa 500 lux trên mặt bàn và 350 lux trên khuôn mặt\nCảm biến: mmWave radar\nCông suất: 145 W mặc định; 202 W tối đa; 28 W chờ\nGóc mở cửa: 180°\nBàn: 94 × 140 cm; cao cố định 71,2 cm\nKết nối: 4G tích hợp, Wi-Fi và cập nhật phần mềm tự động\nNguồn điện: hỗ trợ USB-C PD 65 W; LAN và HDMI tùy chọn",
+    "highlights": ["Tối đa 6 người","Thông gió tối đa 187 l/s","Không gian họp trực tiếp và hybrid"],
+    "optionGroups": [
+      {"label":"Cấu hình","values":["Base","Lite","Essentials"]},
+      {"label":"Màu vỏ","values":["White","Black","Gray","Navy","Powder Blue","Winter Moss","Sand","Blush"]}
+    ],
+    "images": [
+      "https://framery.com/wp-content/uploads/2024/03/framery-six-smart-meeting-pod-product-card.webp",
+      "https://framery.com/wp-content/uploads/2024/03/framery-six-smart-soundproof-meeting-room.webp",
+      "https://framery.com/wp-content/uploads/2024/03/framery-six-in-open-plan-office-002.webp",
+      "https://framery.com/wp-content/uploads/2024/03/framery-six-meeting-room-close-up.webp",
+      "https://framery.com/wp-content/uploads/2026/01/framery-six-astrazeneca-1.webp",
+      "https://framery.com/wp-content/uploads/2026/01/framery-six-at-nbf-1.webp",
+      "https://framery.com/wp-content/uploads/2026/01/framery-six-integrata-1.webp",
+      "https://framery.com/wp-content/uploads/2026/01/framery-six-essentials-1.webp"
+    ],
+    "sourceUrl": "https://framery.com/en/office-pods-and-booths/framery-six/"
+  }
+});

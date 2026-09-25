@@ -11,9 +11,10 @@ const catalogDetails={
  'Accessories':'Phụ kiện không gian làm việc'
 };
 const catalogEntries=[
- ['framery-one-compact','FRAMERY ONE COMPACT','Smart Pods',0,'https://product.hstatic.net/200000617147/product/9_a60be6b65e294921a6b64a22c31af285_large.png','frammery-one-compact'],
- ['framery-one-premium','FRAMERY ONE PREMIUM','Smart Pods',0,'https://product.hstatic.net/200000617147/product/lauching_phonebooth__13__a92e6d9749b34efdb09929ccbb19b525_large.png','phonebooth-framery-one-premium'],
- ['framery-four','FRAMERY FOUR','Smart Pods',0,'https://product.hstatic.net/200000617147/product/lauching_phonebooth__7__ac77029bebe04510962fe3b78a5e09c8_large.png','frammery-four'],
+ ['framery-one-compact','FRAMERY ONE COMPACT','Smart Pods',0,'https://framery.com/wp-content/uploads/2024/03/framery-one-compact-smart-office-phone-booth-product-card.webp','framery-one-compact'],
+ ['framery-one-premium','FRAMERY ONE','Smart Pods',0,'https://framery.com/wp-content/uploads/2025/12/framery-one-premium-sand-1.webp','framery-one'],
+ ['framery-four','FRAMERY FOUR','Smart Pods',0,'https://framery.com/wp-content/uploads/2024/03/framery-four-meeting-pod-product-card.webp','framery-four'],
+ ['framery-six','FRAMERY SIX','Smart Pods',0,'https://framery.com/wp-content/uploads/2024/03/framery-six-smart-meeting-pod-product-card.webp','framery-six','Mới'],
  ['spod3','SPOD 3.0 (PLUS SERIES)','Smart Pods',220000000,'https://product.hstatic.net/200000617147/product/website_07feb25__2__294404db25b84d1ab5fe37ec58d398aa_large.png','s-pod-3-0-plus-series','Mới'],
  ['wpod3','WPOD 3.0 (PLUS SERIES)','Smart Pods',295000000,'https://product.hstatic.net/200000617147/product/website_07feb25__1__92ac537964cf428f836b83972bc0e5b6_large.png','w-pod-3-0-plus-series'],
  ['dpod3','DPOD 3.0 (PLUS SERIES)','Smart Pods',346700000,'https://product.hstatic.net/200000617147/product/website_07feb25_8b8529fb8c374fae8b5b89e9ac9c1a82_large.png','d-pod3-0-plus-series'],
@@ -108,7 +109,7 @@ const wpodExperience={
  }
 };
 const manufacturerOverrides={
- 'framery-one-compact':podReference,'framery-one-premium':podReference,'framery-four':podReference,spod3:podReference,wpod3:wpodExperience,dpod3:podReference,
+ spod3:podReference,wpod3:wpodExperience,dpod3:podReference,
  sls470:{
   imageScale:82,
   swatches:['#111312','#a7aaa8','#f4f5f3'],
