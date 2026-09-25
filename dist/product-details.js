@@ -1528,6 +1528,129 @@ Object.assign(window.productDetails,{
   }
 });
 
+// Zenith furniture families requested for the TFW catalogue.
+Object.assign(window.productDetails,{
+  "teddy-tables": {
+    "brand":"Zenith",
+    "productType":"Hệ bàn và workstation",
+    "imageScale":86,
+    "swatches":["#f3f2ed","#b8b7b0","#111312","#713f32","#b57668","#73818e","#59614a"],
+    "description":"TEDDY là hệ bàn mang dấu ấn từ văn hóa Teddy Boy, nhận diện bằng chân tròn và bản chân phẳng rõ nét. Dòng sản phẩm có bàn ngồi, bàn đứng, workstation và project table; có thể bố trí độc lập hoặc gắn tường để thích ứng với nhiều quy mô không gian làm việc.",
+    "specifications":"Thiết kế: Zenith Design Studio\nMặt bàn: laminate hoặc veneer dày 25 mm\nChân và khung: kim loại sơn tĩnh điện\nKiểu lắp đặt: độc lập hoặc gắn tường, tùy cấu hình\nChiều cao bàn đứng: 900 hoặc 1050 mm\nChiều rộng Teddy Standing: 1200–9600 mm, tùy số chân\nChiều sâu Teddy Standing: 600–1200 mm\nChiều rộng Teddy Project Table: 800–7200 mm\nChiều sâu Teddy Project Table: 800–900 mm\nChứng nhận: AFRDI, BIFMA, GREENGUARD Gold\nBảo hành: 10 năm",
+    "highlights":["Bốn nhóm cấu hình đồng bộ","Mặt bàn laminate hoặc veneer 25 mm","AFRDI, BIFMA và GREENGUARD Gold"],
+    "optionGroups":[{"label":"Dòng sản phẩm","values":["TEDDY Table","TEDDY Standing Table","TEDDY Workstation","TEDDY Project Table"]},{"label":"Màu khung","values":["Cool White","Warm White","Cool Grey","Gum Grey","Black","Monument","Chocolate","Burnt Umber","Blush Pink","Rust","Sky Blue","Indigo","Olive"]}],
+    "images":["https://www.zenithinteriors.com/media/xhai4kuw/teddy_table_-thumb.png?anchor=center&mode=crop&width=720&height=1002&rnd=133917728938370000","https://www.zenithinteriors.com/media/v2goazpb/hcp_250428_zenith_095.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=133929782943830000","https://www.zenithinteriors.com/media/vfjd40bs/hcp_250428_zenith_089.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=133941054086630000","https://www.zenithinteriors.com/media/dlibzmim/hover-teddy-table.png?anchor=center&mode=crop&width=720&height=1002&rnd=133929782858770000"],
+    "sourceUrl":"https://www.zenithinteriors.com/asia/products/teddy-table/"
+  },
+  "orbis": {
+    "brand":"Zenith",
+    "productType":"Hệ workstation linh hoạt",
+    "imageScale":90,
+    "swatches":["#f3f2ed","#b8b7b0","#111312","#775044","#b57668","#73818e","#59614a"],
+    "description":"ORBIS là hệ bàn làm việc linh hoạt cho cả cá nhân và đội nhóm. Hệ chân tinh gọn hỗ trợ bàn cố định, nâng hạ điện, điều chỉnh kỹ thuật hoặc tay quay; phiên bản ORBIS ADAPT sử dụng pin tích hợp để vận hành bàn, màn hình và thiết bị ngoại vi mà không cần dây nguồn tại vị trí làm việc.",
+    "specifications":"Cấu hình: bàn cá nhân, pod nhóm và layout 120°\nChiều rộng/chiều dài: 1200–2100 mm; bản nâng điện 1200–1700 mm\nChiều sâu: 600–900 mm\nChiều cao cố định: 720 mm\nĐiều chỉnh kỹ thuật hoặc tay quay: 610–900 mm\nĐiều chỉnh điện: 620–1230 mm\nPhiên bản ADAPT: pin tích hợp, vận hành không dây cho một ngày làm việc hoặc hơn\nTương thích: CTRL, Precinct, Glovebox, Framed screens và quản lý cáp\nChứng nhận: AFRDI",
+    "highlights":["Cố định hoặc điều chỉnh độ cao","Bố cục cá nhân và đội nhóm","ORBIS ADAPT vận hành bằng pin tích hợp"],
+    "optionGroups":[{"label":"Phiên bản","values":["ORBIS Workstation","ORBIS ADAPT"]},{"label":"Cơ chế chiều cao","values":["Cố định","Tech Adjust","Tay quay","Nâng hạ điện"]},{"label":"Màu khung","values":["Cool White","Warm White","Cool Grey","Gum Grey","Monument","Black","Chocolate","Burnt Umber","Blush Pink","Rust","Sky Blue","Indigo","Olive"]}],
+    "images":["https://www.zenithinteriors.com/media/fdhnztgn/hcp_221214_zenith_orbis_002_v1.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=133456578015670000","https://www.zenithinteriors.com/media/eqxftvma/hcp_221214_zenith_orbis_004_v1.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=133235283675170000","https://www.zenithinteriors.com/media/uqkpsyja/hcp_221214_zenith_orbis_008_v2.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=133235283933570000","https://www.zenithinteriors.com/media/fmxhvptr/hcp_221214_zenith_orbis_003_v1.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=133456578001270000"],
+    "sourceUrl":"https://www.zenithinteriors.com/asia/collections/orbis/"
+  },
+  "hours-lounge": {
+    "brand":"Zenith",
+    "productType":"Hệ lounge mô-đun",
+    "imageScale":88,
+    "swatches":["#d6cabd","#a7735a","#6e6c64","#35504b","#1f2528"],
+    "description":"HOURS kết hợp cảm giác ngồi êm sâu với hình thức vượt thời gian. Các khối đệm đầy đặn, chân gỗ dạng blade thanh mảnh và cấu trúc mô-đun tạo nên hệ lounge phù hợp từ cuộc trao đổi nhanh đến khoảng nghỉ yên tĩnh trong văn phòng.",
+    "specifications":"Thiết kế: Zenith Design Studio\nCấu trúc: hệ lounge mô-đun với nhiều hình dạng và kích thước\nĐệm: khối đệm bọc vải hoặc da\nChân: gỗ dạng blade\nỨng dụng: lounge văn phòng, khu cộng tác, tiếp khách và không gian nghỉ\nHoàn thiện: theo bảng vải/da Zenith House\nThời gian đặt hàng tham khảo: 4–6 tuần, tùy thị trường",
+    "highlights":["Đệm êm sâu cho thời gian sử dụng dài","Chân gỗ blade thanh mảnh","Mô-đun linh hoạt cho nhiều bố cục"],
+    "optionGroups":[{"label":"Cấu hình","values":["Ghế đơn","Sofa","Mô-đun thẳng","Mô-đun góc","Theo bản vẽ dự án"]},{"label":"Vật liệu bọc","values":["Vải Zenith House","Da Zenith House","Theo bảng vật liệu dự án"]}],
+    "images":["https://www.zenithinteriors.com/media/wq3lumt3/hcp_250528_zenith_012.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=133954181943870000","https://www.zenithinteriors.com/media/qdpbk311/hcp_250528_zenith_010.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=133954181942170000","https://www.zenithinteriors.com/media/lgkpi23b/hcp_250528_zenith_006.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=133954181936330000","https://www.zenithinteriors.com/media/rszcmbau/hcp_250528_zenith_002.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=133954181931130000","https://www.zenithinteriors.com/media/kovlbkcv/hcp_250528_zenith_004.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=133954181932830000"],
+    "sourceUrl":"https://www.zenithinteriors.com/asia/products/hours-lounge/"
+  },
+  "jac-chairs": {
+    "brand":"Zenith",
+    "productType":"Bộ sưu tập ghế đa dụng",
+    "imageScale":76,
+    "swatches":["#eee9df","#8d8e88","#111312","#775044","#a87968","#597082","#59614a"],
+    "description":"JAC là bộ sưu tập ghế đa dụng kết hợp hình thức thanh lịch, độ bền thương mại và tư duy bền vững. Vỏ ghế được sản xuất từ 95% polypropylene tái chế sau tiêu dùng; mỗi ghế JAC bán ra góp phần trồng một cây xanh. Nhiều kiểu chân, tay vịn, lounge và executive cho phép một ngôn ngữ thiết kế xuyên suốt không gian làm việc, giáo dục và hospitality.",
+    "specifications":"Thiết kế: Schamburg + Alvisse\nVỏ ghế: 95% polypropylene tái chế sau tiêu dùng hoặc bọc vải/da\nMàu vỏ: Canvas White, Gum Grey, Black, Chocolate, Burnt Umber, Blush Pink, Rust, Sky Blue, Indigo, Olive\nTùy chọn mặt ngồi: nguyên bản hoặc đệm bọc\nChân gỗ Classic: American Oak hoặc American Oak nhuộm đen\nKích thước JAC Classic Side: R470 × S525 × C820 mm; cao ghế 450 mm\nKích thước JAC 4-Star: R510 × S570 × C820–920 mm; cao ghế 450–550 mm\nChương trình bền vững: mỗi ghế bán ra trồng một cây",
+    "highlights":["12 kiểu ghế trong cùng một ngôn ngữ","Vỏ 95% nhựa tái chế sau tiêu dùng","Mỗi ghế góp phần trồng một cây"],
+    "optionGroups":[{"label":"Kiểu ghế","values":["JAC Sled Armchair","JAC Classic Armchair","JAC Sled Lounge Chair","JAC Classic Lounge Chair","JAC Architectural Lounge Chair","JAC 4-Star Lounge Chair","JAC Executive Chair","JAC Classic Chair","JAC 4-Leg Chair","JAC Sled Chair","JAC 4-Star Chair","JAC Architectural Chair"]},{"label":"Màu vỏ","values":["Canvas White","Gum Grey","Black","Chocolate","Burnt Umber","Blush Pink","Rust","Sky Blue","Indigo","Olive"]},{"label":"Hoàn thiện ghế","values":["Vỏ polypropylene","Đệm ngồi bọc","Bọc toàn bộ vải/da"]}],
+    "images":["https://www.zenithinteriors.com/media/gw3ntefm/schamburg_alvisse_jac_star_01.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=132739290915130000","https://www.zenithinteriors.com/media/xc2dv4cf/schamburg_alvisse_jac_star_07.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=133356144877430000","https://www.zenithinteriors.com/media/lwnpssth/schamburg_alvisse_jac_star_02.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=132739290916700000","https://www.zenithinteriors.com/media/d4hhml0e/schamburg_alvisse_jac_star_03.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=132739290918100000"],
+    "sourceUrl":"https://www.zenithinteriors.com/asia/collections/jac/"
+  },
+  "precinct": {
+    "brand":"Zenith",
+    "productType":"Hệ pod và lounge mô-đun",
+    "imageScale":90,
+    "swatches":["#d8d0c4","#a98978","#6f7770","#444b50","#263a42"],
+    "description":"PRECINCT là hệ nội thất bọc tiêu âm giúp tạo “không gian trong không gian” cho tập trung, kết nối và cộng tác. Các pod, lounge, ottoman, màn ngăn và booth có thể phối hợp thành khu làm việc cá nhân, khu họp hoặc lounge riêng tư mà không cần xây dựng cố định.",
+    "specifications":"Thiết kế: Zenith Design Studio\nPhạm vi: pod làm việc, lounge, ottoman, screen, divide và booth\nPrecinct Focus Workpod: hai chiều cao lưng, ghế mềm, bàn tích hợp và nguồn điện tùy chọn\nPrecinct Lounge: mô-đun độc lập hoặc ghép thành alcove bao quanh\nPrivacy: bổ sung screen để tăng riêng tư và phân vùng không gian mở\nCấu hình: hơn 30 thành phần trong toàn bộ bộ sưu tập\nVật liệu bọc: theo bảng vải Zenith Select\nBề mặt bàn: laminate theo bảng hoàn thiện Zenith",
+    "highlights":["Pod và lounge trong cùng một hệ","Cấu hình riêng tư hoặc cộng tác","Mô-đun thích ứng với mặt bằng thay đổi"],
+    "optionGroups":[{"label":"Dòng sản phẩm","values":["PRECINCT FOCUS Workpod","PRECINCT Pod Fixed Height","PRECINCT Pod Height Adjust","PRECINCT POD Open","PRECINCT LOUNGE Modules","PRECINCT FOCUS Lounge","PRECINCT MEET Booth"]},{"label":"Hoàn thiện","values":["Theo bảng vải Zenith Select","Phối hai màu theo dự án"]}],
+    "images":["https://www.zenithinteriors.com/media/rwlprjlb/thumbnail.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=132739289362070000","https://www.zenithinteriors.com/media/ng4fomg1/zenith_precinct_lounge_01.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=132739289364700000","https://www.zenithinteriors.com/media/k0zfibes/zenith_precinct_lounge_02.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=132739289367370000","https://www.zenithinteriors.com/media/3xyg2fuy/zenith_precinct_lounge_03.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=132739289369370000","https://www.zenithinteriors.com/media/mdchcimq/hover.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=132739289363130000"],
+    "sourceUrl":"https://www.zenithinteriors.com/collections/precinct/"
+  },
+  "kissen": {
+    "brand":"Zenith",
+    "productType":"Hệ bàn và workstation",
+    "imageScale":90,
+    "swatches":["#f3f2ed","#b8b7b0","#111312","#775044","#a87968","#6e4d3d","#b99b72"],
+    "description":"KISSEN tạo bề mặt làm việc cho cả tư thế ngồi và đứng, với ngôn ngữ thiết kế mềm và chân bàn có biên dạng riêng biệt. Hệ bàn hỗ trợ làm việc xã hội, cộng tác và linh hoạt qua nhiều kích thước, hình dạng mặt bàn và định hướng chân.",
+    "specifications":"Thiết kế: Zenith Design Studio\nMặt bàn: laminate, veneer hoặc mặt tùy chỉnh dày 25 mm\nChân và khung: nhôm sơn tĩnh điện\nTùy chọn chân gỗ: American Oak nguyên khối\nChiều cao: bàn ngồi hoặc bàn đứng, tùy dòng\nCạnh mặt bàn: shark nose hoặc cạnh vuông\nTùy chọn: bánh xe khóa, felt basket, Omni duct, cable sleeve, Ctrl rail và gắn tường\nChứng nhận: GECA, GREENGUARD, PEFC; AFRDI Level 3 cho chân gỗ\nBảo hành: 7 năm",
+    "highlights":["Bàn ngồi, bàn cao và workstation","Mặt bàn laminate hoặc veneer 25 mm","Hệ phụ kiện quản lý cáp và screen"],
+    "optionGroups":[{"label":"Dòng sản phẩm","values":["KISSEN Workstation","KISSEN Table","KISSEN High Table","KISSEN CONFERENCE Folding","KISSEN CONFERENCE Fixed"]},{"label":"Chân bàn","values":["Nhôm sơn tĩnh điện","American Oak","American Oak nhuộm đen"]},{"label":"Cạnh mặt bàn","values":["Cạnh vuông","Shark nose"]}],
+    "images":["https://www.zenithinteriors.com/media/2b4ajsqi/zenith_kissen_table_01.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=132739289057000000","https://www.zenithinteriors.com/media/gufdamrc/hcp_251014_zenith_003.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=134093152163630000","https://www.zenithinteriors.com/media/o1cltyby/hcp_251014_zenith_006.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=134093152165330000","https://www.zenithinteriors.com/media/pn4p3ayc/hcp_251014_zenith_008.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=134093152159670000","https://www.zenithinteriors.com/media/u13hnpyb/zenith_kissen_table_02.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=132739289058170000"],
+    "sourceUrl":"https://www.zenithinteriors.com/collections/kissen/"
+  },
+  "parco": {
+    "brand":"TFW Collection",
+    "productType":"Hệ sofa mô-đun",
+    "imageScale":96,
+    "swatches":["#b96f58","#c8948f","#d8bdac","#7b5a4c"],
+    "description":"Parco là hệ sofa mô-đun do thefirstworkshop tuyển chọn cho không gian tập trung, gặp gỡ và cộng tác. Khung thép sơn tĩnh điện, plywood 18 mm hoàn thiện cạnh UV, chân tăng chỉnh và đệm mút định hình đàn hồi cao tạo nên một hệ ghế bền, dễ mở rộng và linh hoạt theo mặt bằng.",
+    "specifications":"Khung: kim loại sơn tĩnh điện\nKết cấu: plywood dày 18 mm, cạnh phủ UV trong suốt\nChân: tăng chỉnh độ cao\nĐệm: mút định hình đàn hồi cao\nVật liệu bọc: vải OTE\nCấu hình: ghế đơn, ghế băng, semi-pod và cụm cộng tác\nMàu tiêu chuẩn trong bộ ảnh: Terracotta, Blush, Sand và Brown\nMàu dự án: chọn theo bảng vải OTE",
+    "highlights":["Sáu cấu hình từ ghế đơn đến semi-pod","Khung thép và plywood 18 mm","Bốn tông màu chuẩn theo bộ ảnh"],
+    "optionGroups":[{"label":"Cấu hình","values":["Single Semi Pod","Collaboration 6 chỗ","Meeting Semi Pod 4 chỗ","Sofa 3 chỗ lưng trung","Ghế đơn lưng trung","Ghế đơn không lưng"]},{"label":"Màu vải OTE","values":["Terracotta","Blush","Sand","Brown","Theo bảng vải OTE"]}],
+    "images":window.productDetails.parco.images,
+    "sourceUrl":"https://tfw.space/products/parco-series"
+  }
+});
+
+// Zenith task seating, sourced from official Zenith product pages and specifications.
+Object.assign(window.productDetails,{
+  "vox": {
+    "brand": "Zenith",
+    "productType": "Ghế công thái học",
+    "imageScale": 78,
+    "swatches": ["#111312","#777a79","#d5d6d3"],
+    "description": "VOX Task Chair cân bằng giữa công năng, sự thoải mái và hình thức gọn gàng cho nhiều môi trường làm việc. Cơ chế ngả tự điều chỉnh theo trọng lượng, mặt ghế chỉnh cao và trượt sâu giúp người dùng thiết lập tư thế phù hợp mà không cần nhiều thao tác. Có thể chọn phiên bản không tay hoặc tay đa chức năng, đồng thời bổ sung tựa thắt lưng và tựa đầu theo nhu cầu.",
+    "specifications": "Xuất xứ thương hiệu: Úc\nKích thước tổng thể (R × S): 630 × 630 mm\nChiều cao tổng thể: 1015–1140 mm\nChiều rộng mặt ghế: 495 mm\nChiều sâu mặt ghế điều chỉnh: 430–480 mm\nChiều cao mặt ghế: 430–555 mm\nKhoảng rộng tay ghế: 660–720 mm\nChiều cao tay ghế: 595–675 mm\nCơ chế: ngả tự điều chỉnh theo trọng lượng\nĐiều chỉnh: chiều cao ghế và chiều sâu mặt ghế\nTựa lưng: lưới\nTùy chọn: tay đa chức năng, hỗ trợ thắt lưng, tựa đầu, bánh xe mềm, chân nhôm\nChứng nhận: GECA, GREENGUARD, BIFMA, AFRDI Level 6\nBảo hành: 5 năm",
+    "highlights": ["Ngả tự điều chỉnh theo trọng lượng","Mặt ghế chỉnh cao và trượt sâu","Tay, tựa thắt lưng và tựa đầu tùy chọn"],
+    "optionGroups": [
+      {"label":"Tay ghế","values":["Không tay","Tay đa chức năng"]},
+      {"label":"Màu khung","values":["Đen","Xám nhạt"]},
+      {"label":"Hỗ trợ bổ sung","values":["Tiêu chuẩn","Tựa thắt lưng","Tựa đầu","Tựa thắt lưng + tựa đầu"]}
+    ],
+    "images": window.productDetails.vox.images,
+    "sourceUrl": "https://www.zenithinteriors.com/asia/products/vox-task-chair/"
+  },
+  "khyn": {
+    "brand": "Zenith",
+    "productType": "Ghế công thái học",
+    "imageScale": 80,
+    "swatches": ["#111312","#d5d6d3"],
+    "description": "KHYN Task Chair được thiết kế cho sự thoải mái công thái học trong ngày làm việc dài. Tựa lưng lưới thoáng khí hỗ trợ tư thế, mặt ghế bọc nệm có áo bọc tháo rời để vệ sinh và bảo trì thuận tiện. Hai lựa chọn khung cùng phiên bản không tay hoặc tay 4D giúp KHYN thích nghi với người dùng và nhiều kiểu bàn làm việc hiện đại.",
+    "specifications": "Xuất xứ thương hiệu: Úc\nKích thước tổng thể (R × S): 730 × 700 mm\nChiều cao tổng thể: 1065–1175 mm\nChiều rộng mặt ghế: 500 mm\nChiều sâu mặt ghế điều chỉnh: 418–488 mm\nChiều cao mặt ghế: 475–585 mm\nKhoảng rộng tay ghế: 640–700 mm\nChiều cao tay ghế: 653–843 mm\nTựa lưng: lưới thoáng khí\nMặt ghế: bọc nệm, áo bọc tháo rời\nTùy chọn: không tay hoặc tay 4D hiệu năng cao\nTải trọng người dùng được chứng nhận: tối đa 135 kg\nTải trọng thử tĩnh: 410 kg\nChứng nhận: AFRDI Blue Tick",
+    "highlights": ["Tựa lưng lưới thoáng khí","Áo bọc mặt ghế tháo rời","Chứng nhận người dùng đến 135 kg"],
+    "optionGroups": [
+      {"label":"Tay ghế","values":["Không tay","Tay 4D hiệu năng cao"]},
+      {"label":"Màu khung","values":["Đen","Xám nhạt"]}
+    ],
+    "images": window.productDetails.khyn.images,
+    "sourceUrl": "https://www.zenithinteriors.com/asia/products/khyn-task-chair/"
+  }
+});
+
 // Winpod Pod 3.0 Plus products, sourced from official Winpod product pages.
 Object.assign(window.productDetails,{
   "spod3": {
