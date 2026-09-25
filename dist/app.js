@@ -34,11 +34,11 @@ const catalogEntries=[
  ['tabletop','Table Top / Mặt bàn','System Furniture',1600000,'https://cdn.hstatic.net/products/200000617147/m_t_b_n_04_f9620ec58a0d449cac72344cc8878264_large.jpg','table-top'],
  ['meeting','Meeting Table Genese / Bàn Họp','System Furniture',56000000,'https://cdn.hstatic.net/products/200000617147/3_15__e297a1b72ee540baa111378536937a96_large.png','genese'],
  ['q20','Q20 / Holmris B8','System Furniture',24000000,'https://cdn.hstatic.net/products/200000617147/website_ergogen__9__2997fc9d0f154984b928b58494b2169b_large.png','q20-recrafted'],
- ['sls1050','SLS 1050 - thefirstworkshop','System Furniture',12000000,'https://cdn.hstatic.net/products/200000617147/website_ergogen__9__e499c03a86e54e6fbbdb07389ea82904_large.png','steelforce-1050-tfw'],
+ ['sls1050','Steelforce 1050 - thefirstworkshop','System Furniture',12000000,'https://cdn.hstatic.net/products/200000617147/website_ergogen__9__e499c03a86e54e6fbbdb07389ea82904_large.png','steelforce-1050-tfw'],
  ['sls770','SLS 770 PRO - thefirstworkshop','System Furniture',13000000,'https://cdn.hstatic.net/products/200000617147/website_ergogen__8__526e52550344473690b6add29e3cb468_large.png','sls-770-pro-tfw','Nổi bật'],
  ['quantum','QUANTUM workstation','System Furniture',8500000,'https://cdn.hstatic.net/products/200000617147/24_2ab876c8cd7a4cd3826ec390e2983c1c_large.png','quantum-workstation'],
- ['sls470bench','SLS 470 PRO Bench - thefirstworkshop','System Furniture',30000000,'https://product.hstatic.net/200000617147/product/sls_670_bench_bf_oakt_1-scaled_04915ccfe2fb41e489d8307259fdeb73_large.jpg','sls-670-pro-bench'],
- ['sls470','SLS 470 PRO - thefirstworkshop','System Furniture',15000000,'https://product.hstatic.net/200000617147/product/54_f198c19fea50400da9c0fe84500fbe1a_large.png','sls-470-pro','Bán chạy'],
+ ['sls470bench','SLS 670 Bench PRO - thefirstworkshop','System Furniture',30000000,'https://product.hstatic.net/200000617147/product/sls_670_bench_bf_oakt_1-scaled_04915ccfe2fb41e489d8307259fdeb73_large.jpg','sls-670-pro-bench'],
+ ['sls470','SLS 670 PRO - thefirstworkshop','System Furniture',15000000,'https://product.hstatic.net/200000617147/product/54_f198c19fea50400da9c0fe84500fbe1a_large.png','sls-470-pro','Bán chạy'],
  ['at-chair','AT Chair / Wilkhahn','Seatings',36980000,'https://product.hstatic.net/200000617147/product/fixed_1_4x-100_3b907028760740b9bed4f27bc11e9f8e_large.jpg','at-chair'],
  ['freedom','Freedom Chair / Humanscale','Seatings',36600000,'https://product.hstatic.net/200000617147/product/1_4x-100_e5507a410b524b5aa48fafeff583e49d_large.jpg','freedom-chair'],
  ['smart-chair','Smart Chair / Humanscale','Seatings',33000000,'https://product.hstatic.net/200000617147/product/them_tieu_de__1__4be2295487f44317b743d75a04b7e852_large.png','smart-chair'],
@@ -104,7 +104,38 @@ const wpodExperience={
 };
 const manufacturerOverrides={
  'framery-one-compact':podReference,'framery-one-premium':podReference,'framery-four':podReference,spod3:podReference,wpod3:wpodExperience,dpod3:podReference,
- sls470:{brand:'Actiforce',productType:'Bàn nâng hạ điện',description:'Bàn SLS 670 PRO kết hợp khung nâng hạ điện ổn định với mặt bàn có thể cấu hình. Người dùng có thể chuyển đổi linh hoạt giữa tư thế ngồi và đứng, lựa chọn chiều rộng mặt bàn, màu mặt bàn và màu khung theo không gian làm việc.',specifications:'Khối lượng: 38 kg\nKích thước khung: 110 × 75 × 61 cm\nKích thước cột: 6 × 9 cm\nTải trọng nâng động: 120 kg\nTruyền động: động cơ điện\nHệ chống va chạm: có\nQuản lý dây cáp: tùy chọn\nVật liệu: kim loại, một phần gỗ nguyên khối\nMặt bàn: MDF\nBộ điều khiển: ActiSwitch Eco-Memory',optionGroups:[{label:'Chiều rộng mặt bàn',values:['160 cm','180 cm','200 cm']},{label:'Màu mặt bàn',values:['Xám nhạt','Gỗ sồi','Trắng']},{label:'Màu khung',values:['Đen','Bạc','Trắng']}],sourceUrl:'https://actiforce.com/en/produkt/sls-670-pro-desk/'}
+ sls470:{
+  brand:'Actiforce',productType:'Khung bàn nâng hạ điện',
+  description:'SLS 670 PRO là khung bàn nâng hạ điện cao cấp dành cho không gian làm việc chuyên nghiệp. Kết cấu thép ổn định, vận hành êm và điều chỉnh độ cao liên tục giúp chuyển đổi linh hoạt giữa tư thế ngồi và đứng. Bộ điều khiển ActiSwitch Eco-Memory, chức năng ghi nhớ độ cao, chống va chạm và tùy chọn quản lý dây cáp tạo nên một trạm làm việc gọn gàng, an toàn và dễ sử dụng.',
+  specifications:'Khối lượng: 31 kg\nKích thước khung: 110 × 75 × 61 cm\nKích thước cột: 6 × 9 cm\nChiều cao điều chỉnh: 61,5–127,5 cm\nChiều rộng điều chỉnh: 110–170 cm\nHành trình nâng: 66 cm\nTốc độ nâng: 39 mm/s\nTải trọng nâng động: 120 kg\nTruyền động: động cơ điện\nHệ chống va chạm: có\nỔ cắm tích hợp: không\nQuản lý dây cáp: tùy chọn\nVật liệu: kim loại\nBộ điều khiển: ActiSwitch Eco-Memory',
+  highlights:['Điều chỉnh điện êm và chính xác','Tải trọng nâng động 120 kg','ActiSwitch Eco-Memory đi kèm'],
+  optionGroups:[{label:'Màu khung',values:['Đen','Bạc','Trắng']}],
+  sourceUrl:'https://actiforce.com/en/produkt/sls-670-pro-table-frame/'
+ },
+ sls470bench:{
+  brand:'Actiforce',productType:'Khung bàn bench nâng hạ điện',
+  description:'SLS 670 Bench PRO là hệ khung bàn đôi nâng hạ điện dành cho văn phòng hiện đại và không gian coworking. Hai vị trí làm việc được tổ chức trên một kết cấu chung để tiết kiệm diện tích, trong khi mỗi người dùng vẫn có thể điều chỉnh độ cao phù hợp với tư thế ngồi hoặc đứng. Kết cấu thép chắc chắn, chống va chạm và bộ điều khiển ActiSwitch Eco-Memory hỗ trợ vận hành an toàn, linh hoạt.',
+  specifications:'Khối lượng: 70 kg\nKích thước khung: 110 × 140 × 61 cm\nKích thước cột: 6 × 9 cm\nTải trọng nâng động: 120 kg\nTruyền động: động cơ điện\nHệ chống va chạm: có\nỔ cắm tích hợp: không\nQuản lý dây cáp: tùy chọn\nVật liệu: kim loại\nBộ điều khiển: ActiSwitch Eco-Memory',
+  highlights:['Hệ bench tiết kiệm diện tích','Điều chỉnh độ cao cho từng vị trí','Tải trọng nâng động 120 kg'],
+  optionGroups:[{label:'Màu khung',values:['Đen','Bạc','Trắng']}],
+  sourceUrl:'https://actiforce.com/en/produkt/sls-670-bench-pro-table-frame/'
+ },
+ sls770:{
+  brand:'Actiforce',productType:'Khung bàn nâng hạ điện',
+  description:'SLS 770 PRO là khung bàn nâng hạ điện một tầng, phù hợp cho trạm làm việc công thái học có dải chiều cao tiêu chuẩn. Khung thép ổn định, vận hành điện êm và có chống va chạm, cho phép người dùng thay đổi tư thế làm việc thuận tiện trong ngày. Chiều rộng khung linh hoạt hỗ trợ nhiều kích thước mặt bàn văn phòng.',
+  specifications:'Khối lượng khung: khoảng 27 kg\nChiều cao điều chỉnh: 68,5–115,5 cm\nChiều rộng điều chỉnh: 110–170 cm\nKích thước mặt bàn khuyến nghị: 120–200 × 80 cm\nHành trình nâng: 47 cm\nTốc độ nâng: khoảng 39 mm/s\nTải trọng nâng động: tối đa 120 kg, tùy bộ điều khiển\nĐộ ồn: dưới 50 dB(A)\nTruyền động: động cơ điện\nHệ chống va chạm: có\nVật liệu: thép, nhựa và nhôm\nXuất xứ sản xuất: Malaysia',
+  highlights:['Dải cao 68,5–115,5 cm','Tải trọng tối đa 120 kg','Vận hành dưới 50 dB(A)'],
+  optionGroups:[{label:'Màu khung',values:['Đen','Bạc','Trắng']}],
+  sourceUrl:'https://actiforce.com/wp-content/uploads/2023/11/P_ACTIFORC_SLS_SLS770PRO___Manual.pdf'
+ },
+ sls1050:{
+  brand:'Actiforce',productType:'Khung bàn nâng hạ điện',
+  description:'Steelforce 1050 là khung bàn nâng hạ điện bằng thép, được thiết kế cho độ ổn định và độ bền trong môi trường làm việc hằng ngày. Thiết kế tối giản có thể kết hợp với nhiều loại mặt bàn, hỗ trợ chuyển đổi linh hoạt giữa tư thế ngồi và đứng, đồng thời tích hợp chống va chạm và tùy chọn quản lý dây cáp.',
+  specifications:'Khối lượng: 26 kg\nKích thước đóng gói: 76 × 26 × 19,5 cm\nKích thước cột: 8 × 5 cm\nChiều cao điều chỉnh: 61,5–122,5 cm\nChiều rộng điều chỉnh: 115–175 cm\nTốc độ nâng: 40 mm/s\nTải trọng nâng động: 100 kg\nĐộ ồn: khoảng 45 dB(A)\nTruyền động: động cơ điện\nHệ chống va chạm: có\nỔ cắm tích hợp: không\nQuản lý dây cáp: tùy chọn\nVật liệu: kim loại',
+  highlights:['Kết cấu thép ổn định','Tải trọng nâng động 100 kg','Bốn màu khung lựa chọn'],
+  optionGroups:[{label:'Màu khung',values:['Anthracite','Đen','Bạc','Trắng']}],
+  sourceUrl:'https://actiforce.com/en/produkt/steelforce-1050-table-frame/'
+ }
 };
 let cart=JSON.parse(localStorage.getItem('tfw-demo-cart')||'{}');let activeFilter='all';let activeSort='featured';
 const money=n=>new Intl.NumberFormat('vi-VN',{style:'currency',currency:'VND'}).format(n);
