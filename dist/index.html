@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="thefirstworkshop — nội thất và giải pháp không gian làm việc cho doanh nghiệp Việt Nam.">
+  <meta name="theme-color" content="#11130f">
+  <title>thefirstworkshop — Workspace, made practical.</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2311130f'/%3E%3Cpath d='M15 18h34v8H36v25h-8V26H15z' fill='%23215c45'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="collection.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Đi tới nội dung</a>
+  <div class="announcement">Giao hàng toàn quốc · Nhận hàng tại 71 Hai Bà Trưng, Quận 1</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="thefirstworkshop home">
+      <span class="brand-mark">tfw</span><span class="brand-name">thefirstworkshop</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Điều hướng chính">
+      <a href="#shop">Sản phẩm</a><a href="#solutions">Giải pháp</a><a href="#story">Về chúng tôi</a>
+    </nav>
+    <div class="header-actions">
+      <button class="text-button" id="searchButton" type="button">Tìm kiếm</button>
+      <button class="language-button" id="langToggle" type="button" aria-label="Switch to English">EN</button>
+      <button class="cart-button" id="cartButton" type="button" aria-haspopup="dialog" aria-controls="cartDrawer">
+        Giỏ hàng <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero collection-hero" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <p class="eyebrow">Collection · Workspace Solutions</p>
+        <h1 id="heroTitle">Không gian làm việc.</h1>
+      </div>
+      <div class="hero-structure collection-intro">
+        <p>Từ bàn ghế, smart pod đến acoustic và vật liệu hoàn thiện — một hệ sản phẩm cho toàn bộ không gian làm việc.</p>
+        <button class="read-more" type="button" id="readMoreButton">Đọc thêm</button>
+        <div class="expanded-intro" id="expandedIntro" hidden>thefirstworkshop tuyển chọn và phát triển giải pháp nội thất linh hoạt, dễ bảo trì, phù hợp với nhu cầu thực tế của doanh nghiệp Việt Nam.</div>
+      </div>
+    </section>
+
+    <section class="category-strip" aria-label="Danh mục sản phẩm">
+      <a href="#shop" data-filter-link="Smart Pods"><span>01</span> Smart Pods</a>
+      <a href="#shop" data-filter-link="System Furniture"><span>02</span> System Furniture</a>
+      <a href="#shop" data-filter-link="Seatings"><span>03</span> Seatings</a>
+      <a href="#shop" data-filter-link="Milliken Flooring"><span>04</span> Finishing Solutions</a>
+    </section>
+
+    <section class="shop-section" id="shop" aria-labelledby="shopTitle">
+      <div class="section-heading collection-heading">
+        <div><p class="eyebrow">Workspace Collection</p><h2 id="shopTitle">Tất cả sản phẩm</h2></div>
+        <p class="collection-description">Khám phá sản phẩm theo từng lớp của không gian: nội thất, công nghệ, riêng tư, âm học và bề mặt hoàn thiện.</p>
+      </div>
+      <div class="collection-toolbar">
+        <div class="filters" role="group" aria-label="Lọc sản phẩm">
+          <button class="filter active" data-filter="all" type="button">Tất cả</button>
+          <button class="filter" data-filter="Smart Pods" type="button">Smart Pods</button>
+          <button class="filter" data-filter="Loose Furniture" type="button">Loose Furniture</button>
+          <button class="filter" data-filter="Storage Solutions" type="button">Storage Solutions</button>
+          <button class="filter" data-filter="System Furniture" type="button">System Furniture</button>
+          <button class="filter" data-filter="Seatings" type="button">Seatings</button>
+          <button class="filter" data-filter="Monitor Arm & Docking" type="button">Monitor Arm &amp; Docking</button>
+          <button class="filter" data-filter="Glass Partition" type="button">Glass Partition</button>
+          <button class="filter" data-filter="Milliken Flooring" type="button">Milliken Flooring</button>
+          <button class="filter" data-filter="Acoustic Wall Panel" type="button">Acoustic Wall Panel</button>
+          <button class="filter" data-filter="Accessories" type="button">Accessories</button>
+        </div>
+        <div class="toolbar-meta"><span id="productCount">0 sản phẩm</span><label>Sắp xếp <select id="sortProducts"><option value="featured">Nổi bật</option><option value="low">Giá: thấp đến cao</option><option value="high">Giá: cao đến thấp</option></select></label></div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="shop-the-look" aria-labelledby="shopLookTitle">
+      <div class="shop-look-heading">
+        <div><p class="eyebrow">Shop the setup</p><h2 id="shopLookTitle">Chạm vào không gian.</h2></div>
+        <p>Chọn một điểm để xem sản phẩm, sau đó mở cấu hình chi tiết hoặc thêm nhanh vào giỏ.</p>
+      </div>
+      <div class="scene-wrap" id="workspaceScene">
+        <img src="https://product.hstatic.net/200000617147/product/sls_670_bench_bf_oakt_1-scaled_04915ccfe2fb41e489d8307259fdeb73_large.jpg" alt="Không gian làm việc với bàn, phụ kiện và giải pháp lưu trữ" loading="lazy">
+        <button class="scene-hotspot" style="--x:51%;--y:63%" data-hotspot="sls470bench" type="button" aria-label="Xem SLS 470 PRO Bench"><span class="hotspot-dot"></span><span class="hotspot-label">SLS 470 PRO Bench</span></button>
+        <button class="scene-hotspot" style="--x:68%;--y:43%" data-hotspot="m2pro" type="button" aria-label="Xem M2 Pro Monitor Arm"><span class="hotspot-dot"></span><span class="hotspot-label">M2 Pro Monitor Arm</span></button>
+        <button class="scene-hotspot" style="--x:35%;--y:76%" data-hotspot="cabletray" type="button" aria-label="Xem Cable Tray"><span class="hotspot-dot"></span><span class="hotspot-label">Cable Tray</span></button>
+        <button class="scene-hotspot" style="--x:82%;--y:68%" data-hotspot="ck06" type="button" aria-label="Xem CK06 Power Module"><span class="hotspot-dot"></span><span class="hotspot-label">CK06 Power Module</span></button>
+      </div>
+      <p class="scene-help">Nhấn vào dấu chấm để khám phá sản phẩm trong không gian.</p>
+    </section>
+
+    <section class="material-callout">
+      <div><p class="eyebrow">Build with confidence</p><h2>Chạm vật liệu.<br>Chọn đúng cấu hình.</h2></div>
+      <div class="material-copy"><p>Đến showroom để trải nghiệm mặt bàn, khung, màu sắc và cable management trước khi quyết định.</p><div class="material-stats"><span><strong>02</strong>Showroom & kho</span><span><strong>1:1</strong>Tư vấn cấu hình</span></div><a class="primary-button" href="mailto:hi@tfw.space">Đặt lịch tư vấn</a></div>
+    </section>
+
+    <section class="faq-section" aria-labelledby="faqTitle">
+      <div><p class="eyebrow">Good to know</p><h2 id="faqTitle">Câu hỏi thường gặp</h2></div>
+      <div class="faq-list">
+        <details><summary>Làm sao chọn kích thước bàn phù hợp?</summary><p>Hãy bắt đầu từ số người sử dụng, thiết bị trên bàn và lối lưu thông. Đội ngũ của chúng tôi có thể đề xuất kích thước theo mặt bằng thực tế.</p></details>
+        <details><summary>Có thể thay đổi màu và vật liệu không?</summary><p>Tùy dòng sản phẩm, bạn có thể chọn mặt bàn, màu khung và phụ kiện đi kèm. Các cấu hình dự án sẽ được xác nhận trước khi sản xuất.</p></details>
+        <details><summary>Thời gian giao hàng bao lâu?</summary><p>Hàng có sẵn và hàng sản xuất theo cấu hình có thời gian khác nhau. Lịch giao cụ thể được xác nhận cùng báo giá.</p></details>
+        <details><summary>Có hỗ trợ lắp đặt tại văn phòng?</summary><p>Có. Chúng tôi hỗ trợ giao, lắp đặt và nghiệm thu theo phạm vi dự án.</p></details>
+      </div>
+    </section>
+
+    <section class="solutions" id="solutions" aria-labelledby="solutionsTitle">
+      <div class="solution-intro"><p class="eyebrow">From one chair to a whole floor</p><h2 id="solutionsTitle">Một hệ thống.<br>Nhiều cách làm việc.</h2></div>
+      <div class="solution-list">
+        <article><span>01</span><div><h3>Không gian cá nhân</h3><p>Bàn, ghế và phụ kiện ergonomic cho nhịp làm việc tập trung.</p></div></article>
+        <article><span>02</span><div><h3>Văn phòng linh hoạt</h3><p>Workstation, storage và loose furniture có thể thích nghi khi đội ngũ thay đổi.</p></div></article>
+        <article><span>03</span><div><h3>Không gian riêng tư</h3><p>Smart pod và giải pháp acoustic cho cuộc gọi, họp nhóm và công việc sâu.</p></div></article>
+      </div>
+    </section>
+
+    <section class="story" id="story">
+      <p class="eyebrow">We are thefirstworkshop</p>
+      <blockquote>“Chất lượng tốt không nhất thiết phải đến từ những điều phức tạp.”</blockquote>
+      <p>Chúng tôi là thương hiệu nội thất và giải pháp không gian làm việc thuộc Ergovn, được phát triển bởi một đội ngũ trẻ tại Việt Nam. Vật liệu phù hợp, thi công cẩn thận và tinh thần luôn muốn làm tốt hơn mỗi ngày.</p>
+      <a class="arrow-link light" href="mailto:hi@tfw.space">Bắt đầu một dự án <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">thefirstworkshop</div>
+    <div><p class="footer-label">Visit</p><p>Tầng 5, 71 Hai Bà Trưng<br>P. Sài Gòn, TP. Hồ Chí Minh</p></div>
+    <div><p class="footer-label">Talk</p><p><a href="tel:+84909368571">+84 909 368 571</a><br><a href="mailto:hi@tfw.space">hi@tfw.space</a></p></div>
+    <div><p class="footer-label">Hours</p><p>Thứ 2—Thứ 6<br>08:00—18:00</p></div>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true">
+    <div class="drawer-header"><h2 id="cartTitle">Giỏ hàng</h2><button class="icon-button" id="closeCart" type="button" aria-label="Đóng giỏ hàng">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer"><div class="subtotal"><span>Tạm tính</span><strong id="cartSubtotal">0₫</strong></div><p>Phí vận chuyển được tính ở bước tiếp theo.</p><button class="primary-button full" id="checkoutButton" type="button">Tiếp tục thanh toán</button></div>
+  </aside>
+
+  <section class="checkout" id="checkout" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle" aria-hidden="true">
+    <button class="icon-button checkout-close" id="closeCheckout" type="button" aria-label="Đóng thanh toán">×</button>
+    <div class="checkout-brand"><span class="brand-mark">tfw</span><p>Thanh toán bảo mật</p></div>
+    <div class="checkout-panel">
+      <p class="eyebrow">Checkout · 01 / 02</p><h2 id="checkoutTitle">Thông tin giao hàng</h2>
+      <form id="paymentForm">
+        <div class="field-row"><label>Họ và tên<input name="name" autocomplete="name" required placeholder="Nguyễn Minh Anh"></label><label>Số điện thoại<input name="phone" autocomplete="tel" required placeholder="0909 000 000"></label></div>
+        <label>Email<input type="email" name="email" autocomplete="email" required placeholder="ban@email.com"></label>
+        <label>Địa chỉ giao hàng<input name="address" autocomplete="street-address" required placeholder="Số nhà, đường, phường, quận"></label>
+        <fieldset><legend>Phương thức thanh toán</legend><label class="payment-option"><input type="radio" name="payment" value="card" checked><span><strong>Thẻ ngân hàng</strong><small>Visa · Mastercard · JCB</small></span></label><label class="payment-option"><input type="radio" name="payment" value="bank"><span><strong>Chuyển khoản</strong><small>QR ngân hàng</small></span></label><label class="payment-option"><input type="radio" name="payment" value="cod"><span><strong>Thanh toán khi nhận hàng</strong><small>Áp dụng theo khu vực</small></span></label></fieldset>
+        <div id="cardFields"><label>Số thẻ<input inputmode="numeric" autocomplete="cc-number" placeholder="4242 4242 4242 4242" required></label><div class="field-row"><label>Ngày hết hạn<input inputmode="numeric" autocomplete="cc-exp" placeholder="MM / YY" required></label><label>CVC<input inputmode="numeric" autocomplete="cc-csc" placeholder="123" required></label></div></div>
+        <p class="demo-note">Bản demo học tập — không có khoản tiền nào được thu.</p>
+        <button class="primary-button full" type="submit">Xác nhận đơn hàng · <span id="checkoutTotal">0₫</span></button>
+      </form>
+      <div class="success-state" id="successState" hidden><span class="success-mark">✓</span><h2>Đơn hàng đã được ghi nhận.</h2><p>Mã đơn <strong id="orderNumber"></strong>. Đội ngũ thefirstworkshop sẽ liên hệ để xác nhận giao hàng.</p><button class="primary-button" id="continueShopping" type="button">Tiếp tục mua sắm</button></div>
+    </div>
+    <aside class="order-summary"><p class="eyebrow">Đơn hàng</p><div id="checkoutItems"></div><div class="summary-row"><span>Giao hàng</span><span>Liên hệ xác nhận</span></div><div class="summary-row total"><span>Tổng</span><strong id="summaryTotal">0₫</strong></div></aside>
+  </section>
+
+  <div class="search-panel" id="searchPanel" hidden><div class="search-inner"><label for="searchInput">Tìm sản phẩm</label><input id="searchInput" type="search" placeholder="Bàn, ghế, phụ kiện..." autocomplete="off"><button class="icon-button" id="closeSearch" type="button" aria-label="Đóng tìm kiếm">×</button></div><div class="search-results" id="searchResults"></div></div>
+  <section class="product-detail" id="productDetail" role="dialog" aria-modal="true" aria-labelledby="detailTitle" aria-hidden="true">
+    <div class="detail-topbar">
+      <button class="detail-back" id="closeProductDetail" type="button">← Trở lại cửa hàng</button>
+      <a class="brand detail-brand" href="#shop" aria-label="thefirstworkshop home">
+        <span class="brand-mark" aria-hidden="true">tfw</span><span class="brand-name">thefirstworkshop</span>
+      </a>
+      <button class="language-button" id="detailLangToggle" type="button" aria-label="Switch to English">EN</button>
+    </div>
+    <div class="detail-layout">
+      <div class="detail-gallery" id="detailGallery"></div>
+      <aside class="detail-buy">
+        <div class="detail-summary">
+          <div class="detail-labels"><span id="detailBadge">Bán chạy</span><span>Sản xuất tại Việt Nam</span></div>
+          <h2 id="detailTitle"></h2>
+          <div class="detail-price" id="detailPrice"></div>
+          <ul class="detail-benefits"><li>Điều chỉnh linh hoạt theo nhu cầu làm việc</li><li>Cấu trúc bền vững, dễ bảo trì</li><li>Lắp đặt bởi đội ngũ thefirstworkshop</li></ul>
+        </div>
+        <div class="config-group"><div class="config-heading"><span>Hoàn thiện</span><strong id="selectedFinish">Black</strong></div><div class="finish-options" id="finishOptions"></div></div>
+        <div class="config-group"><div class="config-heading"><span>Kích thước</span><button type="button">Hướng dẫn kích thước</button></div><div class="choice-grid" id="sizeOptions"><button class="selected" type="button">120×60</button><button type="button">140×70</button><button type="button">160×80</button><button type="button">180×80</button></div></div>
+        <div class="config-group"><div class="config-heading"><span>Màu khung</span><strong id="selectedFrame">Black</strong></div><div class="choice-grid three" id="frameOptions"><button class="selected" type="button">Black</button><button type="button">White</button><button type="button">Grey</button></div></div>
+        <button class="primary-button full detail-add" id="detailAddButton" type="button">Thêm vào giỏ · <span id="detailAddPrice"></span></button>
+        <p class="detail-delivery">Giao hàng dự kiến được xác nhận sau khi đặt hàng · Hỗ trợ lắp đặt tại TP. Hồ Chí Minh</p>
+        <div class="detail-accordions">
+          <details open><summary>Thiết kế & công năng</summary><p>Giải pháp bàn linh hoạt cho văn phòng hiện đại, với cấu trúc tối giản và hệ phụ kiện được thiết kế để giữ bề mặt làm việc gọn gàng.</p></details>
+          <details><summary>Thông số kỹ thuật</summary><p>Khung thép sơn tĩnh điện, mặt bàn cấu hình theo dòng sản phẩm, hệ cable management tùy chọn và linh kiện dễ bảo trì.</p></details>
+          <details><summary>Giao hàng & bảo hành</summary><p>Thời gian giao phụ thuộc cấu hình và tồn kho. Chính sách bảo hành và lắp đặt sẽ được xác nhận trong báo giá.</p></details>
+        </div>
+      </aside>
+    </div>
+  </section>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+  <script src="i18n.js"></script>
+</body>
+</html>
