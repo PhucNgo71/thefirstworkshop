@@ -83,8 +83,27 @@ const catalogEntries=[
 ];
 const products=catalogEntries.map(([id,name,scope,price,image,handle,badge])=>({id,name,category:scope,scope,price,image,badge,contactOnly:price===0,detail:catalogDetails[scope],sourceUrl:`https://tfw.space/products/${handle}`,swatches:['#111312','#f4f5f3','#8b8f8c']}));
 const podReference={optionGroups:[{label:'Màu hoàn thiện tham khảo',values:['Beige','Grey','Green','Blue','Cloud','Yellow','Navy']}],referenceUrl:'https://musepod.us/products/musepod-mp-series'};
+const wpodExperience={
+ optionGroups:[{label:'Màu hoàn thiện tham khảo',values:['Light','Dark','Beige','Grey','Green','Blue','Navy']}],
+ referenceUrl:'https://room.com/shop/phone-booth/',
+ highlights:['Không gian làm việc riêng tư','Cắm điện và sử dụng','Linh hoạt trong văn phòng'],
+ experience:{
+  eyebrow:'RIÊNG TƯ TRONG KHÔNG GIAN MỞ',
+  title:'Một văn phòng thu nhỏ, sẵn sàng khi bạn cần.',
+  copy:'WPOD 3.0 tạo một không gian yên tĩnh và thoải mái cho công việc tập trung, cuộc gọi video hoặc những phiên làm việc kéo dài — mà không cần cải tạo mặt bằng.',
+  featureTitle:'Mọi thứ cần thiết, tích hợp gọn trong một không gian.',
+  features:[
+   ['Cách âm riêng tư','Giảm tác động của tiếng ồn xung quanh để bạn tập trung và trò chuyện thoải mái hơn.'],
+   ['Không gian rộng rãi','Kích thước W140 × D125 × H218 cm phù hợp cho một người làm việc trong thời gian dài.'],
+   ['Cảm biến thông minh','Đèn cảm biến hỗ trợ vận hành thuận tiện và tiết kiệm năng lượng.'],
+   ['Thông gió chủ động','Quạt thông gió tích hợp duy trì luồng không khí trong suốt phiên làm việc.'],
+   ['Nguồn điện & USB','Ổ điện và cổng USB được tích hợp để thiết bị luôn sẵn sàng.'],
+   ['Ánh sáng điều chỉnh','Cường độ chiếu sáng có thể tăng giảm để phù hợp với từng tác vụ.']
+  ]
+ }
+};
 const manufacturerOverrides={
- 'framery-one-compact':podReference,'framery-one-premium':podReference,'framery-four':podReference,spod3:podReference,wpod3:podReference,dpod3:podReference,
+ 'framery-one-compact':podReference,'framery-one-premium':podReference,'framery-four':podReference,spod3:podReference,wpod3:wpodExperience,dpod3:podReference,
  sls470:{brand:'Actiforce',productType:'Bàn nâng hạ điện',description:'Bàn SLS 670 PRO kết hợp khung nâng hạ điện ổn định với mặt bàn có thể cấu hình. Người dùng có thể chuyển đổi linh hoạt giữa tư thế ngồi và đứng, lựa chọn chiều rộng mặt bàn, màu mặt bàn và màu khung theo không gian làm việc.',specifications:'Khối lượng: 38 kg\nKích thước khung: 110 × 75 × 61 cm\nKích thước cột: 6 × 9 cm\nTải trọng nâng động: 120 kg\nTruyền động: động cơ điện\nHệ chống va chạm: có\nQuản lý dây cáp: tùy chọn\nVật liệu: kim loại, một phần gỗ nguyên khối\nMặt bàn: MDF\nBộ điều khiển: ActiSwitch Eco-Memory',optionGroups:[{label:'Chiều rộng mặt bàn',values:['160 cm','180 cm','200 cm']},{label:'Màu mặt bàn',values:['Xám nhạt','Gỗ sồi','Trắng']},{label:'Màu khung',values:['Đen','Bạc','Trắng']}],sourceUrl:'https://actiforce.com/en/produkt/sls-670-pro-desk/'}
 };
 let cart=JSON.parse(localStorage.getItem('tfw-demo-cart')||'{}');let activeFilter='all';let activeSort='featured';
@@ -106,12 +125,14 @@ let activeProductId=null;
 function openProductDetail(id){
  const product=products.find(p=>p.id===id);if(!product)return;
  const source={...(window.productDetails?.[id]||{}),...(manufacturerOverrides[id]||{})};const gallery=source.images?.length?source.images.slice(0,8):[product.image];const safe=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
- activeProductId=id;$('#detailTitle').textContent=product.name;$('#detailPrice').textContent=priceText(product);$('#detailAddButton').innerHTML=product.contactOnly?'Liên hệ tư vấn ↗':`Thêm vào giỏ · <span id="detailAddPrice">${money(product.price)}</span>`;$('#detailBadge').textContent=product.badge||product.scope||'thefirstworkshop';
+ activeProductId=id;$('#detailTitle').textContent=product.name;$('#detailPrice').textContent=priceText(product);$('#detailAddButton').innerHTML=product.contactOnly?'Liên hệ tư vấn ↗':`Thêm vào giỏ · <span id="detailAddPrice">${money(product.price)}</span>`;$('#detailBadge').textContent=product.badge||product.scope||'thefirstworkshop';const origin=source.specifications?.match(/Xuất xứ thương hiệu:\s*([^\n]+)/i)?.[1]?.trim();$('#detailOrigin').textContent=origin||'TFW SELECTED';
+ $('#detailHighlights').innerHTML=(source.highlights||[]).map(item=>`<li>${safe(item)}</li>`).join('');$('#detailHighlights').hidden=!source.highlights?.length;
  $('#detailGallery').innerHTML=gallery.map((image,index)=>`<figure class="detail-image${index===0?' primary':''}"><img src="${image}" alt="${index===0?product.name:`${product.name} · ${index+1}`}" loading="${index===0?'eager':'lazy'}"></figure>`).join('');
  const allInfo=`${source.specifications||''}\n${source.description||''}`;const dimension=allInfo.split(/\n+/).find(line=>/kích thước|dimension/i.test(line));const facts=[['Thương hiệu',source.brand],['Dòng sản phẩm',source.productType||product.scope],['Kích thước',dimension?.replace(/^.*?(kích thước|dimension)\s*:?\s*/i,'')]].filter(([,value])=>value);
  $('#detailFacts').innerHTML=facts.map(([label,value])=>`<div><span>${safe(label)}</span><strong>${safe(value)}</strong></div>`).join('');
  $('#detailDescription').textContent=source.description||product.detail;$('#detailSpecifications').textContent=source.specifications||'Thông số chi tiết được xác nhận theo cấu hình và báo giá.';$('#specificationsPanel').hidden=false;$('#sourceProductLink').href=source.sourceUrl||product.sourceUrl;$('#referenceProductLink').hidden=!source.referenceUrl;if(source.referenceUrl)$('#referenceProductLink').href=source.referenceUrl;
  const variants=(source.variants||[]).filter(Boolean);const optionGroups=source.optionGroups||((variants.length)?[{label:'Tùy chọn sản phẩm',values:variants}]:[]);$('#productOptions').innerHTML=optionGroups.map((group,groupIndex)=>`<div class="config-group"><div class="config-heading"><span>${safe(group.label)}</span><strong data-option-selection="${groupIndex}">${safe(group.values[0]||'')}</strong></div><div class="choice-grid detail-variants" data-option-group="${groupIndex}">${group.values.map((value,index)=>`<button class="${index===0?'selected':''}" type="button" data-option-value="${safe(value)}">${safe(value)}</button>`).join('')}</div></div>`).join('');$$('[data-option-group] button').forEach(button=>button.onclick=()=>{const group=button.closest('[data-option-group]');$$('[data-option-group="'+group.dataset.optionGroup+'"] button').forEach(x=>x.classList.remove('selected'));button.classList.add('selected');$('[data-option-selection="'+group.dataset.optionGroup+'"]').textContent=button.dataset.optionValue});
+ const experience=source.experience;$('#detailExperience').hidden=!experience;if(experience){$('#experienceEyebrow').textContent=experience.eyebrow;$('#experienceTitle').textContent=experience.title;$('#experienceCopy').textContent=experience.copy;$('#experienceImage').src=gallery[1]||gallery[0];$('#experienceImage').alt=`${product.name} · không gian sử dụng`;$('#featureTitle').textContent=experience.featureTitle;$('#featureGrid').innerHTML=experience.features.map(([title,copy],index)=>`<article class="pod-feature"><span>${String(index+1).padStart(2,'0')}</span><h4>${safe(title)}</h4><p>${safe(copy)}</p></article>`).join('')}
  $('#productDetail').classList.add('open');$('#productDetail').setAttribute('aria-hidden','false');document.body.style.overflow='hidden';location.hash=`product-${id}`;window.applyI18n?.();setTimeout(()=>$('#closeProductDetail').focus(),40)
 }
 function closeProductDetail(){activeProductId=null;$('#productDetail').classList.remove('open');$('#productDetail').setAttribute('aria-hidden','true');document.body.style.overflow='';history.replaceState(null,'',location.pathname+location.search+'#shop')}

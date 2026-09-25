@@ -176,9 +176,10 @@
       <div class="detail-gallery" id="detailGallery"></div>
       <aside class="detail-buy">
         <div class="detail-summary">
-          <div class="detail-labels"><span id="detailBadge">Bán chạy</span><span>Sản xuất tại Việt Nam</span></div>
+          <div class="detail-labels"><span id="detailBadge">Bán chạy</span><span id="detailOrigin">TFW SELECTED</span></div>
           <h2 id="detailTitle"></h2>
           <div class="detail-price" id="detailPrice"></div>
+          <ul class="detail-highlights" id="detailHighlights" hidden></ul>
           <div class="detail-facts" id="detailFacts"></div>
         </div>
         <div id="productOptions"></div>
@@ -192,6 +193,16 @@
         <div class="detail-source-links"><a class="source-product-link" id="sourceProductLink" href="https://tfw.space/" target="_blank" rel="noopener">Xem thông tin sản phẩm gốc ↗</a><a class="source-product-link" id="referenceProductLink" href="#" target="_blank" rel="noopener" hidden>Xem nguồn tham khảo ↗</a></div>
       </aside>
     </div>
+    <section class="pod-experience" id="detailExperience" hidden>
+      <div class="pod-experience-copy">
+        <p class="eyebrow" id="experienceEyebrow"></p>
+        <h3 id="experienceTitle"></h3>
+        <p id="experienceCopy"></p>
+      </div>
+      <figure class="pod-experience-image"><img id="experienceImage" src="" alt=""></figure>
+      <div class="pod-feature-heading"><p class="eyebrow">WPOD 3.0 · FEATURES</p><h3 id="featureTitle"></h3></div>
+      <div class="pod-feature-grid" id="featureGrid"></div>
+    </section>
   </section>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="product-details.js"></script>

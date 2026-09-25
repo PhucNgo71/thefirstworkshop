@@ -56,6 +56,16 @@ const english = {
   'Thông số kỹ thuật':'Technical specifications','Khung thép sơn tĩnh điện, mặt bàn cấu hình theo dòng sản phẩm, hệ cable management tùy chọn và linh kiện dễ bảo trì.':'Powder-coated steel frame, configurable table top, optional cable management, and easy-to-maintain components.',
   'Giao hàng & bảo hành':'Delivery & warranty','Thời gian giao phụ thuộc cấu hình và tồn kho. Chính sách bảo hành và lắp đặt sẽ được xác nhận trong báo giá.':'Delivery time depends on configuration and stock. Warranty and installation terms are confirmed in the quotation.',
   'Màu hoàn thiện':'Available finishes','Thêm vào giỏ ·':'Add to cart ·'
+  ,'Không gian làm việc riêng tư':'Private workspace','Cắm điện và sử dụng':'Plug and play','Linh hoạt trong văn phòng':'Flexible for any office'
+  ,'Riêng tư trong không gian mở':'Privacy in the open office','RIÊNG TƯ TRONG KHÔNG GIAN MỞ':'PRIVACY IN THE OPEN OFFICE','Một văn phòng thu nhỏ, sẵn sàng khi bạn cần.':'A compact office, ready when you need it.'
+  ,'WPOD 3.0 tạo một không gian yên tĩnh và thoải mái cho công việc tập trung, cuộc gọi video hoặc những phiên làm việc kéo dài — mà không cần cải tạo mặt bằng.':'WPOD 3.0 creates a quiet, comfortable space for focused work, video calls, or longer work sessions — without renovating your floor plan.'
+  ,'Mọi thứ cần thiết, tích hợp gọn trong một không gian.':'Everything you need, integrated into one space.'
+  ,'Cách âm riêng tư':'Acoustic privacy','Giảm tác động của tiếng ồn xung quanh để bạn tập trung và trò chuyện thoải mái hơn.':'Reduces surrounding noise so you can focus and speak more comfortably.'
+  ,'Không gian rộng rãi':'Generous interior','Kích thước W140 × D125 × H218 cm phù hợp cho một người làm việc trong thời gian dài.':'W140 × D125 × H218 cm, designed for one person to work comfortably for longer sessions.'
+  ,'Cảm biến thông minh':'Smart sensor','Đèn cảm biến hỗ trợ vận hành thuận tiện và tiết kiệm năng lượng.':'Sensor-controlled lighting supports convenient, energy-efficient operation.'
+  ,'Thông gió chủ động':'Active ventilation','Quạt thông gió tích hợp duy trì luồng không khí trong suốt phiên làm việc.':'Integrated ventilation maintains airflow throughout the work session.'
+  ,'Nguồn điện & USB':'Power & USB','Ổ điện và cổng USB được tích hợp để thiết bị luôn sẵn sàng.':'Integrated power and USB keep your devices ready.'
+  ,'Ánh sáng điều chỉnh':'Adjustable lighting','Cường độ chiếu sáng có thể tăng giảm để phù hợp với từng tác vụ.':'Adjust the light intensity to suit each task.'
 };
 
 const originalText = new WeakMap();
