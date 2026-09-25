@@ -1463,7 +1463,7 @@ Object.assign(window.productDetails,{
     "specifications": "Xuất xứ thương hiệu: Phần Lan\nSức chứa: 1 người\nKích thước ngoài (C × R × S): 225,5 × 122 × 100 cm\nTrọng lượng: 357 kg; phiên bản Lounge 370 kg\nCách âm: Class A, giảm mức tiếng nói 30 dB DS,A theo ISO 23351-1\nThông gió mặc định: 26 l/s (94 m³/h), điều chỉnh thủ công\nChiếu sáng: 4000K; tối đa 500 lux trên mặt bàn và 400 lux trên khuôn mặt\nCảm biến: siêu âm\nCông suất: 28 W mặc định; 37 W tối đa; 6 W chờ\nGóc mở cửa: 90°\nBàn: 76,5 × 46 cm; cao điều chỉnh 74–116 cm\nKết nối: 4G tích hợp và cập nhật phần mềm tự động\nNguồn điện: 1 ổ AC, 1 cổng USB-C 15 W; tùy chọn LAN",
     "highlights": ["Không gian rộng cho công việc tập trung","Class A — giảm tiếng nói 30 dB","Bàn và ánh sáng tối ưu cho video call"],
     "optionGroups": [
-      {"label":"Cấu hình","values":["Base","Essentials","Lounge"]},
+      {"label":"Cấu hình","values":["Essentials","Lounge"]},
       {"label":"Màu vỏ","values":["White","Black","Gray","Navy","Powder Blue","Winter Moss","Sand","Blush"]}
     ],
     "images": [
