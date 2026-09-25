@@ -1443,7 +1443,7 @@ Object.assign(window.productDetails,{
       {"label":"Màu vỏ","values":["White","Black","Gray","Navy","Powder Blue","Winter Moss","Sand","Blush"]}
     ],
     "images": [
-      "https://framery.com/wp-content/uploads/2024/03/framery-one-compact-smart-office-phone-booth-product-card.webp",
+      "https://framery.com/wp-content/uploads/2025/11/framery-one-compact-white-1.webp",
       "https://framery.com/wp-content/uploads/2024/03/framery-one-compact-smart-soundproof-office-phone-booth.webp",
       "https://framery.com/wp-content/uploads/2024/03/framery-one-compact-in-open-plan-office.jpg",
       "https://framery.com/wp-content/uploads/2024/03/framery-one-compact-finnair-lounge-2.webp",
@@ -1467,7 +1467,7 @@ Object.assign(window.productDetails,{
       {"label":"Màu vỏ","values":["White","Black","Gray","Navy","Powder Blue","Winter Moss","Sand","Blush"]}
     ],
     "images": [
-      "https://framery.com/wp-content/uploads/2025/12/framery-one-premium-sand-1.webp",
+      "https://framery.com/wp-content/uploads/2026/01/framery-one-white-1.webp",
       "https://framery.com/wp-content/uploads/2024/03/framery-one-smart-soundproof-office-pod.webp",
       "https://framery.com/wp-content/uploads/2025/12/framery-one-in-stylish-office-1.webp",
       "https://framery.com/wp-content/uploads/2025/12/framery-one-at-posten-bring-office-1.webp",
@@ -1491,7 +1491,7 @@ Object.assign(window.productDetails,{
       {"label":"Màu vỏ","values":["White","Black","Gray","Navy","Powder Blue","Winter Moss","Sand","Blush"]}
     ],
     "images": [
-      "https://framery.com/wp-content/uploads/2024/03/framery-four-meeting-pod-product-card.webp",
+      "https://framery.com/wp-content/uploads/2026/01/four-white-1.png",
       "https://framery.com/wp-content/uploads/2024/03/framery-four-smart-soundproof-meeting-pod.webp",
       "https://framery.com/wp-content/uploads/2024/03/framery-four-in-open-plan-office.webp",
       "https://framery.com/wp-content/uploads/2024/12/framery_four-people_office_07_hires-1.jpg",
@@ -1515,7 +1515,7 @@ Object.assign(window.productDetails,{
       {"label":"Màu vỏ","values":["White","Black","Gray","Navy","Powder Blue","Winter Moss","Sand","Blush"]}
     ],
     "images": [
-      "https://framery.com/wp-content/uploads/2024/03/framery-six-smart-meeting-pod-product-card.webp",
+      "https://framery.com/wp-content/uploads/2026/01/framery-six-white.png",
       "https://framery.com/wp-content/uploads/2024/03/framery-six-smart-soundproof-meeting-room.webp",
       "https://framery.com/wp-content/uploads/2024/03/framery-six-in-open-plan-office-002.webp",
       "https://framery.com/wp-content/uploads/2024/03/framery-six-meeting-room-close-up.webp",

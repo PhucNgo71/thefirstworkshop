@@ -11,10 +11,10 @@ const catalogDetails={
  'Accessories':'Phụ kiện không gian làm việc'
 };
 const catalogEntries=[
- ['framery-one-compact','FRAMERY ONE COMPACT','Smart Pods',0,'https://framery.com/wp-content/uploads/2024/03/framery-one-compact-smart-office-phone-booth-product-card.webp','framery-one-compact'],
- ['framery-one-premium','FRAMERY ONE','Smart Pods',0,'https://framery.com/wp-content/uploads/2025/12/framery-one-premium-sand-1.webp','framery-one'],
- ['framery-four','FRAMERY FOUR','Smart Pods',0,'https://framery.com/wp-content/uploads/2024/03/framery-four-meeting-pod-product-card.webp','framery-four'],
- ['framery-six','FRAMERY SIX','Smart Pods',0,'https://framery.com/wp-content/uploads/2024/03/framery-six-smart-meeting-pod-product-card.webp','framery-six','Mới'],
+ ['framery-one-compact','FRAMERY ONE COMPACT','Smart Pods',0,'https://framery.com/wp-content/uploads/2025/11/framery-one-compact-white-1.webp','framery-one-compact'],
+ ['framery-one-premium','FRAMERY ONE','Smart Pods',0,'https://framery.com/wp-content/uploads/2026/01/framery-one-white-1.webp','framery-one'],
+ ['framery-four','FRAMERY FOUR','Smart Pods',0,'https://framery.com/wp-content/uploads/2026/01/four-white-1.png','framery-four'],
+ ['framery-six','FRAMERY SIX','Smart Pods',0,'https://framery.com/wp-content/uploads/2026/01/framery-six-white.png','framery-six','Mới'],
  ['spod3','SPOD 3.0 (PLUS SERIES)','Smart Pods',220000000,'https://product.hstatic.net/200000617147/product/website_07feb25__2__294404db25b84d1ab5fe37ec58d398aa_large.png','s-pod-3-0-plus-series','Mới'],
  ['wpod3','WPOD 3.0 (PLUS SERIES)','Smart Pods',295000000,'https://product.hstatic.net/200000617147/product/website_07feb25__1__92ac537964cf428f836b83972bc0e5b6_large.png','w-pod-3-0-plus-series'],
  ['dpod3','DPOD 3.0 (PLUS SERIES)','Smart Pods',346700000,'https://product.hstatic.net/200000617147/product/website_07feb25_8b8529fb8c374fae8b5b89e9ac9c1a82_large.png','d-pod3-0-plus-series'],
