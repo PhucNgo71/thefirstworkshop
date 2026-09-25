@@ -1,0 +1,30 @@
+{
+  "line": "System Furniture / SLS",
+  "cardAspectRatio": "4:3",
+  "products": {
+    "sls-670-pro": {
+      "catalogId": "sls470",
+      "imageScalePercent": 82,
+      "frameFinishes": ["Black", "Silver", "White"],
+      "folder": "sls-670-pro"
+    },
+    "sls-670-bench-pro": {
+      "catalogId": "sls470bench",
+      "imageScalePercent": 90,
+      "frameFinishes": ["Black", "Silver", "White"],
+      "folder": "sls-670-bench-pro"
+    },
+    "sls-770-pro": {
+      "catalogId": "sls770",
+      "imageScalePercent": 86,
+      "frameFinishes": ["Black", "Silver", "White"],
+      "folder": "sls-770-pro"
+    },
+    "steelforce-1050": {
+      "catalogId": "sls1050",
+      "imageScalePercent": 80,
+      "frameFinishes": ["Anthracite", "Black", "Silver", "White"],
+      "folder": "steelforce-1050"
+    }
+  }
+}

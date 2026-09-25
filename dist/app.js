@@ -82,6 +82,11 @@ const catalogEntries=[
  ['zeus','Zeus','Accessories',0,'https://cdn.hstatic.net/products/200000617147/1_11__a6f0e40081ad4418a4b9669c5d4783dd_large.png','zeus']
 ];
 const products=catalogEntries.map(([id,name,scope,price,image,handle,badge])=>({id,name,category:scope,scope,price,image,badge,contactOnly:price===0,detail:catalogDetails[scope],sourceUrl:`https://tfw.space/products/${handle}`,swatches:['#111312','#f4f5f3','#8b8f8c']}));
+const productLineProfiles={
+ 'Smart Pods':76,'Loose Furniture':84,'Storage Solutions':80,'System Furniture':86,'Seatings':80,
+ 'Monitor Arm & Docking':76,'Glass Partition':84,'Milliken Flooring':92,'Acoustic Wall Panel':88,'Accessories':74
+};
+const productLineSlug=value=>value.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'');
 const podReference={optionGroups:[{label:'Màu hoàn thiện tham khảo',values:['Beige','Grey','Green','Blue','Cloud','Yellow','Navy']}],referenceUrl:'https://musepod.us/products/musepod-mp-series'};
 const wpodExperience={
  optionGroups:[{label:'Màu hoàn thiện tham khảo',values:['Light','Dark','Beige','Grey','Green','Blue','Navy']}],
@@ -105,43 +110,60 @@ const wpodExperience={
 const manufacturerOverrides={
  'framery-one-compact':podReference,'framery-one-premium':podReference,'framery-four':podReference,spod3:podReference,wpod3:wpodExperience,dpod3:podReference,
  sls470:{
+  imageScale:82,
+  swatches:['#111312','#a7aaa8','#f4f5f3'],
   brand:'Actiforce',productType:'Khung bàn nâng hạ điện',
   description:'SLS 670 PRO là khung bàn nâng hạ điện cao cấp dành cho không gian làm việc chuyên nghiệp. Kết cấu thép ổn định, vận hành êm và điều chỉnh độ cao liên tục giúp chuyển đổi linh hoạt giữa tư thế ngồi và đứng. Bộ điều khiển ActiSwitch Eco-Memory, chức năng ghi nhớ độ cao, chống va chạm và tùy chọn quản lý dây cáp tạo nên một trạm làm việc gọn gàng, an toàn và dễ sử dụng.',
   specifications:'Khối lượng: 31 kg\nKích thước khung: 110 × 75 × 61 cm\nKích thước cột: 6 × 9 cm\nChiều cao điều chỉnh: 61,5–127,5 cm\nChiều rộng điều chỉnh: 110–170 cm\nHành trình nâng: 66 cm\nTốc độ nâng: 39 mm/s\nTải trọng nâng động: 120 kg\nTruyền động: động cơ điện\nHệ chống va chạm: có\nỔ cắm tích hợp: không\nQuản lý dây cáp: tùy chọn\nVật liệu: kim loại\nBộ điều khiển: ActiSwitch Eco-Memory',
   highlights:['Điều chỉnh điện êm và chính xác','Tải trọng nâng động 120 kg','ActiSwitch Eco-Memory đi kèm'],
   optionGroups:[{label:'Màu khung',values:['Đen','Bạc','Trắng']}],
+  bundleItems:[{id:'m2pro'},{id:'freedom'},{id:'cabletray'},{id:'cableriser'}],
   sourceUrl:'https://actiforce.com/en/produkt/sls-670-pro-table-frame/'
  },
  sls470bench:{
+  imageScale:90,
+  swatches:['#111312','#a7aaa8','#f4f5f3'],
   brand:'Actiforce',productType:'Khung bàn bench nâng hạ điện',
   description:'SLS 670 Bench PRO là hệ khung bàn đôi nâng hạ điện dành cho văn phòng hiện đại và không gian coworking. Hai vị trí làm việc được tổ chức trên một kết cấu chung để tiết kiệm diện tích, trong khi mỗi người dùng vẫn có thể điều chỉnh độ cao phù hợp với tư thế ngồi hoặc đứng. Kết cấu thép chắc chắn, chống va chạm và bộ điều khiển ActiSwitch Eco-Memory hỗ trợ vận hành an toàn, linh hoạt.',
   specifications:'Khối lượng: 70 kg\nKích thước khung: 110 × 140 × 61 cm\nKích thước cột: 6 × 9 cm\nTải trọng nâng động: 120 kg\nTruyền động: động cơ điện\nHệ chống va chạm: có\nỔ cắm tích hợp: không\nQuản lý dây cáp: tùy chọn\nVật liệu: kim loại\nBộ điều khiển: ActiSwitch Eco-Memory',
   highlights:['Hệ bench tiết kiệm diện tích','Điều chỉnh độ cao cho từng vị trí','Tải trọng nâng động 120 kg'],
   optionGroups:[{label:'Màu khung',values:['Đen','Bạc','Trắng']}],
+  bundleItems:[
+   {label:'Vách ngăn bàn',detail:'Vách ngăn trung tâm cho bàn bench',contact:true},
+   {id:'m2pro'},{id:'freedom'},{id:'cabletray'},{id:'cableriser'}
+  ],
   sourceUrl:'https://actiforce.com/en/produkt/sls-670-bench-pro-table-frame/'
  },
  sls770:{
+  imageScale:86,
+  swatches:['#111312','#a7aaa8','#f4f5f3'],
   brand:'Actiforce',productType:'Khung bàn nâng hạ điện',
   description:'SLS 770 PRO là khung bàn nâng hạ điện một tầng, phù hợp cho trạm làm việc công thái học có dải chiều cao tiêu chuẩn. Khung thép ổn định, vận hành điện êm và có chống va chạm, cho phép người dùng thay đổi tư thế làm việc thuận tiện trong ngày. Chiều rộng khung linh hoạt hỗ trợ nhiều kích thước mặt bàn văn phòng.',
   specifications:'Khối lượng khung: khoảng 27 kg\nChiều cao điều chỉnh: 68,5–115,5 cm\nChiều rộng điều chỉnh: 110–170 cm\nKích thước mặt bàn khuyến nghị: 120–200 × 80 cm\nHành trình nâng: 47 cm\nTốc độ nâng: khoảng 39 mm/s\nTải trọng nâng động: tối đa 120 kg, tùy bộ điều khiển\nĐộ ồn: dưới 50 dB(A)\nTruyền động: động cơ điện\nHệ chống va chạm: có\nVật liệu: thép, nhựa và nhôm\nXuất xứ sản xuất: Malaysia',
   highlights:['Dải cao 68,5–115,5 cm','Tải trọng tối đa 120 kg','Vận hành dưới 50 dB(A)'],
   optionGroups:[{label:'Màu khung',values:['Đen','Bạc','Trắng']}],
+  bundleItems:[{id:'m2pro'},{id:'freedom'},{id:'cabletray'},{id:'cableriser'}],
   sourceUrl:'https://actiforce.com/wp-content/uploads/2023/11/P_ACTIFORC_SLS_SLS770PRO___Manual.pdf'
  },
  sls1050:{
+  imageScale:80,
+  swatches:['#434744','#111312','#a7aaa8','#f4f5f3'],
   brand:'Actiforce',productType:'Khung bàn nâng hạ điện',
   description:'Steelforce 1050 là khung bàn nâng hạ điện bằng thép, được thiết kế cho độ ổn định và độ bền trong môi trường làm việc hằng ngày. Thiết kế tối giản có thể kết hợp với nhiều loại mặt bàn, hỗ trợ chuyển đổi linh hoạt giữa tư thế ngồi và đứng, đồng thời tích hợp chống va chạm và tùy chọn quản lý dây cáp.',
   specifications:'Khối lượng: 26 kg\nKích thước đóng gói: 76 × 26 × 19,5 cm\nKích thước cột: 8 × 5 cm\nChiều cao điều chỉnh: 61,5–122,5 cm\nChiều rộng điều chỉnh: 115–175 cm\nTốc độ nâng: 40 mm/s\nTải trọng nâng động: 100 kg\nĐộ ồn: khoảng 45 dB(A)\nTruyền động: động cơ điện\nHệ chống va chạm: có\nỔ cắm tích hợp: không\nQuản lý dây cáp: tùy chọn\nVật liệu: kim loại',
   highlights:['Kết cấu thép ổn định','Tải trọng nâng động 100 kg','Bốn màu khung lựa chọn'],
   optionGroups:[{label:'Màu khung',values:['Anthracite','Đen','Bạc','Trắng']}],
+  bundleItems:[{id:'m2pro'},{id:'freedom'},{id:'cabletray'},{id:'cableriser'}],
   sourceUrl:'https://actiforce.com/en/produkt/steelforce-1050-table-frame/'
  }
 };
 let cart=JSON.parse(localStorage.getItem('tfw-demo-cart')||'{}');let activeFilter='all';let activeSort='featured';
 const money=n=>new Intl.NumberFormat('vi-VN',{style:'currency',currency:'VND'}).format(n);
 const priceText=p=>p.contactOnly?'Liên hệ':money(p.price);
+const productImageScale=product=>manufacturerOverrides[product.id]?.imageScale||window.productDetails?.[product.id]?.imageScale||productLineProfiles[product.scope]||84;
+const productSwatches=product=>manufacturerOverrides[product.id]?.swatches||window.productDetails?.[product.id]?.swatches||product.swatches;
 const $=s=>document.querySelector(s);const $$=s=>[...document.querySelectorAll(s)];
-function renderProducts(filter=activeFilter){activeFilter=filter;let list=filter==='all'?[...products]:products.filter(p=>p.scope===filter||p.category===filter);if(activeSort==='low')list.sort((a,b)=>(a.contactOnly?Number.MAX_SAFE_INTEGER:a.price)-(b.contactOnly?Number.MAX_SAFE_INTEGER:b.price));if(activeSort==='high')list.sort((a,b)=>b.price-a.price);$('#productCount').textContent=`${list.length} sản phẩm`;$('#productGrid').innerHTML=list.map(p=>`<article class="product-card"><div class="product-visual">${p.badge?`<span class="product-badge">${p.badge}</span>`:''}<button class="product-image-button" data-product="${p.id}" type="button" aria-label="Xem chi tiết ${p.name}"><img src="${p.image}" alt="${p.name}" loading="lazy"></button><button class="quick-add" ${p.contactOnly?`data-contact="${p.id}"`:`data-add="${p.id}"`} type="button" aria-label="${p.contactOnly?'Liên hệ tư vấn':'Thêm '+p.name+' vào giỏ'}">${p.contactOnly?'↗':'＋'}</button></div><div class="product-meta"><div class="product-copy"><button class="product-title" data-product="${p.id}" type="button">${p.name}</button><span class="product-price">${priceText(p)}</span><p>${p.detail}</p><div class="swatches" aria-label="Màu hoàn thiện">${p.swatches.map(color=>`<span style="--swatch:${color}"></span>`).join('')}</div></div><button class="add-button" ${p.contactOnly?`data-contact="${p.id}"`:`data-add="${p.id}"`} type="button">${p.contactOnly?'Liên hệ tư vấn ↗':'Thêm vào giỏ <span>＋</span>'}</button></div></article>`).join('');$$('[data-add]').forEach(b=>b.onclick=()=>addToCart(b.dataset.add));$$('[data-contact]').forEach(b=>b.onclick=()=>requestQuote(b.dataset.contact));$$('[data-product]').forEach(b=>b.onclick=()=>openProductDetail(b.dataset.product));window.applyI18n?.();}
+function renderProducts(filter=activeFilter){activeFilter=filter;let list=filter==='all'?[...products]:products.filter(p=>p.scope===filter||p.category===filter);if(activeSort==='low')list.sort((a,b)=>(a.contactOnly?Number.MAX_SAFE_INTEGER:a.price)-(b.contactOnly?Number.MAX_SAFE_INTEGER:b.price));if(activeSort==='high')list.sort((a,b)=>b.price-a.price);$('#productCount').textContent=`${list.length} sản phẩm`;$('#productGrid').innerHTML=list.map(p=>`<article class="product-card" data-product-line="${productLineSlug(p.scope)}" style="--product-image-scale:${productImageScale(p)}%"><div class="product-visual">${p.badge?`<span class="product-badge">${p.badge}</span>`:''}<button class="product-image-button" data-product="${p.id}" type="button" aria-label="Xem chi tiết ${p.name}"><img src="${p.image}" alt="${p.name}" loading="lazy"></button><button class="quick-add" ${p.contactOnly?`data-contact="${p.id}"`:`data-add="${p.id}"`} type="button" aria-label="${p.contactOnly?'Liên hệ tư vấn':'Thêm '+p.name+' vào giỏ'}">${p.contactOnly?'↗':'＋'}</button></div><div class="product-meta"><div class="product-copy"><button class="product-title" data-product="${p.id}" type="button">${p.name}</button><span class="product-price">${priceText(p)}</span><p>${p.detail}</p><div class="swatches" aria-label="Màu hoàn thiện">${productSwatches(p).map(color=>`<span style="--swatch:${color}"></span>`).join('')}</div></div><button class="add-button" ${p.contactOnly?`data-contact="${p.id}"`:`data-add="${p.id}"`} type="button">${p.contactOnly?'Liên hệ tư vấn ↗':'Thêm vào giỏ <span>＋</span>'}</button></div></article>`).join('');$$('[data-add]').forEach(b=>b.onclick=()=>addToCart(b.dataset.add));$$('[data-contact]').forEach(b=>b.onclick=()=>requestQuote(b.dataset.contact));$$('[data-product]').forEach(b=>b.onclick=()=>openProductDetail(b.dataset.product));window.applyI18n?.();}
 function saveCart(){localStorage.setItem('tfw-demo-cart',JSON.stringify(cart));renderCart();}
 function addToCart(id){cart[id]=(cart[id]||0)+1;saveCart();showToast('Đã thêm vào giỏ hàng');}
 function requestQuote(id){const product=products.find(p=>p.id===id);if(!product)return;location.href=`mailto:hi@tfw.space?subject=${encodeURIComponent('Tư vấn sản phẩm '+product.name)}`;}
@@ -158,11 +180,12 @@ function openProductDetail(id){
  const source={...(window.productDetails?.[id]||{}),...(manufacturerOverrides[id]||{})};const gallery=source.images?.length?source.images.slice(0,8):[product.image];const galleryCells=gallery.length>1&&gallery.length<8?[...gallery,...gallery.slice(1,1+(8-gallery.length))]:gallery;const safe=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
  activeProductId=id;$('#detailTitle').textContent=product.name;$('#detailPrice').textContent=priceText(product);$('#detailAddButton').innerHTML=product.contactOnly?'Liên hệ tư vấn ↗':`Thêm vào giỏ · <span id="detailAddPrice">${money(product.price)}</span>`;$('#detailBadge').textContent=product.badge||product.scope||'thefirstworkshop';const origin=source.specifications?.match(/Xuất xứ thương hiệu:\s*([^\n]+)/i)?.[1]?.trim();$('#detailOrigin').textContent=origin||'TFW SELECTED';
  $('#detailHighlights').innerHTML=(source.highlights||[]).map(item=>`<li>${safe(item)}</li>`).join('');$('#detailHighlights').hidden=!source.highlights?.length;
- $('#detailGallery').innerHTML=galleryCells.map((image,index)=>`<figure class="detail-image${index===0?' primary':''}${index>=gallery.length?' closeup':''}"><img src="${image}" alt="${index===0?product.name:index>=gallery.length?`${product.name} · chi tiết ${index-gallery.length+1}`:`${product.name} · ${index+1}`}" loading="${index===0?'eager':'lazy'}"></figure>`).join('');
+ $('#detailGallery').style.setProperty('--detail-image-scale',`${Math.min(92,source.imageScale||productImageScale(product)+2)}%`);$('#detailGallery').innerHTML=galleryCells.map((image,index)=>`<figure class="detail-image${index===0?' primary':''}${index>=gallery.length?' closeup':''}"><img src="${image}" alt="${index===0?product.name:index>=gallery.length?`${product.name} · chi tiết ${index-gallery.length+1}`:`${product.name} · ${index+1}`}" loading="${index===0?'eager':'lazy'}"></figure>`).join('');
  const allInfo=`${source.specifications||''}\n${source.description||''}`;const dimension=allInfo.split(/\n+/).find(line=>/kích thước|dimension/i.test(line));const facts=[['Thương hiệu',source.brand],['Dòng sản phẩm',source.productType||product.scope],['Kích thước',dimension?.replace(/^.*?(kích thước|dimension)\s*:?\s*/i,'')]].filter(([,value])=>value);
  $('#detailFacts').innerHTML=facts.map(([label,value])=>`<div><span>${safe(label)}</span><strong>${safe(value)}</strong></div>`).join('');
  $('#detailDescription').textContent=source.description||product.detail;$('#detailSpecifications').textContent=source.specifications||'Thông số chi tiết được xác nhận theo cấu hình và báo giá.';$('#specificationsPanel').hidden=false;
  const variants=(source.variants||[]).filter(Boolean);const optionGroups=source.optionGroups||((variants.length)?[{label:'Tùy chọn sản phẩm',values:variants}]:[]);$('#productOptions').innerHTML=optionGroups.map((group,groupIndex)=>`<div class="config-group"><div class="config-heading"><span>${safe(group.label)}</span><strong data-option-selection="${groupIndex}">${safe(group.values[0]||'')}</strong></div><div class="choice-grid detail-variants" data-option-group="${groupIndex}">${group.values.map((value,index)=>`<button class="${index===0?'selected':''}" type="button" data-option-value="${safe(value)}">${safe(value)}</button>`).join('')}</div></div>`).join('');$$('[data-option-group] button').forEach(button=>button.onclick=()=>{const group=button.closest('[data-option-group]');$$('[data-option-group="'+group.dataset.optionGroup+'"] button').forEach(x=>x.classList.remove('selected'));button.classList.add('selected');$('[data-option-selection="'+group.dataset.optionGroup+'"]').textContent=button.dataset.optionValue});
+ const bundleItems=(source.bundleItems||[]).map(item=>item.id?{...item,product:products.find(candidate=>candidate.id===item.id)}:item).filter(item=>!item.id||item.product);$('#detailAddons').hidden=!bundleItems.length;$('#detailAddonGrid').innerHTML=bundleItems.map(item=>{const addon=item.product;const label=addon?.name||item.label;const detail=addon?(addon.contactOnly?'Liên hệ':money(addon.price)):item.detail;return `<article class="detail-addon-card">${addon?`<img src="${addon.image}" alt="${safe(label)}" loading="lazy">`:`<div class="detail-addon-placeholder">SCREEN</div>`}<div><strong>${safe(label)}</strong><span>${safe(detail||'')}</span></div><button type="button" ${addon&&!addon.contactOnly?`data-bundle-add="${addon.id}"`:`data-bundle-contact="${addon?.id||''}" data-bundle-label="${safe(label)}"`} aria-label="Thêm ${safe(label)}">${addon&&!addon.contactOnly?'＋':'↗'}</button></article>`}).join('');$$('[data-bundle-add]').forEach(button=>button.onclick=()=>addToCart(button.dataset.bundleAdd));$$('[data-bundle-contact]').forEach(button=>button.onclick=()=>{const addonId=button.dataset.bundleContact;if(addonId)return requestQuote(addonId);location.href=`mailto:hi@tfw.space?subject=${encodeURIComponent('Tư vấn '+button.dataset.bundleLabel+' cho '+product.name)}`});
  const experience=source.experience;$('#detailExperience').hidden=!experience;if(experience){$('#experienceEyebrow').textContent=experience.eyebrow;$('#experienceTitle').textContent=experience.title;$('#experienceCopy').textContent=experience.copy;$('#experienceImage').src=gallery[1]||gallery[0];$('#experienceImage').alt=`${product.name} · không gian sử dụng`;$('#featureTitle').textContent=experience.featureTitle;$('#featureGrid').innerHTML=experience.features.map(([title,copy],index)=>`<article class="pod-feature"><span>${String(index+1).padStart(2,'0')}</span><h4>${safe(title)}</h4><p>${safe(copy)}</p></article>`).join('')}
  $('#productDetail').classList.add('open');$('#productDetail').setAttribute('aria-hidden','false');document.body.style.overflow='hidden';location.hash=`product-${id}`;window.applyI18n?.();setTimeout(()=>$('#closeProductDetail').focus(),40)
 }

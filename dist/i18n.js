@@ -49,7 +49,7 @@ const english = {
   'Tìm sản phẩm':'Search products','Không tìm thấy sản phẩm phù hợp.':'No matching products found.','Đã thêm vào giỏ hàng':'Added to cart'
   ,'Trở lại cửa hàng':'Back to shop','← Trở lại cửa hàng':'← Back to shop','Sản xuất tại Việt Nam':'Made in Vietnam',
   'Điều chỉnh linh hoạt theo nhu cầu làm việc':'Flexible adjustment for your work needs','Cấu trúc bền vững, dễ bảo trì':'Durable structure that is easy to maintain','Lắp đặt bởi đội ngũ thefirstworkshop':'Installed by the thefirstworkshop team',
-  'Hoàn thiện':'Finish','Kích thước':'Size','Hướng dẫn kích thước':'Size guide','Màu khung':'Frame color',
+  'Hoàn thiện':'Finish','Kích thước':'Size','Hướng dẫn kích thước':'Size guide','Màu khung':'Frame color','Hoàn thiện setup':'Complete the setup','Vách ngăn bàn':'Desk divider screen','Vách ngăn trung tâm cho bàn bench':'Central divider for the bench desk',
   'Giao hàng dự kiến được xác nhận sau khi đặt hàng · Hỗ trợ lắp đặt tại TP. Hồ Chí Minh':'Estimated delivery is confirmed after ordering · Installation available in Ho Chi Minh City',
   'Thiết kế & công năng':'Design & function','Giải pháp bàn linh hoạt cho văn phòng hiện đại, với cấu trúc tối giản và hệ phụ kiện được thiết kế để giữ bề mặt làm việc gọn gàng.':'A flexible desk solution for modern offices, with a minimal structure and accessories designed to keep the workspace tidy.',
   'Thông số kỹ thuật':'Technical specifications','Khung thép sơn tĩnh điện, mặt bàn cấu hình theo dòng sản phẩm, hệ cable management tùy chọn và linh kiện dễ bảo trì.':'Powder-coated steel frame, configurable table top, optional cable management, and easy-to-maintain components.',
