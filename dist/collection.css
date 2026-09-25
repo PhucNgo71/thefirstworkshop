@@ -6,8 +6,8 @@
 .language-button{border:0;background:transparent;font-weight:800;cursor:pointer;padding:.5rem;min-width:2.5rem}
 .language-button:hover{color:var(--green)}
 .hero-copy{background:linear-gradient(135deg,rgba(33,92,69,.13),transparent 42%)}
-.primary-button:hover{background:#123b2d;color:#fff}
-.story{color:#fff}
+.primary-button:hover{background:#c3c6c2;color:#0b0d0c}
+.story{color:#0b0d0c}
 .collection-hero{min-height:54vh;grid-template-columns:minmax(0,1.5fr) minmax(320px,.65fr)}
 .collection-hero .hero-copy{padding:6vw 4vw}
 .collection-hero h1{font-size:clamp(4.6rem,11vw,11rem)}
