@@ -198,7 +198,15 @@
   <div class="overlay" id="overlay" hidden></div>
   <aside class="drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true">
     <div class="drawer-header"><h2 id="cartTitle">Giỏ hàng</h2><button class="icon-button" id="closeCart" type="button" aria-label="Đóng giỏ hàng">×</button></div>
-    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-scroll"><div class="cart-items" id="cartItems"></div>
+    <form id="cartDelivery" class="cart-delivery">
+      <h3>Thông tin giao hàng</h3>
+      <label>Họ và tên<input name="name" autocomplete="name" required></label>
+      <label>Số điện thoại<input name="phone" type="tel" autocomplete="tel" required></label>
+      <label>Địa chỉ giao hàng<input name="address" autocomplete="street-address" required></label>
+      <label for="discountCode">Mã giảm giá</label><div class="discount-entry"><input id="discountCode" autocomplete="off" maxlength="40"><button id="applyDiscount" type="button">Áp dụng</button></div>
+      <p id="discountMessage" role="status" aria-live="polite"></p>
+    </form></div>
     <div class="cart-footer"><div class="subtotal"><span>Tạm tính</span><strong id="cartSubtotal">0₫</strong></div><p>Phí vận chuyển được tính ở bước tiếp theo.</p><button class="primary-button full" id="checkoutButton" type="button">Tiếp tục thanh toán</button></div>
   </aside>
 
@@ -273,5 +281,8 @@
   <script src="app.js"></script>
   <script src="i18n.js"></script>
   <script src="monitor-configurator.js"></script>
+  <script src="cart-details.js"></script>
+  <a class="zalo-contact" href="https://zalo.me/0909368571" target="_blank" rel="noopener noreferrer" aria-label="Zalo · 0909 368 571"><span class="zalo-bubble" aria-hidden="true">Zalo</span><span>Chat Zalo</span></a>
+  <script src="visitor-analytics.js"></script>
 </body>
 </html>

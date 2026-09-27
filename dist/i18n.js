@@ -1,4 +1,5 @@
 const english = {
+  'Mã giảm giá':'Discount code','Áp dụng':'Apply',
   'Tư vấn B2B · ergovn.com ↗':'B2B Consulting · ergovn.com ↗',
   'Đi tới nội dung':'Skip to content',
   'Giao hàng toàn quốc · Nhận hàng tại 71 Hai Bà Trưng, Quận 1':'Nationwide delivery · Pick up at 71 Hai Ba Trung, District 1',
