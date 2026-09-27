@@ -6,16 +6,17 @@
   <meta name="description" content="thefirstworkshop — nội thất và giải pháp không gian làm việc cho doanh nghiệp Việt Nam.">
   <meta name="theme-color" content="#11130f">
   <title>thefirstworkshop — Workspace, made practical.</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2311130f'/%3E%3Cpath d='M15 18h34v8H36v25h-8V26H15z' fill='%23215c45'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon-symbol.svg?v=2">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="collection.css">
+  <link rel="stylesheet" href="monitor-configurator.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Đi tới nội dung</a>
   <div class="announcement">Giao hàng toàn quốc · Nhận hàng tại 71 Hai Bà Trưng, Quận 1</div>
   <header class="site-header">
     <a class="brand" href="#" aria-label="thefirstworkshop home">
-      <img class="brand-logo" src="assets/TFW%20logo%20BLACK.png" alt="thefirstworkshop">
+      <span class="brand-lockup"><img class="brand-logo" src="assets/TFW%20logo%20BLACK.png" alt="thefirstworkshop"><span class="brand-endorsement">A brand of Ergovn</span></span>
     </a>
     <nav class="desktop-nav" aria-label="Điều hướng chính">
       <a href="#shop">Sản phẩm</a><a href="#solutions">Giải pháp</a><a href="#story">Về chúng tôi</a>
@@ -42,13 +43,6 @@
       </div>
     </section>
 
-    <section class="category-strip" aria-label="Danh mục sản phẩm">
-      <a href="#shop" data-filter-link="Smart Pods"><span>01</span> Smart Pods</a>
-      <a href="#shop" data-filter-link="System Furniture"><span>02</span> System Furniture</a>
-      <a href="#shop" data-filter-link="Seatings"><span>03</span> Seatings</a>
-      <a href="#shop" data-filter-link="Milliken Flooring"><span>04</span> Finishing Solutions</a>
-    </section>
-
     <section class="shop-section" id="shop" aria-labelledby="shopTitle">
       <div class="section-heading collection-heading">
         <div><p class="eyebrow">Workspace Collection</p><h2 id="shopTitle">Tất cả sản phẩm</h2></div>
@@ -64,7 +58,7 @@
           <button class="filter" data-filter="Seatings" type="button">Seatings</button>
           <button class="filter" data-filter="Monitor Arm & Docking" type="button">Monitor Arm &amp; Docking</button>
           <button class="filter" data-filter="Glass Partition" type="button">Glass Partition</button>
-          <button class="filter" data-filter="Milliken Flooring" type="button">Milliken Flooring</button>
+          <button class="filter" data-filter="Flooring Solutions" type="button">Flooring Solutions</button>
           <button class="filter" data-filter="Acoustic Wall Panel" type="button">Acoustic Wall Panel</button>
           <button class="filter" data-filter="Accessories" type="button">Accessories</button>
         </div>
@@ -73,9 +67,82 @@
       <div class="product-grid" id="productGrid"></div>
     </section>
 
-    <section class="shop-the-look" aria-label="SLS 670 Bench PRO product photo">
-      <div class="scene-wrap product-photo-only" id="workspaceScene">
-        <img src="https://product.hstatic.net/200000617147/product/sls_670_bench_bf_oakt_1-scaled_04915ccfe2fb41e489d8307259fdeb73_master.jpg" alt="SLS 670 Bench PRO — ảnh sản phẩm từ thefirstworkshop" loading="lazy">
+    <nav class="solution-switch" id="solutions" aria-label="Giải pháp"><a href="#configurator">Workstation Configurator</a><a href="#monitor-arm-configurator">Monitor Arm Configurator</a></nav>
+    <section class="workstation-configurator" id="configurator" aria-labelledby="configuratorTitle">
+      <header class="configurator-header">
+        <div><p class="eyebrow">Workstation Configurator</p><h2 id="configuratorTitle">Chọn cấu hình. Hiểu rõ từng phần.</h2></div>
+        <p>Đây là hướng dẫn cấu hình độc lập, không thuộc riêng một dòng bàn. Chọn kiểu workstation trước, sau đó đội ngũ thefirstworkshop sẽ ghép bàn, ghế, screen và hệ quản lý cáp phù hợp.</p>
+      </header>
+      <figure class="configurator-render">
+        <div class="configurator-render-viewport"><img class="composite" id="configuratorImage" src="assets/workstation-structures-render.png" alt="Single Desk · bàn làm việc đơn" loading="lazy"></div>
+        <figcaption><b id="configuratorImageNumber">01</b><strong id="configuratorImageTitle">Single Desk</strong><span id="configuratorImageMeta">01 người · Không screen</span></figcaption>
+      </figure>
+      <div class="configurator-options" role="radiogroup" aria-label="Chọn cấu hình workstation">
+        <label class="configurator-card selected">
+          <input type="radio" name="workstationConfiguration" value="Single Desk" checked>
+          <span class="configurator-number">01</span><strong>Single Desk</strong><small>01 người · không screen</small>
+          <p>Một vị trí làm việc độc lập, tiếp cận từ một phía.</p>
+        </label>
+        <label class="configurator-card">
+          <input type="radio" name="workstationConfiguration" value="Bench">
+          <span class="configurator-number">02</span><strong>Bench</strong><small>02 người · không screen</small>
+          <p>Hai vị trí làm việc đối diện, chia sẻ một hệ khung bench.</p>
+        </label>
+        <label class="configurator-card">
+          <input type="radio" name="workstationConfiguration" value="Single Desk + Screen">
+          <span class="configurator-number">03</span><strong>Single Desk + Screen</strong><small>01 người · 01 screen</small>
+          <p>Một bàn độc lập với screen tạo vùng tập trung và riêng tư hơn.</p>
+        </label>
+        <label class="configurator-card">
+          <input type="radio" name="workstationConfiguration" value="Bench + Screen">
+          <span class="configurator-number">04</span><strong>Bench + Screen</strong><small>02 người · 01 screen trung tâm</small>
+          <p>Hai bàn đối diện với screen trung tâm phân chia hai vị trí.</p>
+        </label>
+      </div>
+      <div class="configurator-standard"><span>Tiêu chuẩn đi kèm</span><strong>01 cable tray + 01 cable riser cho mỗi vị trí làm việc</strong><small>Single: 01 bộ · Bench: 02 bộ</small></div>
+      <div class="configurator-action"><span>Cấu hình đã chọn</span><strong id="configuratorSelected">Single Desk</strong><a class="primary-button" id="configuratorCta" href="mailto:hi@tfw.space?subject=T%C6%B0%20v%E1%BA%A5n%20c%E1%BA%A5u%20h%C3%ACnh%20workstation%20%C2%B7%20Single%20Desk">Nhận tư vấn cấu hình ↗</a></div>
+      <p class="configurator-note">Màn hình máy tính và thiết bị cá nhân trong ảnh chỉ dùng để minh họa. Kích thước, màu sắc và sản phẩm cụ thể được xác nhận trong báo giá.</p>
+    </section>
+
+    <section class="arm-configurator" id="monitor-arm-configurator" aria-labelledby="armTitle">
+      <header class="arm-heading">
+        <div><p class="eyebrow">Monitor Arm Configurator · Humanscale</p><h2 id="armTitle" data-arm-en="A setup that fits your screens.">Chọn tay đỡ đúng cho màn hình.</h2></div>
+        <p data-arm-en="Choose your screen count and specifications. See the matching arm and complete your setup with mounting and docking options.">Chọn số lượng và thông số màn hình. Xem tay đỡ phù hợp, sau đó chọn cách lắp và docking cho bộ setup.</p>
+      </header>
+      <div class="arm-workspace">
+        <div class="arm-preview">
+          <div class="arm-preview-image"><img id="armImage" src="https://www.humanscale.com/userfiles/images/collection-pages/monitor-arms/desktop/M21BTSC.png" alt="Humanscale M2 Pro" loading="lazy"></div>
+          <div class="arm-preview-caption"><span id="armImageCaption">M2 Pro · 1 màn hình</span><small data-arm-en="Configuration reference · displays not included">Ảnh cấu hình tham khảo · không bao gồm màn hình</small></div>
+          <div class="arm-dock-preview" id="armDockPreview" hidden><img src="https://www.humanscale.com/userfiles/images/collection-pages/monitor-arms/desktop/m-connect-3.jpg" alt="Humanscale M/Connect 3" loading="lazy"><div><strong>M/Connect 3</strong><p data-arm-en="Optional power and data hub. Dock version and laptop compatibility confirmed in your quote.">Hub nguồn và dữ liệu tùy chọn. Phiên bản dock và tương thích laptop được xác nhận khi báo giá.</p></div></div>
+        </div>
+        <form class="arm-controls" id="armForm">
+          <fieldset><legend><span>01</span> <span data-arm-en="Number of screens">Số màn hình</span></legend><div class="arm-count-options">
+            <label><input type="radio" name="armCount" value="1" checked><span>1</span></label>
+            <label><input type="radio" name="armCount" value="2"><span>2</span></label>
+            <label><input type="radio" name="armCount" value="3"><span>3</span></label>
+            <label><input type="radio" name="armCount" value="4"><span>4</span></label>
+            <label><input type="radio" name="armCount" value="6"><span>6</span></label>
+          </div></fieldset>
+          <fieldset><legend><span>02</span> <span data-arm-en="Specifications per screen">Thông số mỗi màn hình</span></legend>
+            <div class="arm-field-grid">
+              <label><span data-arm-en="Diagonal (inches)">Kích thước (inch)</span><input id="armSize" type="number" min="10" max="100" step="0.1" value="27" required inputmode="decimal"></label>
+              <label><span data-arm-en="Weight without stand (kg)">Khối lượng bỏ chân đế (kg)</span><input id="armWeight" type="number" min="0.1" max="50" step="0.1" value="5" required inputmode="decimal"></label>
+            </div>
+            <p class="arm-help" data-arm-en="For matching screens. If models differ, request a check for each display.">Áp dụng cho các màn hình cùng thông số. Nếu dùng nhiều mẫu khác nhau, cần kiểm tra từng màn hình.</p>
+          </fieldset>
+          <fieldset><legend><span>03</span> <span data-arm-en="Mounting and connection">Lắp đặt và kết nối</span></legend>
+            <div class="arm-field-grid">
+              <label><span data-arm-en="Desk mount">Gắn vào bàn</span><select id="armMount"><option value="clamp" data-arm-en="Desk clamp">Kẹp mép bàn</option><option value="grommet" data-arm-en="Through-desk mount">Xuyên mặt bàn</option></select></label>
+              <label><span>VESA</span><select id="armVesa"><option value="100">100 × 100 mm</option><option value="75">75 × 75 mm</option><option value="other" data-arm-en="Other / not sure">Khác / chưa rõ</option></select></label>
+            </div>
+            <label class="arm-dock-choice"><input id="armDock" type="checkbox"><span><strong data-arm-en="Add M/Connect 3">Thêm M/Connect 3</strong><small data-arm-en="Power + data docking">Docking nguồn + dữ liệu</small></span></label>
+          </fieldset>
+          <div class="arm-result" aria-live="polite" aria-atomic="true"><p id="armResultStatus" class="arm-result-status"></p><h3 id="armModel"></h3><p id="armCapacity"></p><p id="armCompatibility"></p><dl id="armSummary"></dl></div>
+          <a class="primary-button" id="armQuote" href="mailto:hi@tfw.space" data-arm-en="Request this configuration ↗">Nhận tư vấn cấu hình này ↗</a>
+          <button class="arm-detail-link" id="armProductLink" type="button" data-arm-en="View product details">Xem chi tiết sản phẩm</button>
+          <p class="arm-help" data-arm-en="Final fit depends on VESA, screen dimensions and desk material/thickness. Mounting hardware and dock compatibility are confirmed before ordering.">Cần xác nhận VESA, kích thước thực tế và vật liệu/độ dày mặt bàn. Phụ kiện lắp đặt và tương thích dock được kiểm tra trước khi đặt hàng.</p>
+          <a class="arm-source" href="https://www.humanscale.com/products/monitor-arms" target="_blank" rel="noopener" data-arm-en="Humanscale specifications ↗">Thông số từ Humanscale ↗</a>
+        </form>
       </div>
     </section>
 
@@ -94,7 +161,7 @@
       </div>
     </section>
 
-    <section class="solutions" id="solutions" aria-labelledby="solutionsTitle">
+    <section class="solutions" id="workspace-solutions" aria-labelledby="solutionsTitle">
       <div class="solution-intro"><p class="eyebrow">From one chair to a whole floor</p><h2 id="solutionsTitle">Một hệ thống.<br>Nhiều cách làm việc.</h2></div>
       <div class="solution-list">
         <article><span>01</span><div><h3>Không gian cá nhân</h3><p>Bàn, ghế và phụ kiện ergonomic cho nhịp làm việc tập trung.</p></div></article>
@@ -106,7 +173,7 @@
     <section class="story" id="story">
       <p class="eyebrow">We are thefirstworkshop</p>
       <blockquote>“Chất lượng tốt không nhất thiết phải đến từ sự phức tạp.”</blockquote>
-      <p>thefirstworkshop là thương hiệu nội thất và giải pháp không gian làm việc thuộc Ergovn, được phát triển bởi một đội ngũ trẻ tại Việt Nam. Chúng tôi tập trung vào nội thất văn phòng, loose furniture, sản phẩm sản xuất trong nước và các giải pháp phù hợp với nhu cầu thực tế của doanh nghiệp Việt Nam.</p>
+      <p>thefirstworkshop là thương hiệu nội thất và giải pháp không gian làm việc thuộc Ergovn, được phát triển bởi một đội ngũ trẻ tại Việt Nam. Chúng tôi ưu tiên sản phẩm sản xuất nội địa, phù hợp với hầu hết nhu cầu của doanh nghiệp Việt Nam và doanh nghiệp nước ngoài.</p>
       <p class="story-note">Với tinh thần của một “workshop”, chúng tôi hướng đến sự thực tế, linh hoạt và chỉn chu trong từng sản phẩm, từng dự án.</p>
       <a class="arrow-link light" href="mailto:hi@tfw.space">Bắt đầu dự án <span>↗</span></a>
     </section>
@@ -121,10 +188,10 @@
     </section>
   </main>
 
-  <footer>
-    <div class="footer-brand"><img class="brand-logo brand-logo-light" src="assets/TFW%20logo%20BLACK.png" alt="thefirstworkshop"></div>
+  <footer class="site-footer">
+    <div class="footer-brand brand-lockup"><img class="brand-logo brand-logo-light" src="assets/TFW%20logo%20BLACK.png" alt="thefirstworkshop"><span class="brand-endorsement">A brand of Ergovn</span></div>
     <div><p class="footer-label">Visit</p><p>Tầng 5, 71 Hai Bà Trưng<br>P. Sài Gòn, TP. Hồ Chí Minh</p></div>
-    <div><p class="footer-label">Talk</p><p><a href="tel:+84909368571">+84 909 368 571</a><br><a href="mailto:hi@tfw.space">hi@tfw.space</a></p></div>
+    <div><p class="footer-label">Talk</p><p><a href="tel:+84909368571">+84 909 368 571</a><br><a href="mailto:hi@tfw.space">hi@tfw.space</a><br><a href="https://www.ergovn.com/" target="_blank" rel="noopener noreferrer">Tư vấn B2B · ergovn.com ↗</a></p></div>
     <div><p class="footer-label">Hours</p><p>Thứ 2—Thứ 6<br>08:00—18:00</p></div>
   </footer>
 
@@ -137,7 +204,7 @@
 
   <section class="checkout" id="checkout" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle" aria-hidden="true">
     <button class="icon-button checkout-close" id="closeCheckout" type="button" aria-label="Đóng thanh toán">×</button>
-    <div class="checkout-brand"><img class="brand-logo brand-logo-light" src="assets/TFW%20logo%20BLACK.png" alt="thefirstworkshop"><p>Thanh toán bảo mật</p></div>
+    <div class="checkout-brand"><div class="brand-lockup"><img class="brand-logo brand-logo-light" src="assets/TFW%20logo%20BLACK.png" alt="thefirstworkshop"><span class="brand-endorsement">A brand of Ergovn</span></div><p>Thanh toán bảo mật</p></div>
     <div class="checkout-panel">
       <p class="eyebrow">Checkout · 01 / 02</p><h2 id="checkoutTitle">Thông tin giao hàng</h2>
       <form id="paymentForm">
@@ -159,7 +226,7 @@
     <div class="detail-topbar">
       <button class="detail-back" id="closeProductDetail" type="button">← Trở lại cửa hàng</button>
       <a class="brand detail-brand" href="#shop" aria-label="thefirstworkshop home">
-        <img class="brand-logo" src="assets/TFW%20logo%20BLACK.png" alt="thefirstworkshop">
+        <span class="brand-lockup"><img class="brand-logo" src="assets/TFW%20logo%20BLACK.png" alt="thefirstworkshop"><span class="brand-endorsement">A brand of Ergovn</span></span>
       </a>
       <button class="language-button" id="detailLangToggle" type="button" aria-label="Switch to English">EN</button>
     </div>
@@ -202,7 +269,9 @@
   </section>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="product-details.js"></script>
+  <script src="product-gallery.js"></script>
   <script src="app.js"></script>
   <script src="i18n.js"></script>
+  <script src="monitor-configurator.js"></script>
 </body>
 </html>

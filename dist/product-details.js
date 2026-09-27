@@ -986,7 +986,7 @@ window.productDetails={
   },
   "airborn": {
     "brand": "Milliken",
-    "productType": "Milliken Flooring",
+    "productType": "Flooring Solutions · Milliken",
     "description": "Air Born Collection lấy cảm hứng từ sự tự do vô hạn và sự nhẹ nhàng của bầu trời.\nNó mang lại cảm giác của một luồng không khí trong lành, mời gọi khám phá những khả năng vô tận được tìm thấy trong bầu khí quyển luôn thay đổi.\nThông số kỹ thuật:\nCấu tạo: Thảm dệt sợi vòng cấu trúc\nKích thước gạch thảm: 25cm x 100cm\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\nPhương pháp nhuộm: Nhuộm trong dung dịch\nLớp đế tiêu chuẩn: WellBAC™ Function không chứa PVC\nCó sẵn với công nghệ TractionBack®\nĐộ dày tổng thể danh định: 5.5mm ±10%\nKhả năng chống cháy: ≥ 0.45 (Loại I)\nĐánh giá duy trì bề mặt: Mức độ nặng\nChất lượng không khí trong nhà: CRI Green Label Plus™\nGLP3200, Phân loại thảm 14X",
     "specifications": "Thông số kỹ thuật:\n\nCấu tạo: Thảm dệt sợi vòng cấu trúc\n\nKích thước gạch thảm: 25cm x 100cm\n\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\n\nPhương pháp nhuộm: Nhuộm trong dung dịch\n\nLớp đế tiêu chuẩn: WellBAC™ Function không chứa PVC\n\nCó sẵn với công nghệ TractionBack®\n\nĐộ dày tổng thể danh định: 5.5mm &plusmn;10%\n\nKhả năng chống cháy: &ge; 0.45 (Loại I)\n\nĐánh giá duy trì bề mặt: Mức độ nặng\n\nChất lượng không khí trong nhà: CRI Green Label Plus™\n\nGLP3200, Phân loại thảm 14X",
     "variants": [],
@@ -1007,7 +1007,7 @@ window.productDetails={
   },
   "building-blocks": {
     "brand": "Milliken",
-    "productType": "Milliken Flooring",
+    "productType": "Flooring Solutions · Milliken",
     "description": "Thông số kỹ thuật: Cấu tạo: Thảm dệt sợi vòng cấu trúc\n\nKích thước gạch thảm: 50cm x 50cm (19.7\" x 19.7\")\n\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\n\nPhương pháp nhuộm: Nhuộm trong dung dịch\n\nLớp đế tiêu chuẩn: WellBAC™ Function không chứa PVC (Optional: Công nghệ TractionBack®)\n\nĐộ dày tổng thể danh định: 5.6mm ±10%\n\nKhả năng chống cháy: ≥ 0.45 (Loại I)\n\nĐánh giá duy trì bề mặt (TARR): Mức độ nặng\n\nChất lượng không khí trong nhà: CRI Green Label Plus™\n\nMã sản phẩm: GLP3200, Phân loại thảm 14X",
     "specifications": "Thông số kỹ thuật:\n\nCấu tạo: Thảm dệt sợi vòng cấu trúc\n\nKích thước gạch thảm: 50cm x 50cm (19.7\" x 19.7\")\n\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\n\nPhương pháp nhuộm: Nhuộm trong dung dịch\n\nLớp đế tiêu chuẩn: WellBAC™ Function không chứa PVC\n\nCó sẵn với: Công nghệ TractionBack®\n\nĐộ dày tổng thể danh định: 5.6mm &plusmn;10%\n\nKhả năng chống cháy: &ge; 0.45 (Loại I)\n\nĐánh giá duy trì bề mặt (TARR): Mức độ nặng\n\nChất lượng không khí trong nhà: CRI Green Label Plus™\n\nMã sản phẩm: GLP3200, Phân loại thảm 14X",
     "variants": [],
@@ -1025,7 +1025,7 @@ window.productDetails={
   },
   "cornerstone": {
     "brand": "Khác",
-    "productType": "Milliken Flooring",
+    "productType": "Flooring Solutions · Milliken",
     "description": "Cornerstone Collection khám phá các đặc tính của những kết cấu đá khác nhau qua 4 họa tiết: Elements, Keystone, Pavement và Fundament. Với những gam màu đá tự nhiên tuyệt đẹp, bộ sưu tập này phù hợp với mọi không gian nội thất. Thông số kỹ thuật: Cấu tạo: Thảm dệt sợi vòng cấu trúc\n\nKích thước gạch thảm: 50cm x 50 cm\n\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\n\nPhương pháp nhuộm: Nhuộm trong dung dịch\n\nLớp đế tiêu chuẩn: WellBAC™ Function không chứa PVC\n\nCó sẵn với: Công nghệ TractionBack®\n\nĐộ dày tổng thể danh định: 5.7 mm ±10%\n\nKhả năng chống cháy: ≥ 0.45 (Loại I)\n\nĐánh giá duy trì bề mặt (TARR): Mức độ nặng\n\nChất lượng không khí trong nhà: CRI Green Label Plus™ - GLP3200, Phân loại thảm 14X",
     "specifications": "Thông số kỹ thuật:",
     "variants": [],
@@ -1047,7 +1047,7 @@ window.productDetails={
   },
   "heavy-meta": {
     "brand": "Khác",
-    "productType": "Milliken Flooring",
+    "productType": "Flooring Solutions · Milliken",
     "description": "T rong thế giới hiện đại, kim loại đóng vai trò không thể thiếu, ảnh hưởng sâu sắc đến mọi mặt đời sống. Nhưng đã bao giờ bạn tự hỏi điều gì sẽ xảy ra khi chính vật liệu quen thuộc này vượt qua mọi giới hạn? Heavy Meta Collection được ra đời để khám phá sự biến đổi đầy bất ngờ đó, nơi một vật liệu tưởng chừng đơn giản được chuyển hóa thành một hình thái hoàn toàn mới, đầy tính nghệ thuật. Liệu với một chất xúc tác đặc biệt, kim loại có thể vươn mình, thăng hoa và bứt phá mọi quy chuẩn ban đầu? Thông số kỹ thuật: Cấu tạo: Thảm dệt sợi vòng cấu trúc\nKích thước gạch thảm: 25cm x 100 cm\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\nPhương pháp nhuộm: Nylon nhuộm trong dung dịch ECONYL®\nLớp đế tiêu chuẩn: WellBAC® Comfort không chứa PVC\nCó sẵn với: Công nghệ TractionBack®\nĐộ dày tổng thể danh định: 9.9mm ±10%\nKhả năng chống cháy: ≥ 0.45 (Loại I)\nĐánh giá duy trì bề mặt (TARR): Mức độ nặng",
     "specifications": "Thông số kỹ thuật:\n\nCấu tạo: Thảm dệt sợi vòng cấu trúc\n\nKích thước gạch thảm: 25cm x 100 cm\n\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\n\nPhương pháp nhuộm: Nylon nhuộm trong dung dịch ECONYL®\n\nLớp đế tiêu chuẩn: WellBAC® Comfort không chứa PVC\n\nCó sẵn với: Công nghệ TractionBack®\n\nĐộ dày tổng thể danh định: 9.9mm &plusmn;10%\n\nKhả năng chống cháy: &ge; 0.45 (Loại I)\n\nĐánh giá duy trì bề mặt (TARR): Mức độ nặng",
     "variants": [],
@@ -1067,7 +1067,7 @@ window.productDetails={
   },
   "living-facades": {
     "brand": "Milliken",
-    "productType": "Milliken Flooring",
+    "productType": "Flooring Solutions · Milliken",
     "description": "Việc trồng cây xanh mang lại nhiều lợi ích, chúng hấp thụ CO2, lọc bụi bẩn, giảm thiểu ô nhiễm tiếng ồn và cung cấp khả năng làm mát tự nhiên cho tòa nhà nhờ việc tạo bóng râm và bay hơi nước. Một hệ thống giàn/mặt tiền dạng module có thể hỗ trợ và thúc đẩy sự phát triển của cây xanh, tạo nên một vẻ ngoài ấn tượng khó quên. Các tấm lưới dây thép gắn tường hoặc đứng độc lập tạo thành một \"mặt tiền xanh\" có thể thay đổi không gian và cải thiện môi trường. Lấy cảm hứng từ ý tưởng mặt tiền xanh này, Living Facade Collection đã ra đời với mục tiêu tạo ra hiệu ứng tương tự trên sàn nhà. Chúng tôi đã lấy hệ thống sắp xếp và phân lớp của các loài thực vật khác nhau làm cơ sở để thiết kế một họa tiết lặp lại trên gạch thảm module. Bằng cách sắp xếp các viên gạch thảm này theo một hệ thống module, người dùng có thể tạo ra một họa tiết mô phỏng sự phân lớp và đan xen của một khu vườn thẳng đứng. Cách tiếp cận này không chỉ cho phép tạo ra một thiết kế độc đáo và ấn tượng về mặt thị giác mà còn thúc đẩy sự bền vững trong môi trường xây dựng. Thông số kỹ thuật: Cấu tạo: Thảm dệt sợi vòng cấu trúc\nKích thước gạch thảm: 100cm x 100cm hoặc 25cm x 100cm\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\nPhương pháp nhuộm: Nhuộm chính xác PrintWorks™\nLớp đế tiêu chuẩn: WellBAC™ Comfort không chứa PVC (Optional: Công nghệ TractionBack®)\nĐộ dày tổng thể danh định: 8.4mm ±10%\nChống bám bẩn/Dễ làm sạch: Công nghệ StainSmart®\nKhả năng chống cháy: ≥ 0.45 (Loại I)\nĐánh giá duy trì bề mặt (TARR): Mức độ cao\nChất lượng không khí trong nhà: CRI Green Label Plus™\nMã sản phẩm: GLP3237, Phân loại thảm 5Y",
     "specifications": "Thông số kỹ thuật:\n\nCấu tạo: Thảm dệt sợi vòng cấu trúc\n\nKích thước gạch thảm: 100cm x 100cm hoặc 25cm x 100cm\n\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\n\nPhương pháp nhuộm: Nhuộm chính xác PrintWorks™\n\nLớp đế tiêu chuẩn: WellBAC™ Comfort không chứa PVC\n\nCó sẵn với: Công nghệ TractionBack®\n\nĐộ dày tổng thể danh định: 8.4mm &plusmn;10%\n\nChống bám bẩn/Dễ làm sạch: Công nghệ StainSmart®\n\nKhả năng chống cháy: &ge; 0.45 (Loại I)\n\nĐánh giá duy trì bề mặt (TARR): Mức độ cao\n\nChất lượng không khí trong nhà: CRI Green Label Plus™\n\nMã sản phẩm: GLP3237, Phân loại thảm 5Y",
     "variants": [],
@@ -1089,7 +1089,7 @@ window.productDetails={
   },
   "natural-supply": {
     "brand": "Khác",
-    "productType": "Milliken Flooring",
+    "productType": "Flooring Solutions · Milliken",
     "description": "Natural Supply Collection lấy cảm hứng từ tiếng suối róc rách vào buổi sáng, khu rừng rậm rạp lúc trưa, những hạt mưa lất phất vào buổi chiều... Thiên nhiên đã mang đến cho chúng ta tất cả vẻ đẹp và sự thư thái. Cảm giác khám phá khu rừng là như thế nào? Liệu chúng ta có thể thư giãn bằng cách trải nghiệm sự bình yên trong thiên nhiên? Hãy tạm rời xa căng thẳng nơi công sở, cho phép bản thân có cơ hội đến gần với thiên nhiên và cảm nhận món quà của tự nhiên ngay tại văn phòng.\nThông số kỹ thuật:\nCấu tạo: Thảm dệt sợi vòng cấu trúc\n\nKích thước gạch thảm: 25cm x 100cm (9.8\" x 39.4\")\n\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\n\nPhương pháp nhuộm: Nhuộm trong dung dịch\n\nLớp đế tiêu chuẩn: WellBAC™ Function không chứa PVC (Optional: Công nghệ TractionBack®)\n\nĐộ dày tổng thể danh định: 5.5mm ±10%\n\nKhả năng chống cháy: ≥ 0.45 (Loại I)\n\nĐánh giá duy trì bề mặt (TARR): Mức độ nặng\n\nChất lượng không khí trong nhà: CRI Green Label Plus™\n\nMã sản phẩm: GLP3200, Phân loại thảm 14X",
     "specifications": "Thông số kỹ thuật:\n\nCấu tạo: Thảm dệt sợi vòng cấu trúc\n\nKích thước gạch thảm: 25cm x 100cm (9.8\" x 39.4\")\n\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\n\nPhương pháp nhuộm: Nhuộm trong dung dịch\n\nLớp đế tiêu chuẩn: WellBAC™ Function không chứa PVC (Optional: Công nghệ TractionBack®)\n\nĐộ dày tổng thể danh định: 5.5mm &plusmn;10%\n\nKhả năng chống cháy: &ge; 0.45 (Loại I)\n\nĐánh giá duy trì bề mặt (TARR): Mức độ nặng\n\nChất lượng không khí trong nhà: CRI Green Label Plus™\n\nMã sản phẩm: GLP3200, Phân loại thảm 14X",
     "variants": [],
@@ -1110,7 +1110,7 @@ window.productDetails={
   },
   "on-the-track": {
     "brand": "Milliken",
-    "productType": "Milliken Flooring",
+    "productType": "Flooring Solutions · Milliken",
     "description": "On The Track Collection lấy cảm hứng từ các đường ray; Cuộc sống tựa như một đường ray mở, không hề có một lộ trình được định sẵn. Điều đó cho phép bạn tự do lựa chọn hướng đi của chính mình, để trải nghiệm những ngã rẽ bất ngờ và khám phá những điểm đến đầy thú vị trên mỗi chặng đường. Thông số kỹ thuật: Cấu tạo: Thảm dệt sợi vòng cấu trúc\nKích thước gạch thảm: 25cm x 100cm\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\nPhương pháp nhuộm: Nhuộm trong dung dịch\nLớp đế tiêu chuẩn: WellBAC™ Function không chứa PVC\nCó sẵn với công nghệ TractionBack®\nĐộ dày tổng thể danh định: 5.5mm ±10%\nKhả năng chống cháy: ≥ 0.45 (Loại I)\nĐánh giá duy trì bề mặt: Mức độ nặng\nChất lượng không khí trong nhà: CRI Green Label Plus™\nGLP3200, Phân loại thảm 14X",
     "specifications": "Thông số kỹ thuật:\n\nCấu tạo: Thảm dệt sợi vòng cấu trúc\n\nKích thước gạch thảm: 25cm x 100cm\n\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\n\nPhương pháp nhuộm: Nhuộm trong dung dịch\n\nLớp đế tiêu chuẩn: WellBAC™ Function không chứa PVC\n\nCó sẵn với công nghệ TractionBack®\n\nĐộ dày tổng thể danh định: 5.5mm &plusmn;10%\n\nKhả năng chống cháy: &ge; 0.45 (Loại I)\n\nĐánh giá duy trì bề mặt: Mức độ nặng\n\nChất lượng không khí trong nhà: CRI Green Label Plus™\n\nGLP3200, Phân loại thảm 14X",
     "variants": [],
@@ -1132,7 +1132,7 @@ window.productDetails={
   },
   "patina": {
     "brand": "Khác",
-    "productType": "Milliken Flooring",
+    "productType": "Flooring Solutions · Milliken",
     "description": "Patina Collection Patina lấy cảm hứng sự thay đổi trên bề mặt tự nhiên theo thời gian và sự tác động của môi trường. Sự đa dạng của các kết cấu tương phản và bề mặt khác biệt tạo nên một sự độc đáo không gì sánh bằng cho bất kỳ không gian nào. Đá, Đồng, Đồng thiếc, Gỗ... Hãy phối hợp không gian của bạn thông qua việc tái khám phá vẻ đẹp của Patina. Thông số kỹ thuật: Cấu tạo: Thảm dệt sợi vòng cấu trúc\nKích thước gạch thảm: 50 cm x 50 cm (19.7 x 19.7 inch) HOẶC 25cm x 1m (9.8 x 39.4 inch)\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\nPhương pháp nhuộm: Millitron®\nLớp đế tiêu chuẩn: WellBAC™ Comfort không chứa PVC(Có sẵn với công nghệ TractionBack®)\nĐộ dày tổng thể danh định: 8.0mm ±10% HOẶC 8.4mm ±10%",
     "specifications": "Thông số kỹ thuật:",
     "variants": [],
@@ -1151,7 +1151,7 @@ window.productDetails={
   },
   "retrofit": {
     "brand": "Milliken",
-    "productType": "Milliken Flooring",
+    "productType": "Flooring Solutions · Milliken",
     "description": "Thông số kỹ thuật:\nCấu tạo: Thảm dệt sợi vòng cấu trúc\n\nKích thước gạch thảm: 50cm x 50cm (19.7\" x 19.7\")\n\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\n\nPhương pháp nhuộm: Nhuộm trong dung dịch\n\nLớp đế tiêu chuẩn: WellBAC™ Function không chứa PVC (Tùy chọn: Công nghệ TractionBack®)\n\nĐộ dày tổng thể danh định: 5.6mm ±10%\n\nKhả năng chống cháy: ≥ 0.45 (Loại I)\n\nĐánh giá duy trì bề mặt (TARR): Mức độ nặng\n\nChất lượng không khí trong nhà: CRI Green Label Plus™\n\nMã sản phẩm: GLP3200, Phân loại thảm 14X",
     "specifications": "Thông số kỹ thuật:\n\nCấu tạo: Thảm dệt sợi vòng cấu trúc\n\nKích thước gạch thảm: 50cm x 100cm\n\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\n\nPhương pháp nhuộm: Nhuộm chính xác PrintWorks™\n\nLớp đế tiêu chuẩn: WellBAC® Comfort không chứa PVC\n\nCó sẵn với công nghệ TractionBack®\n\nĐộ dày tổng thể danh định: 10.3mm &plusmn; 10%\n\nChống bám bẩn/Làm sạch vết bẩn: Công nghệ StainSmart®\n\nKhả năng chống cháy: &ge;2 0.45 (Loại I)\n\nĐánh giá duy trì bề mặt: Mức độ cao\n\nChất lượng không khí trong nhà: CRI Green Label Plus™\n\nGLP3237, Loại thảm SY",
     "variants": [],
@@ -1173,7 +1173,7 @@ window.productDetails={
   },
   "ripple-effect": {
     "brand": "Milliken",
-    "productType": "Milliken Flooring",
+    "productType": "Flooring Solutions · Milliken",
     "description": "Ripple Effect Collection lấy cảm hứng từ vùng cửa sông nước lợ, nơi dòng nước ngọt và thủy triều đại dương gặp nhau. Sự va chạm của những đợt thủy triều mạnh – nước mặn xâm nhập hòa cùng mạch nước ngọt và những gợn sóng trên bề mặt – đã tạo nên một thiết kế tự nhiên tinh xảo khi nhìn từ trên cao. Các yếu tố kết cấu nhiều lớp được tạo ra nhờ ánh sáng tự nhiên phản chiếu trên mặt nước, làm nổi bật đặc trưng của thiết kế thông qua bản chất phản chiếu của nó. Trong khi đó, chuyển động xoáy dưới nước kích thích sự chuyển động nhẹ nhàng của đáy đại dương, tạo nên các lớp vân và hiệu ứng gợn sóng độc đáo. Thông số kỹ thuật: Cấu tạo: Thảm dệt sợi vòng cấu trúc\nKích thước gạch thảm: 50cm x 50cm (chỉ dành cho Breeze) hoặc 25cm x 100cm\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\nPhương pháp nhuộm: Millitron®\nLớp đế tiêu chuẩn: WellBAC™ Function không chứa PVC (Optional: Công nghệ TractionBack®)\nĐộ dày tổng thể danh định: 6.3 mm ±10%\nChống thấm/chống bám bẩn/dễ làm sạch: Công nghệ StainSmart®\nKhả năng chống cháy: ≥ 0.45 (Loại I)\nĐánh giá duy trì bề mặt (TARR): Mức độ nặng\nChất lượng không khí trong nhà: CRI Green Label Plus™\nMã sản phẩm: GLP3210, Phân loại thảm 6Y",
     "specifications": "Thông số kỹ thuật:\n\nCấu tạo: Thảm dệt sợi vòng cấu trúc\n\nKích thước gạch thảm: 50cm x 50cm (chỉ dành cho Breeze) hoặc 25cm x 100cm\n\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\n\nPhương pháp nhuộm: Millitron®\n\nLớp đế tiêu chuẩn: WellBAC™ Function không chứa PVC (Optional: Công nghệ TractionBack®)\n\nĐộ dày tổng thể danh định: 6.3 mm &plusmn;10%\n\nChống thấm/chống bám bẩn/dễ làm sạch: Công nghệ StainSmart®\n\nKhả năng chống cháy: &ge; 0.45 (Loại I)\n\nĐánh giá duy trì bề mặt (TARR): Mức độ nặng\n\nChất lượng không khí trong nhà: CRI Green Label Plus™\n\nMã sản phẩm: GLP3210, Phân loại thảm 6Y",
     "variants": [],
@@ -1527,7 +1527,6 @@ Object.assign(window.productDetails,{
     "sourceUrl": "https://framery.com/en/office-pods-and-booths/framery-six/"
   }
 });
-
 // Zenith furniture families requested for the TFW catalogue.
 Object.assign(window.productDetails,{
   "teddy-tables": {

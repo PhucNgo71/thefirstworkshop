@@ -6,7 +6,7 @@ const catalogDetails={
  'Seatings':'Ghế công thái học và ghế tác vụ',
  'Monitor Arm & Docking':'Tay màn hình và giải pháp kết nối',
  'Glass Partition':'Hệ vách kính văn phòng',
- 'Milliken Flooring':'Thảm tấm · Milliken',
+ 'Flooring Solutions':'Giải pháp sàn · Milliken',
  'Acoustic Wall Panel':'Tấm tiêu âm · Acoufelt',
  'Accessories':'Phụ kiện không gian làm việc'
 };
@@ -37,18 +37,18 @@ const catalogEntries=[
  ['meeting','Meeting Table Genese / Bàn Họp','System Furniture',56000000,'https://cdn.hstatic.net/products/200000617147/3_15__e297a1b72ee540baa111378536937a96_large.png','genese'],
  ['q20','Q20 / Holmris B8','System Furniture',24000000,'https://cdn.hstatic.net/products/200000617147/website_ergogen__9__2997fc9d0f154984b928b58494b2169b_large.png','q20-recrafted'],
  ['teddy-tables','TEDDY TABLES','System Furniture',0,'https://www.zenithinteriors.com/media/xhai4kuw/teddy_table_-thumb.png?anchor=center&mode=crop&width=720&height=1002&rnd=133917728938370000','teddy-table','Mới'],
- ['orbis','ORBIS WORKSTATIONS','System Furniture',0,'https://www.zenithinteriors.com/media/fdhnztgn/hcp_221214_zenith_orbis_002_v1.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=133456578015670000','orbis-workstation'],
+ ['orbis','ORBIS WORKSTATION','System Furniture',0,'https://www.zenithinteriors.com/media/fdhnztgn/hcp_221214_zenith_orbis_002_v1.jpg','orbis-workstation'],
  ['kissen','KISSEN TABLES','System Furniture',0,'https://www.zenithinteriors.com/media/2b4ajsqi/zenith_kissen_table_01.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=132739289057000000','kissen-table'],
  ['sls1050','Steelforce 1050 - thefirstworkshop','System Furniture',12000000,'https://cdn.hstatic.net/products/200000617147/website_ergogen__9__e499c03a86e54e6fbbdb07389ea82904_large.png','steelforce-1050-tfw'],
  ['sls770','SLS 770 PRO','System Furniture',13000000,'https://cdn.hstatic.net/products/200000617147/website_ergogen__8__526e52550344473690b6add29e3cb468_large.png','sls-770-pro-tfw','Nổi bật'],
- ['sls470bench','SLS 670 PRO WORKSTATION SETS','System Furniture',0,'assets/sls-670-bench-cluster-2-scene-2.png','sls-670-pro-bench'],
+ ['sls470bench','SLS 670 BENCH PRO','System Furniture',30000000,'assets/workstation-bench-system-render.png','sls-670-pro-bench'],
  ['sls470','SLS 670 PRO','System Furniture',15000000,'https://product.hstatic.net/200000617147/product/54_f198c19fea50400da9c0fe84500fbe1a_large.png','sls-470-pro','Bán chạy'],
  ['at-chair','AT Chair / Wilkhahn','Seatings',36980000,'https://product.hstatic.net/200000617147/product/fixed_1_4x-100_3b907028760740b9bed4f27bc11e9f8e_large.jpg','at-chair'],
  ['freedom','Freedom Chair / Humanscale','Seatings',36600000,'https://product.hstatic.net/200000617147/product/1_4x-100_e5507a410b524b5aa48fafeff583e49d_large.jpg','freedom-chair'],
  ['smart-chair','Smart Chair / Humanscale','Seatings',33000000,'https://product.hstatic.net/200000617147/product/them_tieu_de__1__4be2295487f44317b743d75a04b7e852_large.png','smart-chair'],
  ['liberty','Liberty Chair / Humanscale','Seatings',29650000,'https://product.hstatic.net/200000617147/product/them_tieu_de__4__78523b997f3d4b338711a8e2f27dd5c4_large.png','liberty-chair'],
  ['world-chair','World Chair / Humanscale','Seatings',24200000,'https://product.hstatic.net/200000617147/product/them_tieu_de__5__84703126540d43baa309fc75707080e9_large.png','world-chair'],
- ['worldone','World One Chair / Humanscale','Seatings',13500000,'https://product.hstatic.net/200000617147/product/hs-seating-world-one-1_d9c1729bdd57475eb0459c2d2c314f17_large.jpg','world-one-chair'],
+ ['worldone','WORLD LM / Humanscale','Seatings',13500000,'https://www.humanscale.com/userFiles/images/seating/world/worldone/World-One_Carousel_Image-1.jpg','world-one-chair'],
  ['vox','VOX TASK CHAIR','Seatings',11500000,'https://product.hstatic.net/200000617147/product/15_db98a04259924bc787047b7707ac52d5_large.png','vox-chair'],
  ['k10m','K10M Chair / Krede','Seatings',9890000,'https://product.hstatic.net/200000617147/product/1_4x-100_87b1380d1aae4a31b50fde8be1af8316_large.jpg','k10m-chair'],
  ['khyn','KHYN TASK CHAIR','Seatings',9700000,'https://cdn.hstatic.net/products/200000617147/website_ergogen__28__b031c543111e43e6862b5b1ac894b6dc_large.png','khyn-chair'],
@@ -64,16 +64,17 @@ const catalogEntries=[
  ['teknion-pod','Teknion POD','Glass Partition',0,'https://cdn.hstatic.net/products/200000617147/1_12__0c2382838dd246b98af0e5bb49982b7e_large.png','teknion-pod'],
  ['telescope','Telescope','Glass Partition',0,'https://product.hstatic.net/200000617147/product/website_ergogen__9__5c53d91c9b734c75a0c24d45d89f6e6a_large.png','telescope'],
  ['within','WITHIN','Glass Partition',0,'https://product.hstatic.net/200000617147/product/website_ergogen__10__bd76f8a6b8b34ed389f6a6fb14a87244_large.png','within'],
- ['airborn','Air Born Collection','Milliken Flooring',0,'https://cdn.hstatic.net/products/200000617147/website_ergogen__12__7a69f706885247cdbc5d4aea50314fa4_large.png','air-born-collection'],
- ['building-blocks','Building Blocks 2.0 Collection','Milliken Flooring',0,'https://cdn.hstatic.net/products/200000617147/website_ergogen__13__14f1b24192134cc5ab44ab138728ccd2_large.png','building-blocks-2-0-collection'],
- ['cornerstone','Cornerstone Collection','Milliken Flooring',0,'https://cdn.hstatic.net/products/200000617147/1_4__dcf3054e2f8048ec8779e3dce3c10a39_large.png','cornerstone-collection'],
- ['heavy-meta','Heavy Meta Collection','Milliken Flooring',0,'https://cdn.hstatic.net/products/200000617147/1_9__513895adddf54eab84960b5272abe294_large.png','heavy-meta-collection'],
- ['living-facades','Living Facades Collection','Milliken Flooring',0,'https://cdn.hstatic.net/products/200000617147/1_11__5b4d99cd0f0e447ca5eb11780756ff43_large.png','living-facades-collection'],
- ['natural-supply','Natural Supply Collection','Milliken Flooring',0,'https://cdn.hstatic.net/products/200000617147/1_5__7f4db3535b3e48dbbbec87807ea23ede_large.png','natural-supply-collection'],
- ['on-the-track','On The Track Collection','Milliken Flooring',0,'https://cdn.hstatic.net/products/200000617147/1_3__abba627021d24d81999d342581252dbe_large.png','on-the-track-collection'],
- ['patina','Patina Collection','Milliken Flooring',0,'https://cdn.hstatic.net/products/200000617147/1_2__e44236a9cc25443b8beff032565fa216_large.png','patina-collection'],
- ['retrofit','Retrofit Collection','Milliken Flooring',0,'https://cdn.hstatic.net/products/200000617147/website_ergogen__10__6daea0acf8fb4baca08c60c391a7865d_large.png','retrofit-collection'],
- ['ripple-effect','Ripple Effect Collection','Milliken Flooring',0,'https://cdn.hstatic.net/products/200000617147/1_10__2905235d47bb4247bab00bfe9add82da_large.png','ripple-effect-collection'],
+ ['spiralis-e100','SPIRALIS E100','Glass Partition',0,'assets/spiralis-e100-01.jpg','spiralis-e100','Mới'],
+ ['airborn','Air Born Collection','Flooring Solutions',0,'https://cdn.hstatic.net/products/200000617147/website_ergogen__12__7a69f706885247cdbc5d4aea50314fa4_large.png','air-born-collection'],
+ ['building-blocks','Building Blocks 2.0 Collection','Flooring Solutions',0,'https://cdn.hstatic.net/products/200000617147/website_ergogen__13__14f1b24192134cc5ab44ab138728ccd2_large.png','building-blocks-2-0-collection'],
+ ['cornerstone','Cornerstone Collection','Flooring Solutions',0,'https://cdn.hstatic.net/products/200000617147/1_4__dcf3054e2f8048ec8779e3dce3c10a39_large.png','cornerstone-collection'],
+ ['heavy-meta','Heavy Meta Collection','Flooring Solutions',0,'https://cdn.hstatic.net/products/200000617147/1_9__513895adddf54eab84960b5272abe294_large.png','heavy-meta-collection'],
+ ['living-facades','Living Facades Collection','Flooring Solutions',0,'https://cdn.hstatic.net/products/200000617147/1_11__5b4d99cd0f0e447ca5eb11780756ff43_large.png','living-facades-collection'],
+ ['natural-supply','Natural Supply Collection','Flooring Solutions',0,'https://cdn.hstatic.net/products/200000617147/1_5__7f4db3535b3e48dbbbec87807ea23ede_large.png','natural-supply-collection'],
+ ['on-the-track','On The Track Collection','Flooring Solutions',0,'https://cdn.hstatic.net/products/200000617147/1_3__abba627021d24d81999d342581252dbe_large.png','on-the-track-collection'],
+ ['patina','Patina Collection','Flooring Solutions',0,'https://cdn.hstatic.net/products/200000617147/1_2__e44236a9cc25443b8beff032565fa216_large.png','patina-collection'],
+ ['retrofit','Retrofit Collection','Flooring Solutions',0,'https://cdn.hstatic.net/products/200000617147/website_ergogen__10__6daea0acf8fb4baca08c60c391a7865d_large.png','retrofit-collection'],
+ ['ripple-effect','Ripple Effect Collection','Flooring Solutions',0,'https://cdn.hstatic.net/products/200000617147/1_10__2905235d47bb4247bab00bfe9add82da_large.png','ripple-effect-collection'],
  ['fracture','Fracture Two-Tone','Acoustic Wall Panel',0,'https://product.hstatic.net/200000617147/product/acoufelt-n-w-panels-fracture-two-tone-shard-talc-amaryllis1_f9cfb5b1c7d2485dbdae56111a9ac4fe_large.jpg','fracture-two-tone'],
  ['pixel','Pixel','Acoustic Wall Panel',0,'https://product.hstatic.net/200000617147/product/acoufelt-n-w-panel-pixel-rectangle-limestone-balsam1_1d60d0cb353f477485d57b609496f858_large.jpg','pixel'],
  ['athena','Athena','Accessories',0,'https://cdn.hstatic.net/products/200000617147/1_8__506b7ec19007435ebe0c75447d52b5b1_large.png','athena'],
@@ -86,10 +87,10 @@ const catalogEntries=[
  ['sw-series','SW Series','Accessories',0,'https://cdn.hstatic.net/products/200000617147/1_5__6c7fc71c2e0a48f0b5f274480b5507e6_large.png','sw'],
  ['zeus','Zeus','Accessories',0,'https://cdn.hstatic.net/products/200000617147/1_11__a6f0e40081ad4418a4b9669c5d4783dd_large.png','zeus']
 ];
-const products=catalogEntries.map(([id,name,scope,price,image,handle,badge])=>({id,name,category:scope,scope,price,image,badge,contactOnly:price===0,detail:catalogDetails[scope],sourceUrl:`https://tfw.space/products/${handle}`,swatches:['#111312','#f4f5f3','#8b8f8c']}));
+const products=catalogEntries.map(([id,name,scope,price,image,handle,badge])=>({id,name,category:scope,scope,price,image:window.productImageUrl(window.productGalleryOverrides?.[id]?.images?.[0]||image),badge,contactOnly:price===0,detail:catalogDetails[scope],sourceUrl:`https://tfw.space/products/${handle}`,swatches:['#111312','#f4f5f3','#8b8f8c']}));
 const productLineProfiles={
  'Smart Pods':76,'Loose Furniture':84,'Storage Solutions':80,'System Furniture':86,'Seatings':80,
- 'Monitor Arm & Docking':76,'Glass Partition':84,'Milliken Flooring':92,'Acoustic Wall Panel':88,'Accessories':74
+ 'Monitor Arm & Docking':76,'Glass Partition':84,'Flooring Solutions':92,'Acoustic Wall Panel':88,'Accessories':74
 };
 const productLineSlug=value=>value.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'');
 const podReference={optionGroups:[{label:'Màu hoàn thiện tham khảo',values:['Beige','Grey','Green','Blue','Cloud','Yellow','Navy']}],referenceUrl:'https://musepod.us/products/musepod-mp-series'};
@@ -114,41 +115,104 @@ const wpodExperience={
 };
 const manufacturerOverrides={
  wpod3:{experience:wpodExperience.experience},
+ orbis:{
+  imageScale:100,
+  images:[
+   'https://www.zenithinteriors.com/media/fdhnztgn/hcp_221214_zenith_orbis_002_v1.jpg',
+   'https://www.zenithinteriors.com/media/u4th3010/hcp_230221_zenith_015.jpg'
+  ],
+  swatches:['#f3f2ee','#e9e4da','#a6a7a3','#787a75','#3c3d3a','#171817','#6c5548','#6e4031','#c99691','#aa5136','#88a9b8','#31425d','#6e7551'],
+  brand:'Zenith',productType:'Hệ workstation linh hoạt',
+  description:'Orbis là hệ workstation có thiết kế chân tinh gọn, hỗ trợ cả chế độ làm việc cá nhân và theo nhóm. Hệ bàn có thể cấu hình nâng hạ điện, chiều cao cố định, tech-adjust hoặc winder-adjust; đồng thời tương thích với CTRL, Precinct, Glovebox và các dòng vách Framed để tạo nên trạm làm việc phù hợp với từng dự án.',
+  specifications:'Cấu hình: bàn đơn hoặc cụm workstation\nCơ chế điều chỉnh: sit–stand điện, chiều cao cố định, tech-adjust hoặc winder-adjust\nHệ vách tương thích: Precinct, Framed, Slide-On Divider, Simpl và Modesty Panel\nQuản lý dây cáp: tùy chọn Cable Management / Cable Hub\nTay màn hình: hỗ trợ cấu hình đơn, đôi hoặc nhiều màn hình\nPhụ kiện: Work Shapes, CTRL và công nghệ tích hợp\nKích thước: theo cấu hình và tài liệu kỹ thuật\nThời gian giao hàng tham khảo: 6–10 tuần',
+  highlights:['Bàn đơn hoặc cụm làm việc nhóm','Bốn cơ chế điều chỉnh chiều cao','Hệ vách và phụ kiện cấu hình linh hoạt'],
+  optionGroups:[
+   {label:'Cấu hình',values:['Bàn đơn','Cụm workstation']},
+   {label:'Điều chỉnh chiều cao',values:['Sit–stand điện','Chiều cao cố định','Tech-adjust','Winder-adjust']},
+   {label:'Hệ vách',values:['Precinct','Framed','Slide-On Divider','Simpl','Modesty Panel']}
+  ],
+ bundleItems:[{id:'m2pro'},{id:'cabletray'},{label:'Cable Hub',detail:'Quản lý và che giấu dây cáp',contact:true}],
+  sourceUrl:'https://www.zenithinteriors.com/asia/products/orbis-workstation/'
+ },
+ 'spiralis-e100':{
+  imageScale:100,
+  images:['assets/spiralis-e100-01.jpg','assets/spiralis-e100-02.jpg','assets/spiralis-e100-03.jpg','assets/spiralis-e100-04.jpg'],
+  galleryModes:['photo','photo','photo','photo'],
+  swatches:['#e7e9e7','#bec8c3','#3d4743','#101312'],
+  brand:'Spiralis',productType:'Hệ vách kính văn phòng tích hợp',
+  description:'E100 là hệ vách kính văn phòng nhẹ, tinh gọn và có đường nét tối giản. Khung nhôm mảnh giúp tăng độ trong suốt, rút gọn thời gian đo đạc và lắp đặt, đồng thời hỗ trợ hiệu năng âm học cho phòng họp, văn phòng riêng và không gian làm việc phân khu.',
+  specifications:'Độ dày hệ vách: 100 mm\nKính đơn: kính cường lực 10 hoặc 12 mm\nKính đôi: kính dán 5+5 hoặc 6+6 mm\nCấu hình: vách kính đơn hoặc kính đôi\nCửa tương thích: cửa kính đơn không khung/có khung, cửa kính đôi khung 60 mm, cửa kính đôi phẳng 100 mm và cửa đặc\nKhung: nhôm định hình nhẹ\nLắp đặt: thanh khung giao sẵn theo chiều dài, giảm đo cắt tại công trường\nỨng dụng: phòng họp, văn phòng riêng và phân khu không gian',
+  highlights:['Khung mảnh, tăng độ trong suốt','Vách kính đơn hoặc kính đôi','Nhiều cấu hình cửa đồng bộ'],
+  optionGroups:[{label:'Cấu hình kính',values:['Kính đơn','Kính đôi']},{label:'Loại cửa',values:['Cửa kính đơn','Cửa kính đôi 60 mm','Cửa kính đôi phẳng 100 mm','Cửa đặc']}],
+  sourceUrl:'assets/spiralis-e100-catalogue.pdf'
+ },
+ m2pro:{
+  imageScale:74,
+  swatches:['#f4f5f3','#b8b9b7','#111312'],
+  brand:'Humanscale',productType:'M2 Pro Single Monitor Arm',
+  description:'M2 Pro là tay màn hình đơn gọn nhẹ của Humanscale, cho phép điều chỉnh tức thời để đặt màn hình đúng tầm nhìn, giải phóng diện tích mặt bàn và hỗ trợ tư thế làm việc lành mạnh.',
+  specifications:'Cấu hình: 01 màn hình\nTải trọng màn hình: 5–22 lb (2,3–10 kg)\nKích thước màn hình: tối đa 43 inch\nĐiều chỉnh: nâng hạ, xoay và thay đổi chiều sâu\nQuản lý cáp: tích hợp\nLắp đặt: kẹp bàn hoặc xuyên bàn, tùy cấu hình',
+  highlights:['Màn hình đến 43 inch','Tải trọng 2,3–10 kg','Quản lý cáp tích hợp'],
+  optionGroups:[{label:'Cấu hình',values:['Single Monitor','Dual Mount']},{label:'Màu hoàn thiện',values:['White','Silver','Black']}],
+  sourceUrl:'https://www.humanscale.com/products/monitor-arms'
+ },
+ m8pro:{
+  imageScale:88,
+  swatches:['#f4f5f3','#b8b9b7','#111312'],
+  brand:'Humanscale',productType:'M8 Pro Monitor Arm',
+  description:'M8 Pro là tay màn hình tải trọng cao dành cho màn hình lớn. Cơ cấu điều chỉnh mượt giúp thay đổi độ cao, khoảng cách và góc nhìn nhanh chóng, đồng thời giữ mặt bàn gọn gàng.',
+  specifications:'Cấu hình đơn: tải trọng 9–50 lb (4,1–22,7 kg)\nKích thước màn hình đơn: tối đa 65 inch\nCấu hình đôi tiêu chuẩn: 1–12,5 lb mỗi màn hình\nKích thước màn hình đôi: tối đa 28 inch mỗi màn hình\nQuản lý cáp: tích hợp\nTùy chọn: tay cầm cho cấu hình đôi',
+  highlights:['Màn hình đơn đến 65 inch','Tải trọng đến 22,7 kg','Có cấu hình đơn và đôi'],
+  optionGroups:[{label:'Cấu hình',values:['Single Monitor','Dual Monitor','Dual Monitor + Handle']},{label:'Màu hoàn thiện',values:['White','Silver','Black']}],
+  sourceUrl:'https://www.humanscale.com/products/monitor-arms'
+ },
+ mflex:{
+  imageScale:90,
+  swatches:['#f4f5f3','#b8b9b7','#111312'],
+  brand:'Humanscale',productType:'M/Flex Multi-Monitor System',
+  description:'M/Flex là hệ tay màn hình mô-đun trên một trụ, được thiết kế để mở rộng linh hoạt cho nhiều màn hình. Hệ thống kết hợp tay M2 Pro hoặc M8 Pro để tạo cấu hình đôi, xếp tầng, ba, bốn hoặc sáu màn hình.',
+  specifications:'Số màn hình: tối đa 6 trên một trụ\nTay tương thích: M2 Pro hoặc M8 Pro\nCấu hình: đôi, xếp tầng, ba, bốn hoặc sáu màn hình\nTải trọng: phụ thuộc số lượng và loại tay màn hình\nKích thước màn hình: tối đa 65 inch ở một số cấu hình M8 Pro\nSlider tùy chọn: điều chỉnh ngang 4,5 inch mỗi hướng\nQuản lý cáp: tích hợp',
+  highlights:['Tối đa 6 màn hình','Hệ mô-đun mở rộng linh hoạt','Tương thích M2 Pro và M8 Pro'],
+  optionGroups:[{label:'Số màn hình',values:['2 màn hình','3 màn hình','4 màn hình','6 màn hình']},{label:'Loại tay',values:['M2 Pro','M8 Pro']}],
+  sourceUrl:'https://www.humanscale.com/products/monitor-arms'
+ },
+ mconnect3:{
+  imageScale:92,
+  swatches:['#f4f5f3','#111312'],
+  brand:'Humanscale',productType:'Docking & Connectivity Hub',
+  description:'M/Connect 3 là hub kết nối tập trung cho dữ liệu và nguồn điện, giúp laptop và thiết bị cầm tay kết nối gọn gàng tại trạm làm việc. Thiết kế mô-đun hỗ trợ bảo trì và nâng cấp thuận tiện khi nhu cầu công nghệ thay đổi.',
+  specifications:'Chức năng: kết nối dữ liệu và cấp nguồn tập trung\nThiết bị: laptop và thiết bị cầm tay\nPhiên bản: M/Power Charging Hub, USB Data Hub và Pro Dock\nTích hợp: dùng cùng hệ tay màn hình Humanscale\nThiết kế: mô-đun, dễ bảo trì và nâng cấp\nQuản lý cáp: gom kết nối về một điểm trên bàn',
+  highlights:['Dữ liệu và nguồn điện tập trung','Ba cấu hình hub/dock','Thiết kế mô-đun dễ nâng cấp'],
+  optionGroups:[{label:'Phiên bản',values:['M/Power Charging Hub','USB Data Hub','Pro Dock']}],
+  sourceUrl:'https://www.humanscale.com/products/monitor-arms'
+ },
  sls470:{
   imageScale:82,
   swatches:['#111312','#a7aaa8','#f4f5f3'],
   brand:'Actiforce · SLS Collection',productType:'Bàn nâng hạ điện hoàn chỉnh',
   description:'SLS 670 PRO là bàn nâng hạ điện hoàn chỉnh dành cho không gian làm việc chuyên nghiệp, đã bao gồm mặt bàn Actiforce. Kết cấu thép ổn định, vận hành êm và điều chỉnh độ cao liên tục giúp chuyển đổi linh hoạt giữa tư thế ngồi và đứng. Bộ điều khiển ActiSwitch Eco-Memory, chức năng ghi nhớ độ cao, chống va chạm và tùy chọn quản lý dây cáp tạo nên một trạm làm việc gọn gàng, an toàn và dễ sử dụng.',
-  specifications:'Khối lượng: 31 kg\nKích thước khung: 110 × 75 × 61 cm\nKích thước cột: 6 × 9 cm\nChiều cao điều chỉnh: 61,5–127,5 cm\nChiều rộng điều chỉnh: 110–170 cm\nHành trình nâng: 66 cm\nTốc độ nâng: 39 mm/s\nTải trọng nâng động: 120 kg\nTruyền động: động cơ điện\nHệ chống va chạm: có\nỔ cắm tích hợp: không\nQuản lý dây cáp: tùy chọn\nVật liệu: kim loại\nBộ điều khiển: ActiSwitch Eco-Memory',
+  specifications:'Khối lượng: 31 kg\nKích thước khung: 110 × 75 × 61 cm\nKích thước cột: 6 × 9 cm\nChiều cao điều chỉnh: 61,5–127,5 cm\nChiều rộng điều chỉnh: 110–170 cm\nHành trình nâng: 66 cm\nTốc độ nâng: 39 mm/s\nTải trọng nâng động: 120 kg\nTruyền động: động cơ điện\nHệ chống va chạm: có\nỔ cắm tích hợp: không\nQuản lý dây cáp: 01 cable tray + 01 cable riser tiêu chuẩn\nVật liệu: kim loại\nBộ điều khiển: ActiSwitch Eco-Memory',
   highlights:['Điều chỉnh điện êm và chính xác','Tải trọng nâng động 120 kg','ActiSwitch Eco-Memory đi kèm'],
   optionGroups:[{label:'Kích thước mặt bàn',values:['1600 × 800 × 25 mm','1800 × 800 × 25 mm','2000 × 800 × 25 mm']},{label:'Màu mặt bàn',values:['Trắng','Xám nhạt','Sồi']},{label:'Màu khung',values:['Đen','Bạc','Trắng']}],
-  bundleItems:[{id:'m2pro'},{id:'freedom'},{id:'cabletray'},{id:'cableriser'}],
+  bundleItems:[{id:'m2pro'},{id:'freedom'},{id:'cabletray',included:true,detail:'Tiêu chuẩn · 01 bộ'},{id:'cableriser',included:true,detail:'Tiêu chuẩn · 01 bộ'}],
   sourceUrl:'https://actiforce.com/en/produkt/sls-670-pro-table-frame/'
  },
  sls470bench:{
-  imageScale:100,
+  imageScale:90,
+  galleryMode:'spec',
+  images:['assets/workstation-bench-system-render.png','assets/workstation-bench-system-screen-v2.png'],
+  galleryLabels:[['Bench','02 vị trí làm việc · Không vách ngăn'],['Bench + Screen','Vách ngăn trung tâm · 02 monitor arm']],
+  gallerySpecs:[['Cấu hình','02 người'],['Mặt bàn','02 bộ'],['Cable tray','02 bộ · Tiêu chuẩn'],['Cable riser','02 bộ · Tiêu chuẩn']],
   swatches:['#111312','#a7aaa8','#f4f5f3'],
-  brand:'Actiforce · SLS Collection',productType:'Bộ trạm làm việc nâng hạ · 3 cấu hình',
-  description:'SLS 670 PRO được tổ chức thành ba bộ cấu hình rõ ràng: Cluster of 2 có screen cho hai người; Single có screen cho một người; và Single không screen. Mỗi bộ được hoàn thiện với ghế làm việc, tay màn hình, máng điện, quản lý dây cáp và sâu điện theo đúng số lượng của từng vị trí. Màn hình máy tính và thiết bị cá nhân trong ảnh dùng để minh họa và không nằm trong bộ tiêu chuẩn.',
-  specifications:'03 CẤU HÌNH TRỌN BỘ\n01 · CLUSTER OF 2 + SCREEN: 02 vị trí làm việc, 02 mặt bàn, 02 ghế, 01 screen trung tâm, 02 tay màn hình, 02 máng điện, quản lý dây cáp và 02 sâu điện.\n02 · SINGLE + SCREEN: 01 vị trí làm việc, 01 mặt bàn, 01 ghế, 01 screen, 01 tay màn hình, 01 máng điện, quản lý dây cáp và 01 sâu điện.\n03 · SINGLE: 01 vị trí làm việc, 01 mặt bàn, 01 ghế, 01 tay màn hình, 01 máng điện, quản lý dây cáp và 01 sâu điện; không bao gồm screen.\n\nKhung nâng hạ điện SLS 670 PRO · tải trọng nâng động tối đa 120 kg mỗi vị trí · chống va chạm · bộ điều khiển ActiSwitch Eco-Memory.\n\nMàn hình máy tính, bàn phím, chuột và phụ kiện cá nhân trong ảnh không bao gồm.',
-  highlights:['03 cấu hình trọn bộ','01 hoặc 02 vị trí nâng hạ','Đầy đủ ghế và quản lý cáp'],
-  images:['assets/sls-670-bench-cluster-2-scene-2.png','assets/sls-670-bench-cluster-2-scene-3.png','assets/sls-670-bench-cluster-2-scene-1.png','assets/sls-670-bench-cluster-2-scene-4.png','assets/sls-670-bench-cluster-2-scene-5.png','https://product.hstatic.net/200000617147/product/sls_670_bench_bf_oakt_1-scaled_04915ccfe2fb41e489d8307259fdeb73_master.jpg','https://product.hstatic.net/200000617147/product/sls_670_bench_bf_oakt_2-scaled_9fb9a155c9a247a2857d22aab8c8c8a0_master.jpg','https://product.hstatic.net/200000617147/product/sls_670_bench_wf_st_1-scaled_e24e6cd95079417b8cb8bb06f1e6f295_master.jpg'],
-  optionGroups:[{label:'Cấu hình bộ',values:['Cluster of 2 + Screen','Single + Screen','Single']},{label:'Kích thước mỗi mặt bàn',values:['1600 × 800 × 25 mm','1800 × 800 × 25 mm','2000 × 800 × 25 mm']},{label:'Màu mặt bàn',values:['Trắng','Xám nhạt','Sồi']},{label:'Màu khung',values:['Đen','Bạc','Trắng']}],
-  setTitle:'Cluster of 2 + Screen',setSubtitle:'Bao gồm trong 01 bộ',
+  brand:'Actiforce · SLS Collection',productType:'Bàn bench nâng hạ điện hoàn chỉnh',
+  description:'SLS 670 Bench PRO là hệ bàn đôi nâng hạ điện hoàn chỉnh dành cho văn phòng hiện đại và không gian coworking, đã bao gồm hai mặt bàn Actiforce. Hai vị trí làm việc được tổ chức trên một kết cấu chung để tiết kiệm diện tích, trong khi mỗi người dùng vẫn có thể điều chỉnh độ cao phù hợp với tư thế ngồi hoặc đứng. Kết cấu thép chắc chắn, chống va chạm và bộ điều khiển ActiSwitch Eco-Memory hỗ trợ vận hành an toàn, linh hoạt.',
+  specifications:'Khối lượng: 70 kg\nKích thước khung: 110 × 140 × 61 cm\nKích thước cột: 6 × 9 cm\nTải trọng nâng động: 120 kg\nTruyền động: động cơ điện\nHệ chống va chạm: có\nỔ cắm tích hợp: không\nQuản lý dây cáp: 02 cable tray + 02 cable riser tiêu chuẩn\nVật liệu: kim loại\nBộ điều khiển: ActiSwitch Eco-Memory',
+  highlights:['Hệ bench tiết kiệm diện tích','Điều chỉnh độ cao cho từng vị trí','Tải trọng nâng động 120 kg'],
+  optionGroups:[{label:'Kích thước mỗi mặt bàn',values:['1600 × 800 × 25 mm','1800 × 800 × 25 mm','2000 × 800 × 25 mm']},{label:'Màu mặt bàn',values:['Trắng','Xám nhạt','Sồi']},{label:'Màu khung',values:['Đen','Bạc','Trắng']}],
   bundleItems:[
-   {label:'Bàn bench nâng hạ',detail:'01 khung · 02 mặt bàn · 02 bộ điều khiển',included:true},
-   {label:'Ghế làm việc',detail:'02 ghế theo cấu hình hình ảnh',included:true},
-   {label:'Vách ngăn tiêu âm',detail:'01 screen trung tâm màu xanh',included:true},
-   {label:'Tay màn hình',detail:'02 tay màn hình',included:true},
-   {label:'Máng điện',detail:'02 cable tray dưới bàn',included:true},
-   {label:'Quản lý dây cáp',detail:'01 hệ cable management tích hợp',included:true},
-   {label:'Sâu điện',detail:'02 cable riser từ sàn',included:true}
+   {label:'Vách ngăn bàn',detail:'Vách ngăn trung tâm cho bàn bench',contact:true},
+   {id:'m2pro'},{id:'freedom'},{id:'cabletray',included:true,detail:'Tiêu chuẩn · 02 bộ'},{id:'cableriser',included:true,detail:'Tiêu chuẩn · 02 bộ'}
   ],
-  configurationProfiles:{
-   'Cluster of 2 + Screen':{setTitle:'Cluster of 2 + Screen',bundleItems:[{label:'Bàn bench nâng hạ',detail:'01 khung · 02 mặt bàn · 02 bộ điều khiển',included:true},{label:'Ghế làm việc',detail:'02 ghế theo cấu hình hình ảnh',included:true},{label:'Vách ngăn tiêu âm',detail:'01 screen trung tâm màu xanh',included:true},{label:'Tay màn hình',detail:'02 tay màn hình',included:true},{label:'Máng điện',detail:'02 cable tray dưới bàn',included:true},{label:'Quản lý dây cáp',detail:'01 hệ cable management tích hợp',included:true},{label:'Sâu điện',detail:'02 cable riser từ sàn',included:true}]},
-   'Single + Screen':{setTitle:'Single + Screen',bundleItems:[{label:'Bàn nâng hạ',detail:'01 khung · 01 mặt bàn · 01 bộ điều khiển',included:true},{label:'Ghế làm việc',detail:'01 ghế theo cấu hình hình ảnh',included:true},{label:'Vách ngăn tiêu âm',detail:'01 screen màu xanh',included:true},{label:'Tay màn hình',detail:'01 tay màn hình',included:true},{label:'Máng điện',detail:'01 cable tray dưới bàn',included:true},{label:'Quản lý dây cáp',detail:'01 hệ cable management tích hợp',included:true},{label:'Sâu điện',detail:'01 cable riser từ sàn',included:true}]},
-   'Single':{setTitle:'Single',bundleItems:[{label:'Bàn nâng hạ',detail:'01 khung · 01 mặt bàn · 01 bộ điều khiển',included:true},{label:'Ghế làm việc',detail:'01 ghế theo cấu hình hình ảnh',included:true},{label:'Tay màn hình',detail:'01 tay màn hình',included:true},{label:'Máng điện',detail:'01 cable tray dưới bàn',included:true},{label:'Quản lý dây cáp',detail:'01 hệ cable management tích hợp',included:true},{label:'Sâu điện',detail:'01 cable riser từ sàn',included:true}]}
-  },
   sourceUrl:'https://actiforce.com/en/produkt/sls-670-bench-pro-table-frame/'
  },
  sls770:{
@@ -194,10 +258,10 @@ function closeCheckout(){ $('#checkout').classList.remove('open');$('#checkout')
 let activeProductId=null;
 function openProductDetail(id){
  const product=products.find(p=>p.id===id);if(!product)return;
- const source={...(window.productDetails?.[id]||{}),...(manufacturerOverrides[id]||{})};const gallery=source.images?.length?source.images.slice(0,8):[product.image];const galleryCells=gallery.length>1&&gallery.length<8?[...gallery,...gallery.slice(1,1+(8-gallery.length))]:gallery;const safe=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+ const source={...(window.productDetails?.[id]||{}),...(manufacturerOverrides[id]||{}),...(window.productGalleryOverrides?.[id]||{})};const gallery=[...new Set((source.images?.length?source.images:[product.image]).map(window.productImageUrl))].slice(0,8);const isSpecGallery=source.galleryMode==='spec';const galleryCells=gallery;const safe=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
  activeProductId=id;$('#detailTitle').textContent=product.name;$('#detailPrice').textContent=priceText(product);$('#detailAddButton').innerHTML=product.contactOnly?'Liên hệ tư vấn ↗':`Thêm vào giỏ · <span id="detailAddPrice">${money(product.price)}</span>`;$('#detailBadge').textContent=product.badge||product.scope||'thefirstworkshop';const origin=source.specifications?.match(/Xuất xứ thương hiệu:\s*([^\n]+)/i)?.[1]?.trim();$('#detailOrigin').textContent=origin||'TFW SELECTED';
  $('#detailHighlights').innerHTML=(source.highlights||[]).map(item=>`<li>${safe(item)}</li>`).join('');$('#detailHighlights').hidden=!source.highlights?.length;
- $('#detailGallery').style.setProperty('--detail-image-scale',`${Math.min(92,source.imageScale||productImageScale(product)+2)}%`);$('#detailGallery').innerHTML=galleryCells.map((image,index)=>`<figure class="detail-image${index===0?' primary':''}${index>=gallery.length?' closeup':''}"><img src="${image}" alt="${index===0?product.name:index>=gallery.length?`${product.name} · chi tiết ${index-gallery.length+1}`:`${product.name} · ${index+1}`}" loading="${index===0?'eager':'lazy'}"></figure>`).join('');
+ $('#productDetail').classList.toggle('lean-detail',isSpecGallery);$('#detailGallery').style.setProperty('--detail-image-scale',`${Math.min(92,source.imageScale||productImageScale(product)+2)}%`);const galleryMarkup=galleryCells.map((image,index)=>{const label=source.galleryLabels?.[index];const requestedMode=source.galleryModes?.[index];const photoClass=!isSpecGallery&&(requestedMode==='photo'||(!requestedMode&&index>=2))?' photo':'';return `<figure class="detail-image${index===0?' primary':''}${photoClass}"><img src="${image}" alt="${index===0?product.name:`${product.name} · ${index+1}`}" loading="${index===0?'eager':'lazy'}">${label?`<figcaption><strong>${safe(label[0])}</strong><span>${safe(label[1])}</span></figcaption>`:''}</figure>`}).join('');const specMarkup=isSpecGallery&&source.gallerySpecs?.length?`<div class="detail-spec-rail" aria-label="Thông số cấu hình">${source.gallerySpecs.map(([label,value])=>`<div><span>${safe(label)}</span><strong>${safe(value)}</strong></div>`).join('')}</div>`:'';$('#detailGallery').innerHTML=galleryMarkup+specMarkup;
  const allInfo=`${source.specifications||''}\n${source.description||''}`;const dimension=allInfo.split(/\n+/).find(line=>/kích thước|dimension/i.test(line));const facts=[['Thương hiệu',source.brand],['Dòng sản phẩm',source.productType||product.scope],['Kích thước',dimension?.replace(/^.*?(kích thước|dimension)\s*:?\s*/i,'')]].filter(([,value])=>value);
  $('#detailFacts').innerHTML=facts.map(([label,value])=>`<div><span>${safe(label)}</span><strong>${safe(value)}</strong></div>`).join('');
  $('#detailDescription').textContent=source.description||product.detail;$('#detailSpecifications').textContent=source.specifications||'Thông số chi tiết được xác nhận theo cấu hình và báo giá.';$('#specificationsPanel').hidden=false;
@@ -205,7 +269,7 @@ function openProductDetail(id){
  const variants=(source.variants||[]).filter(Boolean);const optionGroups=source.optionGroups||((variants.length)?[{label:'Tùy chọn sản phẩm',values:variants}]:[]);$('#productOptions').innerHTML=optionGroups.map((group,groupIndex)=>`<div class="config-group"><div class="config-heading"><span>${safe(group.label)}</span><strong data-option-selection="${groupIndex}">${safe(group.values[0]||'')}</strong></div><div class="choice-grid detail-variants" data-option-group="${groupIndex}">${group.values.map((value,index)=>`<button class="${index===0?'selected':''}" type="button" data-option-value="${safe(value)}">${safe(value)}</button>`).join('')}</div></div>`).join('');$$('[data-option-group] button').forEach(button=>button.onclick=()=>{const group=button.closest('[data-option-group]');$$('[data-option-group="'+group.dataset.optionGroup+'"] button').forEach(x=>x.classList.remove('selected'));button.classList.add('selected');$('[data-option-selection="'+group.dataset.optionGroup+'"]').textContent=button.dataset.optionValue;const profile=source.configurationProfiles?.[button.dataset.optionValue];if(profile)renderBundleItems(profile.bundleItems,profile.setTitle,source.setSubtitle);window.applyI18n?.()});
  renderBundleItems(source.bundleItems);
  const experience=source.experience;$('#detailExperience').hidden=!experience;if(experience){$('#experienceEyebrow').textContent=experience.eyebrow;$('#experienceTitle').textContent=experience.title;$('#experienceCopy').textContent=experience.copy;$('#experienceImage').src=gallery[1]||gallery[0];$('#experienceImage').alt=`${product.name} · không gian sử dụng`;$('#featureTitle').textContent=experience.featureTitle;$('#featureGrid').innerHTML=experience.features.map(([title,copy],index)=>`<article class="pod-feature"><span>${String(index+1).padStart(2,'0')}</span><h4>${safe(title)}</h4><p>${safe(copy)}</p></article>`).join('')}
- $('#productDetail').classList.add('open');$('#productDetail').setAttribute('aria-hidden','false');document.body.style.overflow='hidden';location.hash=`product-${id}`;window.applyI18n?.();setTimeout(()=>$('#closeProductDetail').focus(),40)
+ $('#productDetail').scrollTop=0;$('#detailGallery').dataset.count=String(gallery.length);$('#productDetail').classList.add('open');$('#productDetail').setAttribute('aria-hidden','false');document.body.style.overflow='hidden';location.hash=`product-${id}`;window.applyI18n?.();setTimeout(()=>$('#closeProductDetail').focus({preventScroll:true}),40)
 }
 function closeProductDetail(){activeProductId=null;$('#productDetail').classList.remove('open');$('#productDetail').setAttribute('aria-hidden','true');document.body.style.overflow='';history.replaceState(null,'',location.pathname+location.search+'#shop')}
 function showToast(msg){$('#toast').textContent=msg;$('#toast').classList.add('show');setTimeout(()=>$('#toast').classList.remove('show'),1800)}
@@ -218,6 +282,22 @@ $('.detail-brand').onclick=closeProductDetail;
 $('#paymentForm').onchange=e=>{if(e.target.name==='payment'){const card=e.target.value==='card';$('#cardFields').hidden=!card;$$('#cardFields input').forEach(i=>i.required=card)}};
 $('#paymentForm').onsubmit=e=>{e.preventDefault();$('#paymentForm').hidden=true;$('#successState').hidden=false;$('#orderNumber').textContent='TFW-'+Math.floor(100000+Math.random()*900000);cart={};saveCart()};
 $('#continueShopping').onclick=()=>{closeCheckout();$('#paymentForm').reset();$('#paymentForm').hidden=false;$('#successState').hidden=true;location.hash='shop'};
+function updateWorkstationConfiguration(input){
+ const selected=input.value;
+ const renderStates={
+  'Single Desk':{src:'assets/workstation-structures-render.png',mode:'composite',transform:'translate(0,0)',number:'01',meta:'01 người · Không screen',alt:'Single Desk · bàn làm việc đơn'},
+  'Bench':{src:'assets/workstation-bench-system-render.png',mode:'direct',transform:'none',number:'02',meta:'02 người · Khung bench dùng chung',alt:'Bench · cụm bàn hai người trên một hệ khung dùng chung'},
+  'Single Desk + Screen':{src:'assets/workstation-structures-render.png',mode:'composite',transform:'translate(0,-50%)',number:'03',meta:'01 người · 01 screen',alt:'Single Desk với screen · bàn làm việc đơn có vách ngăn'},
+  'Bench + Screen':{src:'assets/workstation-bench-system-screen-v2.png',mode:'direct',transform:'none',number:'04',meta:'02 người · Khung bench + screen trung tâm',alt:'Bench với screen · cụm bàn hai người trên một hệ khung dùng chung và vách ngăn trung tâm'}
+ };
+ const render=renderStates[selected];
+ $$('.configurator-card').forEach(card=>card.classList.toggle('selected',card.contains(input)));
+ if(render){const image=$('#configuratorImage');image.className=render.mode;image.src=render.src;image.style.transform=render.transform;image.alt=render.alt;$('#configuratorImageNumber').textContent=render.number;$('#configuratorImageTitle').textContent=selected;$('#configuratorImageMeta').textContent=render.meta;}
+ $('#configuratorSelected').textContent=selected;
+ $('#configuratorCta').href=`mailto:hi@tfw.space?subject=${encodeURIComponent('Tư vấn cấu hình workstation · '+selected)}`;
+ window.applyI18n?.();
+}
+$$('[name="workstationConfiguration"]').forEach(input=>input.onchange=()=>updateWorkstationConfiguration(input));
 function renderSearch(q=''){const v=q.trim().toLowerCase();const list=v?products.filter(p=>(p.name+' '+p.category+' '+p.scope+' '+p.detail).toLowerCase().includes(v)):products.slice(0,3);$('#searchResults').innerHTML=list.map(p=>`<button class="search-result" data-search-product="${p.id}"><strong>${p.name}</strong><br><span>${priceText(p)}</span></button>`).join('')||'<p>Không tìm thấy sản phẩm phù hợp.</p>';$$('[data-search-product]').forEach(b=>b.onclick=()=>{$('#closeSearch').click();openProductDetail(b.dataset.searchProduct)});window.applyI18n?.()}
 $('#searchButton').onclick=()=>{$('#searchPanel').hidden=false;document.body.style.overflow='hidden';renderSearch();setTimeout(()=>$('#searchInput').focus(),50)};$('#closeSearch').onclick=()=>{$('#searchPanel').hidden=true;document.body.style.overflow=''};$('#searchInput').oninput=e=>renderSearch(e.target.value);
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){if($('#productDetail').classList.contains('open'))closeProductDetail();else if(!$('#searchPanel').hidden)$('#closeSearch').click();else if($('#checkout').classList.contains('open'))closeCheckout();else closeCart()}});
@@ -228,7 +308,7 @@ function registerCommerceTools(){
  const context=typeof document==='undefined'?undefined:document.modelContext;if(!context?.registerTool)return;
  const lifecycle=new AbortController();
  const register=tool=>Promise.resolve(context.registerTool(tool,{signal:lifecycle.signal})).catch(()=>{});
- register({name:'list_products',title:'List products',description:'List the products currently offered in the thefirstworkshop demo store, optionally filtered by category.',inputSchema:{type:'object',properties:{category:{type:'string',enum:['Smart Pods','Loose Furniture','Storage Solutions','System Furniture','Seatings','Monitor Arm & Docking','Glass Partition','Milliken Flooring','Acoustic Wall Panel','Accessories']}},additionalProperties:false},annotations:{readOnlyHint:true,untrustedContentHint:false},execute(input={}){const list=input.category?products.filter(p=>p.scope===input.category||p.category===input.category):products;return{products:list.map(({id,name,category,scope,price,contactOnly,detail})=>({id,name,category,scope,priceVnd:price,contactOnly:Boolean(contactOnly),detail}))}}});
+ register({name:'list_products',title:'List products',description:'List the products currently offered in the thefirstworkshop demo store, optionally filtered by category.',inputSchema:{type:'object',properties:{category:{type:'string',enum:['Smart Pods','Loose Furniture','Storage Solutions','System Furniture','Seatings','Monitor Arm & Docking','Glass Partition','Flooring Solutions','Acoustic Wall Panel','Accessories']}},additionalProperties:false},annotations:{readOnlyHint:true,untrustedContentHint:false},execute(input={}){const list=input.category?products.filter(p=>p.scope===input.category||p.category===input.category):products;return{products:list.map(({id,name,category,scope,price,contactOnly,detail})=>({id,name,category,scope,priceVnd:price,contactOnly:Boolean(contactOnly),detail}))}}});
  register({name:'add_product_to_cart',title:'Add product to cart',description:'Add a specified quantity of one priced product to the visible shopping cart.',inputSchema:{type:'object',properties:{productId:{type:'string'},quantity:{type:'integer',minimum:1,maximum:20}},required:['productId'],additionalProperties:false},annotations:{readOnlyHint:false,untrustedContentHint:false},execute(input){const product=products.find(p=>p.id===input.productId);if(!product)throw new Error('Unknown productId');if(product.contactOnly)throw new Error('This product requires a quotation');const quantity=input.quantity??1;if(!Number.isInteger(quantity)||quantity<1||quantity>20)throw new Error('Quantity must be an integer from 1 to 20');cart[product.id]=(cart[product.id]||0)+quantity;saveCart();return{added:{productId:product.id,quantity},cartItemCount:cartData().reduce((sum,p)=>sum+p.qty,0),subtotalVnd:total()}}});
  register({name:'start_checkout',title:'Start checkout',description:'Open the visible checkout for the current cart. This prepares checkout but does not place or pay for an order.',inputSchema:{type:'object',properties:{},additionalProperties:false},annotations:{readOnlyHint:false,untrustedContentHint:false},execute(){if(!cartData().length)throw new Error('The cart is empty');openCheckout();return{status:'checkout_open',items:cartData().reduce((sum,p)=>sum+p.qty,0),totalVnd:total(),paymentMode:'demo'}}});
 }
