@@ -13,6 +13,12 @@ const armLayouts=[
   {count:4,maxSize:43,minLb:5,maxLb:15,model:'M/Flex · M2 Pro Quad Extended Reach',code:'X242ETSC',product:'mflex'},
   {count:6,maxSize:33,minLb:3,maxLb:10,model:'M/Flex · Six',code:'X262FSSC',product:'mflex'}
 ];
+// Every supported configurator layout has its own black-finish preview.
+// Product-detail galleries continue to use their original manufacturer images.
+function armPreviewUrl(code){
+  const singles={M21BTSC:'assets/arm-card-m2pro-black.png',M81BTSC:'assets/monitor-arm-black-preview.png'};
+  return singles[code]||`assets/arm-config-${code}-black.png`;
+}
 function selectArmLayout(count,size,weight){
   if(!Number.isFinite(size)||!Number.isFinite(weight)||size<=0||weight<=0)return null;
   const pounds=weight/0.45359237;
@@ -38,7 +44,7 @@ function selectArmLayout(count,size,weight){
     get('armCapacity').textContent=match?`${match.minLb}–${match.maxLb} lb (${(match.minLb*.45359237).toFixed(1)}–${(match.maxLb*.45359237).toFixed(1)} kg) / ${t('màn hình','screen')} · ${t('Tối đa','Up to')} ${match.maxSize}″`:t('Thông số này nằm ngoài các cấu hình tiêu chuẩn đã liệt kê.','These specifications fall outside the listed standard configurations.');
     get('armCompatibility').textContent=vesa==='100'?t('Bản gắn VESA 100 × 100 mm; cần xác nhận phần cứng gắn bàn.','100 × 100 mm VESA plate; desk mounting hardware requires confirmation.'):t('Cần xác nhận bản gắn hoặc adapter VESA trước khi chọn tay đỡ.','Confirm the VESA plate or adapter before selecting the arm.');
     const image=get('armImage');image.hidden=!match;
-    if(match){const blackPreviews={M21BTSC:'assets/arm-card-m2pro-black.png',M81BTSC:'assets/monitor-arm-black-preview.png'};image.src=blackPreviews[match.code]||`https://www.humanscale.com/userfiles/images/collection-pages/monitor-arms/desktop/${match.code}.png`;image.alt=`${match.model} · ${count} ${t('màn hình','screens')}`;}
+    if(match){image.src=armPreviewUrl(match.code);image.alt=`${match.model} · ${count} ${t('màn hình','screens')}`;}
     get('armImageCaption').textContent=match?`${match.model} · ${count} ${t('màn hình','screens')}`:t('Chờ xác nhận cấu hình phù hợp','Awaiting a compatible configuration');
     get('armDockPreview').hidden=!dock;
     const summary=[

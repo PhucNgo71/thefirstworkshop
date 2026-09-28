@@ -1,5 +1,56 @@
 // Product details compiled from public TFW and manufacturer product pages.
 window.productDetails={
+  "kissen-folding": {
+    "brand": "Zenith",
+    "productType": "Folding Table",
+    "description": "Bàn gập hai phía cho phòng họp và đào tạo, dễ di chuyển và bố trí lại không gian.",
+    "specifications": "Kích thước: Xác nhận theo cấu hình và báo giá.",
+    "images": [
+      "https://product.hstatic.net/200000617147/product/chair_website__3__f51cdd7a94d040b18ce35f34ead95cf8.png",
+      "https://product.hstatic.net/200000617147/product/2_2688fad225f547389ca11cffb4b9bac3.png",
+      "https://product.hstatic.net/200000617147/product/26_ab9bfc936ae14239907f3fb0b6e57d15.png"
+    ],
+    "galleryModes": [
+      "contain",
+      "contain",
+      "contain"
+    ],
+    "sourceUrl": "https://tfw.space/products/kissen-folding-table"
+  },
+  "shirly": {
+    "brand": "TFW",
+    "productType": "Folding Table",
+    "description": "Bàn đào tạo gập 90° với bánh xe và tấm che chân, thuận tiện xếp gọn và ghép thành nhiều bố cục.",
+    "specifications": "Kích thước khung bàn: 1200 × 600 mm\nTấm che chân: 1100 × 300 mm",
+    "images": [
+      "https://product.hstatic.net/200000617147/product/5_4x-100_ebeeeca1e459420587d2e3331c04d023.jpg",
+      "https://product.hstatic.net/200000617147/product/27_4x-100_0e6d9da4a6b14718a8b1fe4de841809e.jpg",
+      "https://product.hstatic.net/200000617147/product/7_4x-100_99259ed689694ae4b5587d884ce5f9c1.jpg"
+    ],
+    "galleryModes": [
+      "contain",
+      "contain",
+      "contain"
+    ],
+    "sourceUrl": "https://tfw.space/products/matchman-series-table"
+  },
+  "graph-table": {
+    "brand": "Wilkhahn",
+    "productType": "Conference Table",
+    "description": "Bàn họp với khung nhôm và nhiều hình dạng mặt bàn, dành cho không gian hội nghị.",
+    "specifications": "Kích thước: Theo cấu hình, từ 120 × 120 đến 780 × 230 cm.",
+    "images": [
+      "https://product.hstatic.net/200000617147/product/6_4x-100_5faaf111ba4d4340a65c6a382d3ab88a.jpg",
+      "https://product.hstatic.net/200000617147/product/9_4x-100_28307cc689194018bdeff6b880c82bad.jpg",
+      "https://product.hstatic.net/200000617147/product/11_4x-100_e529da756cf043549b500ff0728027e1.jpg"
+    ],
+    "galleryModes": [
+      "contain",
+      "contain",
+      "contain"
+    ],
+    "sourceUrl": "https://tfw.space/products/range-graph-table"
+  },
   "framery-one-compact": {
     "brand": "Framery",
     "productType": "Phonebooth",

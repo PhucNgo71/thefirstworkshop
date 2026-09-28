@@ -11,6 +11,9 @@ const catalogDetails={
  'Accessories':'Phụ kiện không gian làm việc'
 };
 const catalogEntries=[
+ ["kissen-folding","Kissen Folding Table / Zenith","System Furniture",16000000,"https://product.hstatic.net/200000617147/product/chair_website__3__f51cdd7a94d040b18ce35f34ead95cf8.png","kissen-folding-table"],
+ ["shirly","Shirly","System Furniture",10000000,"https://product.hstatic.net/200000617147/product/5_4x-100_ebeeeca1e459420587d2e3331c04d023.jpg","matchman-series-table"],
+ ["graph-table","Graph Table / Wilkhahn","System Furniture",215490000,"https://product.hstatic.net/200000617147/product/6_4x-100_5faaf111ba4d4340a65c6a382d3ab88a.jpg","range-graph-table"],
  ['framery-one-compact','FRAMERY ONE COMPACT','Smart Pods',0,'https://framery.com/wp-content/uploads/2025/11/framery-one-compact-white-1.webp','framery-one-compact'],
  ['framery-one-premium','FRAMERY ONE','Smart Pods',0,'https://framery.com/wp-content/uploads/2026/01/framery-one-white-1.webp','framery-one'],
  ['framery-four','FRAMERY FOUR','Smart Pods',0,'https://framery.com/wp-content/uploads/2026/01/four-white-1.png','framery-four'],
