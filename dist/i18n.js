@@ -19,6 +19,8 @@ const english = {
   'Build with confidence':'Build with confidence','Chạm vật liệu.':'Feel the materials.','Chọn đúng cấu hình.':'Choose the right setup.',
   'Đến showroom để trải nghiệm mặt bàn, khung, màu sắc và cable management trước khi quyết định.':'Visit our showroom to experience table tops, frames, finishes, and cable management before deciding.',
   'Showroom & kho':'Showroom & warehouse','Tư vấn cấu hình':'Configuration consultation','Đặt lịch tư vấn':'Book a consultation',
+  'Showroom Đà Nẵng':'Da Nang showroom','Showroom 02 · Hà Nội':'Showroom 02 · Hanoi',
+  '79 Tôn Thất Đ. Kỵ, Hòa Xuân, Đà Nẵng 550000, Việt Nam':'79 Tôn Thất Đ. Kỵ, Hòa Xuân, Da Nang 550000, Vietnam',
   'Good to know':'Good to know','Câu hỏi thường gặp':'Frequently asked questions',
   'Làm sao chọn kích thước bàn phù hợp?':'How do I choose the right desk size?',
   'Hãy bắt đầu từ số người sử dụng, thiết bị trên bàn và lối lưu thông. Đội ngũ của chúng tôi có thể đề xuất kích thước theo mặt bằng thực tế.':'Start with the number of users, equipment on the desk, and circulation space. Our team can recommend dimensions based on your actual floor plan.',
