@@ -219,8 +219,16 @@
         <div class="field-row"><label>Họ và tên<input name="name" autocomplete="name" required placeholder="Nguyễn Minh Anh"></label><label>Số điện thoại<input name="phone" autocomplete="tel" required placeholder="0909 000 000"></label></div>
         <label>Email<input type="email" name="email" autocomplete="email" required placeholder="ban@email.com"></label>
         <label>Địa chỉ giao hàng<input name="address" autocomplete="street-address" required placeholder="Số nhà, đường, phường, quận"></label>
-        <fieldset><legend>Phương thức thanh toán</legend><label class="payment-option"><input type="radio" name="payment" value="card" checked><span><strong>Thẻ ngân hàng</strong><small>Visa · Mastercard · JCB</small></span></label><label class="payment-option"><input type="radio" name="payment" value="bank"><span><strong>Chuyển khoản</strong><small>QR ngân hàng</small></span></label><label class="payment-option"><input type="radio" name="payment" value="cod"><span><strong>Thanh toán khi nhận hàng</strong><small>Áp dụng theo khu vực</small></span></label></fieldset>
+        <fieldset><legend>Phương thức thanh toán</legend><label class="payment-option"><input type="radio" name="payment" value="card" checked><span><strong>Thẻ ngân hàng</strong><small>Visa · Mastercard · JCB</small></span></label><label class="payment-option"><input type="radio" name="payment" value="bank"><span><strong>Chuyển khoản</strong><small>MB Bank · 1031101804007</small></span></label><label class="payment-option"><input type="radio" name="payment" value="cod"><span><strong>Thanh toán khi nhận hàng</strong><small>Áp dụng theo khu vực</small></span></label></fieldset>
         <div id="cardFields"><label>Số thẻ<input inputmode="numeric" autocomplete="cc-number" placeholder="4242 4242 4242 4242" required></label><div class="field-row"><label>Ngày hết hạn<input inputmode="numeric" autocomplete="cc-exp" placeholder="MM / YY" required></label><label>CVC<input inputmode="numeric" autocomplete="cc-csc" placeholder="123" required></label></div></div>
+        <section id="bankDetails" hidden aria-labelledby="bankDetailsTitle">
+          <h3 id="bankDetailsTitle">Thông tin chuyển khoản</h3>
+          <p><span>Ngân hàng</span><br><strong>Ngân hàng TMCP Quân Đội (MB Bank)</strong></p>
+          <p><span>Chi nhánh</span><br><strong>Sở Giao Dịch 2</strong></p>
+          <p><span>Số tài khoản</span><br><strong>1031101804007</strong></p>
+          <p>Vui lòng liên hệ thefirstworkshop để xác nhận tên chủ tài khoản, số tiền và nội dung chuyển khoản trước khi thanh toán.</p>
+          <p>Thanh toán chuyển khoản được xác nhận thủ công sau khi ngân hàng ghi có.</p>
+        </section>
         <p class="demo-note">Bản demo học tập — không có khoản tiền nào được thu.</p>
         <button class="primary-button full" type="submit">Xác nhận đơn hàng · <span id="checkoutTotal">0₫</span></button>
       </form>

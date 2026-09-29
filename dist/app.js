@@ -284,9 +284,9 @@ $('#sortProducts').onchange=e=>{activeSort=e.target.value;renderProducts()};$('#
 $('#cartButton').onclick=openCart;$('#closeCart').onclick=closeCart;$('#overlay').onclick=closeCart;$('#checkoutButton').onclick=openCheckout;$('#closeCheckout').onclick=closeCheckout;
 $('#closeProductDetail').onclick=closeProductDetail;$('#detailAddButton').onclick=()=>{if(!activeProductId)return;const product=products.find(p=>p.id===activeProductId);product?.contactOnly?requestQuote(product.id):addToCart(activeProductId)};$('#detailLangToggle').onclick=()=>$('#langToggle').click();
 $('.detail-brand').onclick=closeProductDetail;
-$('#paymentForm').onchange=e=>{if(e.target.name==='payment'){const card=e.target.value==='card';$('#cardFields').hidden=!card;$$('#cardFields input').forEach(i=>i.required=card)}};
+$('#paymentForm').onchange=e=>{if(e.target.name==='payment'){const card=e.target.value==='card';$('#cardFields').hidden=!card;$('#bankDetails').hidden=e.target.value!=='bank';$$('#cardFields input').forEach(i=>i.required=card)}};
 $('#paymentForm').onsubmit=e=>{e.preventDefault();$('#paymentForm').hidden=true;$('#successState').hidden=false;$('#orderNumber').textContent='TFW-'+Math.floor(100000+Math.random()*900000);cart={};saveCart()};
-$('#continueShopping').onclick=()=>{closeCheckout();$('#paymentForm').reset();$('#paymentForm').hidden=false;$('#successState').hidden=true;location.hash='shop'};
+$('#continueShopping').onclick=()=>{closeCheckout();$('#paymentForm').reset();$('#cardFields').hidden=false;$('#bankDetails').hidden=true;$$('#cardFields input').forEach(i=>i.required=true);$('#paymentForm').hidden=false;$('#successState').hidden=true;location.hash='shop'};
 function updateWorkstationConfiguration(input){
  const selected=input.value;
  const renderStates={
