@@ -11,6 +11,10 @@ const catalogDetails={
  'Accessories':'Phụ kiện không gian làm việc'
 };
 const catalogEntries=[
+ ['dress01','Dress-1','Loose Furniture',3300000,'https://product.hstatic.net/200000617147/product/7_2a5d96644f28497f9db29bb855675fa2_large.png','dress-01'],
+ ['dress04','Dress-4','Loose Furniture',3500000,'assets/dress04-green-front.jpg','dress-04'],
+ ['dress05','Dress-5','Loose Furniture',4200000,'assets/dress05-green-front.jpg','dress-05'],
+ ['dress06','Dress-6','Loose Furniture',3500000,'assets/dress06-green-front.jpg','dress-06'],
  ["kissen-folding","Kissen Folding Table / Zenith","System Furniture",16000000,"https://product.hstatic.net/200000617147/product/chair_website__3__f51cdd7a94d040b18ce35f34ead95cf8.png","kissen-folding-table"],
  ["shirly","Shirly","System Furniture",10000000,"https://product.hstatic.net/200000617147/product/5_4x-100_ebeeeca1e459420587d2e3331c04d023.jpg","matchman-series-table"],
  ["graph-table","Graph Table / Wilkhahn","System Furniture",215490000,"https://product.hstatic.net/200000617147/product/6_4x-100_5faaf111ba4d4340a65c6a382d3ab88a.jpg","range-graph-table"],
@@ -30,7 +34,6 @@ const catalogEntries=[
  ['swing','Swing Chair','Loose Furniture',16100000,'https://cdn.hstatic.net/products/200000617147/6_1__04cb884dcd674f318125a0e175871829_large.png','swing-chair'],
  ['jac','JAC Stool','Loose Furniture',0,'https://product.hstatic.net/200000617147/product/15_48e16d292b364ad9bc48721b089f9c3f_large.png','jac-stool'],
  ['occo','OCCO Chair','Loose Furniture',0,'https://product.hstatic.net/200000617147/product/5_3ec632a26e6546588fbee76c047bf393_large.png','occo-chair'],
- ['dress01','Dress-01','Loose Furniture',3300000,'https://product.hstatic.net/200000617147/product/7_2a5d96644f28497f9db29bb855675fa2_large.png','dress-01'],
  ['hours-lounge','HOURS LOUNGE','Loose Furniture',0,'https://www.zenithinteriors.com/media/wq3lumt3/hcp_250528_zenith_012.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=133954181943870000','hours-lounge','Mới'],
  ['precinct','PRECINCT POD & LOUNGE','Loose Furniture',0,'https://www.zenithinteriors.com/media/rwlprjlb/thumbnail.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=132739289362070000','precinct-lounge-modules'],
  ['repo','REPO Pedestal','Storage Solutions',3500000,'https://cdn.hstatic.net/products/200000617147/1_2__708824e55ad84f00a73fe2a27a023ce5_large.png','repo-pedestal'],
