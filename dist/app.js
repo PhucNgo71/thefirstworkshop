@@ -11,7 +11,7 @@ const catalogDetails={
  'Accessories':'Phụ kiện không gian làm việc'
 };
 const catalogEntries=[
- ['dress01','Dress-1','Loose Furniture',3300000,'https://product.hstatic.net/200000617147/product/7_2a5d96644f28497f9db29bb855675fa2_large.png','dress-01'],
+ ['dress01','Dress-1','Loose Furniture',3300000,'assets/dress01-green-front.jpg','dress-01'],
  ['dress04','Dress-4','Loose Furniture',3500000,'assets/dress04-green-front.jpg','dress-04'],
  ['dress05','Dress-5','Loose Furniture',4200000,'assets/dress05-green-front.jpg','dress-05'],
  ['dress06','Dress-6','Loose Furniture',3500000,'assets/dress06-green-front.jpg','dress-06'],
