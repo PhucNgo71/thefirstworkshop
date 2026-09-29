@@ -40,7 +40,7 @@ function selectArmLayout(count,size,weight){
     const mount=get('armMount').value==='clamp'?t('Kẹp mép bàn','Desk clamp'):t('Xuyên mặt bàn','Through-desk mount');
     const result=get('armModel').closest('.arm-result');result.classList.toggle('needs-check',!match||vesa!=='100');
     get('armResultStatus').textContent=!valid?t('Nhập thông số hợp lệ','Enter valid specifications'):!match?t('Cần tư vấn cấu hình riêng','Custom configuration review required'):t('Gợi ý theo kích thước và tải trọng','Suggested by screen size and weight');
-    get('armModel').textContent=match?.model||t('Đội ngũ TFW sẽ kiểm tra','TFW will check your setup');
+    get('armModel').textContent=match?.model||t('Đội ngũ của chúng tôi sẽ kiểm tra','Our team will check your setup');
     get('armCapacity').textContent=match?`${match.minLb}–${match.maxLb} lb (${(match.minLb*.45359237).toFixed(1)}–${(match.maxLb*.45359237).toFixed(1)} kg) / ${t('màn hình','screen')} · ${t('Tối đa','Up to')} ${match.maxSize}″`:t('Thông số này nằm ngoài các cấu hình tiêu chuẩn đã liệt kê.','These specifications fall outside the listed standard configurations.');
     get('armCompatibility').textContent=vesa==='100'?t('Bản gắn VESA 100 × 100 mm; cần xác nhận phần cứng gắn bàn.','100 × 100 mm VESA plate; desk mounting hardware requires confirmation.'):t('Cần xác nhận bản gắn hoặc adapter VESA trước khi chọn tay đỡ.','Confirm the VESA plate or adapter before selecting the arm.');
     const image=get('armImage');image.hidden=!match;
