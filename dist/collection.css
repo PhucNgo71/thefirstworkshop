@@ -59,6 +59,7 @@
 .detail-gallery[data-count="1"]{grid-template-columns:1fr}
 .detail-image{position:relative;min-width:0;min-height:0;margin:0;background:#fff;aspect-ratio:4/3;display:grid;place-items:center;overflow:hidden}
 .detail-image.primary{grid-column:auto;min-height:0}
+.detail-image figcaption{position:absolute;left:1rem;right:1rem;bottom:.7rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.3rem .8rem;font-size:.65rem;color:var(--muted);z-index:1}
 .detail-image img{position:absolute;inset:0;margin:auto;display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center;padding:0;image-rendering:auto;mix-blend-mode:normal}.detail-image.photo img{width:100%;height:100%;object-fit:contain;mix-blend-mode:normal}
 .detail-image.closeup{min-height:0}
 .detail-image.closeup img{transform:scale(1.18);object-position:center;padding:7%}

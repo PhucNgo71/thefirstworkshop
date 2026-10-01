@@ -1,4 +1,5 @@
 const english = {
+  'Không sao chép hoặc tái sử dụng hình ảnh.':'Copying or reusing this image is prohibited.',
   'xác nhận theo mẫu và cấu hình':'Confirmed by model and configuration',
   'xác nhận theo cấu hình':'Confirmed by configuration',
   "Genese là bàn họp phong cách Scandinavian do Voss & Hedlund thiết kế cho HOLMRIS B8, với mặt bàn thanh thoát và chân cong nhẹ. Có nhiều kích thước và vật liệu hoàn thiện; phiên bản chứng nhận FSC có thể đặt theo yêu cầu.":"Genese is a Scandinavian-style conference table designed by Voss & Hedlund for HOLMRIS B8, with a slender tabletop and gently curved base. Multiple sizes and finishes are available; FSC-certified versions can be ordered on request.",

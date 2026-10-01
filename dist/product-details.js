@@ -6,7 +6,7 @@ window.productDetails={
   "description": "Intra là ghế phòng họp với cơ chế chuyển động đồng bộ và tự điều chỉnh theo trọng lượng, hỗ trợ tư thế ngồi linh hoạt. Các bộ phận điều khiển được tích hợp vào vỏ ghế và tay vịn.",
   "specifications": "Dòng: 295 Intra\nThiết kế: Phoenix Design\nChức năng: điều chỉnh độ cao, chuyển động đồng bộ\nKích thước: xác nhận theo mẫu và cấu hình\nGiá và giao hàng: liên hệ tư vấn",
   "images": [
-    "https://www.wilkhahn.com/fileadmin/_processed_/6/d/csm_Wilkhahn-Intra-Weltfrauentag-09_20cbdf1802.jpg",
+    "assets/products/wilkhahn-intra-005259.jpg",
     "https://www.wilkhahn.com/fileadmin/_processed_/8/5/csm_wilkhahn-intra-versa-03_d786913994.jpg",
     "https://www.wilkhahn.com/fileadmin/_processed_/2/8/csm_wilkhahn-intra-detail-1_acb509608d.jpg",
     "https://www.wilkhahn.com/fileadmin/_processed_/4/7/csm_wilkhahn-intra-graph_9053e1c1ee.jpg"
@@ -18,6 +18,7 @@ window.productDetails={
     "contain"
   ],
   "swatches": [],
+  "galleryLabels": [["© Wilkhahn", "Không sao chép hoặc tái sử dụng hình ảnh."]],
   "sourceUrl": "https://www.wilkhahn.com/en/products/conference-chairs/intra/"
 },
   "graph-chair": {

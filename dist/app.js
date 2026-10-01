@@ -11,8 +11,8 @@ const catalogDetails={
  'Accessories':'Phụ kiện không gian làm việc'
 };
 const catalogEntries=[
- ["intra-chair","Intra / Wilkhahn","Seatings",0,"https://www.wilkhahn.com/fileadmin/_processed_/6/d/csm_Wilkhahn-Intra-Weltfrauentag-09_20cbdf1802.jpg","intra-chair"],
- ["graph-chair","Graph Chair / Wilkhahn","Seatings",0,"https://www.wilkhahn.com/fileadmin/_processed_/f/7/csm_005564_WH_Graph_2021_9157d6d58f.jpg","graph-chair"],
+ ["intra-chair","Intra / Wilkhahn","Seatings",0,"assets/products/wilkhahn-intra-005259.jpg","intra-chair"],
+ ["graph-chair","Graph Chair / Wilkhahn","Seatings",0,"https://www.wilkhahn.com/fileadmin/_processed_/5/f/csm_Wilkhahn-302_7-Graph-cutout_a0082e04a5.jpg","graph-chair"],
  ["confair-folding-table","Confair Folding Table / Wilkhahn","System Furniture",0,"https://www.wilkhahn.com/fileadmin/_processed_/4/d/csm_004827_WH_2017_ac1ebc7178.jpg","confair-folding-table"],
  ['dress01','Dress-1','Loose Furniture',3300000,'assets/dress01-green-front.jpg','dress-01'],
  ['dress04','Dress-4','Loose Furniture',3500000,'assets/dress04-green-front.jpg','dress-04'],
