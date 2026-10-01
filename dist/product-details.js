@@ -1,5 +1,61 @@
 // Product details compiled from public TFW and manufacturer product pages.
 window.productDetails={
+  "intra-chair": {
+  "brand": "Wilkhahn",
+  "productType": "Conference Chair",
+  "description": "Intra là ghế phòng họp với cơ chế chuyển động đồng bộ và tự điều chỉnh theo trọng lượng, hỗ trợ tư thế ngồi linh hoạt. Các bộ phận điều khiển được tích hợp vào vỏ ghế và tay vịn.",
+  "specifications": "Dòng: 295 Intra\nThiết kế: Phoenix Design\nChức năng: điều chỉnh độ cao, chuyển động đồng bộ\nKích thước: xác nhận theo mẫu và cấu hình\nGiá và giao hàng: liên hệ tư vấn",
+  "images": [
+    "https://www.wilkhahn.com/fileadmin/_processed_/6/d/csm_Wilkhahn-Intra-Weltfrauentag-09_20cbdf1802.jpg",
+    "https://www.wilkhahn.com/fileadmin/_processed_/8/5/csm_wilkhahn-intra-versa-03_d786913994.jpg",
+    "https://www.wilkhahn.com/fileadmin/_processed_/2/8/csm_wilkhahn-intra-detail-1_acb509608d.jpg",
+    "https://www.wilkhahn.com/fileadmin/_processed_/4/7/csm_wilkhahn-intra-graph_9053e1c1ee.jpg"
+  ],
+  "galleryModes": [
+    "contain",
+    "contain",
+    "contain",
+    "contain"
+  ],
+  "swatches": [],
+  "sourceUrl": "https://www.wilkhahn.com/en/products/conference-chairs/intra/"
+},
+  "graph-chair": {
+  "brand": "Wilkhahn",
+  "productType": "Conference Chair",
+  "description": "Graph kết hợp các đường nét mềm mại với cấu trúc ghế bọc đệm dành cho phòng họp cao cấp. Hệ đỡ đàn hồi với dầm chữ Y và lò xo phía sau tạo sự thoải mái; cơ chế Active là tùy chọn theo cấu hình.",
+  "specifications": "Dòng: 30 Graph\nThiết kế: jehs+laub\nKết cấu: khung thép với lò xo dạng sóng, đệm mút\nKhung nhôm: phủ màu, mạ crôm bóng hoặc đánh bóng mờ\nKích thước: xác nhận theo mẫu và cấu hình\nGiá và giao hàng: liên hệ tư vấn",
+  "images": [
+    "https://www.wilkhahn.com/fileadmin/_processed_/f/7/csm_005564_WH_Graph_2021_9157d6d58f.jpg",
+    "https://www.wilkhahn.com/fileadmin/_processed_/8/0/csm_005549_WH_Graph_2021_a816ee8417.jpg",
+    "https://www.wilkhahn.com/fileadmin/_processed_/6/c/csm_005487_WH_Graph_2020_ef3a89fa6f.jpg"
+  ],
+  "galleryModes": [
+    "contain",
+    "contain",
+    "contain"
+  ],
+  "swatches": [],
+  "sourceUrl": "https://www.wilkhahn.com/en/products/conference-chairs/graph/"
+},
+  "confair-folding-table": {
+  "brand": "Wilkhahn",
+  "productType": "Folding Table",
+  "description": "Confair là bàn gập di động cho phòng họp và không gian đào tạo linh hoạt. Một người có thể bố trí lại bàn không cần dụng cụ; các bàn có thể liên kết bằng khớp cài để tạo nhiều bố cục.",
+  "specifications": "Dòng: 440 Confair\nThiết kế: Andreas Störiko\nDi chuyển: bánh xe lớn có phanh\nLiên kết: khớp cài\nTùy chọn: máng cáp, hộp kết nối và PowerBar\nKích thước: xác nhận theo cấu hình\nGiá và giao hàng: liên hệ tư vấn",
+  "images": [
+    "https://www.wilkhahn.com/fileadmin/_processed_/4/d/csm_004827_WH_2017_ac1ebc7178.jpg",
+    "https://www.wilkhahn.com/fileadmin/_processed_/4/5/csm_Wilkhahn-Confair-Falttisch_d95ec0e14f.jpg",
+    "https://www.wilkhahn.com/fileadmin/_processed_/3/2/csm_005490_WH_Metrik_Sitzbock_Confair_2020_cf97992940.jpg"
+  ],
+  "galleryModes": [
+    "contain",
+    "contain",
+    "contain"
+  ],
+  "swatches": [],
+  "sourceUrl": "https://www.wilkhahn.com/en/products/mobile-flexible-tables/confair-folding-table/"
+},
   "precinct-pod-fixed-height": {
     "brand": "Zenith",
     "productType": "System Furniture",
@@ -463,21 +519,26 @@ window.productDetails={
   },
   "meeting": {
     "brand": "Holmris B8",
-    "productType": "System Furniture",
-    "description": "Genese là một mẫu bàn làm việc sở hữu vẻ đẹp tinh tế và thẩm mỹ cao, được tạo ra từ sự hợp tác giữa chúng tôi và bộ đôi nhà thiết kế lừng danh người Đan Mạch Voss & Hedlund. Với phần chân bàn được thiết kế thanh thoát và mặt bàn tối giản, Genese mang đậm tinh thần của phong cách Scandinavian hiện đại. Thiết Kế Linh Hoạt, Chăm Sóc Sức Khỏe Bạn có thể lựa chọn giữa phiên bản điều chỉnh độ cao bằng điện hoặc phiên bản tiêu chuẩn. Đối với bản điều chỉnh độ cao, bạn chỉ cần nhấn nút trên bảng điều khiển để thay đổi chiều cao bàn một cách mượt mà từ 66 cm đến 130 cm . Tính năng này giúp bạn dễ dàng luân phiên giữa tư thế ngồi và đứng, tăng cường sức khỏe và sự tập trung suốt cả ngày làm việc. Sản phẩm được sản xuất tại Đan Mạch , đảm bảo chất lượng và độ bền vượt trội, khả năng tiết kiệm năng lượng đáng kinh ngạc, chỉ tiêu thụ 0.1 watt ở chế độ chờ. Để cá nhân hóa không gian làm việc, Genese đi kèm với nhiều tùy chọn thông minh như: Genese không chỉ là một chiếc bàn, mà còn là một giải pháp toàn diện, kết hợp hoàn hảo giữa vẻ đẹp, công năng và phong cách sống hiện đại.",
-    "specifications": "Thông số kỹ thuật\n\nChiều cao: 66 – 130 cm\n\nChiều rộng: 80/90 cm\n\nChiều dài: 140/160/180/200 cm",
-    "variants": [
-      "Default Title / Dài 2800mm x Rộng 1200mm x Cao 730mm"
-    ],
+    "productType": "Conference Table",
+    "description": "Genese là bàn họp phong cách Scandinavian do Voss & Hedlund thiết kế cho HOLMRIS B8, với mặt bàn thanh thoát và chân cong nhẹ. Có nhiều kích thước và vật liệu hoàn thiện; phiên bản chứng nhận FSC có thể đặt theo yêu cầu.",
+    "specifications": "Thiết kế: Voss & Hedlund\nKích thước: cao 74 cm; rộng 90/100/120 cm; dài 180/200/240/296 cm\nMặt bàn: Resistant, laminate, veneer, linoleum, NanoSoft hoặc Really\nKhung: thép màu đen, trắng hoặc mushroom\nCấu hình và giá cuối cùng: xác nhận khi tư vấn",
+    "variants": [],
     "images": [
-      "https://cdn.hstatic.net/products/200000617147/3_15__e297a1b72ee540baa111378536937a96_master.png",
-      "https://cdn.hstatic.net/products/200000617147/4_15__ee6f7b3c2af94bfd95819239c6ba341e_master.png",
-      "https://cdn.hstatic.net/products/200000617147/5_22__0cf4e63a24904dda805e9e4b949a32dd_master.png",
-      "https://cdn.hstatic.net/products/200000617147/6_23__bc9eb3e81ab2438081a68ddf0ad35e2f_master.png",
-      "https://cdn.hstatic.net/products/200000617147/7_22__03926a5f70f6491593364d121c1fd87d_master.png",
-      "https://cdn.hstatic.net/products/200000617147/8_20__c8a117c9c25e42e095443b8abf3952bf_master.png"
+      "https://www.holmrisb8.com/wp-content/uploads/2021/12/HOLMRIS-B8-Genese-meeting-table-1.png",
+      "https://www.holmrisb8.com/wp-content/uploads/2021/12/HOLMRIS-B8-Genese-meeting-table-3.png",
+      "https://www.holmrisb8.com/wp-content/uploads/2021/12/HOLMRIS-B8-Genese-meeting-table-4.png",
+      "https://www.holmrisb8.com/wp-content/uploads/2021/12/HOLMRIS-B8-Genese-meeting-table-5.png",
+      "https://www.holmrisb8.com/wp-content/uploads/2021/12/HOLMRIS-B8-Genese-meeting-table-6.png"
     ],
-    "sourceUrl": "https://tfw.space/products/genese"
+    "galleryModes": [
+      "contain",
+      "contain",
+      "contain",
+      "contain",
+      "contain"
+    ],
+    "swatches": [],
+    "sourceUrl": "https://www.holmrisb8.com/holmris-b8-collection/genese-conference/"
   },
   "q20": {
     "brand": "Holmris B8",

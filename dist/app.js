@@ -11,6 +11,9 @@ const catalogDetails={
  'Accessories':'Phụ kiện không gian làm việc'
 };
 const catalogEntries=[
+ ["intra-chair","Intra / Wilkhahn","Seatings",0,"https://www.wilkhahn.com/fileadmin/_processed_/6/d/csm_Wilkhahn-Intra-Weltfrauentag-09_20cbdf1802.jpg","intra-chair"],
+ ["graph-chair","Graph Chair / Wilkhahn","Seatings",0,"https://www.wilkhahn.com/fileadmin/_processed_/f/7/csm_005564_WH_Graph_2021_9157d6d58f.jpg","graph-chair"],
+ ["confair-folding-table","Confair Folding Table / Wilkhahn","System Furniture",0,"https://www.wilkhahn.com/fileadmin/_processed_/4/d/csm_004827_WH_2017_ac1ebc7178.jpg","confair-folding-table"],
  ['dress01','Dress-1','Loose Furniture',3300000,'assets/dress01-green-front.jpg','dress-01'],
  ['dress04','Dress-4','Loose Furniture',3500000,'assets/dress04-green-front.jpg','dress-04'],
  ['dress05','Dress-5','Loose Furniture',4200000,'assets/dress05-green-front.jpg','dress-05'],
@@ -40,7 +43,7 @@ const catalogEntries=[
  ['repo-tambour','REPO tambour','Storage Solutions',7700000,'https://cdn.hstatic.net/products/200000617147/2_1__7d76c51930304449acbf8a64137b77de_large.png','repo-tambour-2'],
  ['cableriser','Cable Riser / Sâu Điện','System Furniture',350000,'https://cdn.hstatic.net/products/200000617147/s_u_di_n_02_549028b7c34f435e8bf1b74e80308255_large.png','cable-riser-sau-dien'],
  ['cabletray','Cable Tray / Máng Điện','System Furniture',650000,'https://cdn.hstatic.net/products/200000617147/chatgpt_image_jul_20__2026__03_54_08_pm__2__3c3fc56466424e98a2f1a320411e0633_large.png','cable-tray-mang-dien'],
- ['meeting','Meeting Table Genese / Bàn Họp','System Furniture',56000000,'https://cdn.hstatic.net/products/200000617147/3_15__e297a1b72ee540baa111378536937a96_large.png','genese'],
+ ['meeting','Meeting Table Genese / Bàn Họp','System Furniture',56000000,'https://www.holmrisb8.com/wp-content/uploads/2021/12/HOLMRIS-B8-Genese-meeting-table-1.png','genese'],
  ['q20','Q20 / Holmris B8','System Furniture',24000000,'https://cdn.hstatic.net/products/200000617147/website_ergogen__9__2997fc9d0f154984b928b58494b2169b_large.png','q20-recrafted'],
  ['teddy-tables','TEDDY TABLES','System Furniture',0,'https://www.zenithinteriors.com/media/xhai4kuw/teddy_table_-thumb.png?anchor=center&mode=crop&width=720&height=1002&rnd=133917728938370000','teddy-table','Mới'],
  ['orbis','ORBIS WORKSTATION','System Furniture',0,'https://www.zenithinteriors.com/media/fdhnztgn/hcp_221214_zenith_orbis_002_v1.jpg','orbis-workstation'],
