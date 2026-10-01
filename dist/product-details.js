@@ -35,11 +35,9 @@ window.productDetails={
     "https://cdn11.bigcommerce.com/s-0193a/images/stencil/original/products/3070/21781/002970_WH_Graph_2012__20966.1677252693.jpg?c=2",
     "https://www.wilkhahn.com/fileadmin/_processed_/5/f/csm_Wilkhahn-302_7-Graph-cutout_a0082e04a5.jpg",
     "https://www.wilkhahn.com/fileadmin/_processed_/6/c/csm_005487_WH_Graph_2020_ef3a89fa6f.jpg",
-    "assets/products/graph-conference-room.png",
     "assets/products/graph-city-meeting.png"
   ],
   "galleryModes": [
-    "contain",
     "contain",
     "contain",
     "contain",
