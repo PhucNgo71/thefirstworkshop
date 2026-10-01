@@ -6,12 +6,14 @@ window.productDetails={
   "description": "Intra là ghế phòng họp với cơ chế chuyển động đồng bộ và tự điều chỉnh theo trọng lượng, hỗ trợ tư thế ngồi linh hoạt. Các bộ phận điều khiển được tích hợp vào vỏ ghế và tay vịn.",
   "specifications": "Dòng: 295 Intra\nThiết kế: Phoenix Design\nChức năng: điều chỉnh độ cao, chuyển động đồng bộ\nKích thước: xác nhận theo mẫu và cấu hình\nGiá và giao hàng: liên hệ tư vấn",
   "images": [
-    "assets/products/wilkhahn-intra-005259.jpg",
+    "assets/products/wilkhahn-intra-grey-highback.png",
+    "assets/products/wilkhahn-intra-005902.jpg",
     "https://www.wilkhahn.com/fileadmin/_processed_/8/5/csm_wilkhahn-intra-versa-03_d786913994.jpg",
     "https://www.wilkhahn.com/fileadmin/_processed_/2/8/csm_wilkhahn-intra-detail-1_acb509608d.jpg",
     "https://www.wilkhahn.com/fileadmin/_processed_/4/7/csm_wilkhahn-intra-graph_9053e1c1ee.jpg"
   ],
   "galleryModes": [
+    "contain",
     "contain",
     "contain",
     "contain",
@@ -55,6 +57,7 @@ window.productDetails={
   "description": "Confair là bàn gập di động cho phòng họp và không gian đào tạo linh hoạt. Một người có thể bố trí lại bàn không cần dụng cụ; các bàn có thể liên kết bằng khớp cài để tạo nhiều bố cục.",
   "specifications": "Dòng: 440 Confair\nThiết kế: Andreas Störiko\nDi chuyển: bánh xe lớn có phanh\nLiên kết: khớp cài\nTùy chọn: máng cáp, hộp kết nối và PowerBar\nKích thước: xác nhận theo cấu hình\nGiá và giao hàng: liên hệ tư vấn",
   "images": [
+    "https://www.wilkhahn.com/fileadmin/_processed_/4/c/csm_Wilkhahn-440-Confair-cutout_897f3d01f6.jpg",
     "https://www.wilkhahn.com/fileadmin/_processed_/4/d/csm_004827_WH_2017_ac1ebc7178.jpg",
     "https://www.wilkhahn.com/fileadmin/_processed_/4/5/csm_Wilkhahn-Confair-Falttisch_d95ec0e14f.jpg",
     "https://www.wilkhahn.com/fileadmin/_processed_/3/2/csm_005490_WH_Metrik_Sitzbock_Confair_2020_cf97992940.jpg"

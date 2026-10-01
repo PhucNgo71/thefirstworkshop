@@ -132,3 +132,7 @@
 @media(max-width:580px){.collection-toolbar{overflow:visible}.filters{grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible}.toolbar-meta{grid-template-columns:1fr;align-items:center}.toolbar-meta label{min-width:0}.toolbar-meta select{min-width:0;max-width:none}}
 @media(max-width:900px){.collection-heading{gap:1rem;margin-bottom:1rem}.lean-detail .detail-gallery{grid-template-columns:1fr 1fr}.detail-spec-rail{grid-template-columns:1fr 1fr}.detail-spec-rail>div:nth-child(2){border-right:0}.detail-spec-rail>div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
 @media(max-width:580px){.collection-heading h2{font-size:2.4rem}.collection-description{font-size:.85rem}.lean-detail .detail-gallery{grid-template-columns:1fr}.lean-detail .detail-image{aspect-ratio:1/1}.lean-detail .detail-image figcaption{left:1rem;right:1rem}.detail-spec-rail{grid-template-columns:1fr 1fr}}
+
+/* Match the supplied Intra photo to the other product cards. */
+.product-image-button[data-product="intra-chair"] img{inset:auto;left:50%;top:50%;width:114%;height:114%;transform:translate(-50%,-56%)}
+.product-card:hover .product-image-button[data-product="intra-chair"] img{transform:translate(-50%,-56%) scale(1.025)}
