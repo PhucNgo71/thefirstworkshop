@@ -27,11 +27,21 @@ window.productDetails={
   "description": "Graph kết hợp các đường nét mềm mại với cấu trúc ghế bọc đệm dành cho phòng họp cao cấp. Hệ đỡ đàn hồi với dầm chữ Y và lò xo phía sau tạo sự thoải mái; cơ chế Active là tùy chọn theo cấu hình.",
   "specifications": "Dòng: 30 Graph\nThiết kế: jehs+laub\nKết cấu: khung thép với lò xo dạng sóng, đệm mút\nKhung nhôm: phủ màu, mạ crôm bóng hoặc đánh bóng mờ\nKích thước: xác nhận theo mẫu và cấu hình\nGiá và giao hàng: liên hệ tư vấn",
   "images": [
-    "https://www.wilkhahn.com/fileadmin/_processed_/f/7/csm_005564_WH_Graph_2021_9157d6d58f.jpg",
-    "https://www.wilkhahn.com/fileadmin/_processed_/8/0/csm_005549_WH_Graph_2021_a816ee8417.jpg",
-    "https://www.wilkhahn.com/fileadmin/_processed_/6/c/csm_005487_WH_Graph_2020_ef3a89fa6f.jpg"
+    "https://cdn11.bigcommerce.com/s-0193a/images/stencil/original/products/3071/21800/002964_WH_Graph_2012__06547.1677289639.jpg?c=2",
+    "https://cdn11.bigcommerce.com/s-0193a/images/stencil/original/products/3071/21799/002966_WH_Graph_2012__44409.1677289639.jpg?c=2",
+    "https://cdn11.bigcommerce.com/s-0193a/images/stencil/original/products/3070/21780/002971_WH_Graph_2012__86228.1677252693.jpg?c=2",
+    "https://cdn11.bigcommerce.com/s-0193a/images/stencil/original/products/3070/21781/002970_WH_Graph_2012__20966.1677252693.jpg?c=2",
+    "https://www.wilkhahn.com/fileadmin/_processed_/5/f/csm_Wilkhahn-302_7-Graph-cutout_a0082e04a5.jpg",
+    "https://www.wilkhahn.com/fileadmin/_processed_/6/c/csm_005487_WH_Graph_2020_ef3a89fa6f.jpg",
+    "assets/products/graph-conference-room.png",
+    "assets/products/graph-city-meeting.png"
   ],
   "galleryModes": [
+    "contain",
+    "contain",
+    "contain",
+    "contain",
+    "contain",
     "contain",
     "contain",
     "contain"
