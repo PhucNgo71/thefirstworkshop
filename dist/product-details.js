@@ -1,5 +1,23 @@
 // Product details compiled from public TFW and manufacturer product pages.
 window.productDetails={
+  "precinct-pod-fixed-height": {
+    "brand": "Zenith",
+    "productType": "System Furniture",
+    "description": "PRECINCT Pod Fixed Height là hệ bàn làm việc mô-đun với vách bọc tiêu âm, dành cho không gian tập trung hoặc cộng tác. Có thể bố trí độc lập hoặc ghép cụm, với nhiều lựa chọn vải và mặt bàn. Giá và thời gian giao hàng được xác nhận theo cấu hình dự án.",
+    "specifications": "Thiết kế: Zenith Design Studio\nCấu hình: Open, Enclosed, Alternate Run, Tile, Arrow và Wave\nMặt bàn: laminate hoặc veneer Zenith Select, dày 25 mm\nVách: bọc vải hoặc da Zenith Select\nChân cân bằng: điều chỉnh được\nTùy chọn: cấp điện, quản lý cáp và bọc hai màu\nKích thước: theo từng cấu hình; tham khảo tài liệu kỹ thuật của hãng",
+    "highlights": ["Không gian làm việc mô-đun", "Vách bọc tiêu âm", "Mặt bàn chiều cao cố định"],
+    "imageScale": 90,
+    "swatches": [],
+    "images": [
+      "https://www.zenithinteriors.com/media/etnjbsf3/precinct_pod_open_run4_reva-0000.jpg",
+      "https://www.zenithinteriors.com/media/vwqdane4/precinct_pod_enclosed_pod2_reva-0000.jpg",
+      "https://www.zenithinteriors.com/media/lq3lrn4r/fsp_zenith_20220405_080-lr-group-shot.jpg",
+      "https://www.zenithinteriors.com/media/it2dkabs/fsp_zenith_20220405_158-hr.jpg"
+    ],
+    "galleryModes": ["contain", "contain", "photo", "photo"],
+    "sourceUrl": "https://www.zenithinteriors.com/products/precinct-pod-fixed-height/",
+    "specificationUrl": "https://www.zenithinteriors.com/media/lsciwjx1/precinct_fixed_height_specification-feb26.pdf"
+  },
   "kissen-folding": {
     "brand": "Zenith",
     "productType": "Folding Table",

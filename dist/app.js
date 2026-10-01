@@ -44,6 +44,7 @@ const catalogEntries=[
  ['q20','Q20 / Holmris B8','System Furniture',24000000,'https://cdn.hstatic.net/products/200000617147/website_ergogen__9__2997fc9d0f154984b928b58494b2169b_large.png','q20-recrafted'],
  ['teddy-tables','TEDDY TABLES','System Furniture',0,'https://www.zenithinteriors.com/media/xhai4kuw/teddy_table_-thumb.png?anchor=center&mode=crop&width=720&height=1002&rnd=133917728938370000','teddy-table','Mới'],
  ['orbis','ORBIS WORKSTATION','System Furniture',0,'https://www.zenithinteriors.com/media/fdhnztgn/hcp_221214_zenith_orbis_002_v1.jpg','orbis-workstation'],
+ ['precinct-pod-fixed-height','PRECINCT Pod Fixed Height','System Furniture',0,'https://www.zenithinteriors.com/media/etnjbsf3/precinct_pod_open_run4_reva-0000.jpg','precinct-pod-fixed-height'],
  ['kissen','KISSEN TABLES','System Furniture',0,'https://www.zenithinteriors.com/media/2b4ajsqi/zenith_kissen_table_01.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=132739289057000000','kissen-table'],
  ['sls1050','Steelforce 1050 - thefirstworkshop','System Furniture',12000000,'https://cdn.hstatic.net/products/200000617147/website_ergogen__9__e499c03a86e54e6fbbdb07389ea82904_large.png','steelforce-1050-tfw'],
  ['sls770','SLS 770 PRO','System Furniture',13000000,'https://cdn.hstatic.net/products/200000617147/website_ergogen__8__526e52550344473690b6add29e3cb468_large.png','sls-770-pro-tfw','Nổi bật'],

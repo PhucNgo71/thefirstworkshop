@@ -1,4 +1,8 @@
 const english = {
+  'Không gian làm việc mô-đun':'Modular workspaces','Vách bọc tiêu âm':'Acoustic panels','Mặt bàn chiều cao cố định':'Fixed-height worktop',
+  'theo từng cấu hình; tham khảo tài liệu kỹ thuật của hãng':'Configuration-specific; refer to the manufacturer specification',
+  'PRECINCT Pod Fixed Height là hệ bàn làm việc mô-đun với vách bọc tiêu âm, dành cho không gian tập trung hoặc cộng tác. Có thể bố trí độc lập hoặc ghép cụm, với nhiều lựa chọn vải và mặt bàn. Giá và thời gian giao hàng được xác nhận theo cấu hình dự án.':'PRECINCT Pod Fixed Height is a modular workstation system with upholstered acoustic panels for focused or collaborative work. Arrange it individually or in clusters, with a choice of fabrics and worktops. Pricing and delivery are confirmed for each project configuration.',
+  'Thiết kế: Zenith Design Studio\nCấu hình: Open, Enclosed, Alternate Run, Tile, Arrow và Wave\nMặt bàn: laminate hoặc veneer Zenith Select, dày 25 mm\nVách: bọc vải hoặc da Zenith Select\nChân cân bằng: điều chỉnh được\nTùy chọn: cấp điện, quản lý cáp và bọc hai màu\nKích thước: theo từng cấu hình; tham khảo tài liệu kỹ thuật của hãng':'Design: Zenith Design Studio\nConfigurations: Open, Enclosed, Alternate Run, Tile, Arrow and Wave\nWorktop: 25 mm Zenith Select laminate or veneer\nPanels: Zenith Select fabric or leather upholstery\nLevelling: adjustable glides\nOptions: power, cable management and two-tone upholstery\nDimensions: configuration-specific; refer to the manufacturer specification',
   'Mã giảm giá':'Discount code','Áp dụng':'Apply',
   'Tư vấn B2B · ergovn.com ↗':'B2B Consulting · ergovn.com ↗',
   'Đi tới nội dung':'Skip to content',
