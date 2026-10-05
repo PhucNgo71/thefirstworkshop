@@ -11,6 +11,7 @@ const catalogDetails={
  'Accessories':'Phụ kiện không gian làm việc'
 };
 const catalogEntries=[
+ ['niro','Niro / Zenith','Seatings',0,'assets/products/niro-green.jpg','niro'],
 ["furnipower-pixel","PIXEL Modular Socket EU / Furnipower","Accessories",0,"assets/products/furnipower-pixel.jpg","furnipower-pixel"],
 ["furnipower-flip","GaN USB Flip Cover / Furnipower","Accessories",0,"assets/products/furnipower-flip.jpg","furnipower-flip"],
 ["furnipower-apex","APEX GaN USB Charger Series / Furnipower","Accessories",0,"assets/products/furnipower-apex.jpg","furnipower-apex"],
