@@ -11,6 +11,7 @@ const catalogDetails={
  'Accessories':'Phụ kiện không gian làm việc'
 };
 const catalogEntries=[
+ ['anchor','Anchor Staff Chair','Seatings',0,'assets/products/anchor-main.jpg','anchor'],
  ['niro','Niro / Zenith','Seatings',0,'assets/products/niro-green.jpg','niro'],
 ["furnipower-pixel","PIXEL Modular Socket EU / Furnipower","Accessories",0,"assets/products/furnipower-pixel.jpg","furnipower-pixel"],
 ["furnipower-flip","GaN USB Flip Cover / Furnipower","Accessories",0,"assets/products/furnipower-flip.jpg","furnipower-flip"],
@@ -33,7 +34,7 @@ const catalogEntries=[
  ['spod3','S POD 3.0 PLUS','Smart Pods',220000000,'https://winpodacoustics.com/wp-content/uploads/2026/06/S-Pod-3.0-Plus_White_Certification-1-1024x1024.avif','s-pod-3-0-plus-series','Mới'],
  ['wpod3','W POD 3.0 PLUS','Smart Pods',295000000,'https://winpodacoustics.com/wp-content/uploads/2026/06/W-Pod-3.0-Plus_Middle_Logo-1024x1024.avif','w-pod-3-0-plus-series'],
  ['dpod3','D POD 3.0 PLUS','Smart Pods',346700000,'https://winpodacoustics.com/wp-content/uploads/2026/06/D-Pod-3.0-Plus_Logo-1024x1024.avif','d-pod3-0-plus-series'],
- ['parco','Parco Series','Loose Furniture',19500000,'https://cdn.hstatic.net/products/200000617147/single_semi_pod_03_1b0a0bd782cb4023a5ed976e60f0e7ad_large.jpg','parco-series'],
+ ['parco','Parco Sofa','Loose Furniture',19500000,'assets/products/parco-single.jpg','parco-series'],
  ['easychair','Easy Chair','Loose Furniture',3300000,'https://cdn.hstatic.net/products/200000617147/6_19__171b6d7811424588bb4a02ab3c7a6a4e_large.png','easy-chair'],
  ['maris','MARIS HIGH BACK SOFA','Loose Furniture',35000000,'https://cdn.hstatic.net/products/200000617147/22_5ebaa9b15be546f094c209d6deb7ccbe_large.png','maris-high-back-sofa'],
  ['noah800','NOAH 800 CAFE TABLE','Loose Furniture',10000000,'https://cdn.hstatic.net/products/200000617147/18_09c5dc9236c046969ec4dec7891f1475_large.png','noah-800-cafe-table'],
