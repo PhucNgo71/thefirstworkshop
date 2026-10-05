@@ -94,10 +94,8 @@ const catalogEntries=[
  ['athena','Athena','Accessories',0,'https://cdn.hstatic.net/products/200000617147/1_8__506b7ec19007435ebe0c75447d52b5b1_large.png','athena'],
  ['centra','Centra','Accessories',0,'https://cdn.hstatic.net/products/200000617147/1_16__98fc1ba57c2347c7844420c9e490b103_large.png','centra'],
  ['ck06','CK06','Accessories',3500000,'https://cdn.hstatic.net/products/200000617147/4_2__7d5c69dcdebc43ef9bca4e6f4209b081_large.png','ck06'],
- ['freedom-usb','Freedom Portable USB Charger','Accessories',0,'https://cdn.hstatic.net/products/200000617147/1_15__595a408358bf47489d32d0afacd3620e_large.png','freedom-portable-usb-charger'],
  ['nova-viva','Nova & Viva','Accessories',0,'https://cdn.hstatic.net/products/200000617147/1_9__d3e35596876f4196a948cb65495754bf_large.png','nova-viva'],
  ['nw-series','NW Series','Accessories',0,'https://cdn.hstatic.net/products/200000617147/website_ergogen__6__fe7663fd00f647e7973792bccc11533c_large.png','nw'],
- ['odyssey','Odyssey','Accessories',0,'https://cdn.hstatic.net/products/200000617147/1_10__0f2ded2434c94cf6aa5e7f473b94de9c_large.png','odyssey'],
  ['sw-series','SW Series','Accessories',0,'https://cdn.hstatic.net/products/200000617147/1_5__6c7fc71c2e0a48f0b5f274480b5507e6_large.png','sw'],
  ['zeus','Zeus','Accessories',0,'https://cdn.hstatic.net/products/200000617147/1_11__a6f0e40081ad4418a4b9669c5d4783dd_large.png','zeus']
 ];

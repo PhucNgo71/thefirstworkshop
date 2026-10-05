@@ -14,7 +14,7 @@ window.productDetails={
       "contain"
     ],
     "swatches": [],
-    "imageScale": 88
+    "imageScale": 48
   },
   "furnipower-flip": {
     "brand": "Furnipower",
@@ -30,7 +30,7 @@ window.productDetails={
       "contain"
     ],
     "swatches": [],
-    "imageScale": 88
+    "imageScale": 48
   },
   "furnipower-apex": {
     "brand": "Furnipower",
@@ -46,7 +46,7 @@ window.productDetails={
       "contain"
     ],
     "swatches": [],
-    "imageScale": 88
+    "imageScale": 48
   },
   "furnipower-oecz090w": {
     "brand": "Furnipower",
@@ -60,7 +60,7 @@ window.productDetails={
       "contain"
     ],
     "swatches": [],
-    "imageScale": 88
+    "imageScale": 48
   },
   "intra-chair": {
   "brand": "Wilkhahn",
@@ -1495,6 +1495,7 @@ window.productDetails={
     "sourceUrl": "https://tfw.space/products/centra"
   },
   "ck06": {
+    "imageScale": 48,
     "brand": "TFW Collection",
     "productType": "Socket",
     "description": "Nâng tầm không gian làm việc và dịch vụ với CK06 , dòng ổ cắm mô-đun sở hữu thiết kế siêu mỏng (Contemporary & Slim) và tích hợp công nghệ kết nối tiên tiến. Sản phẩm là sự lựa chọn hoàn hảo cho bàn làm việc di động, phòng họp, khách sạn và các không gian công cộng cao cấp.\nĐặc điểm nổi bật:\nDễ dàng lắp đặt: Bạn có thể lắp trực tiếp lên bàn mà không cần phải khoan hay đục lỗ mặt bàn\n\nTùy chỉnh theo bất kỳ sự kết hợp nào của nguồn điện, dữ liệu và các mô-đun tùy chọn: Bạn có thể tự chọn cấu hình ổ cắm (ví dụ: ổ điện, cổng mạng LAN, USB, HDMI...) theo nhu cầu riêng.\n\nCó khả năng kết nối nguồn theo dạng chuỗi (Daisy chain) - Đạt chứng nhận UL 962: Các thiết bị có thể cắm nối tiếp nhau để dùng chung một nguồn cấp điện, đảm bảo tiêu chuẩn an toàn điện khắt khe của Hoa Kỳ.\n\nKích thước tối thiểu: 1.5 mô-đun.\n\nKích thước tối đa: 7 mô-đun.\n\nChiều dài (L): Số lượng mô-đun x 53 + 16mm.\n\nKích thước tổng thể: L mmD x 91 mmW x 65.5 mmH.",
