@@ -22,7 +22,7 @@ function armPreviewUrl(code){
 function selectArmLayout(count,size,weight){
   if(!Number.isFinite(size)||!Number.isFinite(weight)||size<=0||weight<=0)return null;
   const pounds=weight/0.45359237;
-  return armLayouts.find(layout=>layout.count===count&&size<=layout.maxSize&&pounds>=layout.minLb&&pounds<=layout.maxLb)||null;
+  return armLayouts.find(layout=>layout.count===count&&(weight<=10||layout.model.includes('M8 Pro'))&&size<=layout.maxSize&&pounds>=layout.minLb&&pounds<=layout.maxLb)||null;
 }
 (()=>{
   const root=document.getElementById('monitor-arm-configurator');

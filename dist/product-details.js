@@ -1,5 +1,67 @@
 // Product details compiled from public TFW and manufacturer product pages.
 window.productDetails={
+  "furnipower-pixel": {
+    "brand": "Furnipower",
+    "productType": "Modular Power Socket",
+    "description": "PIXEL là hệ ổ cắm mô-đun cho bàn làm việc, kết hợp ổ điện, sạc USB và kết nối dữ liệu theo cấu hình. Phiên bản EU có các phương án 2, 3 hoặc 4 ổ điện; phụ kiện lắp đặt được chọn theo nhu cầu.",
+    "specifications": "Cấu hình EU tham khảo: 2 / 3 / 4 ổ điện\nSạc: tùy chọn mô-đun cáp USB-C rút gọn PD65W\nKết nối tùy chọn: USB-A, USB-C, mạng, HDMI\nKích thước cấu hình 2 ổ: 190 × 268 × 83 mm\nKích thước cấu hình 3 ổ: 190 × 320 × 83 mm\nKích thước cấu hình 4 ổ: 190 × 416 × 83 mm\nLắp đặt: phụ kiện kẹp bàn và các phương án tùy cấu hình\nCấu hình điện, phụ kiện, giá và giao hàng: xác nhận khi tư vấn",
+    "images": [
+      "assets/products/furnipower-pixel.jpg",
+      "assets/products/furnipower-pixel-configurations.jpg"
+    ],
+    "galleryModes": [
+      "contain",
+      "contain"
+    ],
+    "swatches": [],
+    "imageScale": 88
+  },
+  "furnipower-flip": {
+    "brand": "Furnipower",
+    "productType": "Desktop Power & Charging",
+    "description": "Nắp lật âm bàn tích hợp sạc GaN và cáp USB-C rút gọn, giúp bố trí nguồn điện gọn gàng trên bàn làm việc và bàn họp. Mô-đun ổ điện AC là tùy chọn theo cấu hình.",
+    "specifications": "Kích thước: 298 × 116 × 59 mm\nLỗ lắp theo tài liệu: 290 × 111 mm, R4; mặt bàn 25 mm\nSạc: PD65W, hiển thị công suất kỹ thuật số\nCổng: 1 USB-A + 1 USB-C + 1 cáp USB-C rút gọn\nHoàn thiện: nắp xám, mô-đun USB đen\nTùy chọn: hộp gập và mô-đun nguồn APEX\nXác nhận bản vẽ lắp đặt, chuẩn ổ điện và cấu hình trước khi đặt hàng",
+    "images": [
+      "assets/products/furnipower-flip.jpg",
+      "assets/products/furnipower-flip-desk.jpg"
+    ],
+    "galleryModes": [
+      "contain",
+      "contain"
+    ],
+    "swatches": [],
+    "imageScale": 88
+  },
+  "furnipower-apex": {
+    "brand": "Furnipower",
+    "productType": "Integrated USB Charging",
+    "description": "APEX là dòng sạc GaN tích hợp cho bàn và sofa, với cáp USB-C rút gọn và nhiều kiểu lắp đặt. Chọn phiên bản gắn dưới bàn, dạng oval, dạng tròn hoặc gắn sofa theo thiết kế nội thất.",
+    "specifications": "Sạc: PD65W; cấu hình 1A2C gồm 1 cáp USB-C rút gọn\nAPEX001-HNG: 158 × 33 × 62 mm; cáp 112 cm\nAPEX001-ELL: 150 × 43 × 62 mm; cáp 112 cm; lỗ 139 × 32 mm, R16\nAPEX001-CIR: 72 × 72 × 57 mm; cáp 66 cm; lỗ Ø60 mm\nAPEX001-SOF: 117 × 35 × 210 mm; cáp 73 cm\nMàu: đen\nKích thước và phụ kiện tùy phiên bản; xác nhận cấu hình và giá khi tư vấn",
+    "images": [
+      "assets/products/furnipower-apex.jpg",
+      "assets/products/furnipower-apex-family.jpg"
+    ],
+    "galleryModes": [
+      "contain",
+      "contain"
+    ],
+    "swatches": [],
+    "imageScale": 88
+  },
+  "furnipower-oecz090w": {
+    "brand": "Furnipower",
+    "productType": "Clamp Power Socket",
+    "description": "OECZ090W là ổ cắm kẹp cạnh bàn với hai ổ điện đa năng và sạc USB PD65W. Cáp USB-C rút gọn và màn hình hiển thị công suất giúp sử dụng nguồn điện thuận tiện tại bàn.",
+    "specifications": "Mẫu: OECZ090W\nKích thước: 172 × 84 × 70,5 mm\nLắp kẹp mặt bàn dày: 12–48 mm\nỔ AC: 2 ổ đa năng, 10A / 250V\nUSB: USB-A, USB-C và cáp USB-C rút gọn\nTổng công suất USB: tối đa 65W, phân bổ động giữa các đầu ra\nHiển thị: công suất sạc kỹ thuật số\nGóc cắm: 52°\nHoàn thiện: xám / đen\nChuẩn phích, cấu hình nguồn, giá và giao hàng: xác nhận khi tư vấn",
+    "images": [
+      "assets/products/furnipower-oecz090w.jpg"
+    ],
+    "galleryModes": [
+      "contain"
+    ],
+    "swatches": [],
+    "imageScale": 88
+  },
   "intra-chair": {
   "brand": "Wilkhahn",
   "productType": "Conference Chair",

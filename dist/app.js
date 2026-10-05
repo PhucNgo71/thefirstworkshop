@@ -11,6 +11,10 @@ const catalogDetails={
  'Accessories':'Phụ kiện không gian làm việc'
 };
 const catalogEntries=[
+["furnipower-pixel","PIXEL Modular Socket EU / Furnipower","Accessories",0,"assets/products/furnipower-pixel.jpg","furnipower-pixel"],
+["furnipower-flip","GaN USB Flip Cover / Furnipower","Accessories",0,"assets/products/furnipower-flip.jpg","furnipower-flip"],
+["furnipower-apex","APEX GaN USB Charger Series / Furnipower","Accessories",0,"assets/products/furnipower-apex.jpg","furnipower-apex"],
+["furnipower-oecz090w","OECZ090W Clamp Socket / Furnipower","Accessories",0,"assets/products/furnipower-oecz090w.jpg","furnipower-oecz090w"],
  ["intra-chair","Intra / Wilkhahn","Seatings",0,"assets/products/wilkhahn-intra-grey-highback.png","intra-chair"],
  ["graph-chair","Graph Chair / Wilkhahn","Seatings",0,"https://www.wilkhahn.com/fileadmin/_processed_/5/f/csm_Wilkhahn-302_7-Graph-cutout_a0082e04a5.jpg","graph-chair"],
  ["confair-folding-table","Confair Folding Table / Wilkhahn","System Furniture",0,"https://www.wilkhahn.com/fileadmin/_processed_/4/c/csm_Wilkhahn-440-Confair-cutout_897f3d01f6.jpg","confair-folding-table"],
