@@ -11,7 +11,7 @@ const catalogDetails={
  'Accessories':'Phụ kiện không gian làm việc'
 };
 const catalogEntries=[
- ['anchor','Anchor Staff Chair','Seatings',0,'assets/products/anchor-main.jpg','anchor'],
+ ['anchor','Anchor Staff Chair','Seatings',4700000,'assets/products/anchor-main.jpg','anchor'],
  ['niro','Niro / Zenith','Seatings',0,'assets/products/niro-green.jpg','niro'],
 ["furnipower-pixel","PIXEL Modular Socket EU / Furnipower","Accessories",0,"assets/products/furnipower-pixel.jpg","furnipower-pixel"],
 ["furnipower-flip","GaN USB Flip Cover / Furnipower","Accessories",0,"assets/products/furnipower-flip.jpg","furnipower-flip"],
