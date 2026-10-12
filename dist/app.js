@@ -64,7 +64,7 @@ const catalogEntries=[
  ['smart-chair','Smart Chair / Humanscale','Seatings',33000000,'https://product.hstatic.net/200000617147/product/them_tieu_de__1__4be2295487f44317b743d75a04b7e852_large.png','smart-chair'],
  ['liberty','Liberty Chair / Humanscale','Seatings',29650000,'https://product.hstatic.net/200000617147/product/them_tieu_de__4__78523b997f3d4b338711a8e2f27dd5c4_large.png','liberty-chair'],
  ['world-chair','World Chair / Humanscale','Seatings',24200000,'https://product.hstatic.net/200000617147/product/them_tieu_de__5__84703126540d43baa309fc75707080e9_large.png','world-chair'],
- ['worldone','WORLD LM / Humanscale','Seatings',13500000,'https://www.humanscale.com/userFiles/images/seating/world/worldone/World-One_Carousel_Image-1.jpg','world-one-chair'],
+ ['worldone','WORLD LM / Humanscale','Seatings',13500000,'assets/products/worldone-grey-seat.png','world-one-chair'],
  ['vox','VOX TASK CHAIR','Seatings',11500000,'https://product.hstatic.net/200000617147/product/15_db98a04259924bc787047b7707ac52d5_large.png','vox-chair'],
  ['k10m','K10M Chair / Krede','Seatings',9890000,'https://product.hstatic.net/200000617147/product/1_4x-100_87b1380d1aae4a31b50fde8be1af8316_large.jpg','k10m-chair'],
  ['khyn','KHYN TASK CHAIR','Seatings',9700000,'https://cdn.hstatic.net/products/200000617147/website_ergogen__28__b031c543111e43e6862b5b1ac894b6dc_large.png','khyn-chair'],

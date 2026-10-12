@@ -7,7 +7,7 @@ window.productGalleryOverrides = {
     variants:['Mesh seat','Upholstered seat'],
     highlights:['Form Sensing Mesh','Weight-sensitive recline','Mesh / upholstered seat'],
     images:[
-      'https://www.humanscale.com/userFiles/images/seating/world/worldone/World-One_Carousel_Image-1.jpg',
+      'assets/products/worldone-grey-seat.png',
       'https://www.humanscale.com/userFiles/images/seating/world/worldone/World-One_Carousel_Image-2.jpg',
       'https://www.humanscale.com/userFiles/images/seating/world/worldone/World-One_Carousel_Image-3.jpg',
       'https://www.humanscale.com/userFiles/images/seating/world/worldone/World-One_Carousel_Image-4.jpg'
