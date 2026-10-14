@@ -138,3 +138,7 @@
 /* Match the supplied Intra photo to the other product cards. */
 .product-image-button[data-product="intra-chair"] img{inset:auto;left:50%;top:50%;width:114%;height:114%;transform:translate(-50%,-56%)}
 .product-card:hover .product-image-button[data-product="intra-chair"] img{transform:translate(-50%,-56%) scale(1.025)}
+
+/* Compensate for the JAC photo's white margins to match Tori's visible height. */
+.product-image-button[data-product="jac-chairs"] img{inset:auto;left:50%;top:50%;width:114%;height:114%;transform:translate(-50%,-50%)}
+.product-card:hover .product-image-button[data-product="jac-chairs"] img{transform:translate(-50%,-50%) scale(1.025)}

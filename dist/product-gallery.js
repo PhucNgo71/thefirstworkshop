@@ -67,6 +67,7 @@ window.productGalleryOverrides = {
     'https://www.humanscale.com/userfiles/images/collection-pages/monitor-arms/desktop/X262FSSC.png'
   ]}
 };
+window.productGalleryOverrides['jac-chairs']={images:['assets/products/jac-zenith-black.jpg',...window.productDetails['jac-chairs'].images.slice(1)]};
 // Two differently named CK06 files contained exactly the same photograph.
 window.productGalleryOverrides.ck06={images:window.productDetails.ck06.images.filter((_,i)=>i!==3)};
 // Keep product/installation details; omit the generic fabric-sample rack photograph.
