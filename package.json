@@ -1,0 +1,14 @@
+{
+  "name": "tfw-order-service",
+  "private": true,
+  "scripts": {
+    "test": "node --test test/*.test.cjs",
+    "build": "node scripts/build-catalog.cjs"
+  },
+  "engines": {
+    "node": "22.x"
+  },
+  "dependencies": {
+    "@vercel/blob": "2.8.2"
+  }
+}

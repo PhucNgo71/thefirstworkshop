@@ -1,0 +1,358 @@
+{
+  "anchor": {
+    "name": "Anchor Staff Chair",
+    "price": 4700000
+  },
+  "niro": {
+    "name": "Niro / Zenith",
+    "price": 0
+  },
+  "furnipower-pixel": {
+    "name": "PIXEL Modular Socket EU / Furnipower",
+    "price": 0
+  },
+  "furnipower-flip": {
+    "name": "GaN USB Flip Cover / Furnipower",
+    "price": 0
+  },
+  "furnipower-apex": {
+    "name": "APEX GaN USB Charger Series / Furnipower",
+    "price": 0
+  },
+  "furnipower-oecz090w": {
+    "name": "OECZ090W Clamp Socket / Furnipower",
+    "price": 0
+  },
+  "intra-chair": {
+    "name": "Intra / Wilkhahn",
+    "price": 0
+  },
+  "graph-chair": {
+    "name": "Graph Chair / Wilkhahn",
+    "price": 0
+  },
+  "confair-folding-table": {
+    "name": "Confair Folding Table / Wilkhahn",
+    "price": 0
+  },
+  "dress01": {
+    "name": "Dress-1",
+    "price": 3300000
+  },
+  "dress04": {
+    "name": "Dress-4",
+    "price": 3500000
+  },
+  "dress05": {
+    "name": "Dress-5",
+    "price": 4200000
+  },
+  "dress06": {
+    "name": "Dress-6",
+    "price": 3500000
+  },
+  "kissen-folding": {
+    "name": "Kissen Folding Table / Zenith",
+    "price": 16000000
+  },
+  "shirly": {
+    "name": "Shirly",
+    "price": 10000000
+  },
+  "graph-table": {
+    "name": "Graph Table / Wilkhahn",
+    "price": 215490000
+  },
+  "framery-one-compact": {
+    "name": "FRAMERY ONE COMPACT",
+    "price": 0
+  },
+  "framery-one-premium": {
+    "name": "FRAMERY ONE",
+    "price": 0
+  },
+  "framery-four": {
+    "name": "FRAMERY FOUR",
+    "price": 0
+  },
+  "framery-six": {
+    "name": "FRAMERY SIX",
+    "price": 0
+  },
+  "spod3": {
+    "name": "S POD 3.0 PLUS",
+    "price": 220000000
+  },
+  "wpod3": {
+    "name": "W POD 3.0 PLUS",
+    "price": 295000000
+  },
+  "dpod3": {
+    "name": "D POD 3.0 PLUS",
+    "price": 346700000
+  },
+  "parco": {
+    "name": "Parco Sofa",
+    "price": 19500000
+  },
+  "easychair": {
+    "name": "Easy Chair",
+    "price": 3300000
+  },
+  "maris": {
+    "name": "MARIS HIGH BACK SOFA",
+    "price": 35000000
+  },
+  "noah800": {
+    "name": "NOAH 800 CAFE TABLE",
+    "price": 10000000
+  },
+  "turtle": {
+    "name": "TURTLE POUF",
+    "price": 6000000
+  },
+  "john": {
+    "name": "JOHN HIGH BACK SOFA",
+    "price": 38000000
+  },
+  "swing": {
+    "name": "Swing Chair",
+    "price": 16100000
+  },
+  "jac": {
+    "name": "JAC Stool",
+    "price": 0
+  },
+  "occo": {
+    "name": "OCCO Chair",
+    "price": 0
+  },
+  "hours-lounge": {
+    "name": "HOURS LOUNGE",
+    "price": 0
+  },
+  "precinct": {
+    "name": "PRECINCT POD & LOUNGE",
+    "price": 0
+  },
+  "repo": {
+    "name": "REPO Pedestal",
+    "price": 3500000
+  },
+  "repo-tambour": {
+    "name": "REPO tambour",
+    "price": 7700000
+  },
+  "cableriser": {
+    "name": "Cable Riser / Sâu Điện",
+    "price": 350000
+  },
+  "cabletray": {
+    "name": "Cable Tray / Máng Điện",
+    "price": 650000
+  },
+  "meeting": {
+    "name": "Meeting Table Genese / Bàn Họp",
+    "price": 56000000
+  },
+  "q20": {
+    "name": "Q20 / Holmris B8",
+    "price": 24000000
+  },
+  "teddy-tables": {
+    "name": "TEDDY TABLES",
+    "price": 0
+  },
+  "orbis": {
+    "name": "ORBIS WORKSTATION",
+    "price": 0
+  },
+  "precinct-pod-fixed-height": {
+    "name": "PRECINCT Pod Fixed Height",
+    "price": 0
+  },
+  "kissen": {
+    "name": "KISSEN TABLES",
+    "price": 0
+  },
+  "sls1050": {
+    "name": "Steelforce 1050 - thefirstworkshop",
+    "price": 12000000
+  },
+  "sls770": {
+    "name": "SLS 770 PRO",
+    "price": 13000000
+  },
+  "sls470bench": {
+    "name": "SLS 670 BENCH PRO",
+    "price": 30000000
+  },
+  "sls470": {
+    "name": "SLS 670 PRO",
+    "price": 15000000
+  },
+  "at-chair": {
+    "name": "AT Chair / Wilkhahn",
+    "price": 36980000
+  },
+  "freedom": {
+    "name": "Freedom Chair / Humanscale",
+    "price": 36600000
+  },
+  "smart-chair": {
+    "name": "Smart Chair / Humanscale",
+    "price": 33000000
+  },
+  "liberty": {
+    "name": "Liberty Chair / Humanscale",
+    "price": 29650000
+  },
+  "world-chair": {
+    "name": "World Chair / Humanscale",
+    "price": 24200000
+  },
+  "worldone": {
+    "name": "WORLD LM / Humanscale",
+    "price": 13500000
+  },
+  "vox": {
+    "name": "VOX TASK CHAIR",
+    "price": 11500000
+  },
+  "khyn": {
+    "name": "KHYN TASK CHAIR",
+    "price": 9700000
+  },
+  "k10m": {
+    "name": "K10M Chair / Krede",
+    "price": 9890000
+  },
+  "jac-chairs": {
+    "name": "JAC CHAIR COLLECTION",
+    "price": 0
+  },
+  "tori": {
+    "name": "Tori / Flokk",
+    "price": 8500000
+  },
+  "ae5": {
+    "name": "AE5-FF100",
+    "price": 2200000
+  },
+  "ct206": {
+    "name": "CT 206",
+    "price": 5500000
+  },
+  "mconnect3": {
+    "name": "M/Connect 3",
+    "price": 21000000
+  },
+  "m2pro": {
+    "name": "M2 Pro",
+    "price": 6900000
+  },
+  "m8pro": {
+    "name": "M8 Pro",
+    "price": 18000000
+  },
+  "mflex": {
+    "name": "MFlex",
+    "price": 15900000
+  },
+  "focus": {
+    "name": "Focus",
+    "price": 0
+  },
+  "teknion-pod": {
+    "name": "Teknion POD",
+    "price": 0
+  },
+  "telescope": {
+    "name": "Telescope",
+    "price": 0
+  },
+  "within": {
+    "name": "WITHIN",
+    "price": 0
+  },
+  "spiralis-e100": {
+    "name": "SPIRALIS E100",
+    "price": 0
+  },
+  "airborn": {
+    "name": "Air Born Collection",
+    "price": 0
+  },
+  "building-blocks": {
+    "name": "Building Blocks 2.0 Collection",
+    "price": 0
+  },
+  "cornerstone": {
+    "name": "Cornerstone Collection",
+    "price": 0
+  },
+  "heavy-meta": {
+    "name": "Heavy Meta Collection",
+    "price": 0
+  },
+  "living-facades": {
+    "name": "Living Facades Collection",
+    "price": 0
+  },
+  "natural-supply": {
+    "name": "Natural Supply Collection",
+    "price": 0
+  },
+  "on-the-track": {
+    "name": "On The Track Collection",
+    "price": 0
+  },
+  "patina": {
+    "name": "Patina Collection",
+    "price": 0
+  },
+  "retrofit": {
+    "name": "Retrofit Collection",
+    "price": 0
+  },
+  "ripple-effect": {
+    "name": "Ripple Effect Collection",
+    "price": 0
+  },
+  "fracture": {
+    "name": "Fracture Two-Tone",
+    "price": 0
+  },
+  "pixel": {
+    "name": "Pixel",
+    "price": 0
+  },
+  "athena": {
+    "name": "Athena",
+    "price": 0
+  },
+  "centra": {
+    "name": "Centra",
+    "price": 0
+  },
+  "ck06": {
+    "name": "CK06",
+    "price": 3500000
+  },
+  "nova-viva": {
+    "name": "Nova & Viva",
+    "price": 0
+  },
+  "nw-series": {
+    "name": "NW Series",
+    "price": 0
+  },
+  "sw-series": {
+    "name": "SW Series",
+    "price": 0
+  },
+  "zeus": {
+    "name": "Zeus",
+    "price": 0
+  }
+}
