@@ -16,6 +16,22 @@ test('Single and Bench configurator modes load original standalone images withou
   for(const name of ['Single Desk','Bench']){assert.equal(states[name].mode,'direct');assert.equal(states[name].transform,'none');assert.match(states[name].src,/actiforce\.jpg$/);assert.ok(fs.existsSync(path.join(root,'dist',states[name].src)));}
   const html=fs.readFileSync(path.join(root,'dist/index.html'),'utf8');
   assert.ok(html.includes('class="direct" id="configuratorImage" src="'+states['Single Desk'].src+'"'));
-  assert.equal(states['Single Desk + Screen'].mode,'composite');
+  assert.equal(states['Single Desk + Screen'].mode,'direct');
   assert.equal(states['Bench + Screen'].mode,'direct');
+});
+test('Screen options use distinct standalone reference photos and identify their source',()=>{
+  const states=vm.runInNewContext('('+app.match(/const renderStates=({[\s\S]*?\n });/)[1]+')');
+  const screens=['Single Desk + Screen','Bench + Screen'].map(name=>states[name]);
+  assert.equal(new Set(screens.map(item=>item.src)).size,2);
+  for(const item of screens){
+    assert.equal(item.mode,'direct');assert.equal(item.transform,'none');
+    assert.match(item.src,/assets\/configurator\/.+-screen-reference\.jpg$/);
+    assert.match(item.alt,/Rapidline.*reference/);
+    assert.equal(item.meta,'Rapidline · Cấu hình tham khảo');
+    assert.ok(fs.statSync(path.join(root,'dist',item.src)).size>10000);
+  }
+  const html=fs.readFileSync(path.join(root,'dist/index.html'),'utf8');
+  const translations=fs.readFileSync(path.join(root,'dist/i18n.js'),'utf8');
+  assert.ok(html.includes('không phải quy cách sản phẩm chính xác'));
+  assert.ok(translations.includes('Images show reference layouts, not an exact product specification.'));
 });

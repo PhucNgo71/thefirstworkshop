@@ -306,8 +306,8 @@ function updateWorkstationConfiguration(input){
  const renderStates={
   'Single Desk':{src:'assets/products/sls-670-desk-actiforce.jpg',mode:'direct',transform:'none',number:'01',meta:'01 người · Không screen',alt:'Single Desk · Actiforce SLS 670 PRO'},
   'Bench':{src:'assets/products/sls-670-bench-actiforce.jpg',mode:'direct',transform:'none',number:'02',meta:'02 người · Khung bench dùng chung',alt:'Bench · Actiforce SLS 670 BENCH PRO'},
-  'Single Desk + Screen':{src:'assets/workstation-structures-render.png',mode:'composite',transform:'translate(0,-50%)',number:'03',meta:'01 người · 01 screen',alt:'Single Desk với screen · bàn làm việc đơn có vách ngăn'},
-  'Bench + Screen':{src:'assets/workstation-bench-system-screen-v2.png',mode:'direct',transform:'none',number:'04',meta:'02 người · Khung bench + screen trung tâm',alt:'Bench với screen · cụm bàn hai người trên một hệ khung dùng chung và vách ngăn trung tâm'}
+  'Single Desk + Screen':{src:'assets/configurator/single-desk-screen-reference.jpg',mode:'direct',transform:'none',number:'03',meta:'Rapidline · Cấu hình tham khảo',alt:'Single Desk + Screen · Rapidline configuration reference'},
+  'Bench + Screen':{src:'assets/configurator/bench-screen-reference.jpg',mode:'direct',transform:'none',number:'04',meta:'Rapidline · Cấu hình tham khảo',alt:'Bench + Screen · Rapidline two-person configuration reference'}
  };
  const render=renderStates[selected];
  $$('.configurator-card').forEach(card=>card.classList.toggle('selected',card.contains(input)));
