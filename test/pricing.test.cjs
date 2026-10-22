@@ -4,6 +4,7 @@ const fs=require('node:fs');
 const vm=require('node:vm');
 const path=require('node:path');
 const {productPrice}=require('../dist/pricing.js');
+const {cartProducts}=require('../dist/product-options.js');
 const {normalize,makeOrder,excelRow,mail}=require('../server/orders.cjs');
 const catalog=require('../server/catalog.json');
 const read=file=>fs.readFileSync(path.join(__dirname,'..',file),'utf8');
@@ -14,10 +15,15 @@ const input=()=>({requestId:'12345678-1234-4234-8234-123456789abc',customer:{nam
 test('browser and server apply 10% VAT exactly once to every base catalog price',()=>{
   const context={window:{}};
   vm.runInNewContext(read('dist/pricing.js'),context);
-  assert.equal(entries.length,Object.keys(catalog).length);
+  const configurations=cartProducts(entries.map(([id,name,,price])=>({id,name,...productPrice(price)})));
+  assert.equal(configurations.length,Object.keys(catalog).length);
+  for(const {id,name,basePrice,canonicalOptions} of configurations){
+    assert.deepEqual(catalog[id],{name,...productPrice(basePrice),...(canonicalOptions?{canonicalOptions}:{})});
+  }
   for(const [id,name,,basePrice] of entries){
     const expected=productPrice(basePrice);
-    assert.deepEqual(catalog[id],{name,...expected});
+    assert.equal(catalog[id].name,name);
+    for(const key of Object.keys(expected))assert.equal(catalog[id][key],expected[key]);
     assert.equal(context.window.tfwPricing.productPrice(basePrice).price,expected.price);
     assert.equal(expected.price,basePrice+Math.round(basePrice/10));
   }

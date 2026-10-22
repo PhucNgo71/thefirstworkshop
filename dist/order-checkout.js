@@ -13,16 +13,17 @@
   const en=()=>document.documentElement.lang==='en';
   const notify=(vi,english)=>{error.hidden=false;error.textContent=en()?english:vi;};
   let selectedOptions={};
-  try {const stored=JSON.parse(localStorage.getItem('tfw-cart-options')||'{}');if(stored&&typeof stored==='object'&&!Array.isArray(stored))selectedOptions=Object.fromEntries(Object.entries(stored).filter(([id,value])=>products.some(p=>p.id===id)&&typeof value==='string'&&value.length<=1000));} catch {}
+  try {const stored=JSON.parse(localStorage.getItem('tfw-cart-options')||'{}');if(stored&&typeof stored==='object'&&!Array.isArray(stored))selectedOptions=Object.fromEntries(Object.entries(stored).filter(([id,value])=>orderProducts.some(p=>p.id===id)&&typeof value==='string'&&value.length<=1000));} catch {}
   const originalAddToCart=addToCart, originalRenderCart=renderCart;
   addToCart=function(id){
-    const product=products.find(p=>p.id===id);if(!product||product.contactOnly)return;
-    const chosen=activeProductId===id?[...document.querySelectorAll('#productOptions .config-group')].map(group=>`${group.querySelector('.config-heading span').textContent}: ${group.querySelector('[data-option-selection]').textContent}`).join('; '):(window.slsDefaultOrderOptions?.[id]||'');
+    const product=orderProducts.find(p=>p.id===id);if(!product||product.contactOnly)return;
+    const chosen=product.canonicalOptions||(activeProductId===id?[...document.querySelectorAll('#productOptions .config-group')].map(group=>`${group.querySelector('.config-heading span').textContent}: ${group.querySelector('[data-option-selection]').textContent}`).join('; '):(window.slsDefaultOrderOptions?.[id]||''));
     if(chosen&&cart[id]&&selectedOptions[id]&&selectedOptions[id]!==chosen){showToast(en()?'Remove this product from the cart before choosing a different configuration.':'Vui lòng xóa sản phẩm khỏi giỏ trước khi chọn cấu hình khác.');return;}
     if(chosen)selectedOptions[id]=chosen;
     originalAddToCart(id);
   };
   renderCart=function(){
+    for(const product of orderProducts)if(cart[product.id]&&product.canonicalOptions)selectedOptions[product.id]=product.canonicalOptions;
     for(const id of Object.keys(selectedOptions))if(!cart[id])delete selectedOptions[id];
     try{localStorage.setItem('tfw-cart-options',JSON.stringify(selectedOptions));}catch{}
     originalRenderCart();
@@ -47,7 +48,7 @@
   form.onsubmit=async event=>{
     event.preventDefault(); if(busy || !form.reportValidity()) return;
     error.hidden=true;
-    const items=cartData().map(p=>({id:p.id,quantity:p.qty,options:selectedOptions[p.id]||window.slsDefaultOrderOptions?.[p.id]||'Standard configuration — final details to be confirmed'}));
+    const items=cartData().map(p=>({id:p.id,quantity:p.qty,options:p.canonicalOptions||selectedOptions[p.id]||window.slsDefaultOrderOptions?.[p.id]||'Standard configuration — final details to be confirmed'}));
     if(!items.length) return;
     const payload={customer:Object.fromEntries(['name','phone','email','address','company','taxCode','notes'].map(key=>[key,form.elements[key].value.trim()])),items,paymentMethod:form.elements.payment.value,expectedSubtotal:total(),website:form.elements.website.value};
     const signature=JSON.stringify(payload);

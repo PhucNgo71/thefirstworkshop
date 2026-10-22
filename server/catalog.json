@@ -4,7 +4,16 @@
     "basePrice": 4700000,
     "price": 5170000,
     "vatRate": 10,
-    "vatAmount": 470000
+    "vatAmount": 470000,
+    "canonicalOptions": "Tựa đầu / Headrest: Không / Not included"
+  },
+  "anchor-headrest": {
+    "name": "Anchor Staff Chair — With headrest",
+    "basePrice": 5250000,
+    "price": 5775000,
+    "vatRate": 10,
+    "vatAmount": 525000,
+    "canonicalOptions": "Tựa đầu / Headrest: Có / Included"
   },
   "niro": {
     "name": "Niro / Zenith",
@@ -232,6 +241,34 @@
   },
   "precinct": {
     "name": "PRECINCT POD & LOUNGE",
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
+  },
+  "precinct-focus-workpod": {
+    "name": "PRECINCT FOCUS Workpod / Zenith",
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
+  },
+  "precinct-focus-lounge": {
+    "name": "PRECINCT FOCUS Lounge / Zenith",
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
+  },
+  "precinct-meet-booth": {
+    "name": "PRECINCT MEET Booth / Zenith",
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
+  },
+  "activity-stool": {
+    "name": "Activity Stool / Actiforce",
     "basePrice": 0,
     "price": 0,
     "vatRate": 0,
@@ -582,6 +619,13 @@
   },
   "athena": {
     "name": "Athena",
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
+  },
+  "acticase-actihook": {
+    "name": "ActiCase ActiHook / Actiforce",
     "basePrice": 0,
     "price": 0,
     "vatRate": 0,

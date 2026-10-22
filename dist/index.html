@@ -81,27 +81,31 @@
         <label class="configurator-card selected">
           <input type="radio" name="workstationConfiguration" value="Single Desk" checked>
           <span class="configurator-number">01</span><strong>Single Desk</strong><small>01 người · không screen</small>
+          <small class="configurator-tabletop">01 mặt bàn tiêu chuẩn · 1400 × 700 mm</small>
           <p>Một vị trí làm việc độc lập, tiếp cận từ một phía.</p>
         </label>
         <label class="configurator-card">
           <input type="radio" name="workstationConfiguration" value="Bench">
           <span class="configurator-number">02</span><strong>Bench</strong><small>02 người · không screen</small>
+          <small class="configurator-tabletop">02 mặt bàn tiêu chuẩn · Mỗi mặt 1400 × 700 mm</small>
           <p>Hai vị trí làm việc đối diện, chia sẻ một hệ khung bench.</p>
         </label>
         <label class="configurator-card">
           <input type="radio" name="workstationConfiguration" value="Single Desk + Screen">
           <span class="configurator-number">03</span><strong>Single Desk + Screen</strong><small>01 người · 01 screen</small>
+          <small class="configurator-tabletop">01 mặt bàn tiêu chuẩn · 1400 × 700 mm</small>
           <p>Một bàn độc lập với screen tạo vùng tập trung và riêng tư hơn.</p>
         </label>
         <label class="configurator-card">
           <input type="radio" name="workstationConfiguration" value="Bench + Screen">
           <span class="configurator-number">04</span><strong>Bench + Screen</strong><small>02 người · 01 screen trung tâm</small>
+          <small class="configurator-tabletop">02 mặt bàn tiêu chuẩn · Mỗi mặt 1400 × 700 mm</small>
           <p>Hai bàn đối diện với screen trung tâm phân chia hai vị trí.</p>
         </label>
       </div>
-      <div class="configurator-standard"><span>Tiêu chuẩn đi kèm</span><strong>01 cable tray + 01 cable riser cho mỗi vị trí làm việc</strong><small>Single: 01 bộ · Bench: 02 bộ</small></div>
+      <div class="configurator-standard"><span>Tiêu chuẩn đi kèm</span><strong>Mặt bàn 1400 × 700 mm cho mỗi vị trí làm việc</strong><strong>01 cable tray + 01 cable riser cho mỗi vị trí làm việc</strong><small>Single: 01 bộ · Bench: 02 bộ</small></div>
       <div class="configurator-action"><span>Cấu hình đã chọn</span><strong id="configuratorSelected">Single Desk</strong><a class="primary-button" id="configuratorCta" href="mailto:hi@tfw.space?subject=T%C6%B0%20v%E1%BA%A5n%20c%E1%BA%A5u%20h%C3%ACnh%20workstation%20%C2%B7%20Single%20Desk">Nhận tư vấn cấu hình ↗</a></div>
-      <p class="configurator-note">Hình ảnh minh họa cấu hình tham khảo, không phải quy cách sản phẩm chính xác. Sản phẩm, kích thước, màu sắc và phụ kiện thực tế được xác nhận trong báo giá.</p>
+      <p class="configurator-note">Hình ảnh minh họa cấu hình tham khảo, không phải quy cách sản phẩm chính xác. Mỗi mặt bàn tiêu chuẩn có kích thước 1400 × 700 mm. Kích thước khác, màu sắc và phụ kiện được xác nhận trong báo giá.</p>
     </section>
 
     <section class="arm-configurator" id="monitor-arm-configurator" aria-labelledby="armTitle">
@@ -257,7 +261,7 @@
       </div>
       <aside class="detail-buy">
         <div class="detail-summary">
-          <div class="detail-labels"><span id="detailBadge">Bán chạy</span><span id="detailOrigin">TFW SELECTED</span></div>
+          <div class="detail-labels"><span id="detailBadge">Bán chạy</span><span id="detailOrigin" hidden></span></div>
           <h2 id="detailTitle"></h2>
           <div class="detail-price" id="detailPrice"></div>
           <ul class="detail-highlights" id="detailHighlights" hidden></ul>
@@ -289,6 +293,7 @@
   <script src="dress-collection.js"></script>
   <script src="sls-collection.js"></script>
   <script src="pricing.js"></script>
+  <script src="product-options.js"></script>
   <script src="app.js"></script>
   <script src="i18n.js"></script>
   <script src="monitor-configurator.js?v=all-black-20260928"></script>

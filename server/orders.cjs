@@ -33,7 +33,10 @@ function normalize(input, catalog) {
     seen.add(item.id);
     const tax = product.vatRate === 10 ? {vatRate:10, netUnitPrice:product.basePrice, vatUnitAmount:product.vatAmount, netLineTotal:product.basePrice * item.quantity, vatLineTotal:product.vatAmount * item.quantity} : {};
     if (product.vatRate === 10 && (!Number.isSafeInteger(product.basePrice) || product.basePrice < 0 || product.vatAmount !== Math.round(product.basePrice / 10) || product.price !== product.basePrice + product.vatAmount)) throw new OrderError('INVALID_CATALOG', 503);
-    return {id: item.id, name: product.name, quantity: item.quantity, unitPrice: product.price, lineTotal: product.price * item.quantity, ...tax, options: text(item.options, 1000, false)};
+    const requestedOptions = text(item.options, 1000, false);
+    // Priced configurations are fixed by the server SKU, never by free-form client text.
+    const options = product.canonicalOptions || requestedOptions;
+    return {id: item.id, name: product.name, quantity: item.quantity, unitPrice: product.price, lineTotal: product.price * item.quantity, ...tax, options};
   }).sort((a,b) => a.id.localeCompare(b.id));
   const subtotal = items.reduce((sum, item) => sum + item.lineTotal, 0);
   if (!Number.isSafeInteger(subtotal) || subtotal > 10000000000) throw new OrderError('ORDER_TOO_LARGE');
