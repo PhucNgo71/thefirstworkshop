@@ -1,5 +1,29 @@
 // Product details compiled from public TFW and manufacturer product pages.
 window.productDetails={
+  "hag-capisco": {
+    "brand": "HÅG / Flokk",
+    "productType": "Ghế yên ngựa bọc đệm",
+    "imageScale": 80,
+    "swatches": [],
+    "description": "HÅG Capisco 8106 là ghế yên ngựa dành cho tư thế làm việc linh hoạt.",
+    "specifications": "Model: 8106-STD\nThiết kế: Peter Opsvik\nCơ chế: HÅG inBalance®\nĐiều chỉnh: chiều cao, độ sâu mặt ngồi; cao tựa lưng; lực ngả\nTrụ 200 mm: cao ghế 470–655 mm\nChân nhôm: Ø730 mm\nTrụ 265 mm: tùy chọn; báo giá riêng\nVải, màu và giao hàng: xác nhận khi tư vấn",
+    "images": ["assets/products/hag-capisco-8106-front.jpg", "assets/products/hag-capisco-8106-side.jpg", "assets/products/hag-capisco-8106-back.jpg"],
+    "galleryModes": ["contain", "contain", "contain"],
+    "galleryLabels": [["HÅG Capisco 8106", "Góc trước"], ["HÅG Capisco 8106", "Góc bên"], ["HÅG Capisco 8106", "Góc sau"]],
+    "sourceUrl": "https://store.flokk.com/global/en-gb/products/hag-capisco?model=8106-STD"
+  },
+  "wichair": {
+    "brand": "Wilkhahn",
+    "productType": "Ghế làm việc linh hoạt 3D",
+    "imageScale": 80,
+    "swatches": [],
+    "description": "WiChair kết hợp thiết kế gọn với tay đỡ thép đàn hồi, cho phép chuyển động ngồi ba chiều.",
+    "specifications": "Dòng: 228 WiChair\nThiết kế: Wilkhahn\nĐiều chỉnh lực đàn hồi: theo cân nặng người dùng 45–120 kg\nVỏ ghế: plywood hoặc polypropylene\nTùy chọn: tay vịn, đệm tháo rời hoặc bọc cố định\nCấu hình, hoàn thiện và giao hàng: xác nhận khi tư vấn",
+    "images": ["assets/products/wilkhahn-wichair-oak.jpg", "assets/products/wilkhahn-wichair-grey.jpg", "assets/products/wilkhahn-wichair-main.jpg", "assets/products/wilkhahn-wichair-workspace.jpg"],
+    "galleryModes": ["contain", "contain", "contain", "contain"],
+    "galleryLabels": [["WiChair", "Gỗ sồi · Khung xanh mint"], ["WiChair", "Phiên bản xám"], ["WiChair", "Phiên bản đen"], ["WiChair", "Không gian làm việc · Cấu hình tham khảo"]],
+    "sourceUrl": "https://www.wilkhahn.com/en/products/task-chairs-office-chairs/wichair/"
+  },
   "precinct-focus-lounge": {
     "brand": "Zenith",
     "productType": "Ghế lounge có vách bao quanh",

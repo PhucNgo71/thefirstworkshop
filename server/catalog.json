@@ -456,6 +456,20 @@
     "vatRate": 10,
     "vatAmount": 850000
   },
+  "hag-capisco": {
+    "name": "HÅG Capisco 8106 / Flokk",
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
+  },
+  "wichair": {
+    "name": "WiChair / Wilkhahn",
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
+  },
   "ae5": {
     "name": "AE5-FF100",
     "basePrice": 2200000,

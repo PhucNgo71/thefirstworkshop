@@ -75,6 +75,8 @@ const catalogEntries=[
  ['k10m','K10M Chair / Krede','Seatings',9890000,'https://product.hstatic.net/200000617147/product/1_4x-100_87b1380d1aae4a31b50fde8be1af8316_large.jpg','k10m-chair'],
  ['jac-chairs','JAC CHAIR COLLECTION','Loose Furniture',0,'https://www.zenithinteriors.com/media/gw3ntefm/schamburg_alvisse_jac_star_01.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=132739290915130000','jac-4-star-chair'],
  ['tori','Tori / Flokk','Seatings',8500000,'https://cdn.hstatic.net/products/200000617147/6_1__2010bc0bd11349439171e814c6546630_large.png','tori'],
+ ['hag-capisco','HÅG Capisco 8106 / Flokk','Seatings',0,'assets/products/hag-capisco-8106-front.jpg','hag-capisco'],
+ ['wichair','WiChair / Wilkhahn','Seatings',0,'assets/products/wilkhahn-wichair-oak.jpg','wichair'],
  ['ae5','AE5-FF100','Monitor Arm & Docking',2200000,'https://cdn.hstatic.net/products/200000617147/ae5-5_ad788b5f33704e3084cc3e2a1b8e05b8_large.png','ae5-100'],
  ['ct206','CT 206','Monitor Arm & Docking',5500000,'https://cdn.hstatic.net/products/200000617147/image_2025-08-25_144515_441_db419cce294f42dcb0d89b1bf861ea68_large.png','ct-206'],
  ['mconnect3','M/Connect 3','Monitor Arm & Docking',21000000,'https://product.hstatic.net/200000617147/product/mc3_environmental_6734634215824594bc15054d4c9d7dec_large.jpg','m-connect-3'],

@@ -13,6 +13,8 @@ const details = context.window.productDetails;
 const translations = vm.runInNewContext('(' + fs.readFileSync(path.join(root, 'dist/i18n.js'), 'utf8').match(/const english = ({[\s\S]*?\n});/)[1] + ')');
 const catalog = require('../server/catalog.json');
 const additions = {
+  'hag-capisco': {category:'Seatings', brand:'HÅG / Flokk', images:3},
+  'wichair': {category:'Seatings', brand:'Wilkhahn', images:4},
   'precinct-focus-workpod': {category:'Loose Furniture', brand:'Zenith', images:6},
   'precinct-focus-lounge': {category:'Loose Furniture', brand:'Zenith', images:4},
   'precinct-meet-booth': {category:'Loose Furniture', brand:'Zenith', images:4},
@@ -48,10 +50,10 @@ test('New galleries use available distinct local manufacturer photographs and tr
     assert.equal(product.galleryLabels.length, expected.images);
     for (const image of product.images) assert.ok(fs.statSync(path.join(root, 'dist', image)).size > 10000);
     assert.ok(product.galleryModes.every(mode => mode === 'contain'));
-    for (const value of [product.productType, product.description, product.specifications, ...product.highlights, ...product.galleryLabels.map(label => label[1])]) {
+    for (const value of [product.productType, product.description, product.specifications, ...(product.highlights||[]), ...product.galleryLabels.map(label => label[1])]) {
       assert.ok(translations[value], id + ': missing English translation: ' + value);
     }
-    assert.match(product.sourceUrl, /^https:\/\/(www\.zenithinteriors\.com|actiforce\.com)\//);
+    assert.match(product.sourceUrl, /^https:\/\/(www\.zenithinteriors\.com|actiforce\.com|store\.flokk\.com|www\.wilkhahn\.com)\//);
   }
 });
 
