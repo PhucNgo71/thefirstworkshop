@@ -1,358 +1,632 @@
 {
   "anchor": {
     "name": "Anchor Staff Chair",
-    "price": 4700000
+    "basePrice": 4700000,
+    "price": 5170000,
+    "vatRate": 10,
+    "vatAmount": 470000
   },
   "niro": {
     "name": "Niro / Zenith",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "furnipower-pixel": {
     "name": "PIXEL Modular Socket EU / Furnipower",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "furnipower-flip": {
     "name": "GaN USB Flip Cover / Furnipower",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "furnipower-apex": {
     "name": "APEX GaN USB Charger Series / Furnipower",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "furnipower-oecz090w": {
     "name": "OECZ090W Clamp Socket / Furnipower",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "intra-chair": {
     "name": "Intra / Wilkhahn",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "graph-chair": {
     "name": "Graph Chair / Wilkhahn",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "confair-folding-table": {
     "name": "Confair Folding Table / Wilkhahn",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "dress01": {
     "name": "Dress-1",
-    "price": 3300000
+    "basePrice": 3300000,
+    "price": 3630000,
+    "vatRate": 10,
+    "vatAmount": 330000
   },
   "dress04": {
     "name": "Dress-4",
-    "price": 3500000
+    "basePrice": 3500000,
+    "price": 3850000,
+    "vatRate": 10,
+    "vatAmount": 350000
   },
   "dress05": {
     "name": "Dress-5",
-    "price": 4200000
+    "basePrice": 4200000,
+    "price": 4620000,
+    "vatRate": 10,
+    "vatAmount": 420000
   },
   "dress06": {
     "name": "Dress-6",
-    "price": 3500000
+    "basePrice": 3500000,
+    "price": 3850000,
+    "vatRate": 10,
+    "vatAmount": 350000
   },
   "kissen-folding": {
     "name": "Kissen Folding Table / Zenith",
-    "price": 16000000
+    "basePrice": 16000000,
+    "price": 17600000,
+    "vatRate": 10,
+    "vatAmount": 1600000
   },
   "shirly": {
     "name": "Shirly",
-    "price": 10000000
+    "basePrice": 10000000,
+    "price": 11000000,
+    "vatRate": 10,
+    "vatAmount": 1000000
   },
   "graph-table": {
     "name": "Graph Table / Wilkhahn",
-    "price": 215490000
+    "basePrice": 215490000,
+    "price": 237039000,
+    "vatRate": 10,
+    "vatAmount": 21549000
   },
   "framery-one-compact": {
     "name": "FRAMERY ONE COMPACT",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "framery-one-premium": {
     "name": "FRAMERY ONE",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "framery-four": {
     "name": "FRAMERY FOUR",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "framery-six": {
     "name": "FRAMERY SIX",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "spod3": {
     "name": "S POD 3.0 PLUS",
-    "price": 220000000
+    "basePrice": 220000000,
+    "price": 242000000,
+    "vatRate": 10,
+    "vatAmount": 22000000
   },
   "wpod3": {
     "name": "W POD 3.0 PLUS",
-    "price": 295000000
+    "basePrice": 295000000,
+    "price": 324500000,
+    "vatRate": 10,
+    "vatAmount": 29500000
   },
   "dpod3": {
     "name": "D POD 3.0 PLUS",
-    "price": 346700000
+    "basePrice": 346700000,
+    "price": 381370000,
+    "vatRate": 10,
+    "vatAmount": 34670000
   },
   "parco": {
     "name": "Parco Sofa",
-    "price": 19500000
+    "basePrice": 19500000,
+    "price": 21450000,
+    "vatRate": 10,
+    "vatAmount": 1950000
   },
   "easychair": {
     "name": "Easy Chair",
-    "price": 3300000
+    "basePrice": 3300000,
+    "price": 3630000,
+    "vatRate": 10,
+    "vatAmount": 330000
   },
   "maris": {
     "name": "MARIS HIGH BACK SOFA",
-    "price": 35000000
+    "basePrice": 35000000,
+    "price": 38500000,
+    "vatRate": 10,
+    "vatAmount": 3500000
   },
   "noah800": {
     "name": "NOAH 800 CAFE TABLE",
-    "price": 10000000
+    "basePrice": 10000000,
+    "price": 11000000,
+    "vatRate": 10,
+    "vatAmount": 1000000
   },
   "turtle": {
     "name": "TURTLE POUF",
-    "price": 6000000
+    "basePrice": 6000000,
+    "price": 6600000,
+    "vatRate": 10,
+    "vatAmount": 600000
   },
   "john": {
     "name": "JOHN HIGH BACK SOFA",
-    "price": 38000000
+    "basePrice": 38000000,
+    "price": 41800000,
+    "vatRate": 10,
+    "vatAmount": 3800000
   },
   "swing": {
     "name": "Swing Chair",
-    "price": 16100000
+    "basePrice": 16100000,
+    "price": 17710000,
+    "vatRate": 10,
+    "vatAmount": 1610000
   },
   "jac": {
     "name": "JAC Stool",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "occo": {
     "name": "OCCO Chair",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "hours-lounge": {
     "name": "HOURS LOUNGE",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "precinct": {
     "name": "PRECINCT POD & LOUNGE",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "repo": {
     "name": "REPO Pedestal",
-    "price": 3500000
+    "basePrice": 3500000,
+    "price": 3850000,
+    "vatRate": 10,
+    "vatAmount": 350000
   },
   "repo-tambour": {
     "name": "REPO tambour",
-    "price": 7700000
+    "basePrice": 7700000,
+    "price": 8470000,
+    "vatRate": 10,
+    "vatAmount": 770000
   },
   "cableriser": {
     "name": "Cable Riser / Sâu Điện",
-    "price": 350000
+    "basePrice": 350000,
+    "price": 385000,
+    "vatRate": 10,
+    "vatAmount": 35000
   },
   "cabletray": {
     "name": "Cable Tray / Máng Điện",
-    "price": 650000
+    "basePrice": 650000,
+    "price": 715000,
+    "vatRate": 10,
+    "vatAmount": 65000
   },
   "meeting": {
     "name": "Meeting Table Genese / Bàn Họp",
-    "price": 56000000
+    "basePrice": 56000000,
+    "price": 61600000,
+    "vatRate": 10,
+    "vatAmount": 5600000
   },
   "q20": {
     "name": "Q20 / Holmris B8",
-    "price": 24000000
+    "basePrice": 24000000,
+    "price": 26400000,
+    "vatRate": 10,
+    "vatAmount": 2400000
   },
   "teddy-tables": {
     "name": "TEDDY TABLES",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "orbis": {
     "name": "ORBIS WORKSTATION",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "precinct-pod-fixed-height": {
     "name": "PRECINCT Pod Fixed Height",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "kissen": {
     "name": "KISSEN TABLES",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "sls1050": {
-    "name": "Steelforce 1050 - thefirstworkshop",
-    "price": 12000000
+    "name": "SLS 1050",
+    "basePrice": 14000000,
+    "price": 15400000,
+    "vatRate": 10,
+    "vatAmount": 1400000
   },
   "sls770": {
     "name": "SLS 770 PRO",
-    "price": 13000000
+    "basePrice": 15000000,
+    "price": 16500000,
+    "vatRate": 10,
+    "vatAmount": 1500000
   },
-  "sls470bench": {
-    "name": "SLS 670 BENCH PRO",
-    "price": 30000000
+  "sls-470-pro": {
+    "name": "SLS 470 PRO",
+    "basePrice": 16000000,
+    "price": 17600000,
+    "vatRate": 10,
+    "vatAmount": 1600000
   },
   "sls470": {
     "name": "SLS 670 PRO",
-    "price": 15000000
+    "basePrice": 17000000,
+    "price": 18700000,
+    "vatRate": 10,
+    "vatAmount": 1700000
+  },
+  "sls470bench": {
+    "name": "SLS 670 BENCH PRO",
+    "basePrice": 32000000,
+    "price": 35200000,
+    "vatRate": 10,
+    "vatAmount": 3200000
   },
   "at-chair": {
     "name": "AT Chair / Wilkhahn",
-    "price": 36980000
+    "basePrice": 36980000,
+    "price": 40678000,
+    "vatRate": 10,
+    "vatAmount": 3698000
   },
   "freedom": {
     "name": "Freedom Chair / Humanscale",
-    "price": 36600000
+    "basePrice": 36600000,
+    "price": 40260000,
+    "vatRate": 10,
+    "vatAmount": 3660000
   },
   "smart-chair": {
     "name": "Smart Chair / Humanscale",
-    "price": 33000000
+    "basePrice": 33000000,
+    "price": 36300000,
+    "vatRate": 10,
+    "vatAmount": 3300000
   },
   "liberty": {
     "name": "Liberty Chair / Humanscale",
-    "price": 29650000
+    "basePrice": 29650000,
+    "price": 32615000,
+    "vatRate": 10,
+    "vatAmount": 2965000
   },
   "world-chair": {
     "name": "World Chair / Humanscale",
-    "price": 24200000
+    "basePrice": 24200000,
+    "price": 26620000,
+    "vatRate": 10,
+    "vatAmount": 2420000
   },
   "worldone": {
     "name": "WORLD LM / Humanscale",
-    "price": 13500000
+    "basePrice": 13500000,
+    "price": 14850000,
+    "vatRate": 10,
+    "vatAmount": 1350000
   },
   "vox": {
     "name": "VOX TASK CHAIR",
-    "price": 11500000
+    "basePrice": 11500000,
+    "price": 12650000,
+    "vatRate": 10,
+    "vatAmount": 1150000
   },
   "khyn": {
     "name": "KHYN TASK CHAIR",
-    "price": 9700000
+    "basePrice": 9700000,
+    "price": 10670000,
+    "vatRate": 10,
+    "vatAmount": 970000
   },
   "k10m": {
     "name": "K10M Chair / Krede",
-    "price": 9890000
+    "basePrice": 9890000,
+    "price": 10879000,
+    "vatRate": 10,
+    "vatAmount": 989000
   },
   "jac-chairs": {
     "name": "JAC CHAIR COLLECTION",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "tori": {
     "name": "Tori / Flokk",
-    "price": 8500000
+    "basePrice": 8500000,
+    "price": 9350000,
+    "vatRate": 10,
+    "vatAmount": 850000
   },
   "ae5": {
     "name": "AE5-FF100",
-    "price": 2200000
+    "basePrice": 2200000,
+    "price": 2420000,
+    "vatRate": 10,
+    "vatAmount": 220000
   },
   "ct206": {
     "name": "CT 206",
-    "price": 5500000
+    "basePrice": 5500000,
+    "price": 6050000,
+    "vatRate": 10,
+    "vatAmount": 550000
   },
   "mconnect3": {
     "name": "M/Connect 3",
-    "price": 21000000
+    "basePrice": 21000000,
+    "price": 23100000,
+    "vatRate": 10,
+    "vatAmount": 2100000
   },
   "m2pro": {
     "name": "M2 Pro",
-    "price": 6900000
+    "basePrice": 6900000,
+    "price": 7590000,
+    "vatRate": 10,
+    "vatAmount": 690000
   },
   "m8pro": {
     "name": "M8 Pro",
-    "price": 18000000
+    "basePrice": 18000000,
+    "price": 19800000,
+    "vatRate": 10,
+    "vatAmount": 1800000
   },
   "mflex": {
     "name": "MFlex",
-    "price": 15900000
+    "basePrice": 15900000,
+    "price": 17490000,
+    "vatRate": 10,
+    "vatAmount": 1590000
   },
   "focus": {
     "name": "Focus",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "teknion-pod": {
     "name": "Teknion POD",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "telescope": {
     "name": "Telescope",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "within": {
     "name": "WITHIN",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "spiralis-e100": {
     "name": "SPIRALIS E100",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "airborn": {
     "name": "Air Born Collection",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "building-blocks": {
     "name": "Building Blocks 2.0 Collection",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "cornerstone": {
     "name": "Cornerstone Collection",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "heavy-meta": {
     "name": "Heavy Meta Collection",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "living-facades": {
     "name": "Living Facades Collection",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "natural-supply": {
     "name": "Natural Supply Collection",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "on-the-track": {
     "name": "On The Track Collection",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "patina": {
     "name": "Patina Collection",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "retrofit": {
     "name": "Retrofit Collection",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "ripple-effect": {
     "name": "Ripple Effect Collection",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "fracture": {
     "name": "Fracture Two-Tone",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "pixel": {
     "name": "Pixel",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "athena": {
     "name": "Athena",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "centra": {
     "name": "Centra",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "ck06": {
     "name": "CK06",
-    "price": 3500000
+    "basePrice": 3500000,
+    "price": 3850000,
+    "vatRate": 10,
+    "vatAmount": 350000
   },
   "nova-viva": {
     "name": "Nova & Viva",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "nw-series": {
     "name": "NW Series",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "sw-series": {
     "name": "SW Series",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "zeus": {
     "name": "Zeus",
-    "price": 0
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   }
 }

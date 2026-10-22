@@ -17,8 +17,8 @@
   const originalAddToCart=addToCart, originalRenderCart=renderCart;
   addToCart=function(id){
     const product=products.find(p=>p.id===id);if(!product||product.contactOnly)return;
-    const chosen=activeProductId===id?[...document.querySelectorAll('#productOptions .config-group')].map(group=>`${group.querySelector('.config-heading span').textContent}: ${group.querySelector('[data-option-selection]').textContent}`).join('; '):'';
-    if(chosen&&cart[id]&&selectedOptions[id]!==chosen){showToast(en()?'Remove this product from the cart before choosing a different configuration.':'Vui lòng xóa sản phẩm khỏi giỏ trước khi chọn cấu hình khác.');return;}
+    const chosen=activeProductId===id?[...document.querySelectorAll('#productOptions .config-group')].map(group=>`${group.querySelector('.config-heading span').textContent}: ${group.querySelector('[data-option-selection]').textContent}`).join('; '):(window.slsDefaultOrderOptions?.[id]||'');
+    if(chosen&&cart[id]&&selectedOptions[id]&&selectedOptions[id]!==chosen){showToast(en()?'Remove this product from the cart before choosing a different configuration.':'Vui lòng xóa sản phẩm khỏi giỏ trước khi chọn cấu hình khác.');return;}
     if(chosen)selectedOptions[id]=chosen;
     originalAddToCart(id);
   };
@@ -47,7 +47,7 @@
   form.onsubmit=async event=>{
     event.preventDefault(); if(busy || !form.reportValidity()) return;
     error.hidden=true;
-    const items=cartData().map(p=>({id:p.id,quantity:p.qty,options:selectedOptions[p.id]||'Standard configuration — final details to be confirmed'}));
+    const items=cartData().map(p=>({id:p.id,quantity:p.qty,options:selectedOptions[p.id]||window.slsDefaultOrderOptions?.[p.id]||'Standard configuration — final details to be confirmed'}));
     if(!items.length) return;
     const payload={customer:Object.fromEntries(['name','phone','email','address','company','taxCode','notes'].map(key=>[key,form.elements[key].value.trim()])),items,paymentMethod:form.elements.payment.value,expectedSubtotal:total(),website:form.elements.website.value};
     const signature=JSON.stringify(payload);

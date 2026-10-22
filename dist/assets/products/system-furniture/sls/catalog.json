@@ -1,7 +1,14 @@
 {
   "line": "System Furniture / SLS",
   "cardAspectRatio": "4:3",
+  "standardTabletop": "1400 × 700 mm",
   "products": {
+    "sls-470-pro": {
+      "catalogId": "sls-470-pro",
+      "imageScalePercent": 82,
+      "frameFinishes": ["Black", "Silver", "White"],
+      "folder": "sls-470-pro"
+    },
     "sls-670-pro": {
       "catalogId": "sls470",
       "imageScalePercent": 82,

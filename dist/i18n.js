@@ -132,6 +132,8 @@ const english = {
 
 const originalText = new WeakMap();
 Object.assign(english, window.dressTranslations || {});
+Object.assign(english, window.slsTranslations || {});
+english['Giá đã bao gồm 10% VAT.']='Prices include 10% VAT.';
 const originalAttributes = new WeakMap();
 let currentLanguage = localStorage.getItem('tfw-language') === 'en' ? 'en' : 'vi';
 
@@ -139,6 +141,7 @@ function translatedText(value){
   const trimmed=value.trim();
   if(!trimmed)return value;
   let translated=english[trimmed];
+  if(!translated && /^Từ .+ \(đã gồm 10% VAT\)$/.test(trimmed)) translated=trimmed.replace(/^Từ (.+) \(đã gồm 10% VAT\)$/, 'From $1 (including 10% VAT)');
   if(!translated){
     const count=trimmed.match(/^(\d+) sản phẩm$/);
     if(count)translated=`${count[1]} products`;

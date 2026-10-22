@@ -207,7 +207,7 @@
       <label for="discountCode">Mã giảm giá</label><div class="discount-entry"><input id="discountCode" autocomplete="off" maxlength="40"><button id="applyDiscount" type="button">Áp dụng</button></div>
       <p id="discountMessage" role="status" aria-live="polite"></p>
     </form></div>
-    <div class="cart-footer"><div class="subtotal"><span>Tạm tính</span><strong id="cartSubtotal">0₫</strong></div><p>Phí vận chuyển được tính ở bước tiếp theo.</p><button class="primary-button full" id="checkoutButton" type="button">Tiếp tục thanh toán</button></div>
+    <div class="cart-footer"><div class="subtotal"><span>Tạm tính</span><strong id="cartSubtotal">0₫</strong></div><p>Giá đã bao gồm 10% VAT.</p><p>Phí vận chuyển được tính ở bước tiếp theo.</p><button class="primary-button full" id="checkoutButton" type="button">Tiếp tục thanh toán</button></div>
   </aside>
 
   <section class="checkout" id="checkout" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle" aria-hidden="true">
@@ -234,7 +234,7 @@
       </form>
       <div class="success-state" id="successState" hidden><span class="success-mark">✓</span><h2>Đơn hàng đã được ghi nhận.</h2><p>Mã đơn <strong id="orderNumber"></strong>. Đội ngũ thefirstworkshop sẽ liên hệ để xác nhận giao hàng.</p><button class="primary-button" id="continueShopping" type="button">Tiếp tục mua sắm</button></div>
     </div>
-    <aside class="order-summary"><p class="eyebrow">Đơn hàng</p><div id="checkoutItems"></div><div class="summary-row"><span>Giao hàng</span><span>Liên hệ xác nhận</span></div><div class="summary-row total"><span>Tổng</span><strong id="summaryTotal">0₫</strong></div></aside>
+    <aside class="order-summary"><p class="eyebrow">Đơn hàng</p><div id="checkoutItems"></div><div class="summary-row"><span>Giao hàng</span><span>Liên hệ xác nhận</span></div><div class="summary-row total"><span>Tổng</span><strong id="summaryTotal">0₫</strong></div><p>Giá đã bao gồm 10% VAT.</p></aside>
   </section>
 
   <div class="search-panel" id="searchPanel" hidden><div class="search-inner"><label for="searchInput">Tìm sản phẩm</label><input id="searchInput" type="search" placeholder="Bàn, ghế, phụ kiện..." autocomplete="off"><button class="icon-button" id="closeSearch" type="button" aria-label="Đóng tìm kiếm">×</button></div><div class="search-results" id="searchResults"></div></div>
@@ -287,11 +287,13 @@
   <script src="product-details.js"></script>
   <script src="product-gallery.js"></script>
   <script src="dress-collection.js"></script>
+  <script src="sls-collection.js"></script>
+  <script src="pricing.js"></script>
   <script src="app.js"></script>
   <script src="i18n.js"></script>
   <script src="monitor-configurator.js?v=all-black-20260928"></script>
   <script src="cart-details.js"></script>
-  <script src="order-checkout.js?v=20261021"></script>
+  <script src="order-checkout.js?v=20261022"></script>
   <a class="zalo-contact" href="https://zalo.me/84977849131" target="_blank" rel="noopener noreferrer" aria-label="Zalo · +84 977 849 131"><span class="zalo-bubble" aria-hidden="true">Zalo</span><span>Chat Zalo</span></a>
   <script src="visitor-analytics.js"></script>
 </body>

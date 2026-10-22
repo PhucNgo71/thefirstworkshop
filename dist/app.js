@@ -55,10 +55,11 @@ const catalogEntries=[
  ['orbis','ORBIS WORKSTATION','System Furniture',0,'https://www.zenithinteriors.com/media/fdhnztgn/hcp_221214_zenith_orbis_002_v1.jpg','orbis-workstation'],
  ['precinct-pod-fixed-height','PRECINCT Pod Fixed Height','System Furniture',0,'https://www.zenithinteriors.com/media/etnjbsf3/precinct_pod_open_run4_reva-0000.jpg','precinct-pod-fixed-height'],
  ['kissen','KISSEN TABLES','System Furniture',0,'https://www.zenithinteriors.com/media/2b4ajsqi/zenith_kissen_table_01.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=132739289057000000','kissen-table'],
- ['sls1050','Steelforce 1050 - thefirstworkshop','System Furniture',12000000,'https://cdn.hstatic.net/products/200000617147/website_ergogen__9__e499c03a86e54e6fbbdb07389ea82904_large.png','steelforce-1050-tfw'],
- ['sls770','SLS 770 PRO','System Furniture',13000000,'https://cdn.hstatic.net/products/200000617147/website_ergogen__8__526e52550344473690b6add29e3cb468_large.png','sls-770-pro-tfw','Nổi bật'],
- ['sls470bench','SLS 670 BENCH PRO','System Furniture',30000000,'assets/workstation-bench-system-render.png','sls-670-pro-bench'],
- ['sls470','SLS 670 PRO','System Furniture',15000000,'https://product.hstatic.net/200000617147/product/54_f198c19fea50400da9c0fe84500fbe1a_large.png','sls-470-pro','Bán chạy'],
+ ['sls1050','SLS 1050','System Furniture',14000000,'https://cdn.hstatic.net/products/200000617147/website_ergogen__9__e499c03a86e54e6fbbdb07389ea82904_large.png','steelforce-1050-tfw'],
+ ['sls770','SLS 770 PRO','System Furniture',15000000,'https://cdn.hstatic.net/products/200000617147/website_ergogen__8__526e52550344473690b6add29e3cb468_large.png','sls-770-pro-tfw','Nổi bật'],
+ ['sls-470-pro','SLS 470 PRO','System Furniture',16000000,'assets/products/sls-470-pro-cutout.png','sls-470-pro','Mới'],
+ ['sls470','SLS 670 PRO','System Furniture',17000000,'https://product.hstatic.net/200000617147/product/54_f198c19fea50400da9c0fe84500fbe1a_large.png','sls-670-pro','Bán chạy'],
+ ['sls470bench','SLS 670 BENCH PRO','System Furniture',32000000,'assets/workstation-bench-system-render.png','sls-670-pro-bench'],
  ['at-chair','AT Chair / Wilkhahn','Seatings',36980000,'https://product.hstatic.net/200000617147/product/fixed_1_4x-100_3b907028760740b9bed4f27bc11e9f8e_large.jpg','at-chair'],
  ['freedom','Freedom Chair / Humanscale','Seatings',36600000,'https://product.hstatic.net/200000617147/product/1_4x-100_e5507a410b524b5aa48fafeff583e49d_large.jpg','freedom-chair'],
  ['smart-chair','Smart Chair / Humanscale','Seatings',33000000,'https://product.hstatic.net/200000617147/product/them_tieu_de__1__4be2295487f44317b743d75a04b7e852_large.png','smart-chair'],
@@ -101,7 +102,7 @@ const catalogEntries=[
  ['sw-series','SW Series','Accessories',0,'https://cdn.hstatic.net/products/200000617147/1_5__6c7fc71c2e0a48f0b5f274480b5507e6_large.png','sw'],
  ['zeus','Zeus','Accessories',0,'https://cdn.hstatic.net/products/200000617147/1_11__a6f0e40081ad4418a4b9669c5d4783dd_large.png','zeus']
 ];
-const products=catalogEntries.map(([id,name,scope,price,image,handle,badge])=>({id,name,category:scope,scope,price,image:window.productImageUrl(window.productGalleryOverrides?.[id]?.images?.[0]||image),badge,contactOnly:price===0,detail:catalogDetails[scope],sourceUrl:`https://tfw.space/products/${handle}`,swatches:['#111312','#f4f5f3','#8b8f8c']}));
+const products=catalogEntries.map(([id,name,scope,price,image,handle,badge])=>({id,name,category:scope,scope,...window.tfwPricing.productPrice(price),image:window.productImageUrl(window.productGalleryOverrides?.[id]?.images?.[0]||image),badge,contactOnly:price===0,detail:window.slsListingDetails?.[id]||catalogDetails[scope],sourceUrl:`https://tfw.space/products/${handle}`,swatches:['#111312','#f4f5f3','#8b8f8c']}));
 const productLineProfiles={
  'Smart Pods':76,'Loose Furniture':84,'Storage Solutions':80,'System Furniture':86,'Seatings':80,
  'Monitor Arm & Docking':76,'Glass Partition':84,'Flooring Solutions':92,'Acoustic Wall Panel':88,'Accessories':74
@@ -252,9 +253,10 @@ const manufacturerOverrides={
   sourceUrl:'https://actiforce.com/en/produkt/steelforce-1050-table-frame/'
  }
 };
+window.applySlsDetails?.(manufacturerOverrides);
 let cart=JSON.parse(localStorage.getItem('tfw-demo-cart')||'{}');let activeFilter='all';let activeSort='featured';
 const money=n=>new Intl.NumberFormat('vi-VN',{style:'currency',currency:'VND'}).format(n);
-const priceText=p=>p.contactOnly?'Liên hệ':money(p.price);
+const priceText=p=>p.contactOnly?'Liên hệ':`Từ ${money(p.price)} (đã gồm 10% VAT)`;
 const productImageScale=product=>manufacturerOverrides[product.id]?.imageScale||window.productDetails?.[product.id]?.imageScale||productLineProfiles[product.scope]||84;
 const productSwatches=product=>manufacturerOverrides[product.id]?.swatches||window.productDetails?.[product.id]?.swatches||product.swatches;
 const $=s=>document.querySelector(s);const $$=s=>[...document.querySelectorAll(s)];

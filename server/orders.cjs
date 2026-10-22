@@ -31,12 +31,15 @@ function normalize(input, catalog) {
     const product = Object.hasOwn(catalog, item.id) && catalog[item.id];
     if (!product || !product.price || seen.has(item.id) || !Number.isSafeInteger(item.quantity) || item.quantity < 1 || item.quantity > 100) throw new OrderError('INVALID_ITEMS');
     seen.add(item.id);
-    return {id: item.id, name: product.name, quantity: item.quantity, unitPrice: product.price, lineTotal: product.price * item.quantity, options: text(item.options, 1000, false)};
+    const tax = product.vatRate === 10 ? {vatRate:10, netUnitPrice:product.basePrice, vatUnitAmount:product.vatAmount, netLineTotal:product.basePrice * item.quantity, vatLineTotal:product.vatAmount * item.quantity} : {};
+    if (product.vatRate === 10 && (!Number.isSafeInteger(product.basePrice) || product.basePrice < 0 || product.vatAmount !== Math.round(product.basePrice / 10) || product.price !== product.basePrice + product.vatAmount)) throw new OrderError('INVALID_CATALOG', 503);
+    return {id: item.id, name: product.name, quantity: item.quantity, unitPrice: product.price, lineTotal: product.price * item.quantity, ...tax, options: text(item.options, 1000, false)};
   }).sort((a,b) => a.id.localeCompare(b.id));
   const subtotal = items.reduce((sum, item) => sum + item.lineTotal, 0);
   if (!Number.isSafeInteger(subtotal) || subtotal > 10000000000) throw new OrderError('ORDER_TOO_LARGE');
   if (input.expectedSubtotal !== subtotal) throw new OrderError('PRICE_CHANGED', 409);
-  return {requestId: input.requestId.toLowerCase(), customer: details, items, subtotal, currency: 'VND', paymentMethod: input.paymentMethod};
+  const tax = items.every(item=>item.vatRate===10) ? {vatRate:10, netSubtotal:items.reduce((sum,item)=>sum+item.netLineTotal,0), vatIncluded:items.reduce((sum,item)=>sum+item.vatLineTotal,0)} : {};
+  return {requestId: input.requestId.toLowerCase(), customer: details, items, subtotal, ...tax, currency: 'VND', paymentMethod: input.paymentMethod};
 }
 function makeOrder(normalized, now = new Date()) {
   return {...normalized, orderNumber: 'TFW-' + normalized.requestId.replaceAll('-', '').toUpperCase(), orderDate: now.toISOString(), paymentStatus: 'Unpaid', orderStatus: 'Received', deliveryFee: null, discount: 0};
@@ -44,6 +47,9 @@ function makeOrder(normalized, now = new Date()) {
 function excelRow(order) {
   // Prefix formula-like strings before a connector writes them into Excel.
   const cell = value => /^[=+@\-\t\r\n]/.test(String(value)) ? "'" + value : value;
+  // Preserve the existing 24-column Excel contract. Totals and unit prices are
+  // gross; VAT details travel in OrderItems and Notes, never as a second charge.
+  const notes = order.vatRate===10 ? [order.customer.notes, `Prices include 10% VAT. Net products: ${order.netSubtotal} VND; VAT included: ${order.vatIncluded} VND; gross products: ${order.subtotal} VND. Delivery to be confirmed.`].filter(Boolean).join('\n') : order.customer.notes;
   return {
     OrderNumber: order.orderNumber, OrderDate: order.orderDate, CustomerName: cell(order.customer.name),
     Email: cell(order.customer.email), Phone: cell(order.customer.phone), Company: cell(order.customer.company),
@@ -51,7 +57,7 @@ function excelRow(order) {
     OrderItems: JSON.stringify(order.items), TotalQuantity: order.items.reduce((sum,i) => sum+i.quantity,0),
     SubtotalVND: order.subtotal, DiscountVND: 0, DeliveryFeeVND: 'To be confirmed', TotalVND: order.subtotal,
     PaymentMethod: order.paymentMethod, PaymentStatus: 'Unpaid', OrderStatus: 'Received - delivery to be confirmed',
-    Notes: cell(order.customer.notes), Source: 'tfw.space', RequestId: order.requestId, EmailStatus: 'Pending'
+    Notes: cell(notes), Source: 'tfw.space', RequestId: order.requestId, EmailStatus: 'Pending'
   };
 }
 function mail(order) {
@@ -59,7 +65,8 @@ function mail(order) {
   const testLabel = order.customer.name.startsWith('TEST ') ? 'TEST — DO NOT FULFIL — ' : '';
   const content = `<h1>thefirstworkshop — Order request / Đơn đặt hàng</h1><p>${escape(order.orderNumber)}</p><p>Thank you, ${escape(order.customer.name)}.</p><p>${escape(order.customer.address)}</p><table><tr><th>Product</th><th>Quantity</th><th>Unit price</th><th>Subtotal</th></tr>${order.items.map(i=>`<tr><td>${escape(i.name)}<br>${escape(i.options)}</td><td>${i.quantity}</td><td>${money(i.unitPrice)}</td><td>${money(i.lineTotal)}</td></tr>`).join('')}</table><p>Product subtotal: ${money(order.subtotal)}</p><p>Payment: ${escape(order.paymentMethod)} — UNPAID / CHƯA THANH TOÁN.</p><p>Delivery charges, availability and final configuration require confirmation. This is an order acknowledgement, not a payment receipt or tax invoice. Please wait for our team before transferring payment.</p><p>Phí giao hàng và cấu hình sẽ được xác nhận. Vui lòng chờ đội ngũ của chúng tôi xác nhận trước khi thanh toán.</p><p>Contact: hi@tfw.space</p>`;
   const customerDetails = `<h2>Customer details / Thông tin khách hàng</h2><p>Email: ${escape(order.customer.email)}<br>Phone: ${escape(order.customer.phone)}<br>Company: ${escape(order.customer.company)}<br>Tax code: ${escape(order.customer.taxCode)}</p><p>Notes: ${escape(order.customer.notes)}</p>`;
-  const completeContent = (testLabel ? '<p><strong>TEST ONLY — DO NOT FULFIL / ĐƠN KIỂM TRA — KHÔNG GIAO HÀNG</strong></p>' : '') + content + customerDetails;
+  const vatSummary = order.vatRate===10 ? `<p><strong>Prices include 10% VAT / Giá đã bao gồm 10% VAT.</strong></p><p>Net products / Trước VAT: ${money(order.netSubtotal)}<br>VAT included / VAT đã gồm: ${money(order.vatIncluded)}<br>Products including VAT / Sản phẩm gồm VAT: ${money(order.subtotal)}</p>` : '';
+  const completeContent = (testLabel ? '<p><strong>TEST ONLY — DO NOT FULFIL / ĐƠN KIỂM TRA — KHÔNG GIAO HÀNG</strong></p>' : '') + vatSummary + content + customerDetails;
   return {message: {subject: `TFW Order / PO request — ${testLabel}${order.orderNumber}`, body: {contentType: 'HTML', content:completeContent},
     toRecipients: [{emailAddress: {address: order.customer.email}}],
     ccRecipients: [{emailAddress: {address: ORDER_COPY_EMAIL}}],

@@ -8,11 +8,12 @@
 .hero-copy{background:linear-gradient(135deg,rgba(33,92,69,.13),transparent 42%)}
 .primary-button:hover{background:#c3c6c2;color:#0b0d0c}
 .story{background:#dfe8df;color:#0b0d0c}.story .eyebrow,.collection-heading .eyebrow{color:#033500}.story .arrow-link{color:#033500}
-.collection-hero{min-height:54vh;grid-template-columns:minmax(0,1.5fr) minmax(320px,.65fr)}
-.collection-hero .hero-copy{padding:6vw 4vw}
-.collection-hero h1{font-size:clamp(3.4rem,7vw,7.5rem);line-height:.9}
-.collection-intro{justify-content:flex-end;gap:1.5rem}
-.collection-intro p{font:1.5rem/1.35 var(--sans)}
+.collection-hero{min-height:0;grid-template-columns:minmax(0,1.5fr) minmax(320px,.65fr)}
+.collection-hero .hero-copy{min-height:0;padding:3.25rem 4vw}
+.collection-hero .eyebrow{margin-bottom:1rem}
+.collection-hero h1{font-size:clamp(2.5rem,4.5vw,5rem);line-height:1}
+.collection-intro{min-height:0;justify-content:center;gap:1rem;padding:2rem}
+.collection-intro p{font:1.125rem/1.4 var(--sans)}
 .read-more{align-self:flex-start;border:0;border-bottom:1px solid #fff;background:none;color:#fff;padding:.2rem 0;cursor:pointer;font-weight:700}
 .expanded-intro{color:#c8d1cd;font-size:.95rem}
 .shop-section{padding-top:4.25rem}.collection-heading{display:grid;grid-template-columns:minmax(260px,.72fr) minmax(280px,.42fr);justify-content:space-between;align-items:end;margin-bottom:1.4rem}
@@ -142,3 +143,6 @@
 /* Compensate for the JAC photo's white margins to match Tori's visible height. */
 .product-image-button[data-product="jac-chairs"] img{inset:auto;left:50%;top:50%;width:114%;height:114%;transform:translate(-50%,-50%)}
 .product-card:hover .product-image-button[data-product="jac-chairs"] img{transform:translate(-50%,-50%) scale(1.025)}
+/* Keep the compact collection introduction compact when its panels stack. */
+@media(max-width:900px){.collection-hero .hero-copy{min-height:0;padding:2rem 1.25rem}.collection-hero .collection-intro{min-height:0;padding:1.5rem 1.25rem}}
+@media(max-width:580px){.collection-hero h1{font-size:2.4rem}.collection-hero .eyebrow{font-size:.65rem;margin-bottom:.75rem}.collection-intro p{font-size:1rem}}
