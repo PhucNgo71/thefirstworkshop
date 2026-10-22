@@ -83,6 +83,7 @@
     }
   };
   text('Điều chỉnh điện êm và chính xác','Smooth, precise electric adjustment');
+  text('Khung đen · Mặt sồi','Black frame · Oak top');
   text('Tải trọng nâng động 120 kg','120 kg dynamic lifting capacity');
   text('Hệ bench tiết kiệm diện tích','Space-efficient bench system');
   text('Điều chỉnh độ cao cho từng vị trí','Independent height adjustment');

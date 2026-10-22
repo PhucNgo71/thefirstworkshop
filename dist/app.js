@@ -59,7 +59,7 @@ const catalogEntries=[
  ['sls770','SLS 770 PRO','System Furniture',15000000,'https://cdn.hstatic.net/products/200000617147/website_ergogen__8__526e52550344473690b6add29e3cb468_large.png','sls-770-pro-tfw','Nổi bật'],
  ['sls-470-pro','SLS 470 PRO','System Furniture',16000000,'assets/products/sls-470-pro-cutout.png','sls-470-pro','Mới'],
  ['sls470','SLS 670 PRO','System Furniture',17000000,'https://product.hstatic.net/200000617147/product/54_f198c19fea50400da9c0fe84500fbe1a_large.png','sls-670-pro','Bán chạy'],
- ['sls470bench','SLS 670 BENCH PRO','System Furniture',32000000,'assets/workstation-bench-system-render.png','sls-670-pro-bench'],
+ ['sls470bench','SLS 670 BENCH PRO','System Furniture',32000000,'assets/products/sls-670-bench-actiforce.jpg','sls-670-pro-bench'],
  ['at-chair','AT Chair / Wilkhahn','Seatings',36980000,'https://product.hstatic.net/200000617147/product/fixed_1_4x-100_3b907028760740b9bed4f27bc11e9f8e_large.jpg','at-chair'],
  ['freedom','Freedom Chair / Humanscale','Seatings',36600000,'https://product.hstatic.net/200000617147/product/1_4x-100_e5507a410b524b5aa48fafeff583e49d_large.jpg','freedom-chair'],
  ['smart-chair','Smart Chair / Humanscale','Seatings',33000000,'https://product.hstatic.net/200000617147/product/them_tieu_de__1__4be2295487f44317b743d75a04b7e852_large.png','smart-chair'],
@@ -215,8 +215,8 @@ const manufacturerOverrides={
  sls470bench:{
   imageScale:90,
   galleryMode:'spec',
-  images:['assets/workstation-bench-system-render.png','assets/workstation-bench-system-screen-v2.png'],
-  galleryLabels:[['Bench','02 vị trí làm việc · Không vách ngăn'],['Bench + Screen','Vách ngăn trung tâm · 02 monitor arm']],
+  images:['assets/products/sls-670-bench-actiforce.jpg','assets/products/sls-670-bench-side-actiforce.jpg'],
+  galleryLabels:[['SLS 670 BENCH PRO','Khung đen · Mặt sồi'],['SLS 670 BENCH PRO','Khung đen · Góc bên']],
   gallerySpecs:[['Cấu hình','02 người'],['Mặt bàn','02 bộ'],['Cable tray','02 bộ · Tiêu chuẩn'],['Cable riser','02 bộ · Tiêu chuẩn']],
   swatches:['#111312','#a7aaa8','#f4f5f3'],
   brand:'Actiforce · SLS Collection',productType:'Bàn bench nâng hạ điện hoàn chỉnh',
@@ -304,8 +304,8 @@ $('#continueShopping').onclick=()=>{closeCheckout();$('#paymentForm').reset();$(
 function updateWorkstationConfiguration(input){
  const selected=input.value;
  const renderStates={
-  'Single Desk':{src:'assets/workstation-structures-render.png',mode:'composite',transform:'translate(0,0)',number:'01',meta:'01 người · Không screen',alt:'Single Desk · bàn làm việc đơn'},
-  'Bench':{src:'assets/workstation-bench-system-render.png',mode:'direct',transform:'none',number:'02',meta:'02 người · Khung bench dùng chung',alt:'Bench · cụm bàn hai người trên một hệ khung dùng chung'},
+  'Single Desk':{src:'assets/products/sls-670-desk-actiforce.jpg',mode:'direct',transform:'none',number:'01',meta:'01 người · Không screen',alt:'Single Desk · Actiforce SLS 670 PRO'},
+  'Bench':{src:'assets/products/sls-670-bench-actiforce.jpg',mode:'direct',transform:'none',number:'02',meta:'02 người · Khung bench dùng chung',alt:'Bench · Actiforce SLS 670 BENCH PRO'},
   'Single Desk + Screen':{src:'assets/workstation-structures-render.png',mode:'composite',transform:'translate(0,-50%)',number:'03',meta:'01 người · 01 screen',alt:'Single Desk với screen · bàn làm việc đơn có vách ngăn'},
   'Bench + Screen':{src:'assets/workstation-bench-system-screen-v2.png',mode:'direct',transform:'none',number:'04',meta:'02 người · Khung bench + screen trung tâm',alt:'Bench với screen · cụm bàn hai người trên một hệ khung dùng chung và vách ngăn trung tâm'}
  };
