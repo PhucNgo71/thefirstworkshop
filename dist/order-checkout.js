@@ -18,7 +18,7 @@
   addToCart=function(id){
     const product=orderProducts.find(p=>p.id===id);if(!product||product.contactOnly)return;
     const chosen=product.canonicalOptions||(activeProductId===id?[...document.querySelectorAll('#productOptions .config-group')].map(group=>`${group.querySelector('.config-heading span').textContent}: ${group.querySelector('[data-option-selection]').textContent}`).join('; '):(window.slsDefaultOrderOptions?.[id]||''));
-    if(chosen&&cart[id]&&selectedOptions[id]&&selectedOptions[id]!==chosen){showToast(en()?'Remove this product from the cart before choosing a different configuration.':'Vui lòng xóa sản phẩm khỏi giỏ trước khi chọn cấu hình khác.');return;}
+    if(chosen&&cart[id]&&selectedOptions[id]&&selectedOptions[id]!==chosen){openCart();showToast(en()?'Remove this product from the cart before choosing a different configuration.':'Vui lòng xóa sản phẩm khỏi giỏ trước khi chọn cấu hình khác.');return;}
     if(chosen)selectedOptions[id]=chosen;
     originalAddToCart(id);
   };
