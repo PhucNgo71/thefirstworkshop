@@ -1,10 +1,19 @@
 // Product details compiled from public TFW and manufacturer product pages.
 window.productDetails={
+  "screen-fabric-1400": {
+    "productType": "Tabletop-Mounted Fabric Screen",
+    "description": "Tabletop-mounted screen in standard fabric, 1400 mm wide × 650 mm overall height. Sold separately, per screen. Installation image is for reference; desk, tabletop and frame are not included. Fabric colour and mounting details to be confirmed.",
+    "specifications": "Dimensions: 1400 mm W × 650 mm H (overall screen height)\nFinish: Standard fabric\nMounting: Tabletop-mounted\nPrice before VAT: 2,500,000 VND per screen\nPrice including 10% VAT: 2,750,000 VND per screen\nDesk not included",
+    "images": ["assets/products/screen-fabric-1400.png"],
+    "galleryModes": ["contain"],
+    "galleryLabels": [["Standard Fabric Screen", "Installation reference — desk not included"]],
+    "swatches": []
+  },
   "modesty-mfc-1400": {
     "productType": "MFC Modesty Panel",
     "description": "Optional MFC modesty panel for a 1400 mm tabletop. Sold separately, per panel. Photo shows an installation example; desk, tabletop and frame are not included. Finish and installation details to be confirmed.",
     "specifications": "Material: MFC\nFor tabletop width: 1400 mm\nPrice: 1,500,000 VND per panel, including 10% VAT\nPanel dimensions, finish and mounting details: to be confirmed",
-    "images": ["assets/products/modesty-mfc-1400.png"],
+    "images": ["assets/products/modesty-mfc-1400-black.png"],
     "galleryLabels": [["MFC Modesty Panel", "Panel only — desk not included"]],
     "galleryModes": ["contain"],
     "swatches": []

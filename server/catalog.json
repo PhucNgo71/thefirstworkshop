@@ -1,4 +1,11 @@
 {
+  "screen-fabric-1400": {
+    "name": "Tabletop-Mounted Screen / Standard Fabric",
+    "basePrice": 2500000,
+    "price": 2750000,
+    "vatRate": 10,
+    "vatAmount": 250000
+  },
   "modesty-mfc-1400": {
     "name": "MFC Modesty Panel / 1400 mm Tabletop",
     "basePrice": 1363636,

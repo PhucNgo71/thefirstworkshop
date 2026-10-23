@@ -1,0 +1,30 @@
+const test=require('node:test');
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const vm=require('node:vm');
+const catalog=require('../server/catalog.json');
+const {normalize,makeOrder,excelRow,mail}=require('../server/orders.cjs');
+test('Fabric screen is a separate accessory at 2.5M net; modesty remains unchanged',()=>{
+  const app=fs.readFileSync('dist/app.js','utf8');
+  const entries=vm.runInNewContext(app.match(/const catalogEntries=(\[[\s\S]*?\n\]);/)[1]);
+  assert.equal(entries.find(p=>p[0]==='screen-fabric-1400')[2],'Accessories');
+  assert.equal(catalog['screen-fabric-1400'].basePrice,2500000);
+  assert.equal(catalog['screen-fabric-1400'].price,2750000);
+  assert.equal(catalog['modesty-mfc-1400'].price,1500000);
+  const context={window:{}};
+  vm.runInNewContext(fs.readFileSync('dist/product-details.js','utf8'),context);
+  const detail=context.window.productDetails['screen-fabric-1400'];
+  assert.match(detail.specifications,/1400 mm W × 650 mm H/);
+  assert.match(detail.specifications,/Standard fabric/);
+  assert.ok(fs.existsSync('dist/'+detail.images[0]));
+});
+test('Fabric screen VAT and quantity reach checkout, PO and Excel without sending an order',()=>{
+  const input={requestId:'12345678-1234-4234-8234-123456789abc',customer:{name:'TEST Screen',email:'test@example.com',phone:'0909000000',address:'TEST ONLY'},items:[{id:'screen-fabric-1400',quantity:2}],expectedSubtotal:5500000,paymentMethod:'bank'};
+  const order=makeOrder(normalize(input,catalog));
+  assert.equal(order.items[0].unitPrice,2750000);
+  const row=excelRow(order);
+  assert.equal(row.TotalVND,5500000);
+  assert.match(row.OrderItems,/screen-fabric-1400/);
+  assert.match(mail(order).message.body.content,/Standard Fabric/);
+  assert.throws(()=>normalize({...input,expectedSubtotal:5000000},catalog),/PRICE_CHANGED/);
+});
