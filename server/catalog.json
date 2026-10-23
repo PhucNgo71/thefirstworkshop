@@ -419,7 +419,16 @@
     "basePrice": 13500000,
     "price": 14850000,
     "vatRate": 10,
-    "vatAmount": 1350000
+    "vatAmount": 1350000,
+    "canonicalOptions": "Tựa đầu / Headrest: Không / Not included"
+  },
+  "worldone-headrest": {
+    "name": "WORLD LM / Humanscale — With headrest",
+    "basePrice": 15318182,
+    "price": 16850000,
+    "vatRate": 10,
+    "vatAmount": 1531818,
+    "canonicalOptions": "Tựa đầu / Headrest: Có / Included"
   },
   "vox": {
     "name": "VOX TASK CHAIR",

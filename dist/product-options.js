@@ -7,6 +7,10 @@
   const choices = Object.freeze({anchor: Object.freeze([
     Object.freeze({id:'anchor', label:'Không tựa đầu', surcharge:0, canonicalOptions:'Tựa đầu / Headrest: Không / Not included'}),
     Object.freeze({id:'anchor-headrest', label:'Có tựa đầu', surcharge:550000, canonicalOptions:'Tựa đầu / Headrest: Có / Included'})
+  ]), worldone: Object.freeze([
+    Object.freeze({id:'worldone', label:'Không tựa đầu', surcharge:0, canonicalOptions:'Tựa đầu / Headrest: Không / Not included'}),
+    // Whole-VND net amount rounds to exactly 2,000,000 VND including 10% VAT.
+    Object.freeze({id:'worldone-headrest', label:'Có tựa đầu', surcharge:1818182, canonicalOptions:'Tựa đầu / Headrest: Có / Included'})
   ])});
   function variantsFor(product) {
     return (choices[product.id] || []).map(choice => ({

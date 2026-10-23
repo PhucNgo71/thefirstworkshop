@@ -79,13 +79,29 @@ test('Anchor headrest is a separate complete-chair SKU with 550000 net / 605000 
   assert.equal(headrest.basePrice,5250000);assert.equal(headrest.price,5775000);assert.equal(headrest.vatAmount,525000);
   assert.equal(headrest.basePrice-base.basePrice,550000);assert.equal(headrest.price-base.price,605000);
   assert.equal(evaluate("products.filter(p=>p.id==='anchor-headrest').length"),0);
-  assert.equal(evaluate('orderProducts.length'),evaluate('products.length')+1);
+  assert.equal(evaluate('orderProducts.length'),evaluate('products.length')+2);
   const standalone={id:'other',name:'Other',...productPrice(1000000)};
   assert.deepEqual(cartProducts([anchor,standalone]),[base,headrest,standalone]);
   assert.equal(catalog['anchor-headrest'].price,headrest.price);
   const html=read('dist/index.html');
   assert.ok(html.indexOf('src="pricing.js"')<html.indexOf('src="product-options.js"'));
   assert.ok(html.indexOf('src="product-options.js"')<html.indexOf('src="app.js"'));
+});
+
+test('WORLD LM headrest adds exactly 2000000 VAT-inclusive through checkout, PO and Excel',()=>{
+  const [base, headrest]=variantsFor({id:'worldone',name:'WORLD LM / Humanscale',...productPrice(13500000)});
+  assert.equal(base.price,14850000);
+  assert.equal(headrest.price,16850000);
+  assert.equal(headrest.price-base.price,2000000);
+  assert.equal(catalog['worldone-headrest'].price,headrest.price);
+  const order=makeOrder(normalize(request([{id:'worldone-headrest',quantity:2,unitPrice:1}],33700000),catalog));
+  assert.equal(order.items[0].unitPrice,16850000);
+  assert.equal(order.items[0].options,headrest.canonicalOptions);
+  const row=excelRow(order);
+  assert.equal(row.TotalVND,33700000);
+  assert.match(row.OrderItems,/worldone-headrest/);
+  assert.match(mail(order).message.body.content,/With headrest/);
+  assert.throws(()=>normalize(request([{id:'worldone-headrest',quantity:1}],14850000),catalog),/PRICE_CHANGED/);
 });
 
 test('Server enforces headrest pricing and options and keeps both configurations distinct',()=>{
