@@ -275,12 +275,12 @@ window.productDetails={
     "imageScale": 90,
     "swatches": [],
     "images": [
-      "https://www.zenithinteriors.com/media/etnjbsf3/precinct_pod_open_run4_reva-0000.jpg",
+      "assets/products/precinct-pod-fixed-cutout.png",
       "https://www.zenithinteriors.com/media/vwqdane4/precinct_pod_enclosed_pod2_reva-0000.jpg",
       "https://www.zenithinteriors.com/media/lq3lrn4r/fsp_zenith_20220405_080-lr-group-shot.jpg",
       "https://www.zenithinteriors.com/media/it2dkabs/fsp_zenith_20220405_158-hr.jpg"
     ],
-    "galleryModes": ["contain", "contain", "photo", "photo"],
+    "galleryModes": ["cutout", "contain", "photo", "photo"],
     "sourceUrl": "https://www.zenithinteriors.com/products/precinct-pod-fixed-height/",
     "specificationUrl": "https://www.zenithinteriors.com/media/lsciwjx1/precinct_fixed_height_specification-feb26.pdf"
   },
