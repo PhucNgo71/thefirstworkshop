@@ -549,34 +549,6 @@
     "vatRate": 10,
     "vatAmount": 1590000
   },
-  "focus": {
-    "name": "Focus",
-    "basePrice": 0,
-    "price": 0,
-    "vatRate": 0,
-    "vatAmount": 0
-  },
-  "teknion-pod": {
-    "name": "Teknion POD",
-    "basePrice": 0,
-    "price": 0,
-    "vatRate": 0,
-    "vatAmount": 0
-  },
-  "telescope": {
-    "name": "Telescope",
-    "basePrice": 0,
-    "price": 0,
-    "vatRate": 0,
-    "vatAmount": 0
-  },
-  "within": {
-    "name": "WITHIN",
-    "basePrice": 0,
-    "price": 0,
-    "vatRate": 0,
-    "vatAmount": 0
-  },
   "spiralis-e100": {
     "name": "SPIRALIS E100",
     "basePrice": 0,
