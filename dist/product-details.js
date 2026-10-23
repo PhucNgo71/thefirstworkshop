@@ -18,9 +18,9 @@ window.productDetails={
     "imageScale": 82,
     "description": "PRECINCT offers soft, frameless screens to define individual workspaces. The range includes worktop-mounted, desk-frame-mounted and on-desk versions. Desks, chairs and styling accessories shown are not included.",
     "specifications": "Brand: Zenith\nDimensions: Multiple sizes; confirm selected configuration\nMounting options: Worktop mounted, desk frame mounted, on desk\nFinish and mounting compatibility: confirm with quotation\nPrice and local delivery: contact for quotation",
-    "images": ["assets/products/zenith-precinct-screen-main.jpg", "assets/products/zenith-precinct-screen-detail.jpg"],
+    "images": ["assets/products/zenith-precinct-screen-v2-main.jpg", "assets/products/zenith-precinct-screen-v2-detail.jpg"],
     "galleryModes": ["contain", "contain"],
-    "galleryLabels": [["PRECINCT Screens", "Workspace reference"], ["PRECINCT Screens", "Workspace reference"]],
+    "galleryLabels": [["PRECINCT Screens", "Curved screen detail"], ["PRECINCT Screens", "Desk-mounted screen detail"]],
     "swatches": [],
     "sourceUrl": "https://www.zenithinteriors.com/products/precinct-screens/"
   },
@@ -37,7 +37,7 @@ window.productDetails={
     "productType": "MFC Modesty Panel",
     "description": "Optional MFC modesty panel for a 1400 mm tabletop. Sold separately, per panel. Photo shows an installation example; desk, tabletop and frame are not included. Finish and installation details to be confirmed.",
     "specifications": "Material: MFC\nFor tabletop width: 1400 mm\nPrice: 1,500,000 VND per panel, including 10% VAT\nPanel dimensions, finish and mounting details: to be confirmed",
-    "images": ["assets/products/modesty-mfc-1400-black.png"],
+    "images": ["assets/products/modesty-mfc-1400-dark-wood.png"],
     "galleryLabels": [["MFC Modesty Panel", "Panel only — desk not included"]],
     "galleryModes": ["contain"],
     "swatches": []
