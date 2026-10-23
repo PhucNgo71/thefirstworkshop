@@ -1,10 +1,34 @@
 // Product details compiled from public TFW and manufacturer product pages.
 window.productDetails={
+  "simpl-screens": {
+    "brand": "Zenith",
+    "productType": "Workstation Screen",
+    "imageScale": 82,
+    "description": "SIMPL is a lightweight screen range for dividing workplace settings. Different profiles, mounting arrangements and finishes allow it to suit a variety of workstation layouts. Desks and chairs shown are not included.",
+    "specifications": "Brand: Zenith\nDimensions: Multiple sizes; confirm selected configuration\nProfiles, mounting and finishes: available options confirmed with quotation\nPrice and local delivery: contact for quotation",
+    "images": ["assets/products/zenith-simpl-main.jpg", "assets/products/zenith-simpl-detail.jpg"],
+    "galleryModes": ["contain", "contain"],
+    "galleryLabels": [["SIMPL Screens", "Configuration reference"], ["SIMPL Screens", "Configuration reference"]],
+    "swatches": [],
+    "sourceUrl": "https://www.zenithinteriors.com/products/simpl-screens/"
+  },
+  "precinct-screens": {
+    "brand": "Zenith",
+    "productType": "Workstation Screen",
+    "imageScale": 82,
+    "description": "PRECINCT offers soft, frameless screens to define individual workspaces. The range includes worktop-mounted, desk-frame-mounted and on-desk versions. Desks, chairs and styling accessories shown are not included.",
+    "specifications": "Brand: Zenith\nDimensions: Multiple sizes; confirm selected configuration\nMounting options: Worktop mounted, desk frame mounted, on desk\nFinish and mounting compatibility: confirm with quotation\nPrice and local delivery: contact for quotation",
+    "images": ["assets/products/zenith-precinct-screen-main.jpg", "assets/products/zenith-precinct-screen-detail.jpg"],
+    "galleryModes": ["contain", "contain"],
+    "galleryLabels": [["PRECINCT Screens", "Workspace reference"], ["PRECINCT Screens", "Workspace reference"]],
+    "swatches": [],
+    "sourceUrl": "https://www.zenithinteriors.com/products/precinct-screens/"
+  },
   "screen-fabric-1400": {
     "productType": "Tabletop-Mounted Fabric Screen",
     "description": "Tabletop-mounted screen in standard fabric, 1400 mm wide × 650 mm overall height. Sold separately, per screen. Installation image is for reference; desk, tabletop and frame are not included. Fabric colour and mounting details to be confirmed.",
     "specifications": "Dimensions: 1400 mm W × 650 mm H (overall screen height)\nFinish: Standard fabric\nMounting: Tabletop-mounted\nPrice before VAT: 2,500,000 VND per screen\nPrice including 10% VAT: 2,750,000 VND per screen\nDesk not included",
-    "images": ["assets/products/screen-fabric-1400.png"],
+    "images": ["assets/products/screen-fabric-1400-angle.png"],
     "galleryModes": ["contain"],
     "galleryLabels": [["Standard Fabric Screen", "Installation reference — desk not included"]],
     "swatches": []

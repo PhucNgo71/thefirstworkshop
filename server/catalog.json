@@ -1,4 +1,18 @@
 {
+  "simpl-screens": {
+    "name": "SIMPL Screens / Zenith",
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
+  },
+  "precinct-screens": {
+    "name": "PRECINCT Screens / Zenith",
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
+  },
   "screen-fabric-1400": {
     "name": "Tabletop-Mounted Screen / Standard Fabric",
     "basePrice": 2500000,
