@@ -18,8 +18,8 @@ window.productDetails={
     "imageScale": 82,
     "description": "PRECINCT offers soft, frameless screens to define individual workspaces. The range includes worktop-mounted, desk-frame-mounted and on-desk versions. Desks, chairs and styling accessories shown are not included.",
     "specifications": "Brand: Zenith\nDimensions: Multiple sizes; confirm selected configuration\nMounting options: Worktop mounted, desk frame mounted, on desk\nFinish and mounting compatibility: confirm with quotation\nPrice and local delivery: contact for quotation",
-    "images": ["assets/products/zenith-precinct-screen-v2-main.jpg", "assets/products/zenith-precinct-screen-v2-detail.jpg"],
-    "galleryModes": ["contain", "contain"],
+    "images": ["assets/products/zenith-precinct-screen-cutout.png", "assets/products/zenith-precinct-screen-v2-detail.jpg"],
+    "galleryModes": ["cutout", "contain"],
     "galleryLabels": [["PRECINCT Screens", "Curved screen detail"], ["PRECINCT Screens", "Desk-mounted screen detail"]],
     "swatches": [],
     "sourceUrl": "https://www.zenithinteriors.com/products/precinct-screens/"

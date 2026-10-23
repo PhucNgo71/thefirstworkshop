@@ -40,6 +40,8 @@
 .product-card:hover .product-image-button img{transform:scale(1.025)}
 /* Match the World LM cutout's visible height to the adjacent Vox chair. */
 .product-image-button[data-product="worldone"] img{width:70%;height:70%}
+.product-image-button[data-product="simpl-screens"] img{inset:auto;left:50%;top:50%;width:116%;height:116%;transform:translate(-50%,-50%)}
+.product-card:hover .product-image-button[data-product="simpl-screens"] img{transform:translate(-50%,-50%) scale(1.025)}
 .quick-add{position:absolute;right:1rem;top:1rem;width:42px;height:42px;border:1px solid var(--ink);border-radius:50%;background:rgba(232,234,231,.94);font-size:1.25rem;cursor:pointer;opacity:0;transform:translateY(4px);transition:.2s ease}
 .product-card:hover .quick-add,.quick-add:focus{opacity:1;transform:none}
 .product-meta{display:flex;align-items:flex-start;justify-content:space-between;padding:.8rem .7rem 1.25rem;gap:1rem}
@@ -74,6 +76,7 @@
 .detail-image:has(img[src$="/activity-stool-in-use.jpg"]){background:transparent}
 .detail-image.cutout img,.lean-detail .detail-image.cutout img{width:78%;height:78%;object-fit:contain;mix-blend-mode:normal}
 .product-image-button img[src*="assets/cutouts/"]{mix-blend-mode:normal}
+.product-image-button[data-product="precinct-screens"] img{mix-blend-mode:normal}
 .detail-image.closeup img{transform:scale(1.18);object-position:center;padding:7%}
 .lean-detail .detail-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;padding:0;background:var(--line);border-bottom:1px solid var(--line)}
 .lean-detail .detail-image{position:relative;aspect-ratio:4/3;background:#fff;align-content:center}
