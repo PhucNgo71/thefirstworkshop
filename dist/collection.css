@@ -76,7 +76,9 @@
 .detail-image:has(img[src$="/activity-stool-in-use.jpg"]){background:transparent}
 .detail-image.cutout img,.lean-detail .detail-image.cutout img{width:78%;height:78%;object-fit:contain;mix-blend-mode:normal}
 .product-image-button img[src*="assets/cutouts/"]{mix-blend-mode:normal}
-.product-image-button[data-product="precinct-screens"] img{mix-blend-mode:normal}
+/* Centre the visible cutout, compensating for its transparent left margin. */
+.product-image-button[data-product="precinct-screens"] img{mix-blend-mode:normal;transform:translateX(-17%)}
+.product-card:hover .product-image-button[data-product="precinct-screens"] img{transform:translateX(-17%) scale(1.025)}
 .detail-image.closeup img{transform:scale(1.18);object-position:center;padding:7%}
 .lean-detail .detail-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;padding:0;background:var(--line);border-bottom:1px solid var(--line)}
 .lean-detail .detail-image{position:relative;aspect-ratio:4/3;background:#fff;align-content:center}
