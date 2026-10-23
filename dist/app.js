@@ -49,7 +49,7 @@ const catalogEntries=[
  ['occo','OCCO Chair','Loose Furniture',0,'https://product.hstatic.net/200000617147/product/5_3ec632a26e6546588fbee76c047bf393_large.png','occo-chair'],
  ['hours-lounge','HOURS LOUNGE','Loose Furniture',0,'https://www.zenithinteriors.com/media/wq3lumt3/hcp_250528_zenith_012.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=133954181943870000','hours-lounge','Mới'],
  ['precinct','PRECINCT POD & LOUNGE','Loose Furniture',0,'https://www.zenithinteriors.com/media/rwlprjlb/thumbnail.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=132739289362070000','precinct-lounge-modules'],
- ['precinct-focus-workpod','PRECINCT FOCUS Workpod / Zenith','Loose Furniture',0,'assets/products/precinct-focus-high.jpg','precinct-focus-workpod'],
+ ['precinct-focus-workpod','PRECINCT FOCUS Workpod / Zenith','Loose Furniture',0,'assets/products/precinct-focus-high-cutout.png','precinct-focus-workpod'],
  ['precinct-focus-lounge','PRECINCT FOCUS Lounge / Zenith','Loose Furniture',0,'assets/products/precinct-focus-lounge-main.jpg','precinct-focus-lounge'],
  ['precinct-meet-booth','PRECINCT MEET Booth / Zenith','Loose Furniture',0,'assets/products/precinct-meet-booth-main.jpg','precinct-meet-booth'],
  ['activity-stool','Activity Stool / Actiforce','Loose Furniture',0,'assets/cutouts/activity-stool-main.png','activity-stool'],

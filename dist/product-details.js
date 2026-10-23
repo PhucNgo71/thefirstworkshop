@@ -102,8 +102,8 @@ window.productDetails={
     "description": "PRECINCT FOCUS Workpod kết hợp ghế bọc mềm, vách bao quanh và bàn tích hợp cho công việc cá nhân trong không gian mở. Có nhiều chiều cao vách, hướng bàn trái hoặc phải và tùy chọn nguồn điện tích hợp. Vải bọc và hoàn thiện được chọn theo cấu hình.",
     "specifications": "Thiết kế: Zenith Design Studio\nKích thước (R × S): 920 × 840 mm\nChiều cao tổng thể: 800 / 1200 / 1375 mm\nCao mặt ngồi: 450 mm\nBàn tích hợp (R × S × C): 430 × 810 × 695 mm; cao từ sàn\nHướng bàn: LH / RH\nMặt bàn: Natural Oak / Black Wenge / White\nVải: Zenith Select\nNguồn điện: GPO và USB-A/C tùy chọn\nGiá và giao hàng: liên hệ xác nhận",
     "highlights": ["Ghế mềm với bàn tích hợp", "Vách bao quanh cho công việc cá nhân", "Nguồn điện tích hợp tùy chọn"],
-    "images": ["assets/products/precinct-focus-high.jpg", "assets/products/precinct-focus-low.jpg", "assets/products/precinct-focus-left.jpg", "assets/products/precinct-focus-right.jpg", "assets/products/precinct-focus-low-side.jpg", "assets/products/precinct-focus-workplace.jpg"],
-    "galleryModes": ["contain", "contain", "contain", "contain", "contain", "contain"],
+    "images": ["assets/products/precinct-focus-high-cutout.png", "assets/products/precinct-focus-low.jpg", "assets/products/precinct-focus-left.jpg", "assets/products/precinct-focus-right.jpg", "assets/products/precinct-focus-low-side.jpg", "assets/products/precinct-focus-workplace.jpg"],
+    "galleryModes": ["cutout", "contain", "contain", "contain", "contain", "contain"],
     "galleryLabels": [["PRECINCT FOCUS", "Vách cao"], ["PRECINCT FOCUS", "Vách thấp"], ["PRECINCT FOCUS", "Góc nhìn từ trên"], ["PRECINCT FOCUS", "Bàn tích hợp"], ["PRECINCT FOCUS", "Vách thấp · Góc bên"], ["PRECINCT FOCUS", "Không gian văn phòng"]],
     "sourceUrl": "https://www.zenithinteriors.com/products/precinct-focus-workpod/",
     "specificationUrl": "https://www.zenithinteriors.com/media/gmth4e5q/precinct_focus_workpod_specification_au_mar26.pdf"
