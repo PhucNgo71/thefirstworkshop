@@ -1,4 +1,11 @@
 {
+  "modesty-mfc-1400": {
+    "name": "MFC Modesty Panel / 1400 mm Tabletop",
+    "basePrice": 1363636,
+    "price": 1500000,
+    "vatRate": 10,
+    "vatAmount": 136364
+  },
   "anchor": {
     "name": "Anchor Staff Chair",
     "basePrice": 4700000,

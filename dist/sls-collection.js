@@ -78,7 +78,11 @@
       model.highlights = [included,...(model.highlights || []).slice(0,2)];
       model.optionGroups = [{label:bench?eachTopLabel:topLabel,values:[size]},{label:topColourLabel,values:['Trắng','Xám nhạt','Sồi']},{label:frameColourLabel,values:[...frameColours]}];
       model.setTitle = setTitle; model.setSubtitle = setSubtitle;
-      model.bundleItems = [{label:bench?twoTopsName:topName,detail:bench?includedBench:includedSingle,included:true},...(model.bundleItems || [])];
+      const modesty = {id:'modesty-mfc-1400'};
+      model.bundleItems = [{label:bench?twoTopsName:topName,detail:bench?includedBench:includedSingle,included:true},...(model.bundleItems || []),modesty];
+      for (const profile of Object.values(model.configurationProfiles || {})) {
+        profile.bundleItems = [...(profile.bundleItems || []),modesty];
+      }
       if(bench) model.gallerySpecs = model.gallerySpecs.map(([label,value])=>label==='Mặt bàn'?[label,'02 × 1400 × 700 mm']:[label,value]);
     }
   };

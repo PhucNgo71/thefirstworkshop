@@ -13,6 +13,20 @@ const entries = vm.runInContext(app.match(/const catalogEntries=(\[[\s\S]*?\n\])
 const overrides = vm.runInContext('('+app.match(/const manufacturerOverrides=({[\s\S]*?\n});/)[1]+')',sandbox);
 sandbox.window.applySlsDetails(overrides);
 const catalog = require('../server/catalog.json');
+test('MFC modesty is a separate optional accessory on every SLS, priced per panel including VAT',()=>{
+  const entry=entries.find(row=>row[0]==='modesty-mfc-1400');
+  assert.equal(entry[2],'Accessories');
+  assert.equal(catalog['modesty-mfc-1400'].price,1500000);
+  assert.equal(catalog['modesty-mfc-1400'].basePrice+catalog['modesty-mfc-1400'].vatAmount,1500000);
+  for(const id of ['sls1050','sls770','sls-470-pro','sls470','sls470bench']) {
+    const model=overrides[id];
+    for(const items of [model.bundleItems,...Object.values(model.configurationProfiles||{}).map(p=>p.bundleItems)]) {
+      const panels=items.filter(item=>item.id==='modesty-mfc-1400');
+      assert.equal(panels.length,1,id);
+      assert.ok(!panels[0].included,id);
+    }
+  }
+});
 const expected = {'sls1050':14000000,'sls770':15000000,'sls-470-pro':16000000,'sls470':17000000,'sls470bench':32000000};
 
 test('SLS470 is separate from legacy SLS670 IDs with 16M base price including top, plus VAT once',()=>{

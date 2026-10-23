@@ -52,7 +52,7 @@ test('Every purchasable product and headrest configuration adds once and immedia
     context.closeCart();
     tested++;
   }
-  assert.equal(tested,48);
+  assert.equal(tested,49);
 });
 
 test('Contact-only products and invalid IDs never become zero-price orders', () => {

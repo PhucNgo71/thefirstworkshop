@@ -11,6 +11,7 @@ const catalogDetails={
  'Accessories':'Phụ kiện không gian làm việc'
 };
 const catalogEntries=[
+ ['modesty-mfc-1400','MFC Modesty Panel / 1400 mm Tabletop','Accessories',1363636,'assets/products/modesty-mfc-1400.png','modesty-mfc-1400'],
  ['anchor','Anchor Staff Chair','Seatings',4700000,'assets/products/anchor-main.jpg','anchor'],
  ['niro','Niro / Zenith','Seatings',0,'assets/products/niro-green.jpg','niro'],
 ["furnipower-pixel","PIXEL Modular Socket EU / Furnipower","Accessories",0,"assets/products/furnipower-pixel.jpg","furnipower-pixel"],

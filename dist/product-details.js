@@ -1,5 +1,14 @@
 // Product details compiled from public TFW and manufacturer product pages.
 window.productDetails={
+  "modesty-mfc-1400": {
+    "productType": "MFC Modesty Panel",
+    "description": "Optional MFC modesty panel for a 1400 mm tabletop. Sold separately, per panel. Photo shows an installation example; desk, tabletop and frame are not included. Finish and installation details to be confirmed.",
+    "specifications": "Material: MFC\nFor tabletop width: 1400 mm\nPrice: 1,500,000 VND per panel, including 10% VAT\nPanel dimensions, finish and mounting details: to be confirmed",
+    "images": ["assets/products/modesty-mfc-1400.png"],
+    "galleryLabels": [["MFC Modesty Panel", "Panel only — desk not included"]],
+    "galleryModes": ["contain"],
+    "swatches": []
+  },
   "hag-capisco": {
     "brand": "HÅG / Flokk",
     "productType": "Ghế yên ngựa bọc đệm",
