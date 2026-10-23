@@ -49,7 +49,7 @@ test('New galleries use available distinct local manufacturer photographs and tr
     assert.equal(product.galleryModes.length, expected.images);
     assert.equal(product.galleryLabels.length, expected.images);
     for (const image of product.images) assert.ok(fs.statSync(path.join(root, 'dist', image)).size > 10000);
-    assert.ok(product.galleryModes.every(mode => mode === 'contain'));
+    assert.deepEqual(Array.from(product.galleryModes), Array.from({length:expected.images}, (_, index) => id === 'activity-stool' && index === 0 ? 'cutout' : 'contain'));
     for (const value of [product.productType, product.description, product.specifications, ...(product.highlights||[]), ...product.galleryLabels.map(label => label[1])]) {
       assert.ok(translations[value], id + ': missing English translation: ' + value);
     }

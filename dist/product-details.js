@@ -74,8 +74,8 @@ window.productDetails={
     "description": "Activity Stool / Activity 2.0 là ghế đôn Actiforce với mặt ngồi đệm tròn và chiều cao điều chỉnh liên tục. Thiết kế nhỏ gọn hỗ trợ thay đổi tư thế ngồi tại văn phòng hoặc góc làm việc tại nhà.",
     "specifications": "Mẫu: Activity 2.0\nMã hãng: PA-CA002-11\nKích thước: đế Ø 360 mm; cao 610–870 mm\nMặt ngồi: Ø 339 mm\nHành trình nâng: 260 mm\nKhối lượng: 5,8 kg\nVật liệu: kim loại và nhựa; mặt ngồi bọc đệm\nMàu: đen\nGiá và giao hàng: liên hệ xác nhận",
     "highlights": ["Điều chỉnh cao 610–870 mm", "Mặt ngồi tròn bọc đệm", "Thiết kế gọn cho không gian linh hoạt"],
-    "images": ["assets/products/activity-stool-main.jpg", "assets/products/activity-stool-in-use.jpg"],
-    "galleryModes": ["contain", "contain"],
+    "images": ["assets/cutouts/activity-stool-main.png", "assets/products/activity-stool-in-use.jpg"],
+    "galleryModes": ["cutout", "contain"],
     "galleryLabels": [["Activity Stool", "Màu đen"], ["Activity Stool", "Hình ảnh sử dụng"]],
     "sourceUrl": "https://actiforce.com/en/produkt/activity-stool/",
     "specificationUrl": "https://actiforce.com/wp-content/uploads/2025/01/P_ACTIFORCE_ACCESSORIES_ACTIVITYSTOOL20___Specsheet.pdf"

@@ -40,15 +40,16 @@
       sourceDocument: 'Dress Collection 2026.pdf, pages 13–16'
     };
   }
-  // Original high-resolution product photos supplied by the client.
+  // Transparent cutouts of the client-supplied product photos.
   const dressPhotos = ['green-front', 'green-rear', 'black-front', 'black-rear',
     'blue-front', 'coral-front', 'ivory-front', 'ivory-rear'];
   window.productDetails.dress01.imageScale = 90;
   window.productDetails.dress01.variants = finishes;
   window.productDetails.dress01.swatches = ['#984e36', '#eeeae2', '#477685', '#345a49', '#171917'];
   for (const number of ['01', '04', '05', '06']) {
-    window.productDetails[`dress${number}`].images = dressPhotos.map(view => `assets/dress${number}-${view}.jpg`);
-    window.productDetails[`dress${number}`].galleryModes = dressPhotos.map(() => 'contain');
+    window.productDetails[`dress${number}`].images = dressPhotos.map(view => `assets/cutouts/dress${number}-${view}.png`);
+    window.productDetails[`dress${number}`].galleryModes = dressPhotos.map(() => 'cutout');
+    window.productDetails[`dress${number}`].imageScale = 72;
   }
   window.dressTranslations = translations;
 })();
