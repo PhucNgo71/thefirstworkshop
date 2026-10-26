@@ -1991,10 +1991,10 @@ Object.assign(window.productDetails,{
   niro.swatches = schemes.map(scheme => scheme[2]);
   niro.optionGroups = [{label: 'Standard colour / Màu tiêu chuẩn', values: schemes.map(scheme => `${scheme[0]} · ${scheme[1]}`)}];
   niro.specifications += '\n\nStandard colour schemes / Phối màu tiêu chuẩn:\n' + schemes.map(scheme => `${scheme[0]} ${scheme[1]} — WAFFLE-${scheme[3]} / FRIDAY-${scheme[4]}`).join('\n') + '\nMàu hiển thị chỉ mang tính tham khảo; xác nhận mẫu vật liệu và tình trạng cung ứng khi tư vấn.';
-  const colourImages = ['01', '02', ...schemes.map(scheme => scheme[5])].map(page => `assets/products/niro-colors-${page}.png`);
-  niro.images = [niro.images[0], ...colourImages, ...niro.images.slice(1)];
+  const colourImages = schemes.map(scheme => `assets/products/niro-${scheme[0].toLowerCase()}.jpg`);
+  niro.images = [...colourImages, ...niro.images.slice(1)];
   niro.galleryModes = niro.images.map(() => 'contain');
-  niro.galleryLabels = [niro.galleryLabels[0], ['Niro', 'Frame colours / Màu khung'], ['Niro', 'Mesh & fabric / Lưới & vải'], ...schemes.map(scheme => ['Niro', `${scheme[0]} · ${scheme[1]}`]), ...niro.galleryLabels.slice(1)];
+  niro.galleryLabels = [...schemes.map(scheme => ['Niro', `${scheme[0]} · ${scheme[1]}`]), ...niro.galleryLabels.slice(1)];
 }
 
 // Brochure-verified Anchor and Parco updates.
