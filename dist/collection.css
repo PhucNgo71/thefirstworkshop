@@ -39,8 +39,11 @@
 .product-card[data-product-line="flooring-solutions"] .product-price{margin:.55rem 0;font-weight:600;line-height:1.5}
 .product-card[data-product-line="flooring-solutions"] .add-button{display:block;margin-top:1rem;text-decoration:underline;text-underline-offset:4px}
 .product-card[data-product-line="flooring-solutions"] .swatches{display:none}
-.product-grid.carpet-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:1px}
-.carpet-grid .product-visual{aspect-ratio:3/2}
+.product-grid.carpet-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;max-width:1200px;margin-inline:auto;width:100%}
+.carpet-grid .product-visual{aspect-ratio:4/3;height:auto;max-height:300px;min-height:0}
+.product-card[data-product-line="flooring-solutions"]{min-width:0}
+.product-card[data-product-line="flooring-solutions"] .product-image-button{position:absolute;inset:0;min-width:0;min-height:0}
+@media(min-width:651px) and (max-width:900px){.product-grid.carpet-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .carpet-intro{display:grid;grid-template-columns:1fr 1fr;gap:2rem;padding:2.5rem 0;align-items:end}
 .carpet-intro h3{font-size:clamp(1.8rem,3vw,3rem);max-width:600px;line-height:1.1;margin:0}
 .carpet-intro>p{max-width:460px;color:var(--muted);line-height:1.6;margin:0}
