@@ -167,6 +167,8 @@ const english = {
 };
 
 const originalText = new WeakMap();
+english['Màu tiêu chuẩn']='Standard colour';
+english['Lưng: lưới Waffle, khung nhựa linh hoạt\nMặt ngồi: vải Friday\nĐiều chỉnh: chiều cao và độ nghiêng\nĐộ nghiêng: sau 12° / trước 5°\nTrụ nâng: KGS Class 4\nChân: nylon 350 mm; bánh xe 60 mm\nCao mặt ngồi: 445–540 mm (ghế) / 635–820 mm (ghế cao)\nMàu: 8 phối màu tiêu chuẩn; xác nhận mẫu khi tư vấn']='Back: Waffle mesh with a flexible plastic frame\nSeat: Friday fabric\nAdjustment: seat height and tilt\nTilt: 12° backward / 5° forward\nGas lift: KGS Class 4\nBase: 350 mm nylon; 60 mm castors\nSeat height: 445–540 mm (chair) / 635–820 mm (stool)\nColours: 8 standard schemes; confirm with a material sample';
 Object.assign(english, window.dressTranslations || {});
 Object.assign(english, window.slsTranslations || {});
 english['Giá đã bao gồm 10% VAT.']='Prices include 10% VAT.';

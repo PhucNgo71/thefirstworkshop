@@ -161,6 +161,17 @@
 .product-image-button[data-product="sls470bench"] img{width:100%;height:100%;object-fit:cover;object-position:50% 72%}
 .lean-detail .detail-image img[src$="sls-670-bench-actiforce.jpg"],.lean-detail .detail-image img[src$="sls-670-bench-side-actiforce.jpg"]{width:100%;height:100%;object-fit:cover;object-position:50% 72%}
 #configuratorImage[src$="-actiforce.jpg"]{position:absolute;top:-15%;left:0;width:100%;height:135%;object-fit:contain}
+#detailSpecifications{white-space:pre-line}
+/* Match visible Niro chair heights despite different source-image margins. */
+.detail-image img[src*="/niro-d0"],.detail-image img[src*="/niro-d3"],.detail-image img[src*="/niro-d47"]{width:100%;height:var(--niro-height,86%);max-height:100%;inset:0;margin:auto;transform:translateY(-4%)}
+.detail-image img[src$="niro-d01.jpg"]{--niro-height:86.3%}
+.detail-image img[src$="niro-d02.jpg"]{--niro-height:87%}
+.detail-image img[src$="niro-d34.jpg"]{--niro-height:77.1%}
+.detail-image img[src$="niro-d36.jpg"]{--niro-height:88.2%}
+.detail-image img[src$="niro-d37.jpg"]{--niro-height:84.3%}
+.detail-image img[src$="niro-d38.jpg"]{--niro-height:87.7%}
+.detail-image img[src$="niro-d39.jpg"]{--niro-height:83.5%}
+.detail-image img[src$="niro-d47.jpg"]{--niro-height:80.9%}
 /* Keep the compact collection introduction compact when its panels stack. */
 @media(max-width:900px){.collection-hero .hero-copy{min-height:0;padding:2rem 1.25rem}.collection-hero .collection-intro{min-height:0;padding:1.5rem 1.25rem}}
 @media(max-width:580px){.collection-hero h1{font-size:2.4rem}.collection-hero .eyebrow{font-size:.65rem;margin-bottom:.75rem}.collection-intro p{font-size:1rem}}

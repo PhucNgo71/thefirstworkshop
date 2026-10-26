@@ -1989,8 +1989,9 @@ Object.assign(window.productDetails,{
     ['D47', 'Wine Red', '#792f38', '580', '580', '10']
   ];
   niro.swatches = schemes.map(scheme => scheme[2]);
-  niro.optionGroups = [{label: 'Standard colour / Màu tiêu chuẩn', values: schemes.map(scheme => `${scheme[0]} · ${scheme[1]}`)}];
-  niro.specifications += '\n\nStandard colour schemes / Phối màu tiêu chuẩn:\n' + schemes.map(scheme => `${scheme[0]} ${scheme[1]} — WAFFLE-${scheme[3]} / FRIDAY-${scheme[4]}`).join('\n') + '\nMàu hiển thị chỉ mang tính tham khảo; xác nhận mẫu vật liệu và tình trạng cung ứng khi tư vấn.';
+  niro.optionGroups = [{label: 'Màu tiêu chuẩn', values: schemes.map(scheme => `${scheme[0]} · ${scheme[1]}`)}];
+  niro.colourSchemes = schemes.map(([code,name,hex,mesh,seat]) => ({code,name,hex,mesh:`WAFFLE-${mesh}`,seat:`FRIDAY-${seat}`}));
+  niro.specifications = 'Lưng: lưới Waffle, khung nhựa linh hoạt\nMặt ngồi: vải Friday\nĐiều chỉnh: chiều cao và độ nghiêng\nĐộ nghiêng: sau 12° / trước 5°\nTrụ nâng: KGS Class 4\nChân: nylon 350 mm; bánh xe 60 mm\nCao mặt ngồi: 445–540 mm (ghế) / 635–820 mm (ghế cao)\nMàu: 8 phối màu tiêu chuẩn; xác nhận mẫu khi tư vấn';
   const colourImages = schemes.map(scheme => `assets/products/niro-${scheme[0].toLowerCase()}.jpg`);
   niro.images = [...colourImages, ...niro.images.slice(1)];
   niro.galleryModes = niro.images.map(() => 'contain');
