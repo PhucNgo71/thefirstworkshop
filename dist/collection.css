@@ -33,6 +33,21 @@
 .product-badge{position:absolute;left:.8rem;top:.8rem;background:var(--green);color:#fff;padding:.35rem .5rem;font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;z-index:1}
 .product-grid{grid-template-columns:repeat(3,1fr);gap:3px;background:#d9dcda;border:0}
 .product-card{background:#f1f1f1}
+.product-card[data-product-line="flooring-solutions"] .product-image-button img{width:100%;height:100%;object-fit:cover;object-position:center 65%;mix-blend-mode:normal}
+.product-card[data-product-line="flooring-solutions"] .product-meta{display:block;padding:1.25rem}
+.product-card[data-product-line="flooring-solutions"] .product-title{font-size:1.1rem}
+.product-card[data-product-line="flooring-solutions"] .product-price{margin:.55rem 0;font-weight:600;line-height:1.5}
+.product-card[data-product-line="flooring-solutions"] .add-button{display:block;margin-top:1rem;text-decoration:underline;text-underline-offset:4px}
+.product-card[data-product-line="flooring-solutions"] .swatches{display:none}
+.carpet-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:1px}
+.carpet-grid .product-visual{aspect-ratio:3/2}
+.carpet-intro{display:grid;grid-template-columns:1fr 1fr;gap:2rem;padding:2.5rem 0;align-items:end}
+.carpet-intro h3{font-size:clamp(1.8rem,3vw,3rem);max-width:600px;line-height:1.1;margin:0}
+.carpet-intro>p{max-width:460px;color:var(--muted);line-height:1.6;margin:0}
+.carpet-group{grid-column:1/-1;display:flex;justify-content:space-between;gap:1.5rem;background:#e6ece3;padding:1.5rem;align-items:center}
+.carpet-group h3{margin:0;font-size:1.3rem}.carpet-group p{font-size:.8rem;max-width:440px;line-height:1.5;margin:.5rem 0 0}
+.carpet-group-price{display:grid;gap:.4rem;text-align:right}.carpet-group-price strong{font-size:1rem}.carpet-group-price span{font-size:.8rem;color:var(--muted)}
+@media(max-width:650px){.carpet-grid{grid-template-columns:1fr}.carpet-intro{grid-template-columns:1fr;gap:1rem;padding:1.5rem 0}.carpet-group{display:block}.carpet-group-price{text-align:left;margin-top:1rem}}
 .product-visual{aspect-ratio:4/3;background:#f1f1f1;position:relative;overflow:hidden}
 .product-visual::after{display:none}
 .product-image-button{border:0;background:transparent;width:100%;height:100%;padding:0;cursor:pointer;display:grid;place-items:center;position:relative}

@@ -2,7 +2,7 @@ const fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 const root=path.resolve(__dirname,'..');
 const read=f=>fs.readFileSync(path.join(root,'dist',f),'utf8');
 const context=vm.createContext({window:{},URL});
-for(const file of ['product-details.js','product-gallery.js','dress-collection.js','sls-collection.js'])vm.runInContext(read(file),context);
+for(const file of ['product-details.js','product-gallery.js','dress-collection.js','sls-collection.js','carpet-collection.js'])vm.runInContext(read(file),context);
 const app=read('app.js');
 vm.runInContext(app.slice(app.indexOf('const wpodExperience='),app.indexOf('const manufacturerOverrides=')),context);
 const entries=vm.runInContext(app.match(/const catalogEntries=(\[[\s\S]*?\n\]);/)[1],context);

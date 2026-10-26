@@ -66,7 +66,7 @@ test('PO and the existing 24-field Excel payload share gross totals and explicit
   assert.equal(payload.row.TotalVND,row.TotalVND);assert.equal(payload.schemaVersion,1);
 });
 test('From is a display label only; cart and order values remain exact',()=>{
-  assert.match(app,/const priceText=p=>p.contactOnly\?'Liên hệ':`Từ \$\{money\(p.price\)\} \(đã gồm 10% VAT\)`/);
+  assert.match(app,/const priceText=p=>p.contactOnly\?\(window\.carpetCollection\?\.priceText\(p.id\)\|\|'Liên hệ'\):`Từ \$\{money\(p.price\)\} \(đã gồm 10% VAT\)`/);
   assert.match(read('dist/i18n.js'),/From \$1 \(including 10% VAT\)/);
   assert.ok(!read('server/orders.cjs').includes('From ${money'));
 });

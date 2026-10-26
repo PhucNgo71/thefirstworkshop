@@ -172,6 +172,7 @@ english['Lưng: lưới Waffle, khung nhựa linh hoạt\nMặt ngồi: vải Fr
 Object.assign(english, window.dressTranslations || {});
 Object.assign(english, window.slsTranslations || {});
 Object.assign(english, window.specificationTranslations || {});
+Object.assign(english, window.carpetTranslations || {});
 english['Giá đã bao gồm 10% VAT.']='Prices include 10% VAT.';
 const originalAttributes = new WeakMap();
 let currentLanguage = localStorage.getItem('tfw-language') === 'en' ? 'en' : 'vi';

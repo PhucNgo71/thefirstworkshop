@@ -1355,28 +1355,6 @@ window.productDetails={
     ],
     "sourceUrl": "https://tfw.space/products/natural-supply-collection"
   },
-  "on-the-track": {
-    "brand": "Milliken",
-    "productType": "Flooring Solutions · Milliken",
-    "description": "On The Track Collection lấy cảm hứng từ các đường ray; Cuộc sống tựa như một đường ray mở, không hề có một lộ trình được định sẵn. Điều đó cho phép bạn tự do lựa chọn hướng đi của chính mình, để trải nghiệm những ngã rẽ bất ngờ và khám phá những điểm đến đầy thú vị trên mỗi chặng đường. Thông số kỹ thuật: Cấu tạo: Thảm dệt sợi vòng cấu trúc\nKích thước gạch thảm: 25cm x 100cm\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\nPhương pháp nhuộm: Nhuộm trong dung dịch\nLớp đế tiêu chuẩn: WellBAC™ Function không chứa PVC\nCó sẵn với công nghệ TractionBack®\nĐộ dày tổng thể danh định: 5.5mm ±10%\nKhả năng chống cháy: ≥ 0.45 (Loại I)\nĐánh giá duy trì bề mặt: Mức độ nặng\nChất lượng không khí trong nhà: CRI Green Label Plus™\nGLP3200, Phân loại thảm 14X",
-    "specifications": "Thông số kỹ thuật:\n\nCấu tạo: Thảm dệt sợi vòng cấu trúc\n\nKích thước gạch thảm: 25cm x 100cm\n\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\n\nPhương pháp nhuộm: Nhuộm trong dung dịch\n\nLớp đế tiêu chuẩn: WellBAC™ Function không chứa PVC\n\nCó sẵn với công nghệ TractionBack®\n\nĐộ dày tổng thể danh định: 5.5mm &plusmn;10%\n\nKhả năng chống cháy: &ge; 0.45 (Loại I)\n\nĐánh giá duy trì bề mặt: Mức độ nặng\n\nChất lượng không khí trong nhà: CRI Green Label Plus™\n\nGLP3200, Phân loại thảm 14X",
-    "variants": [],
-    "images": [
-      "https://cdn.hstatic.net/products/200000617147/1_3__abba627021d24d81999d342581252dbe_master.png",
-      "https://cdn.hstatic.net/products/200000617147/3_3__df00a3da7dab42b0adde2a9ebae4ce6e_master.png",
-      "https://cdn.hstatic.net/products/200000617147/5_5__0a1f41aae1b64e5496fc9886742d3ee3_master.png",
-      "https://cdn.hstatic.net/products/200000617147/6_6__4740456ef6b34b03b7cbf4cdd0e1be5d_master.png",
-      "https://cdn.hstatic.net/products/200000617147/2_3__9af8b2dcdc674cceb3a6822651301915_master.png",
-      "https://cdn.hstatic.net/products/200000617147/4_3__fa849508ad4f4c7da3429e9c3d509060_master.png",
-      "https://cdn.hstatic.net/products/200000617147/7_6__1301f1f4718e40e0868e4bfd4fd0788c_master.png",
-      "https://cdn.hstatic.net/products/200000617147/8_6__380cf9bfa7d240afa30357a749d5b4bf_master.png",
-      "https://cdn.hstatic.net/products/200000617147/9_7__741092d6414c4a7cbb2f085e125b3712_master.png",
-      "https://cdn.hstatic.net/products/200000617147/10_8__d738037c109943adbe6218d9a26be905_master.png",
-      "https://cdn.hstatic.net/products/200000617147/11_7__b64f89d8f029410e91ddf55f3c7250e1_master.png",
-      "https://cdn.hstatic.net/products/200000617147/12_5__4c8da7feed3342cba00e70f3a54e5e7b_master.png"
-    ],
-    "sourceUrl": "https://tfw.space/products/on-the-track-collection"
-  },
   "patina": {
     "brand": "Khác",
     "productType": "Flooring Solutions · Milliken",
@@ -1417,23 +1395,6 @@ window.productDetails={
       "https://cdn.hstatic.net/products/200000617147/10_6__629d71684728493e8af064612c888c43_master.png"
     ],
     "sourceUrl": "https://tfw.space/products/retrofit-collection"
-  },
-  "ripple-effect": {
-    "brand": "Milliken",
-    "productType": "Flooring Solutions · Milliken",
-    "description": "Ripple Effect Collection lấy cảm hứng từ vùng cửa sông nước lợ, nơi dòng nước ngọt và thủy triều đại dương gặp nhau. Sự va chạm của những đợt thủy triều mạnh – nước mặn xâm nhập hòa cùng mạch nước ngọt và những gợn sóng trên bề mặt – đã tạo nên một thiết kế tự nhiên tinh xảo khi nhìn từ trên cao. Các yếu tố kết cấu nhiều lớp được tạo ra nhờ ánh sáng tự nhiên phản chiếu trên mặt nước, làm nổi bật đặc trưng của thiết kế thông qua bản chất phản chiếu của nó. Trong khi đó, chuyển động xoáy dưới nước kích thích sự chuyển động nhẹ nhàng của đáy đại dương, tạo nên các lớp vân và hiệu ứng gợn sóng độc đáo. Thông số kỹ thuật: Cấu tạo: Thảm dệt sợi vòng cấu trúc\nKích thước gạch thảm: 50cm x 50cm (chỉ dành cho Breeze) hoặc 25cm x 100cm\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\nPhương pháp nhuộm: Millitron®\nLớp đế tiêu chuẩn: WellBAC™ Function không chứa PVC (Optional: Công nghệ TractionBack®)\nĐộ dày tổng thể danh định: 6.3 mm ±10%\nChống thấm/chống bám bẩn/dễ làm sạch: Công nghệ StainSmart®\nKhả năng chống cháy: ≥ 0.45 (Loại I)\nĐánh giá duy trì bề mặt (TARR): Mức độ nặng\nChất lượng không khí trong nhà: CRI Green Label Plus™\nMã sản phẩm: GLP3210, Phân loại thảm 6Y",
-    "specifications": "Thông số kỹ thuật:\n\nCấu tạo: Thảm dệt sợi vòng cấu trúc\n\nKích thước gạch thảm: 50cm x 50cm (chỉ dành cho Breeze) hoặc 25cm x 100cm\n\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\n\nPhương pháp nhuộm: Millitron®\n\nLớp đế tiêu chuẩn: WellBAC™ Function không chứa PVC (Optional: Công nghệ TractionBack®)\n\nĐộ dày tổng thể danh định: 6.3 mm &plusmn;10%\n\nChống thấm/chống bám bẩn/dễ làm sạch: Công nghệ StainSmart®\n\nKhả năng chống cháy: &ge; 0.45 (Loại I)\n\nĐánh giá duy trì bề mặt (TARR): Mức độ nặng\n\nChất lượng không khí trong nhà: CRI Green Label Plus™\n\nMã sản phẩm: GLP3210, Phân loại thảm 6Y",
-    "variants": [],
-    "images": [
-      "https://cdn.hstatic.net/products/200000617147/1_10__2905235d47bb4247bab00bfe9add82da_master.png",
-      "https://cdn.hstatic.net/products/200000617147/2_11__45b8d6990f8248849de559273dbb1d2a_master.png",
-      "https://cdn.hstatic.net/products/200000617147/3_11__9ecef23c5c164b93b8f441c15bf22dc7_master.png",
-      "https://cdn.hstatic.net/products/200000617147/4_11__3b9a4fff9c704b6e90e575dd47da376e_master.png",
-      "https://cdn.hstatic.net/products/200000617147/5_13__dfd79d5f1a8443b28d57ec1fbce8f4d4_master.png",
-      "https://cdn.hstatic.net/products/200000617147/6_14__bf93b360bdaf4b63a1697f7a7bffd728_master.png",
-      "https://cdn.hstatic.net/products/200000617147/7_13__3aa7a5c9d0894af39cc64be414b3bfda_master.png"
-    ],
-    "sourceUrl": "https://tfw.space/products/ripple-effect-collection"
   },
   "fracture": {
     "brand": "Acoufelt",

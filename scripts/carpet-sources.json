@@ -1,0 +1,22 @@
+{
+  "reviewed": "2026-10-26",
+  "moments-in-time": {
+    "source": "https://www.milliken.com/en-my/businesses/floor-covering",
+    "images": ["https://contenthub.milliken.com/api/public/content/b6231cd7f230408ab5272e9d96b41aa4?v=41209fa6", "https://contenthub.milliken.com/api/public/content/1747ed43fde24ce2b40a6e6111d3c2e0?v=4571bdbf"]
+  },
+  "pattern-play": {
+    "source": "https://www.milliken.com/en-gb/businesses/floor-covering/collections/pattern-play",
+    "specifications": "https://contenthub.milliken.com/api/public/content/f4f32934c29e4885a1cb6fdf8d143c3e",
+    "images": ["https://www.milliken.com/-/media/7F2E05785BB6498386CCA9F6FA0252F8.ashx", "https://www.milliken.com/-/media/8FA0F81B9A0C4C3091887BDC594B922F.ashx"]
+  },
+  "coastline": {
+    "source": "https://www.milliken.com/en-gb/businesses/floor-covering/collections/coastline",
+    "specifications": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/documents/2C/E9/Coastline_Brochure.pdf?v=2024.08.05.23.04.16",
+    "images": ["https://www.milliken.com/-/media/milliken/businesses/floor-covering/europe/images/collections/coastline-new/coastline-installation.jpg"]
+  },
+  "passage": {
+    "source": "https://pr.www.ipros.com/en/milliken/product/detail/2000627641/",
+    "specifications": "https://contenthub.milliken.com/api/public/content/8a63c5dd3f104838b67937e35208c47c?v=13c6f084",
+    "images": ["https://image.www.ipros.com/public/product/image/153/2000627641/IPROS32071234019327124000.png"]
+  }
+}

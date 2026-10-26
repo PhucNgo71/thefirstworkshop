@@ -556,8 +556,8 @@
     "vatRate": 0,
     "vatAmount": 0
   },
-  "airborn": {
-    "name": "Air Born Collection",
+  "retrofit": {
+    "name": "Retrofit Collection",
     "basePrice": 0,
     "price": 0,
     "vatRate": 0,
@@ -565,6 +565,20 @@
   },
   "building-blocks": {
     "name": "Building Blocks 2.0 Collection",
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
+  },
+  "natural-supply": {
+    "name": "Natural Supply Collection",
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
+  },
+  "airborn": {
+    "name": "Air Born Collection",
     "basePrice": 0,
     "price": 0,
     "vatRate": 0,
@@ -591,20 +605,6 @@
     "vatRate": 0,
     "vatAmount": 0
   },
-  "natural-supply": {
-    "name": "Natural Supply Collection",
-    "basePrice": 0,
-    "price": 0,
-    "vatRate": 0,
-    "vatAmount": 0
-  },
-  "on-the-track": {
-    "name": "On The Track Collection",
-    "basePrice": 0,
-    "price": 0,
-    "vatRate": 0,
-    "vatAmount": 0
-  },
   "patina": {
     "name": "Patina Collection",
     "basePrice": 0,
@@ -612,15 +612,29 @@
     "vatRate": 0,
     "vatAmount": 0
   },
-  "retrofit": {
-    "name": "Retrofit Collection",
+  "moments-in-time": {
+    "name": "Moments in Time Collection",
     "basePrice": 0,
     "price": 0,
     "vatRate": 0,
     "vatAmount": 0
   },
-  "ripple-effect": {
-    "name": "Ripple Effect Collection",
+  "pattern-play": {
+    "name": "Pattern Play Collection",
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
+  },
+  "coastline": {
+    "name": "Coastline Collection",
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
+  },
+  "passage": {
+    "name": "Passage Collection",
     "basePrice": 0,
     "price": 0,
     "vatRate": 0,

@@ -10,10 +10,10 @@ const i18n=fs.readFileSync(path.join(root,'dist/i18n.js'),'utf8');
 const vietnamese=/[ăâđêôơưạảấầẩẫậắằẳẵặẹẻẽếềểễệỉĩịọỏốồổỗộớờởỡợụủũứừửữựỳỵỷỹ]/i;
 const fallback='Thông số chi tiết được xác nhận theo cấu hình và báo giá.';
 function source(id){return {...context.window.productDetails[id],...overrides[id],...context.window.productGalleryOverrides?.[id]};}
-test('All 97 product specification panels render English through the actual translator',()=>{
+test('All product specification panels render English through the actual translator',()=>{
   const c=vm.createContext({english:translations});
   vm.runInContext(i18n.slice(i18n.indexOf('function translatedText('),i18n.indexOf('function applyLanguage(')),c);
-  assert.equal(entries.length,97);
+  assert.equal(entries.length,99);
   for(const [id] of entries){
     c.input=source(id).specifications||fallback;
     const output=vm.runInContext('translatedText(input)',c);
