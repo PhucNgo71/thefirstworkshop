@@ -9,6 +9,15 @@ const root=path.resolve(__dirname,'..');
 const i18n=fs.readFileSync(path.join(root,'dist/i18n.js'),'utf8');
 const vietnamese=/[ăâđêôơưạảấầẩẫậắằẳẵặẹẻẽếềểễệỉĩịọỏốồổỗộớờởỡợụủũứừửữựỳỵỷỹ]/i;
 const fallback='Thông số chi tiết được xác nhận theo cấu hình và báo giá.';
+test('Every product detail field has an English translation, beyond specifications',()=>{
+  const {result}=require('../scripts/audit-product-english.cjs');
+  assert.deepEqual(result,[],JSON.stringify(result.map(x=>x.uses)));
+  const generated=fs.readFileSync(path.join(root,'dist/detail-translations.js'),'utf8');
+  const c=vm.createContext({window:{}});vm.runInContext(generated,c);
+  assert.deepEqual(JSON.parse(JSON.stringify(c.window.detailTranslations)),require('../scripts/product-details-en.json'));
+  const html=fs.readFileSync(path.join(root,'dist/index.html'),'utf8');
+  assert.ok(html.indexOf('src="detail-translations.js"')<html.indexOf('src="i18n.js"'));
+});
 function source(id){return {...context.window.productDetails[id],...overrides[id],...context.window.productGalleryOverrides?.[id]};}
 test('All product specification panels render English through the actual translator',()=>{
   const c=vm.createContext({english:translations});

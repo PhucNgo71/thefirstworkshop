@@ -55,6 +55,38 @@
     product.highlights=[text(shortVi,shortEn),text('Chọn màu theo mẫu vật liệu','Choose colours from material samples'),text('Xác nhận khối lượng và thi công khi báo giá','Quantity and installation confirmed with quotation')];
     summaries[id]=text(shortVi,shortEn);
   }
+  // Distinct collection photographs extracted from the Milliken Asia brochure.
+  const brochureImages={
+  "retrofit": [
+    "assets/products/milliken-retrofit-brochure-1.jpg",
+    "assets/products/milliken-retrofit-brochure-2.jpg"
+  ],
+  "building-blocks": [
+    "assets/products/milliken-building-blocks-brochure-1.jpg",
+    "assets/products/milliken-building-blocks-brochure-2.jpg"
+  ],
+  "natural-supply": [
+    "assets/products/milliken-natural-supply-brochure-1.jpg",
+    "assets/products/milliken-natural-supply-brochure-2.jpg"
+  ],
+  "heavy-meta": [
+    "assets/products/milliken-heavy-meta-brochure-1.jpg",
+    "assets/products/milliken-heavy-meta-brochure-2.jpg"
+  ],
+  "living-facades": [
+    "assets/products/milliken-living-facades-brochure-1.jpg",
+    "assets/products/milliken-living-facades-brochure-2.jpg"
+  ],
+  "patina": [
+    "assets/products/milliken-patina-brochure-1.jpg",
+    "assets/products/milliken-patina-brochure-2.jpg"
+  ]
+};
+  for(const [id,images] of Object.entries(brochureImages)){
+    window.productDetails[id].images=images;
+    window.productGalleryOverrides[id]={...window.productGalleryOverrides[id],images};
+  }
+  const imageStyle=(id)=>brochureImages[id]?'width:100%;height:100%;object-fit:cover;object-position:center 60%':'';
   const range=text('605.000–935.000 ₫/m² (đã gồm 10% VAT)','605,000–935,000 VND/m² (including 10% VAT)');
   const groupTitle=text('Lựa chọn 01','Option 01');
   const net=text('550.000–850.000 ₫/m² chưa VAT','550,000–850,000 VND/m² before VAT');
@@ -64,7 +96,7 @@
   const title=text('Thảm cho không gian làm việc.','Carpet for the way you work.');
   const intro=text('Khám phá kết cấu, màu sắc và bố cục. Chọn bộ sưu tập, chúng tôi sẽ hỗ trợ mẫu vật liệu và báo giá cho dự án.','Explore texture, colour and layout. Choose a collection for material samples and a project quotation.');
   const note=text('Giá tham khảo; màu, khối lượng, giao hàng và thi công được xác nhận trong báo giá.','Indicative pricing; colour, quantity, delivery and installation are confirmed in the quotation.');
-  window.carpetCollection={firstGroup,summaries,priceText:id=>firstGroup.includes(id)?range:null,decorateGrid(filter){
+  window.carpetCollection={firstGroup,summaries,imageStyle,priceText:id=>firstGroup.includes(id)?range:null,decorateGrid(filter){
     const grid=document.getElementById('productGrid');
     if(!grid)return;
     grid.classList.toggle('carpet-grid',filter==='Flooring Solutions');

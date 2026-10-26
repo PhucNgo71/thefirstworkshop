@@ -1,0 +1,56 @@
+{
+  "source": "https://contenthub.milliken.com/api/public/content/8a63c5dd3f104838b67937e35208c47c?v=13c6f084",
+  "title": "Milliken Flooring Asia Product Portfolio 2025",
+  "selections": {
+    "retrofit": [
+      "p113-1",
+      "p114-0"
+    ],
+    "building-blocks": [
+      "p34-0",
+      "p33-0"
+    ],
+    "natural-supply": [
+      "p88-0",
+      "p89-0"
+    ],
+    "heavy-meta": [
+      "p67-1",
+      "p66-1"
+    ],
+    "living-facades": [
+      "p74-0",
+      "p72-1"
+    ],
+    "patina": [
+      "p99-0",
+      "p98-3"
+    ]
+  },
+  "images": {
+    "retrofit": [
+      "assets/products/milliken-retrofit-brochure-1.jpg",
+      "assets/products/milliken-retrofit-brochure-2.jpg"
+    ],
+    "building-blocks": [
+      "assets/products/milliken-building-blocks-brochure-1.jpg",
+      "assets/products/milliken-building-blocks-brochure-2.jpg"
+    ],
+    "natural-supply": [
+      "assets/products/milliken-natural-supply-brochure-1.jpg",
+      "assets/products/milliken-natural-supply-brochure-2.jpg"
+    ],
+    "heavy-meta": [
+      "assets/products/milliken-heavy-meta-brochure-1.jpg",
+      "assets/products/milliken-heavy-meta-brochure-2.jpg"
+    ],
+    "living-facades": [
+      "assets/products/milliken-living-facades-brochure-1.jpg",
+      "assets/products/milliken-living-facades-brochure-2.jpg"
+    ],
+    "patina": [
+      "assets/products/milliken-patina-brochure-1.jpg",
+      "assets/products/milliken-patina-brochure-2.jpg"
+    ]
+  }
+}
