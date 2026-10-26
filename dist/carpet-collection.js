@@ -1,5 +1,6 @@
 (() => {
   const collectionLinks={
+  "topography-2": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=409&collectionName=Topography+2.0",
   "retrofit": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=506&collectionName=Retrofit-Asia+Pacific",
   "building-blocks": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=423&collectionName=Building+Blocks+C+2.0",
   "natural-supply": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=482&collectionName=Nature+Supply-Asia+Pacific",
@@ -16,6 +17,12 @@
   const text=(vi,en)=>(translations[vi]=en,vi);
   const firstGroup=['retrofit','building-blocks','natural-supply','airborn'];
   const additions={
+    'topography-2':{
+      description:text("Bốn họa tiết lấy cảm hứng từ bản đồ địa hình: Explorer, Relief, Navigator và Regions. Kết hợp đường nét hình học, kết cấu và màu nhấn để phân vùng, dẫn hướng trong không gian làm việc.","Four map-inspired designs: Explorer, Relief, Navigator and Regions. Combine geometric lines, texture and colour accents for zoning and wayfinding in workspaces."),
+      images:["assets/products/milliken-topography-2-1.webp", "assets/products/milliken-topography-2-2.webp", "assets/products/milliken-topography-2-3.webp", "assets/products/milliken-topography-2-4.webp"],
+      sourceUrl:"https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=409&collectionName=Topography+2.0",
+      summary:text('Họa tiết địa hình và dẫn hướng','Map-inspired patterns and wayfinding')
+    },
     'moments-in-time':{
       description:text('Họa tiết lấy cảm hứng từ đường chỉ và cảnh quan biến đổi. Những lớp kết cấu và sắc màu trầm tạo cảm giác bình yên cho không gian.','Stitch-inspired patterns and changing landscapes, layered with muted colours for a calm, grounded space.'),
       specifications:text('Thương hiệu: Milliken\nBộ sưu tập: Moments in Time\nLoại: thảm tấm\nKích thước, đế thảm và màu: xác nhận theo mẫu được chọn\nGiá và thời gian giao: liên hệ báo giá','Brand: Milliken\nCollection: Moments in Time\nType: carpet tiles\nDimensions, backing and colours: confirm selected design\nPrice and delivery: contact for quotation'),
@@ -69,6 +76,7 @@
   }
   // Collection-matched photographs from the Milliken Asia catalogue and brochure.
   const brochureImages={
+  "topography-2": additions["topography-2"].images,
   "moments-in-time": additions["moments-in-time"].images,
   "pattern-play": additions["pattern-play"].images,
   "retrofit": [
@@ -278,6 +286,19 @@
       "vi": "Chứng nhận ghi trong tài liệu hãng:\nCradle to Cradle Certified® Silver — chứng nhận bền vững đa tiêu chí.\nCRI Green Label Plus — phát thải hóa chất trong nhà thấp; Đạt.\nSingapore Green Label — nhãn môi trường.\nSingapore Green Building Product (SGBP) — mức Leader (4 dấu tick).\n\nCông bố môi trường và thành phần:\nUL EPD — tuyên bố môi trường sản phẩm được xác minh.\nDeclare — công bố thành phần vật liệu.\nHPD — bản công bố thành phần và thông tin nguy hại liên quan đến sức khỏe.\nRESET — biểu trưng được nêu trong tài liệu; xem hồ sơ RESET Embodied trong thư viện hãng để xác nhận phạm vi.\n\nDanh mục trên theo tài liệu sản phẩm, không thay thế chứng chỉ. Tài liệu không nêu đầy đủ số chứng chỉ hoặc ngày hết hạn; hồ sơ hiện hành và phạm vi đế/mẫu cần được xác nhận cho dự án.",
       "en": "Certifications listed in the manufacturer sheet:\nCradle to Cradle Certified® Silver — multi-attribute sustainability certification.\nCRI Green Label Plus — low indoor chemical emissions; Pass.\nSingapore Green Label — environmental label.\nSingapore Green Building Product (SGBP) — Leader (4 ticks).\n\nEnvironmental and ingredient disclosures:\nUL EPD — verified Environmental Product Declaration.\nDeclare — material ingredient disclosure.\nHPD — product contents and associated health-hazard disclosure.\nRESET — mark shown in the sheet; consult the manufacturer’s RESET Embodied records for scope.\n\nThis list follows the product sheet and does not replace certificates. Complete certificate numbers and expiry dates are not provided in the sheet; confirm current documents and backing/design scope for the project."
     }
+  },
+  "topography-2": {
+    "name": "Topography 2.0",
+    "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/documents/8D/17/SPECS_TOPOGRAPHY%202.0%20EN%20.pdf?v=2025.04.03.09.13.14",
+    "specifications": {
+      "vi": "Thương hiệu: Milliken\nBộ sưu tập: Topography 2.0\nKích thước: 50 × 50 cm\nCấu trúc: Thảm chần sợi vòng\nSợi bề mặt: 100% nylon được Milliken chứng nhận\nCông nghệ tạo màu: Millitron®\nCự ly kim (gauge): 1/10\nMật độ mũi chần (theo tài liệu hãng): 14\nĐế tiêu chuẩn: WellBAC® Comfort · không chứa PVC\nTùy chọn đế chống trượt: TractionBack®\nTổng độ dày danh nghĩa: 8.4 mm ±10%\nKhả năng tái chế (hãng công bố): 100%\nHàm lượng tái chế theo tổng khối lượng (sau sản xuất / sau tiêu dùng): 45.1% (42.0% / 3.1%)\nGiữ ngoại quan bề mặt (TARR): Severe (mức sử dụng rất nặng)\nBức xạ nhiệt tới hạn · ASTM E648: ≥0.45 · Class I\nMật độ khói · NFPA 258-T / ASTM E662: ≤450\nThử cháy viên methenamine · CPSC FF-1-70 / ASTM D2859: Tự tắt\nĐộ bền màu ánh sáng · AATCC 16E: ≥4.0 sau 80 giờ\nĐộ bền màu ma sát · AATCC 165: ≥4.0 (ướt / khô)\nTĩnh điện · AATCC 134 (20% RH, 70°F): ≤3.5 kV · sợi dẫn điện vĩnh viễn\nChất lượng không khí trong nhà · CRI Green Label Plus: GLP3237 · 5Y\nChống bám bẩn / hỗ trợ làm sạch: StainSmart®\nKiểu lắp đặt theo tài liệu hãng: Monolithic\nKiểu lắp: Monolithic = cùng chiều; Quarter-turn = xoay 90°; Ashlar = so le; V. Ashlar = so le dọc; Plank = dạng thanh.\nBảo hành trọn đời theo điều kiện của hãng: mài mòn sợi, chống tĩnh điện, tương thích nền, độ bền màu/họa tiết, tháo dỡ khỏi nền, khả năng chịu ẩm, bong tách đế, ổn định kích thước, độ bám sợi, tưa mép và đặc tính cháy. Bao gồm độ đàn hồi đế đệm và chống bẩn StainSmart®.\nThông số áp dụng cho cấu hình đế trong tài liệu liên kết; xác nhận mẫu và cấu hình trước khi đặt hàng.",
+      "en": "Brand: Milliken\nCollection: Topography 2.0\nTile size: 50 × 50 cm\nConstruction: Tufted loop\nFace fibre: 100% Milliken-certified nylon\nDye method: Millitron®\nGauge: 1/10\nStitches (as stated by manufacturer): 14\nStandard backing: WellBAC® Comfort · PVC-free\nBacking option: TractionBack®\nNominal total thickness: 8.4 mm ±10%\nRecyclability (manufacturer declaration): 100%\nRecycled content by total weight (post-industrial / post-consumer): 45.1% (42.0% / 3.1%)\nTexture appearance retention (TARR): Severe\nCritical radiant flux · ASTM E648: ≥0.45 · Class I\nSmoke density · NFPA 258-T / ASTM E662: ≤450\nMethenamine pill test · CPSC FF-1-70 / ASTM D2859: Self-extinguishing\nLightfastness · AATCC 16E: ≥4.0 at 80 hours\nCrocking · AATCC 165: ≥4.0 (wet / dry)\nStatic electricity · AATCC 134 (20% RH, 70°F): ≤3.5 kV · permanent conductive fibre\nIndoor air quality · CRI Green Label Plus: GLP3237 · 5Y\nStain resistance / soil release: StainSmart®\nInstallation methods in manufacturer sheet: Monolithic\nLifetime warranties subject to manufacturer terms: face fibre wear, antistatic, floor compatibility, colour/pattern permanency, floor release, moisture resistance, backing delamination, dimensional stability, tuft bind, edge ravel and flammability. Also includes cushion resiliency and StainSmart® staining/soiling.\nSpecifications apply to the backing in the linked sheet; confirm the selected sample and configuration before ordering."
+    },
+    "certifications": {
+      "vi": "Chứng nhận ghi trong tài liệu hãng:\nCradle to Cradle Certified® Silver — chứng nhận bền vững đa tiêu chí.\nCRI Green Label Plus — phát thải hóa chất trong nhà thấp; GLP3237 · 5Y.\nSingapore Green Label — nhãn môi trường.\nSingapore Green Building Product (SGBP) — mức Leader (4 dấu tick).\n\nCông bố môi trường và thành phần:\nUL EPD — tuyên bố môi trường sản phẩm được xác minh.\nDeclare — công bố thành phần vật liệu.\n\nDanh mục trên theo tài liệu sản phẩm, không thay thế chứng chỉ. Tài liệu không nêu đầy đủ số chứng chỉ hoặc ngày hết hạn; hồ sơ hiện hành và phạm vi đế/mẫu cần được xác nhận cho dự án.",
+      "en": "Certifications listed in the manufacturer sheet:\nCradle to Cradle Certified® Silver — multi-attribute sustainability certification.\nCRI Green Label Plus — low indoor chemical emissions; GLP3237 · 5Y.\nSingapore Green Label — environmental label.\nSingapore Green Building Product (SGBP) — Leader (4 ticks).\n\nEnvironmental and ingredient disclosures:\nUL EPD — verified Environmental Product Declaration.\nDeclare — material ingredient disclosure.\n\nThis list follows the product sheet and does not replace certificates. Complete certificate numbers and expiry dates are not provided in the sheet; confirm current documents and backing/design scope for the project."
+    },
+    "brochure": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/documents/88/EB/Topography%202.0_brochure.pdf?v=2025.04.28.09.13.44"
   }
 };
   for(const [id,item] of Object.entries(technicalData)){window.productDetails[id].specifications=text(item.specifications.vi,item.specifications.en);text(item.certifications.vi,item.certifications.en);}
@@ -320,5 +341,6 @@
   text("Tài liệu kỹ thuật Milliken ↗","Milliken technical sheet \u2197");
   text("Thư viện chứng nhận Milliken ↗","Milliken certification library \u2197");
   text("25 × 100 cm (tất cả mẫu); 100 × 100 cm (Visible Light)","25 × 100 cm (all designs); 100 × 100 cm (Visible Light)");
+  text("Brochure Milliken ↗","Milliken brochure ↗");
   window.carpetTranslations=translations;
 })();

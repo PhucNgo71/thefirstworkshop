@@ -633,6 +633,13 @@
     "vatRate": 0,
     "vatAmount": 0
   },
+  "topography-2": {
+    "name": "Topography 2.0 Collection",
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
+  },
   "fracture": {
     "name": "Fracture Two-Tone",
     "basePrice": 0,

@@ -1,0 +1,27 @@
+{
+  "collection": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=409&collectionName=Topography+2.0",
+  "brochure": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/documents/88/EB/Topography%202.0_brochure.pdf?v=2025.04.28.09.13.44",
+  "technicalSheet": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/documents/8D/17/SPECS_TOPOGRAPHY%202.0%20EN%20.pdf?v=2025.04.03.09.13.14",
+  "photos": [
+    {
+      "image": "assets/products/milliken-topography-2-1.webp",
+      "pdfPage": 4,
+      "design": "Explorer"
+    },
+    {
+      "image": "assets/products/milliken-topography-2-2.webp",
+      "pdfPage": 9,
+      "design": "Relief"
+    },
+    {
+      "image": "assets/products/milliken-topography-2-3.webp",
+      "pdfPage": 11,
+      "design": "Navigator"
+    },
+    {
+      "image": "assets/products/milliken-topography-2-4.webp",
+      "pdfPage": 13,
+      "design": "Regions"
+    }
+  ]
+}
