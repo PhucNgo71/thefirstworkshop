@@ -1,4 +1,18 @@
 (() => {
+  const collectionLinks={
+  "retrofit": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=506&collectionName=Retrofit-Asia+Pacific",
+  "building-blocks": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=423&collectionName=Building+Blocks+C+2.0",
+  "natural-supply": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=482&collectionName=Nature+Supply-Asia+Pacific",
+  "airborn": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=583&collectionName=Air+Born",
+  "cornerstone": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=558&collectionName=Cornerstone",
+  "heavy-meta": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=571&collectionName=Heavy+Meta-Asia+Pacific",
+  "living-facades": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=562&collectionName=Living+Facades",
+  "patina": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=149&collectionName=Patina",
+  "moments-in-time": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=692&collectionName=Moments+In+Time",
+  "pattern-play": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=666&collectionName=Pattern+Play+-+Asia+Pacific",
+  "coastline": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=539&collectionName=Coastline+-+Asia+Pacific",
+  "passage": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=522&collectionName=Passage"
+};
   const translations={};
   const text=(vi,en)=>(translations[vi]=en,vi);
   const firstGroup=['retrofit','building-blocks','natural-supply','airborn'];
@@ -84,21 +98,73 @@
     "assets/products/milliken-patina-brochure-2.jpg"
   ]
 };
+  const roomImages={
+  "retrofit": [
+    "assets/products/milliken-retrofit-room-0.webp",
+    "assets/products/milliken-retrofit-room-4.webp",
+    "assets/products/milliken-retrofit-room-5.webp"
+  ],
+  "building-blocks": [
+    "assets/products/milliken-building-blocks-room-5.webp",
+    "assets/products/milliken-building-blocks-room-1.webp",
+    "assets/products/milliken-building-blocks-room-4.webp",
+    "assets/products/milliken-building-blocks-room-6.webp"
+  ],
+  "natural-supply": [
+    "assets/products/milliken-natural-supply-room-2.webp",
+    "assets/products/milliken-natural-supply-room-0.webp",
+    "assets/products/milliken-natural-supply-room-4.webp",
+    "assets/products/milliken-natural-supply-room-5.webp"
+  ],
+  "heavy-meta": [
+    "assets/products/milliken-heavy-meta-room-4.webp",
+    "assets/products/milliken-heavy-meta-room-1.webp",
+    "assets/products/milliken-heavy-meta-room-2.webp",
+    "assets/products/milliken-heavy-meta-room-5.webp"
+  ],
+  "living-facades": [
+    "assets/products/milliken-living-facades-room-0.webp",
+    "assets/products/milliken-living-facades-room-2.webp",
+    "assets/products/milliken-living-facades-room-7.webp"
+  ],
+  "patina": [
+    "assets/products/milliken-patina-room-0.webp",
+    "assets/products/milliken-patina-room-1.webp",
+    "assets/products/milliken-patina-room-3.webp",
+    "assets/products/milliken-patina-room-6.webp"
+  ],
+  "airborn": [
+    "assets/products/milliken-airborn-room-0.webp",
+    "assets/products/milliken-airborn-room-1.webp",
+    "assets/products/milliken-airborn-room-2.webp",
+    "assets/products/milliken-airborn-room-3.webp"
+  ],
+  "cornerstone": [
+    "assets/products/milliken-cornerstone-room-0.webp",
+    "assets/products/milliken-cornerstone-room-1.webp",
+    "assets/products/milliken-cornerstone-room-2.webp",
+    "assets/products/milliken-cornerstone-room-3.webp"
+  ]
+};
+  for(const [id,images] of Object.entries(roomImages)){
+    const cover=["retrofit","living-facades"].includes(id)?[brochureImages[id][0]]:[];
+    brochureImages[id]=[...cover,...images];
+  }
   for(const [id,images] of Object.entries(brochureImages)){
     window.productDetails[id].images=images;
     window.productGalleryOverrides[id]={...window.productGalleryOverrides[id],images};
   }
-  const imageStyle=(id)=>brochureImages[id]?'width:100%;height:100%;object-fit:cover;object-position:center 60%':'';
-  const range=text('605.000–935.000 ₫/m² (đã gồm 10% VAT)','605,000–935,000 VND/m² (including 10% VAT)');
-  const groupTitle=text('Lựa chọn 01','Option 01');
-  const net=text('550.000–850.000 ₫/m² chưa VAT','550,000–850,000 VND/m² before VAT');
+  const imageStyle=(id)=>collectionLinks[id]?'width:100%;height:100%;max-width:600px;max-height:480px;object-fit:contain;object-position:center':'';
+  text('Xem trên Milliken ↗','View on Milliken ↗');
+  const quotation=text('Liên hệ báo giá','Contact for quotation');
+  const groupTitle=text('Dòng tiết kiệm','Budget line');
   const other=text('Khám phá thêm bộ sưu tập','Explore more collections');
   const quote=text('Liên hệ để nhận giá theo bộ sưu tập.','Contact us for collection-specific pricing.');
   text('Giải pháp sàn · Milliken','Flooring solutions · Milliken');
   const title=text('Thảm cho không gian làm việc.','Carpet for the way you work.');
   const intro=text('Khám phá kết cấu, màu sắc và bố cục. Chọn bộ sưu tập, chúng tôi sẽ hỗ trợ mẫu vật liệu và báo giá cho dự án.','Explore texture, colour and layout. Choose a collection for material samples and a project quotation.');
-  const note=text('Giá tham khảo; màu, khối lượng, giao hàng và thi công được xác nhận trong báo giá.','Indicative pricing; colour, quantity, delivery and installation are confirmed in the quotation.');
-  window.carpetCollection={firstGroup,summaries,imageStyle,priceText:id=>firstGroup.includes(id)?range:null,decorateGrid(filter){
+  const note=text('Giá tham khảo; màu, khối lượng, giao hàng và thi công được xác nhận trong báo giá.','Colours, quantities, delivery and installation are confirmed in your quotation.');
+  window.carpetCollection={collectionLinks,firstGroup,summaries,imageStyle,priceText:id=>collectionLinks[id]?quotation:null,decorateGrid(filter){
     const grid=document.getElementById('productGrid');
     if(!grid)return;
     grid.classList.toggle('carpet-grid',filter==='Flooring Solutions');
@@ -109,7 +175,7 @@
     header.innerHTML=`<div><p class="eyebrow">MILLIKEN · CARPET COLLECTION</p><h3>${title}</h3></div><p>${intro}</p>`;
     grid.before(header);
     const first=grid.querySelector(`[data-product="${firstGroup[0]}"]`)?.closest('article');
-    if(first)first.insertAdjacentHTML('beforebegin',`<div class="carpet-group"><div><h3>${groupTitle}</h3><p>${note}</p></div><div class="carpet-group-price"><strong>${range}</strong><span>${net}</span></div></div>`);
+    if(first)first.insertAdjacentHTML('beforebegin',`<div class="carpet-group"><div><h3>${groupTitle}</h3><p>${note}</p></div></div>`);
     const remaining=[...grid.querySelectorAll('article')].find(card=>!firstGroup.includes(card.querySelector('[data-product]')?.dataset.product));
     if(remaining)remaining.insertAdjacentHTML('beforebegin',`<div class="carpet-group"><div><h3>${other}</h3><p>${quote}</p></div></div>`);
   }};

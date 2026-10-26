@@ -6,13 +6,12 @@ const {entries,context,translations}=require('../scripts/audit-product-english.c
 const catalog=require('../server/catalog.json');
 const first=['retrofit','building-blocks','natural-supply','airborn'];
 const carpets=entries.filter(p=>p[2]==='Flooring Solutions');
-test('Carpet range applies only to the approved four collections, in requested order',()=>{
+test('Carpets are quotation-only and retain budget group order',()=>{
   assert.equal(carpets.length,12);
   assert.deepEqual(Array.from(carpets.slice(0,4),p=>p[0]),first);
   for(const [id] of carpets){
     const display=context.window.carpetCollection.priceText(id);
-    if(first.includes(id))assert.equal(translations[display],'605,000–935,000 VND/m² (including 10% VAT)');
-    else assert.equal(display,null,id);
+    assert.equal(translations[display],'Contact for quotation');
     assert.equal(catalog[id].price,0,`${id}: range must not become a purchasable fixed price`);
   }
 });

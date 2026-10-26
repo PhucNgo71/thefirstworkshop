@@ -194,3 +194,6 @@
 /* Keep the compact collection introduction compact when its panels stack. */
 @media(max-width:900px){.collection-hero .hero-copy{min-height:0;padding:2rem 1.25rem}.collection-hero .collection-intro{min-height:0;padding:1.5rem 1.25rem}}
 @media(max-width:580px){.collection-hero h1{font-size:2.4rem}.collection-hero .eyebrow{font-size:.65rem;margin-bottom:.75rem}.collection-intro p{font-size:1rem}}
+
+.carpet-detail .detail-image{height:auto;max-height:480px;aspect-ratio:1/1;background:#fff}
+#detailMillikenLink:not([hidden]){display:inline-block;margin:.25rem 0 1.5rem;font-size:.9rem}
