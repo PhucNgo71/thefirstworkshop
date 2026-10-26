@@ -1270,28 +1270,6 @@ window.productDetails={
     ],
     "sourceUrl": "https://tfw.space/products/building-blocks-2-0-collection"
   },
-  "cornerstone": {
-    "brand": "Khác",
-    "productType": "Flooring Solutions · Milliken",
-    "description": "Cornerstone Collection khám phá các đặc tính của những kết cấu đá khác nhau qua 4 họa tiết: Elements, Keystone, Pavement và Fundament. Với những gam màu đá tự nhiên tuyệt đẹp, bộ sưu tập này phù hợp với mọi không gian nội thất. Thông số kỹ thuật: Cấu tạo: Thảm dệt sợi vòng cấu trúc\n\nKích thước gạch thảm: 50cm x 50 cm\n\nSợi bề mặt: 100% Nylon được chứng nhận bởi Milliken\n\nPhương pháp nhuộm: Nhuộm trong dung dịch\n\nLớp đế tiêu chuẩn: WellBAC™ Function không chứa PVC\n\nCó sẵn với: Công nghệ TractionBack®\n\nĐộ dày tổng thể danh định: 5.7 mm ±10%\n\nKhả năng chống cháy: ≥ 0.45 (Loại I)\n\nĐánh giá duy trì bề mặt (TARR): Mức độ nặng\n\nChất lượng không khí trong nhà: CRI Green Label Plus™ - GLP3200, Phân loại thảm 14X",
-    "specifications": "Thông số kỹ thuật:",
-    "variants": [],
-    "images": [
-      "https://cdn.hstatic.net/products/200000617147/1_4__dcf3054e2f8048ec8779e3dce3c10a39_master.png",
-      "https://cdn.hstatic.net/products/200000617147/2_4__c24d339fcfec4c14ad37505b86560c3b_master.png",
-      "https://cdn.hstatic.net/products/200000617147/11_8__b0c1e626426c442ca7153aaded927ce6_master.png",
-      "https://cdn.hstatic.net/products/200000617147/10_9__fe671b61039443ce98ac03680bbc4da1_master.png",
-      "https://cdn.hstatic.net/products/200000617147/12_6__c5747a4a6db64fedbe68abd42e8d779a_master.png",
-      "https://cdn.hstatic.net/products/200000617147/4_4__f3bd9527e76d42969e79b5a9ec04795b_master.png",
-      "https://cdn.hstatic.net/products/200000617147/6_7__5a1519e4eac74e8aa2b83cd26f633560_master.png",
-      "https://cdn.hstatic.net/products/200000617147/5_6__ef52a9ee553f45989abfaa7aa3ecac7e_master.png",
-      "https://cdn.hstatic.net/products/200000617147/8_7__f34cfc27b8284292b65a163ec4a8a315_master.png",
-      "https://cdn.hstatic.net/products/200000617147/3_4__06d1c9bf301d44df966689d6861ad4d3_master.png",
-      "https://cdn.hstatic.net/products/200000617147/9_8__bb502547afc84083af8e4cafe85b173f_master.png",
-      "https://cdn.hstatic.net/products/200000617147/7_7__42c462af6cae4625976f12977d837052_master.png"
-    ],
-    "sourceUrl": "https://tfw.space/products/cornerstone-collection"
-  },
   "heavy-meta": {
     "brand": "Khác",
     "productType": "Flooring Solutions · Milliken",

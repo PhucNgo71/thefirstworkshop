@@ -584,13 +584,6 @@
     "vatRate": 0,
     "vatAmount": 0
   },
-  "cornerstone": {
-    "name": "Cornerstone Collection",
-    "basePrice": 0,
-    "price": 0,
-    "vatRate": 0,
-    "vatAmount": 0
-  },
   "heavy-meta": {
     "name": "Heavy Meta Collection",
     "basePrice": 0,

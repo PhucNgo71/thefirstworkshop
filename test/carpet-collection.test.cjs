@@ -7,7 +7,7 @@ const catalog=require('../server/catalog.json');
 const first=['retrofit','building-blocks','natural-supply','airborn'];
 const carpets=entries.filter(p=>p[2]==='Flooring Solutions');
 test('Carpets are quotation-only and retain budget group order',()=>{
-  assert.equal(carpets.length,12);
+  assert.equal(carpets.length,11);
   assert.deepEqual(Array.from(carpets.slice(0,4),p=>p[0]),first);
   for(const [id] of carpets){
     const display=context.window.carpetCollection.priceText(id);
@@ -16,7 +16,7 @@ test('Carpets are quotation-only and retain budget group order',()=>{
   }
 });
 test('Removed carpets are absent and all four additions have local photos and bilingual details',()=>{
-  for(const id of ['on-the-track','ripple-effect']){
+  for(const id of ['on-the-track','ripple-effect','cornerstone']){
     assert.ok(!entries.some(p=>p[0]===id));
     assert.equal(context.window.productDetails[id],undefined);
     assert.equal(catalog[id],undefined);
