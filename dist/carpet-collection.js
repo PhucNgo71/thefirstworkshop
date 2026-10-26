@@ -6,14 +6,14 @@
     'moments-in-time':{
       description:text('Họa tiết lấy cảm hứng từ đường chỉ và cảnh quan biến đổi. Những lớp kết cấu và sắc màu trầm tạo cảm giác bình yên cho không gian.','Stitch-inspired patterns and changing landscapes, layered with muted colours for a calm, grounded space.'),
       specifications:text('Thương hiệu: Milliken\nBộ sưu tập: Moments in Time\nLoại: thảm tấm\nKích thước, đế thảm và màu: xác nhận theo mẫu được chọn\nGiá và thời gian giao: liên hệ báo giá','Brand: Milliken\nCollection: Moments in Time\nType: carpet tiles\nDimensions, backing and colours: confirm selected design\nPrice and delivery: contact for quotation'),
-      images:['assets/products/milliken-moments-in-time-1.webp','assets/products/milliken-moments-in-time-2.webp'],
+      images:['assets/products/milliken-moments-in-time-catalogue.jpg','assets/products/milliken-moments-in-time-2.webp'],
       sourceUrl:'https://www.milliken.com/en-my/businesses/floor-covering',
       summary:text('Kết cấu và sắc màu trầm','Layered texture and muted colour')
     },
     'pattern-play':{
       description:text('Kết hợp hình khối, màu sắc và kết cấu để tạo điểm nhấn. Từ gam trung tính nhẹ nhàng đến bố cục nổi bật cho từng khu vực.','Mix shapes, colours and textures, from quiet neutrals to bold patterns that define each area.'),
       specifications:text('Thương hiệu: Milliken\nLoại: thảm tấm\nKích thước tham khảo: 50 × 50 cm\nSợi: polyamide 6\nĐế tham khảo: Comfort Lite / Comfort Plus\nMàu, đế thảm cung ứng tại Việt Nam và giá: xác nhận khi báo giá','Brand: Milliken\nType: carpet tiles\nReference tile size: 50 × 50 cm\nFibre: polyamide 6\nReference backing: Comfort Lite / Comfort Plus\nLocal colours, backing availability and price: confirmed with quotation'),
-      images:['assets/products/milliken-pattern-play-1.webp','assets/products/milliken-pattern-play-2.webp'],
+      images:['assets/products/milliken-pattern-play-catalogue.jpg','assets/products/milliken-pattern-play-2.webp'],
       sourceUrl:'https://www.milliken.com/en-gb/businesses/floor-covering/collections/pattern-play',
       summary:text('Hình khối và màu sắc','Playful shapes and colour')
     },
@@ -55,10 +55,12 @@
     product.highlights=[text(shortVi,shortEn),text('Chọn màu theo mẫu vật liệu','Choose colours from material samples'),text('Xác nhận khối lượng và thi công khi báo giá','Quantity and installation confirmed with quotation')];
     summaries[id]=text(shortVi,shortEn);
   }
-  // Distinct collection photographs extracted from the Milliken Asia brochure.
+  // Collection-matched photographs from the Milliken Asia catalogue and brochure.
   const brochureImages={
+  "moments-in-time": additions["moments-in-time"].images,
+  "pattern-play": additions["pattern-play"].images,
   "retrofit": [
-    "assets/products/milliken-retrofit-brochure-1.jpg",
+    "assets/products/milliken-retrofit-catalogue.jpg",
     "assets/products/milliken-retrofit-brochure-2.jpg"
   ],
   "building-blocks": [
@@ -74,7 +76,7 @@
     "assets/products/milliken-heavy-meta-brochure-2.jpg"
   ],
   "living-facades": [
-    "assets/products/milliken-living-facades-brochure-1.jpg",
+    "assets/products/milliken-living-facades-catalogue.jpg",
     "assets/products/milliken-living-facades-brochure-2.jpg"
   ],
   "patina": [
