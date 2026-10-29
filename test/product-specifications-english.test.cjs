@@ -22,7 +22,7 @@ function source(id){return {...context.window.productDetails[id],...overrides[id
 test('All product specification panels render English through the actual translator',()=>{
   const c=vm.createContext({english:translations});
   vm.runInContext(i18n.slice(i18n.indexOf('function translatedText('),i18n.indexOf('function applyLanguage(')),c);
-  assert.equal(entries.length,99);
+  assert.equal(entries.length,100);
   for(const [id] of entries){
     c.input=source(id).specifications||fallback;
     const output=vm.runInContext('translatedText(input)',c);

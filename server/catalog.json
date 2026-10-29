@@ -239,12 +239,19 @@
     "vatRate": 10,
     "vatAmount": 3800000
   },
-  "swing": {
-    "name": "Swing Chair",
-    "basePrice": 16100000,
-    "price": 17710000,
-    "vatRate": 10,
-    "vatAmount": 1610000
+  "samy-a": {
+    "name": "Samy A",
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
+  },
+  "trung-luong": {
+    "name": "Trung Luong",
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
   },
   "jac": {
     "name": "JAC Stool",

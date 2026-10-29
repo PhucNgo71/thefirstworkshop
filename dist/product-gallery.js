@@ -71,7 +71,7 @@ window.productGalleryOverrides['jac-chairs']={images:['assets/products/jac-zenit
 // Two differently named CK06 files contained exactly the same photograph.
 window.productGalleryOverrides.ck06={images:window.productDetails.ck06.images.filter((_,i)=>i!==3)};
 // Keep product/installation details; omit the generic fabric-sample rack photograph.
-for(const id of ['maris','turtle','john','swing']){
+for(const id of ['maris','turtle','john']){
   window.productGalleryOverrides[id]={images:window.productDetails[id].images.slice(0,-1)};
 }
 window.productImageUrl=url=>url.includes('zenithinteriors.com/media/')?url.split('?')[0]:url;

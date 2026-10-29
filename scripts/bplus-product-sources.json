@@ -1,0 +1,86 @@
+{
+  "samy-a": {
+    "source": "https://bplusfurniture.com.vn/products/samy-a",
+    "images": [
+      {
+        "file": "assets/products/bplus-samy-a-0.webp",
+        "url": "https://pub-0ec402f767364e6c8cb7b8b4a7160995.r2.dev/SAMY thumbnail.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      {
+        "file": "assets/products/bplus-samy-a-1.webp",
+        "url": "https://pub-0ec402f767364e6c8cb7b8b4a7160995.r2.dev/SAMY 2.jpg",
+        "width": 1000,
+        "height": 750
+      },
+      {
+        "file": "assets/products/bplus-samy-a-2.webp",
+        "url": "https://pub-0ec402f767364e6c8cb7b8b4a7160995.r2.dev/SAMY 4.jpg",
+        "width": 1000,
+        "height": 750
+      },
+      {
+        "file": "assets/products/bplus-samy-a-3.webp",
+        "url": "https://pub-0ec402f767364e6c8cb7b8b4a7160995.r2.dev/SAMY 1.jpg",
+        "width": 1000,
+        "height": 750
+      },
+      {
+        "file": "assets/products/bplus-samy-a-4.webp",
+        "url": "https://pub-0ec402f767364e6c8cb7b8b4a7160995.r2.dev/SAMY 3.jpg",
+        "width": 1000,
+        "height": 750
+      },
+      {
+        "file": "assets/products/bplus-samy-a-5.webp",
+        "url": "https://pub-0ec402f767364e6c8cb7b8b4a7160995.r2.dev/SAMYA 5.jpg",
+        "width": 2000,
+        "height": 1500
+      },
+      {
+        "file": "assets/products/bplus-samy-a-6.webp",
+        "url": "https://pub-0ec402f767364e6c8cb7b8b4a7160995.r2.dev/SAMY A reallife 1.jpg",
+        "width": 2400,
+        "height": 1792
+      }
+    ],
+    "notes": "Omitted the Legs field because the source repeats upholstery text. Selling price requires confirmation."
+  },
+  "trung-luong": {
+    "source": "https://bplusfurniture.com.vn/products/trung-luong",
+    "images": [
+      {
+        "file": "assets/products/bplus-trung-luong-0.webp",
+        "url": "https://pub-0ec402f767364e6c8cb7b8b4a7160995.r2.dev/TRUNG LUONG thumbnail.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      {
+        "file": "assets/products/bplus-trung-luong-1.webp",
+        "url": "https://pub-0ec402f767364e6c8cb7b8b4a7160995.r2.dev/TRUNG LUONG 1.jpg",
+        "width": 1000,
+        "height": 750
+      },
+      {
+        "file": "assets/products/bplus-trung-luong-2.webp",
+        "url": "https://pub-0ec402f767364e6c8cb7b8b4a7160995.r2.dev/TRUNG LUONG 2.jpg",
+        "width": 1000,
+        "height": 750
+      },
+      {
+        "file": "assets/products/bplus-trung-luong-3.webp",
+        "url": "https://pub-0ec402f767364e6c8cb7b8b4a7160995.r2.dev/TRUNG LUONG 3.jpg",
+        "width": 1000,
+        "height": 750
+      },
+      {
+        "file": "assets/products/bplus-trung-luong-4.webp",
+        "url": "https://pub-0ec402f767364e6c8cb7b8b4a7160995.r2.dev/TRUNG LUONG reallife 1.jpg",
+        "width": 2048,
+        "height": 2048
+      }
+    ],
+    "notes": "Selling price requires confirmation."
+  }
+}

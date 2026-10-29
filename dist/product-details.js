@@ -553,20 +553,57 @@ window.productDetails={
     ],
     "sourceUrl": "https://tfw.space/products/high-back-sofa"
   },
-  "swing": {
-    "brand": "thefirstworkshop",
-    "productType": "Loose Furniture",
-    "description": "Ghế, tựa lưng: được bọc đệm bằng mút polyurethane và phủ bằng vải OTE.\nKhung ghế bành: làm bằng gỗ tự nhiên.\nChân ghế: làm bằng thép, hoàn thiện bằng sơn tĩnh điện, có đệm nhựa ở dưới.\nMặt bàn: làm từ gỗ sồi ghép thanh\nKích thước tổng thể: 675mm (chiều Rộng) x 800mm (chiều Sâu) x 840mm (chiều Cao).\nChiều cao mặt ghế: 420 mm.",
-    "specifications": "Ghế, tựa lưng: được bọc đệm bằng mút polyurethane và phủ bằng vải OTE.\n\nKhung ghế bành: làm bằng gỗ tự nhiên.\n\nChân ghế: làm bằng thép, hoàn thiện bằng sơn tĩnh điện, có đệm nhựa ở dưới.\n\nMặt bàn: làm từ gỗ sồi ghép thanh\n\nKích thước tổng thể: 675mm (chiều Rộng) x 800mm (chiều Sâu) x 840mm (chiều Cao).\n\nChiều cao mặt ghế: 420 mm.",
+  "samy-a": {
+    "brand": "B+ Furniture",
+    "productType": "Lounge Chair",
+    "description": "Samy A là ghế thư giãn với đường nét góc cạnh, khung gỗ và đệm bọc vải. Phù hợp cho khu tiếp khách và không gian thư giãn.",
+    "specifications": "Mã sản phẩm: SAMY-A-Y9TP\nKích thước (R × S × C): 760 × 850 × 770 mm\nKhối lượng: 20 kg\nKhung: gỗ tự nhiên kết hợp plywood và MDF chống ẩm; đai đàn hồi và hệ lò xo đỡ\nĐệm: mút đàn hồi cao, bọc lớp xơ mềm\nVải bọc: độ bền mài mòn trên 30.000 chu kỳ\nTùy chỉnh: vật liệu và màu hoàn thiện theo yêu cầu dự án",
     "variants": [],
+    "swatches": [],
+    "imageScale": 150,
     "images": [
-      "https://cdn.hstatic.net/products/200000617147/6_1__04cb884dcd674f318125a0e175871829_master.png",
-      "https://cdn.hstatic.net/products/200000617147/8_1__c64a4659bc804e8583c8f973aaa5af58_master.png",
-      "https://cdn.hstatic.net/products/200000617147/7_1__fbd462f702954947a6c007e422d7bac2_master.png",
-      "https://cdn.hstatic.net/products/200000617147/website_ergogen__2__a03ee9fb42354a06ad5cb8f6bab734b7_master.png",
-      "https://cdn.hstatic.net/products/200000617147/ote_54c0f765e9f64666a580d41e7ca7eeb2_master.jpg"
+      "assets/products/bplus-samy-a-0.webp",
+      "assets/products/bplus-samy-a-1.webp",
+      "assets/products/bplus-samy-a-2.webp",
+      "assets/products/bplus-samy-a-3.webp",
+      "assets/products/bplus-samy-a-4.webp",
+      "assets/products/bplus-samy-a-5.webp",
+      "assets/products/bplus-samy-a-6.webp"
     ],
-    "sourceUrl": "https://tfw.space/products/swing-chair"
+    "galleryModes": [
+      "contain",
+      "contain",
+      "contain",
+      "contain",
+      "contain",
+      "contain",
+      "contain"
+    ],
+    "sourceUrl": "https://bplusfurniture.com.vn/products/samy-a"
+  },
+  "trung-luong": {
+    "brand": "B+ Furniture",
+    "productType": "Lounge Chair",
+    "description": "Trung Luong là ghế thư giãn với tay vịn gỗ uốn cong và đệm ngồi dày. Thiết kế kết hợp đường nét cổ điển với phong cách hiện đại cho khu tiếp khách và trao đổi nhóm nhỏ.",
+    "specifications": "Mã sản phẩm: LC091\nKích thước (R × S × C): 665 × 680 × 755 mm\nKhung: gỗ tự nhiên kết hợp plywood và MDF chống ẩm; đai đàn hồi và hệ lò xo đỡ\nĐệm: mút đàn hồi cao, bọc lớp xơ mềm\nVải bọc: độ bền mài mòn trên 30.000 chu kỳ\nTùy chỉnh: vật liệu và màu hoàn thiện theo yêu cầu dự án\nTay vịn và chân: gỗ hoàn thiện sơn PU hoặc dầu tự nhiên",
+    "variants": [],
+    "swatches": [],
+    "imageScale": 150,
+    "images": [
+      "assets/products/bplus-trung-luong-0.webp",
+      "assets/products/bplus-trung-luong-1.webp",
+      "assets/products/bplus-trung-luong-2.webp",
+      "assets/products/bplus-trung-luong-3.webp",
+      "assets/products/bplus-trung-luong-4.webp"
+    ],
+    "galleryModes": [
+      "contain",
+      "contain",
+      "contain",
+      "contain",
+      "contain"
+    ],
+    "sourceUrl": "https://bplusfurniture.com.vn/products/trung-luong"
   },
   "jac": {
     "brand": "Zenith",
