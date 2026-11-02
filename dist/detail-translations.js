@@ -194,5 +194,13 @@ window.detailTranslations = {
   "Samy A là ghế thư giãn với đường nét góc cạnh, khung gỗ và đệm bọc vải. Phù hợp cho khu tiếp khách và không gian thư giãn.": "An angular lounge chair with a wooden frame and upholstered cushioning, suited to reception and lounge spaces.",
   "(R × S × C): 760 × 850 × 770 mm": "(W × D × H): 760 × 850 × 770 mm",
   "Trung Luong là ghế thư giãn với tay vịn gỗ uốn cong và đệm ngồi dày. Thiết kế kết hợp đường nét cổ điển với phong cách hiện đại cho khu tiếp khách và trao đổi nhóm nhỏ.": "A lounge chair with curved wooden arms and a deep upholstered cushion. Its classic form suits reception areas and informal meeting spaces.",
-  "(R × S × C): 665 × 680 × 755 mm": "(W × D × H): 665 × 680 × 755 mm"
+  "(R × S × C): 665 × 680 × 755 mm": "(W × D × H): 665 × 680 × 755 mm",
+  "DM3-500 là dòng ghế đa năng của Daeha với ba lựa chọn tựa lưng: lưới, bọc đệm hoặc dạng vỏ. Có phiên bản không tay và có tay. Giá hiển thị áp dụng cho DM3-500WM không tay; các phiên bản khác được xác nhận khi báo giá.": "A multipurpose chair range with mesh, upholstered or shell backs, available with or without arms. The displayed price applies to the armless DM3-500WM; other versions are confirmed by quotation.",
+  "Ghế đa năng": "Multipurpose Chair",
+  "Lưng lưới · Không tay": "Mesh back · Armless",
+  "Lưng lưới · Có tay": "Mesh back · With arms",
+  "Lưng bọc đệm · Không tay": "Upholstered back · Armless",
+  "Lưng bọc đệm · Có tay": "Upholstered back · With arms",
+  "Lưng dạng vỏ · Không tay": "Shell back · Armless",
+  "Lưng dạng vỏ · Có tay": "Shell back · With arms"
 };

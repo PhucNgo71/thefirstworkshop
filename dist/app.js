@@ -15,6 +15,7 @@ const catalogEntries=[
  ['precinct-screens','PRECINCT Screens / Zenith','Accessories',0,'assets/products/zenith-precinct-screen-cutout.png','precinct-screens'],
  ['screen-fabric-1400','Tabletop-Mounted Screen / Standard Fabric','Accessories',2500000,'assets/products/screen-fabric-1400-angle.png','screen-fabric-1400'],
  ['modesty-mfc-1400','MFC Modesty Panel / 1400 mm Tabletop','Accessories',1363636,'assets/products/modesty-mfc-1400-dark-wood.png','modesty-mfc-1400'],
+ ['daeha-dm3-500','DM3-500 / Daeha','Seatings',6000000,'assets/products/daeha-dm3-500wm.jpg','daeha-dm3-500'],
  ['anchor','Anchor Staff Chair','Seatings',4700000,'assets/products/anchor-main.jpg','anchor'],
  ['niro','Niro / Zenith','Seatings',0,'assets/products/niro-green.jpg','niro'],
 ["furnipower-pixel","PIXEL Modular Socket EU / Furnipower","Accessories",0,"assets/products/furnipower-pixel.jpg","furnipower-pixel"],

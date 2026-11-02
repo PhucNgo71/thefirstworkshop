@@ -27,6 +27,13 @@
     "vatRate": 10,
     "vatAmount": 136364
   },
+  "daeha-dm3-500": {
+    "name": "DM3-500 / Daeha",
+    "basePrice": 6000000,
+    "price": 6600000,
+    "vatRate": 10,
+    "vatAmount": 600000
+  },
   "anchor": {
     "name": "Anchor Staff Chair",
     "basePrice": 4700000,

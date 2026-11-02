@@ -268,3 +268,5 @@
 .detail-image img[src$="bplus-samy-a-0.webp"],.detail-image img[src$="bplus-trung-luong-0.webp"]{width:160%;height:160%;max-width:none;max-height:none;inset:auto;left:50%;top:50%;transform:translate(-50%,-50%)}
 /* Balance the full-chair views without magnifying the detail or room photos. */
 .detail-image img[src$="bplus-samy-a-1.webp"],.detail-image img[src$="bplus-samy-a-2.webp"]{width:125%;height:125%;max-width:none;max-height:none;inset:auto;left:50%;top:50%;transform:translate(-50%,-50%)}
+/* Keep the brochure chair photos at a consistent height, clear of model captions. */
+.detail-image img[src*="/daeha-dm3-"]{width:84%;height:80%;object-fit:contain;mix-blend-mode:multiply}

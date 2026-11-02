@@ -1,5 +1,56 @@
 // Product details compiled from public TFW and manufacturer product pages.
 window.productDetails={
+  "daeha-dm3-500": {
+  "brand": "Daeha",
+  "productType": "Ghế đa năng",
+  "description": "DM3-500 là dòng ghế đa năng của Daeha với ba lựa chọn tựa lưng: lưới, bọc đệm hoặc dạng vỏ. Có phiên bản không tay và có tay. Giá hiển thị áp dụng cho DM3-500WM không tay; các phiên bản khác được xác nhận khi báo giá.",
+  "specifications": "Thương hiệu: Daeha\nDòng sản phẩm: DM3-500\nCấu hình tiêu chuẩn: DM3-500WM, lưng lưới, không tay\nDM3-500WM / DM3-501WM: rộng 500 / 575 × sâu 580 × cao 875 mm\nDM3-500WF / DM3-501WF: rộng 500 / 575 × sâu 575 × cao 875 mm\nDM3-500W / DM3-501W: rộng 500 / 575 × sâu 575 × cao 875 mm\nTựa lưng: lưới (WM), bọc đệm (WF) hoặc dạng vỏ (W)\nTay vịn: không tay (500) hoặc có tay (501)\nChân ghế: bốn chân có bánh xe\nMàu sắc và cấu hình: xác nhận theo mẫu và báo giá\nNguồn: catalogue Daeha, trang 180",
+  "imageScale": 80,
+  "variants": [],
+  "swatches": [],
+  "images": [
+    "assets/products/daeha-dm3-500wm.jpg",
+    "assets/products/daeha-dm3-501wm.jpg",
+    "assets/products/daeha-dm3-500wf.jpg",
+    "assets/products/daeha-dm3-501wf.jpg",
+    "assets/products/daeha-dm3-500w.jpg",
+    "assets/products/daeha-dm3-501w.jpg"
+  ],
+  "galleryModes": [
+    "contain",
+    "contain",
+    "contain",
+    "contain",
+    "contain",
+    "contain"
+  ],
+  "galleryLabels": [
+    [
+      "DM3-500WM",
+      "Lưng lưới · Không tay"
+    ],
+    [
+      "DM3-501WM",
+      "Lưng lưới · Có tay"
+    ],
+    [
+      "DM3-500WF",
+      "Lưng bọc đệm · Không tay"
+    ],
+    [
+      "DM3-501WF",
+      "Lưng bọc đệm · Có tay"
+    ],
+    [
+      "DM3-500W",
+      "Lưng dạng vỏ · Không tay"
+    ],
+    [
+      "DM3-501W",
+      "Lưng dạng vỏ · Có tay"
+    ]
+  ]
+},
   "simpl-screens": {
     "brand": "Zenith",
     "productType": "Workstation Screen",

@@ -1,0 +1,41 @@
+{
+  "sourceFile": "DM3- 500 Specification.pdf",
+  "cataloguePage": 180,
+  "pdfPage": 1,
+  "product": "daeha-dm3-500",
+  "standardModel": "DM3-500WM",
+  "priceIncludingVat": 6600000,
+  "photos": [
+    {
+      "pdfImage": "5-Im5.jpg",
+      "model": "dm3-500wm",
+      "asset": "assets/products/daeha-dm3-500wm.jpg"
+    },
+    {
+      "pdfImage": "4-Im4.jpg",
+      "model": "dm3-501wm",
+      "asset": "assets/products/daeha-dm3-501wm.jpg"
+    },
+    {
+      "pdfImage": "1-Im1.jpg",
+      "model": "dm3-500wf",
+      "asset": "assets/products/daeha-dm3-500wf.jpg"
+    },
+    {
+      "pdfImage": "0-Im0.jpg",
+      "model": "dm3-501wf",
+      "asset": "assets/products/daeha-dm3-501wf.jpg"
+    },
+    {
+      "pdfImage": "2-Im2.jpg",
+      "model": "dm3-500w",
+      "asset": "assets/products/daeha-dm3-500w.jpg"
+    },
+    {
+      "pdfImage": "3-Im3.jpg",
+      "model": "dm3-501w",
+      "asset": "assets/products/daeha-dm3-501w.jpg"
+    }
+  ],
+  "notes": "Only DM3-500/501 models are included. The tilting DM3-510/511 and swivel DM3-520/521 models on page 181 are not included."
+}
