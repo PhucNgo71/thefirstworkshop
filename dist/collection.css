@@ -177,7 +177,7 @@
 .product-image-button[data-product="jac-chairs"] img{inset:auto;left:50%;top:50%;width:114%;height:114%;transform:translate(-50%,-50%)}
 .product-card:hover .product-image-button[data-product="jac-chairs"] img{transform:translate(-50%,-50%) scale(1.025)}
 /* Frame the manufacturer's square studio photos without altering the originals. */
-.product-image-button[data-product="sls470bench"] img{width:100%;height:100%;object-fit:cover;object-position:50% 72%}
+.product-image-button[data-product="sls470bench"] img{width:90%;height:90%;object-fit:contain;object-position:center}
 .lean-detail .detail-image img[src$="sls-670-bench-actiforce.jpg"],.lean-detail .detail-image img[src$="sls-670-bench-side-actiforce.jpg"]{width:100%;height:100%;object-fit:cover;object-position:50% 72%}
 #configuratorImage[src$="-actiforce.jpg"]{position:absolute;top:-15%;left:0;width:100%;height:135%;object-fit:contain}
 #detailSpecifications{white-space:pre-line}
@@ -266,3 +266,5 @@
 .product-image-button[data-product="samy-a"] img,.product-image-button[data-product="trung-luong"] img{inset:auto;left:50%;top:50%;transform:translate(-50%,-50%)}
 .product-card:hover .product-image-button[data-product="samy-a"] img,.product-card:hover .product-image-button[data-product="trung-luong"] img{transform:translate(-50%,-50%) scale(1.025)}
 .detail-image img[src$="bplus-samy-a-0.webp"],.detail-image img[src$="bplus-trung-luong-0.webp"]{width:160%;height:160%;max-width:none;max-height:none;inset:auto;left:50%;top:50%;transform:translate(-50%,-50%)}
+/* Balance the full-chair views without magnifying the detail or room photos. */
+.detail-image img[src$="bplus-samy-a-1.webp"],.detail-image img[src$="bplus-samy-a-2.webp"]{width:125%;height:125%;max-width:none;max-height:none;inset:auto;left:50%;top:50%;transform:translate(-50%,-50%)}

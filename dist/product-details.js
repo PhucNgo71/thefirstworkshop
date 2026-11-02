@@ -560,7 +560,7 @@ window.productDetails={
     "specifications": "Mã sản phẩm: SAMY-A-Y9TP\nKích thước (R × S × C): 760 × 850 × 770 mm\nKhối lượng: 20 kg\nKhung: gỗ tự nhiên kết hợp plywood và MDF chống ẩm; đai đàn hồi và hệ lò xo đỡ\nĐệm: mút đàn hồi cao, bọc lớp xơ mềm\nVải bọc: độ bền mài mòn trên 30.000 chu kỳ\nTùy chỉnh: vật liệu và màu hoàn thiện theo yêu cầu dự án",
     "variants": [],
     "swatches": [],
-    "imageScale": 150,
+    "imageScale": 140,
     "images": [
       "assets/products/bplus-samy-a-0.webp",
       "assets/products/bplus-samy-a-1.webp",
@@ -588,7 +588,7 @@ window.productDetails={
     "specifications": "Mã sản phẩm: LC091\nKích thước (R × S × C): 665 × 680 × 755 mm\nKhung: gỗ tự nhiên kết hợp plywood và MDF chống ẩm; đai đàn hồi và hệ lò xo đỡ\nĐệm: mút đàn hồi cao, bọc lớp xơ mềm\nVải bọc: độ bền mài mòn trên 30.000 chu kỳ\nTùy chỉnh: vật liệu và màu hoàn thiện theo yêu cầu dự án\nTay vịn và chân: gỗ hoàn thiện sơn PU hoặc dầu tự nhiên",
     "variants": [],
     "swatches": [],
-    "imageScale": 150,
+    "imageScale": 145,
     "images": [
       "assets/products/bplus-trung-luong-0.webp",
       "assets/products/bplus-trung-luong-1.webp",
