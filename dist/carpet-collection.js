@@ -1,5 +1,6 @@
 (() => {
   const collectionLinks={
+  "warp-weft": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=636&collectionName=Warp+%26+Weft",
   "topography-2": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=409&collectionName=Topography+2.0",
   "retrofit": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=506&collectionName=Retrofit-Asia+Pacific",
   "building-blocks": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=423&collectionName=Building+Blocks+C+2.0",
@@ -17,6 +18,7 @@
   const text=(vi,en)=>(translations[vi]=en,vi);
   const firstGroup=['retrofit','building-blocks','natural-supply','airborn'];
   const additions={
+    'warp-weft':{description:text("Ba họa tiết lấy cảm hứng từ nghệ thuật dệt: In Stitches, Threaded Layer và Woven Color. Phối 21 sắc màu để tạo chiều sâu, kết nối và phân vùng không gian.","Three textile-inspired designs: In Stitches, Threaded Layer and Woven Color. Combine 21 colour options to add depth, connect areas and define zones."),images:["assets/products/milliken-warp-weft-7.webp", "assets/products/milliken-warp-weft-9.webp", "assets/products/milliken-warp-weft-12.webp", "assets/products/milliken-warp-weft-14.webp", "assets/products/milliken-warp-weft-19.webp", "assets/products/milliken-warp-weft-22.webp"],sourceUrl:"https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=636&collectionName=Warp+%26+Weft",summary:text('Kết cấu dệt và màu sắc đan xen','Woven texture and layered colour')},
     'topography-2':{
       description:text("Bốn họa tiết lấy cảm hứng từ bản đồ địa hình: Explorer, Relief, Navigator và Regions. Kết hợp đường nét hình học, kết cấu và màu nhấn để phân vùng, dẫn hướng trong không gian làm việc.","Four map-inspired designs: Explorer, Relief, Navigator and Regions. Combine geometric lines, texture and colour accents for zoning and wayfinding in workspaces."),
       images:["assets/products/milliken-topography-2-1.webp", "assets/products/milliken-topography-2-2.webp", "assets/products/milliken-topography-2-3.webp", "assets/products/milliken-topography-2-4.webp"],
@@ -76,6 +78,7 @@
   }
   // Collection-matched photographs from the Milliken Asia catalogue and brochure.
   const brochureImages={
+  "warp-weft": additions["warp-weft"].images,
   "topography-2": additions["topography-2"].images,
   "moments-in-time": additions["moments-in-time"].images,
   "pattern-play": additions["pattern-play"].images,
@@ -299,6 +302,19 @@
       "en": "Certifications listed in the manufacturer sheet:\nCradle to Cradle Certified® Silver — multi-attribute sustainability certification.\nCRI Green Label Plus — low indoor chemical emissions; GLP3237 · 5Y.\nSingapore Green Label — environmental label.\nSingapore Green Building Product (SGBP) — Leader (4 ticks).\n\nEnvironmental and ingredient disclosures:\nUL EPD — verified Environmental Product Declaration.\nDeclare — material ingredient disclosure.\n\nThis list follows the product sheet and does not replace certificates. Complete certificate numbers and expiry dates are not provided in the sheet; confirm current documents and backing/design scope for the project."
     },
     "brochure": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/documents/88/EB/Topography%202.0_brochure.pdf?v=2025.04.28.09.13.44"
+  },
+  "warp-weft": {
+    "name": "Warp & Weft",
+    "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/documents/FE/78/Warp%20%26%20Weft%20Interactive%20Asia.pdf?v=2025.04.28.09.18.26",
+    "brochure": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/documents/FE/78/Warp%20%26%20Weft%20Interactive%20Asia.pdf?v=2025.04.28.09.18.26",
+    "specifications": {
+      "vi": "Thương hiệu: Milliken\nBộ sưu tập: Warp & Weft\nHọa tiết: In Stitches / Threaded Layer / Woven Color\nMàu sắc: 21 lựa chọn thuộc ba họa tiết\nKích thước: 50 × 50 cm\nCấu trúc: Thảm chần sợi vòng tạo vân\nSợi bề mặt: 100% nylon được Milliken chứng nhận\nCông nghệ tạo màu: Millitron®\nĐế tiêu chuẩn: WellBAC™ Comfort · không chứa PVC\nTùy chọn đế chống trượt: TractionBack®\nTổng độ dày danh nghĩa: 8,4 mm ±10%\nChỉ số cháy theo brochure: ≥0,45 · Class I\nGiữ ngoại quan bề mặt (TARR): Severe (mức sử dụng rất nặng)\nChất lượng không khí trong nhà: CRI Green Label Plus™ · GLP3237 · nhóm thảm 5Y\nKiểu lắp đặt: Monolithic (cùng chiều) / Ashlar (so le)\nThông số theo brochure châu Á. Xác nhận màu, đế và kiểu lắp đặt khi báo giá.",
+      "en": "Brand: Milliken\nCollection: Warp & Weft\nDesigns: In Stitches / Threaded Layer / Woven Color\nColours: 21 options across three designs\nTile size: 50 × 50 cm\nConstruction: Tufted textured loop\nFace fibre: 100% Milliken-certified nylon\nDye method: Millitron®\nStandard backing: PVC-free WellBAC™ Comfort\nBacking option: TractionBack®\nNominal total thickness: 8.4 mm ±10%\nFlammability rating in brochure: ≥0.45 · Class I\nTexture appearance retention (TARR): Severe\nIndoor air quality: CRI Green Label Plus™ · GLP3237 · Carpet Category 5Y\nInstallation: Monolithic / Ashlar\nSpecifications follow the Asia brochure. Confirm the selected colour, backing and installation method with quotation."
+    },
+    "certifications": {
+      "vi": "Biểu trưng chứng nhận trong brochure châu Á:\nCradle to Cradle Certified® Product Program — chương trình chứng nhận sản phẩm.\nSingapore Green Label — nhãn môi trường Singapore.\nSingapore Green Building Product (SGBP) — chứng nhận sản phẩm công trình xanh Singapore.\nCRI Green Label Plus™: GLP3237 · nhóm thảm 5Y.\n\nCông bố môi trường và thành phần được nêu:\nUL EPD — tuyên bố môi trường sản phẩm.\nHPD — bản công bố thành phần và thông tin nguy hại liên quan đến sức khỏe, phiên bản 2.1.\nDeclare — công bố thành phần vật liệu.\nRESET — biểu trưng được nêu; xác nhận phạm vi áp dụng với Milliken.\n\nDanh mục theo brochure, không thay thế chứng chỉ. Xác nhận hiệu lực, cấp độ chứng nhận và phạm vi đế/họa tiết trước khi chỉ định cho dự án.",
+      "en": "Certification marks shown in the Asia brochure:\nCradle to Cradle Certified® Product Program.\nSingapore Green Label.\nSingapore Green Building Product (SGBP).\nCRI Green Label Plus™: GLP3237 · Carpet Category 5Y.\n\nEnvironmental and ingredient disclosures shown:\nUL Environmental Product Declaration (EPD).\nHealth Product Declaration (HPD), version 2.1.\nDeclare.\nRESET — mark shown; confirm the applicable scope with Milliken.\n\nThis list follows the brochure and does not replace certificates. Confirm current validity, certification levels and the scope for the selected backing and design before specifying."
+    }
   }
 };
   for(const [id,item] of Object.entries(technicalData)){window.productDetails[id].specifications=text(item.specifications.vi,item.specifications.en);text(item.certifications.vi,item.certifications.en);}

@@ -4109,6 +4109,128 @@
         ],
         "design": "Topography 2.0 - Relief"
       }
+    ],
+    "warp-weft": [
+      {
+        "design": "In Stitches",
+        "colors": [
+          {
+            "name": "ISC208-121 Undertone",
+            "image": "assets/carpet-colours/warp-weft-0-0.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/AA/D6/ISC208-121-Undertone_1_01_M.jpg?v=2025.02.17.08.27.46"
+          },
+          {
+            "name": "ISC218-44 Camel",
+            "image": "assets/carpet-colours/warp-weft-0-1.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/C6/03/ISC218-44-Camel_1_01_M.jpg?v=2025.02.17.08.27.45"
+          },
+          {
+            "name": "ISC235-234 Wool Blend",
+            "image": "assets/carpet-colours/warp-weft-0-2.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/1C/76/ISC235-234-Wool-Blend_1_01_M.jpg?v=2025.02.17.08.27.45"
+          },
+          {
+            "name": "ISC235-254 Baked Beige",
+            "image": "assets/carpet-colours/warp-weft-0-3.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/39/84/ISC235-254-Baked-Beige_1_01_M.jpg?v=2025.02.17.08.27.44"
+          },
+          {
+            "name": "ISC152-180 Dove",
+            "image": "assets/carpet-colours/warp-weft-0-4.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/71/67/ISC152-180-Dove_1_01_M.jpg?v=2025.02.17.08.27.47"
+          },
+          {
+            "name": "ISC6-153 Tweed Coat",
+            "image": "assets/carpet-colours/warp-weft-0-5.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/93/11/ISC6-153-Tweed-Coat_1_01_M.jpg?v=2025.02.17.08.27.47"
+          },
+          {
+            "name": "ISC209-118 Blackened",
+            "image": "assets/carpet-colours/warp-weft-0-6.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/5B/2A/ISC209-118-Blackened_1_01_M.jpg?v=2025.02.17.08.27.46"
+          }
+        ]
+      },
+      {
+        "design": "Threaded Layer",
+        "colors": [
+          {
+            "name": "THL162-208-121 Undertone With Sage",
+            "image": "assets/carpet-colours/warp-weft-1-0.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/A9/EC/THL162-208-121-Undertone-with-Sage_1_01_M.jpg?v=2025.02.17.08.27.44"
+          },
+          {
+            "name": "THL201-218-44 Camel With Seafoam",
+            "image": "assets/carpet-colours/warp-weft-1-1.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/39/AA/THL201-218-44-Camel-with-Seafoam_1_01_M.jpg?v=2025.02.17.08.27.41"
+          },
+          {
+            "name": "THL231-235-234 Wool Blend With Ochre",
+            "image": "assets/carpet-colours/warp-weft-1-2.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/7B/4E/THL231-235-234-Wool-Blend-with-Ochre_1_01_M.jpg?v=2025.02.17.08.27.41"
+          },
+          {
+            "name": "THL191-235-254 Baked Beige With Brick Red",
+            "image": "assets/carpet-colours/warp-weft-1-3.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/24/B9/THL191-235-254-Baked-Beige-with-Brick-Red_1_01_M.jpg?v=2025.02.17.08.27.43"
+          },
+          {
+            "name": "THL196-152-180 Dove With Midnight Blue",
+            "image": "assets/carpet-colours/warp-weft-1-4.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/82/7A/THL196-152-18-Dove-with-Midnight-Blue_1_01_M.jpg?v=2025.02.17.08.27.42"
+          },
+          {
+            "name": "THL189-6-153 Tweed Coat With Sienna",
+            "image": "assets/carpet-colours/warp-weft-1-5.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/AC/C8/THL189-6-153-Tweed-Coat-with-Sienna_1_01_M.jpg?v=2025.02.17.08.27.43"
+          },
+          {
+            "name": "THL265-209-118 Blackened With White",
+            "image": "assets/carpet-colours/warp-weft-1-6.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/0C/09/THL265-209-118-Blackened-with-White_1_01_M.jpg?v=2025.02.17.08.27.40"
+          }
+        ]
+      },
+      {
+        "design": "Woven Color",
+        "colors": [
+          {
+            "name": "WOC162-208-121 Undertone With Sage",
+            "image": "assets/carpet-colours/warp-weft-2-0.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/6B/24/WOC162-208-121-Undertone-with-Sage_1_01_M.jpg?v=2025.02.17.08.27.40"
+          },
+          {
+            "name": "WOC201-218-44 Camel With Seafoam",
+            "image": "assets/carpet-colours/warp-weft-2-1.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/E7/2A/WOC201-218-44-Camel-with-Seafoam_1_01_M.jpg?v=2025.02.17.08.27.38"
+          },
+          {
+            "name": "WOC231-235-234 Wool Blend With Ochre",
+            "image": "assets/carpet-colours/warp-weft-2-2.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/FE/DE/WOC231-235-234-Wool-Blend-with-Ochre_1_01_M.jpg?v=2025.02.17.08.27.37"
+          },
+          {
+            "name": "WOC191-235-254 Baked Beige With Brick Red",
+            "image": "assets/carpet-colours/warp-weft-2-3.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/33/91/WOC191-235-254-Baked-Beige-with-Brick-Red_1_01_M.jpg?v=2025.02.17.08.27.39"
+          },
+          {
+            "name": "WOC196-152-180 Dove With Midnight Blue",
+            "image": "assets/carpet-colours/warp-weft-2-4.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/86/44/WOC196-152-180-Dove-with-Midnight-Blue_1_01_M.jpg?v=2025.02.17.08.27.38"
+          },
+          {
+            "name": "WOC189-6-153 Tweed Coat With Sienna",
+            "image": "assets/carpet-colours/warp-weft-2-5.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/EF/B5/WOC189-6-153-Tweed-Coat-with-Sienna_1_01_M.jpg?v=2025.02.17.08.27.39"
+          },
+          {
+            "name": "WOC265-209-118 Blackened With White",
+            "image": "assets/carpet-colours/warp-weft-2-6.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/74/B8/WOC265-209-118-Blackened-with-White_1_01_M.jpg?v=2025.02.17.08.27.36"
+          }
+        ]
+      }
     ]
   }
 }

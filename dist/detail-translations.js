@@ -202,5 +202,12 @@ window.detailTranslations = {
   "Lưng bọc đệm · Không tay": "Upholstered back · Armless",
   "Lưng bọc đệm · Có tay": "Upholstered back · With arms",
   "Lưng dạng vỏ · Không tay": "Shell back · Armless",
-  "Lưng dạng vỏ · Có tay": "Shell back · With arms"
+  "Lưng dạng vỏ · Có tay": "Shell back · With arms",
+  "CHERRY PD-M1 là tủ di động kim loại thuộc bộ sưu tập thefirstworkshop. Thiết kế gọn với bánh xe, tay nắm âm và khóa số giúp sắp xếp tài liệu, văn phòng phẩm và vật dụng cá nhân dưới bàn làm việc. Có màu trắng hoặc đen; màu sắc, cấu hình và số lượng đặt hàng được xác nhận trước khi giao.": "CHERRY PD-M1 is a metal mobile pedestal in thefirstworkshop collection. Its compact design, castors, recessed handles and combination lock keep documents, stationery and personal items organised beneath the desk. Available in white or black; finish, configuration and order quantity are confirmed before delivery.",
+  "Tủ di động kim loại": "Metal Mobile Pedestal",
+  "Góc nhìn tổng thể": "Overall view",
+  "Mặt trước": "Front view",
+  "Mặt bên": "Side view",
+  "Ngăn kéo mở": "Open drawer",
+  "rộng 302 × sâu 482 × cao 592 mm": "W302 × D482 × H592 mm"
 };

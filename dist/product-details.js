@@ -1,5 +1,48 @@
 // Product details compiled from public TFW and manufacturer product pages.
 window.productDetails={
+  "cherry-pd-m1": {
+  "brand": "thefirstworkshop",
+  "productType": "Tủ di động kim loại",
+  "description": "CHERRY PD-M1 là tủ di động kim loại thuộc bộ sưu tập thefirstworkshop. Thiết kế gọn với bánh xe, tay nắm âm và khóa số giúp sắp xếp tài liệu, văn phòng phẩm và vật dụng cá nhân dưới bàn làm việc. Có màu trắng hoặc đen; màu sắc, cấu hình và số lượng đặt hàng được xác nhận trước khi giao.",
+  "specifications": "Bộ sưu tập: thefirstworkshop\nMẫu: CHERRY PD-M1\nKích thước: rộng 302 × sâu 482 × cao 592 mm\nVật liệu: thép sơn tĩnh điện\nMàu hoàn thiện: trắng hoặc đen\nTay nắm: dạng âm\nKhóa: khóa số\nDi chuyển: bánh xe\nCấu hình ngăn kéo và số lượng đặt hàng: xác nhận khi báo giá",
+  "imageScale": 64,
+  "variants": [],
+  "swatches": [
+    "#eeeeea",
+    "#171918"
+  ],
+  "images": [
+    "assets/products/cherry-pd-m1-main.png",
+    "assets/products/cherry-pd-m1-001.png",
+    "assets/products/cherry-pd-m1-002.png",
+    "assets/products/cherry-pd-m1-004.png"
+  ],
+  "galleryModes": [
+    "contain",
+    "contain",
+    "contain",
+    "contain"
+  ],
+  "galleryLabels": [
+    [
+      "CHERRY PD-M1",
+      "Góc nhìn tổng thể"
+    ],
+    [
+      "CHERRY PD-M1",
+      "Mặt trước"
+    ],
+    [
+      "CHERRY PD-M1",
+      "Mặt bên"
+    ],
+    [
+      "CHERRY PD-M1",
+      "Ngăn kéo mở"
+    ]
+  ],
+  "sourceUrl": "https://tav.com.vn/tu-ke/pd-m1-vi-23edc5c3-2661-406f-b6ca-f2728aa56aab"
+},
   "daeha-dm3-500": {
   "brand": "Daeha",
   "productType": "Ghế đa năng",
@@ -112,7 +155,7 @@ window.productDetails={
     "swatches": [],
     "description": "WiChair kết hợp thiết kế gọn với tay đỡ thép đàn hồi, cho phép chuyển động ngồi ba chiều.",
     "specifications": "Dòng: 228 WiChair\nThiết kế: Wilkhahn\nĐiều chỉnh lực đàn hồi: theo cân nặng người dùng 45–120 kg\nVỏ ghế: plywood hoặc polypropylene\nTùy chọn: tay vịn, đệm tháo rời hoặc bọc cố định\nCấu hình, hoàn thiện và giao hàng: xác nhận khi tư vấn",
-    "images": ["assets/products/wilkhahn-wichair-oak.jpg", "assets/products/wilkhahn-wichair-grey.jpg", "assets/products/wilkhahn-wichair-main.jpg", "assets/products/wilkhahn-wichair-workspace.jpg"],
+    "images": ["assets/products/wilkhahn-wichair-oak-cutout.webp", "assets/products/wilkhahn-wichair-grey.jpg", "assets/products/wilkhahn-wichair-main.jpg", "assets/products/wilkhahn-wichair-workspace.jpg"],
     "galleryModes": ["contain", "contain", "contain", "contain"],
     "galleryLabels": [["WiChair", "Gỗ sồi · Khung xanh mint"], ["WiChair", "Phiên bản xám"], ["WiChair", "Phiên bản đen"], ["WiChair", "Không gian làm việc · Cấu hình tham khảo"]],
     "sourceUrl": "https://www.wilkhahn.com/en/products/task-chairs-office-chairs/wichair/"

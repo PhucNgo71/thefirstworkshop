@@ -22,18 +22,24 @@ const additions = {
   'acticase-actihook': {category:'Accessories', brand:'Actiforce', images:4}
 };
 
-test('New manufacturer products have unique routes, requested categories and quotation-only pricing', () => {
+test('Manufacturer products have unique routes, requested categories and current pricing', () => {
   assert.equal(new Set(entries.map(entry => entry[0])).size, entries.length);
   for (const [id, expected] of Object.entries(additions)) {
     const entry = entries.find(entry => entry[0] === id);
     assert.equal(entry[2], expected.category);
-    assert.equal(entry[3], 0);
+    assert.equal(entry[3], id === 'wichair' ? 17000000 : 0);
     assert.equal(entry[5], id);
     assert.equal(catalog[id].name, entry[1]);
-    assert.equal(catalog[id].price, 0);
+    assert.equal(catalog[id].price, id === 'wichair' ? 18700000 : 0);
     assert.equal(details[id].brand, expected.brand);
     assert.equal(entry[4], details[id].images[0]);
-    assert.throws(() => normalize({
+    if (id === 'wichair') {
+      assert.doesNotThrow(() => normalize({
+        requestId:'12345678-1234-4234-8234-123456789abc',
+        customer:{name:'TEST Catalog',email:'test@example.com',phone:'0909000000',address:'TEST ONLY'},
+        items:[{id,quantity:1}],expectedSubtotal:18700000,paymentMethod:'bank'
+      }, catalog));
+    } else assert.throws(() => normalize({
       requestId:'12345678-1234-4234-8234-123456789abc',
       customer:{name:'TEST Catalog',email:'test@example.com',phone:'0909000000',address:'TEST ONLY'},
       items:[{id,quantity:1}],expectedSubtotal:0,paymentMethod:'bank'

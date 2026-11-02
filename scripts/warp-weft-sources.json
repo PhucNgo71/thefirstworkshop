@@ -1,0 +1,32 @@
+{
+  "collection": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=636&collectionName=Warp+%26+Weft",
+  "brochure": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/documents/FE/78/Warp%20%26%20Weft%20Interactive%20Asia.pdf?v=2025.04.28.09.18.26",
+  "technicalPage": 27,
+  "photos": [
+    {
+      "image": "assets/products/milliken-warp-weft-7.webp",
+      "pdfPage": 7
+    },
+    {
+      "image": "assets/products/milliken-warp-weft-9.webp",
+      "pdfPage": 9
+    },
+    {
+      "image": "assets/products/milliken-warp-weft-12.webp",
+      "pdfPage": 12
+    },
+    {
+      "image": "assets/products/milliken-warp-weft-14.webp",
+      "pdfPage": 14
+    },
+    {
+      "image": "assets/products/milliken-warp-weft-19.webp",
+      "pdfPage": 19
+    },
+    {
+      "image": "assets/products/milliken-warp-weft-22.webp",
+      "pdfPage": 22
+    }
+  ],
+  "note": "Native photographs extracted from official brochure, without page text or logos. Specifications and certification marks transcribed from page 27; no unverified gauge, recycled-content or warranty values added."
+}

@@ -1,0 +1,38 @@
+{
+  "sourceUrl": "https://tav.com.vn/tu-ke/pd-m1-vi-23edc5c3-2661-406f-b6ca-f2728aa56aab",
+  "checkedOn": "2026-11-02",
+  "supplierName": "CHERRY",
+  "supplierModel": "PD_M1_1",
+  "supplierSku": "230000151",
+  "collection": "thefirstworkshop",
+  "basePriceVnd": 3300000,
+  "vatInclusivePriceVnd": 3630000,
+  "dimensions": "W302 × D482 × H592 mm",
+  "photos": [
+    {
+      "asset": "assets/products/cherry-pd-m1-main.png",
+      "source": "https://media.tav.com.vn/tav/PD_M1/Option_Images/PD_M1_1_001.png",
+      "logoCheck": "No visible logo or watermark"
+    },
+    {
+      "asset": "assets/products/cherry-pd-m1-001.png",
+      "source": "https://media.tav.com.vn/tav/PD_M1/230000151/Images/230000151_001.png",
+      "logoCheck": "No visible logo or watermark"
+    },
+    {
+      "asset": "assets/products/cherry-pd-m1-002.png",
+      "source": "https://media.tav.com.vn/tav/PD_M1/230000151/Images/230000151_002.png",
+      "logoCheck": "No visible logo or watermark"
+    },
+    {
+      "asset": "assets/products/cherry-pd-m1-004.png",
+      "source": "https://media.tav.com.vn/tav/PD_M1/230000151/Images/230000151_004.png",
+      "logoCheck": "No visible logo or watermark"
+    }
+  ],
+  "notes": [
+    "Supplier configuration says 2 drawers; description and photos show 3. Drawer count intentionally left unconfirmed.",
+    "Supplier lists MOQ 100 units. TFW order quantity and availability require quotation confirmation.",
+    "Price set by user; supplier 0 VND is not a retail price."
+  ]
+}
