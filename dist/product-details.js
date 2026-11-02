@@ -3,8 +3,8 @@ window.productDetails={
   "cherry-pd-m1": {
   "brand": "thefirstworkshop",
   "productType": "Tủ di động kim loại",
-  "description": "CHERRY PD-M1 là tủ di động kim loại thuộc bộ sưu tập thefirstworkshop. Thiết kế gọn với bánh xe, tay nắm âm và khóa số giúp sắp xếp tài liệu, văn phòng phẩm và vật dụng cá nhân dưới bàn làm việc. Có màu trắng hoặc đen; màu sắc, cấu hình và số lượng đặt hàng được xác nhận trước khi giao.",
-  "specifications": "Bộ sưu tập: thefirstworkshop\nMẫu: CHERRY PD-M1\nKích thước: rộng 302 × sâu 482 × cao 592 mm\nVật liệu: thép sơn tĩnh điện\nMàu hoàn thiện: trắng hoặc đen\nTay nắm: dạng âm\nKhóa: khóa số\nDi chuyển: bánh xe\nCấu hình ngăn kéo và số lượng đặt hàng: xác nhận khi báo giá",
+  "description": "PD-M1 là tủ di động kim loại thuộc bộ sưu tập thefirstworkshop. Thiết kế gọn với bánh xe, tay nắm âm và khóa số giúp sắp xếp tài liệu, văn phòng phẩm và vật dụng cá nhân dưới bàn làm việc. Có màu trắng hoặc đen; màu sắc, cấu hình và số lượng đặt hàng được xác nhận trước khi giao.",
+  "specifications": "Bộ sưu tập: thefirstworkshop\nMẫu: PD-M1\nKích thước: rộng 302 × sâu 482 × cao 592 mm\nVật liệu: thép sơn tĩnh điện\nMàu hoàn thiện: trắng hoặc đen\nTay nắm: dạng âm\nKhóa: khóa số\nDi chuyển: bánh xe\nCấu hình ngăn kéo và số lượng đặt hàng: xác nhận khi báo giá",
   "imageScale": 64,
   "variants": [],
   "swatches": [
@@ -25,29 +25,29 @@ window.productDetails={
   ],
   "galleryLabels": [
     [
-      "CHERRY PD-M1",
+      "PD-M1",
       "Góc nhìn tổng thể"
     ],
     [
-      "CHERRY PD-M1",
+      "PD-M1",
       "Mặt trước"
     ],
     [
-      "CHERRY PD-M1",
+      "PD-M1",
       "Mặt bên"
     ],
     [
-      "CHERRY PD-M1",
+      "PD-M1",
       "Ngăn kéo mở"
     ]
   ],
   "sourceUrl": "https://tav.com.vn/tu-ke/pd-m1-vi-23edc5c3-2661-406f-b6ca-f2728aa56aab"
 },
   "daeha-dm3-500": {
-  "brand": "Daeha",
+  "brand": "thefirstworkshop",
   "productType": "Ghế đa năng",
-  "description": "DM3-500 là dòng ghế đa năng của Daeha với ba lựa chọn tựa lưng: lưới, bọc đệm hoặc dạng vỏ. Có phiên bản không tay và có tay. Giá hiển thị áp dụng cho DM3-500WM không tay; các phiên bản khác được xác nhận khi báo giá.",
-  "specifications": "Thương hiệu: Daeha\nDòng sản phẩm: DM3-500\nCấu hình tiêu chuẩn: DM3-500WM, lưng lưới, không tay\nDM3-500WM / DM3-501WM: rộng 500 / 575 × sâu 580 × cao 875 mm\nDM3-500WF / DM3-501WF: rộng 500 / 575 × sâu 575 × cao 875 mm\nDM3-500W / DM3-501W: rộng 500 / 575 × sâu 575 × cao 875 mm\nTựa lưng: lưới (WM), bọc đệm (WF) hoặc dạng vỏ (W)\nTay vịn: không tay (500) hoặc có tay (501)\nChân ghế: bốn chân có bánh xe\nMàu sắc và cấu hình: xác nhận theo mẫu và báo giá\nNguồn: catalogue Daeha, trang 180",
+  "description": "DM3-500 là dòng ghế đa năng thuộc bộ sưu tập thefirstworkshop với ba lựa chọn tựa lưng: lưới, bọc đệm hoặc dạng vỏ. Có phiên bản không tay và có tay. Giá hiển thị áp dụng cho DM3-500WM không tay; các phiên bản khác được xác nhận khi báo giá.",
+  "specifications": "Thương hiệu: thefirstworkshop\nDòng sản phẩm: DM3-500\nCấu hình tiêu chuẩn: DM3-500WM, lưng lưới, không tay\nDM3-500WM / DM3-501WM: rộng 500 / 575 × sâu 580 × cao 875 mm\nDM3-500WF / DM3-501WF: rộng 500 / 575 × sâu 575 × cao 875 mm\nDM3-500W / DM3-501W: rộng 500 / 575 × sâu 575 × cao 875 mm\nTựa lưng: lưới (WM), bọc đệm (WF) hoặc dạng vỏ (W)\nTay vịn: không tay (500) hoặc có tay (501)\nChân ghế: bốn chân có bánh xe\nMàu sắc và cấu hình: xác nhận theo mẫu và báo giá",
   "imageScale": 80,
   "variants": [],
   "swatches": [],

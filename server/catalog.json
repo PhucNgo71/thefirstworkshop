@@ -310,7 +310,7 @@
     "vatAmount": 0
   },
   "cherry-pd-m1": {
-    "name": "CHERRY PD-M1",
+    "name": "PD-M1",
     "basePrice": 3300000,
     "price": 3630000,
     "vatRate": 10,
@@ -522,7 +522,7 @@
     "vatAmount": 1700000
   },
   "daeha-dm3-500": {
-    "name": "DM3-500 / Daeha",
+    "name": "DM3-500 / thefirstworkshop",
     "basePrice": 6000000,
     "price": 6600000,
     "vatRate": 10,
