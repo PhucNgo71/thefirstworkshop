@@ -84,6 +84,7 @@ const catalogEntries=[
  ['jac-chairs','JAC CHAIR COLLECTION','Loose Furniture',0,'https://www.zenithinteriors.com/media/gw3ntefm/schamburg_alvisse_jac_star_01.jpg?anchor=center&mode=crop&width=720&height=1002&rnd=132739290915130000','jac-4-star-chair'],
  ['tori','Tori / Flokk','Seatings',8500000,'https://cdn.hstatic.net/products/200000617147/6_1__2010bc0bd11349439171e814c6546630_large.png','tori'],
  ['hag-capisco','HÅG Capisco 8106 / Flokk','Seatings',0,'assets/products/hag-capisco-8106-front.jpg','hag-capisco'],
+ ['hag-capisco-puls','HÅG Capisco Puls 8010 / Flokk','Seatings',17000000,'assets/products/hag-capisco-puls-8010-black-front_left.webp','hag-capisco-puls'],
  ['wichair','WiChair / Wilkhahn','Seatings',17000000,'assets/products/wilkhahn-wichair-oak-cutout.webp','wichair'],
  ['daeha-dm3-500','DM3-500 / thefirstworkshop','Seatings',6000000,'assets/products/dm3-500-studio-cutout.webp','daeha-dm3-500'],
  ['ae5','AE5-FF100','Monitor Arm & Docking',2200000,'https://cdn.hstatic.net/products/200000617147/ae5-5_ad788b5f33704e3084cc3e2a1b8e05b8_large.png','ae5-100'],

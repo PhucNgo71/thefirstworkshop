@@ -1,4 +1,11 @@
 window.detailTranslations = {
+  "Ghế yên ngựa có đệm tích hợp": "Saddle Chair with Integrated Cushion",
+  "Mẫu 8010 · Mặt ngồi yên ngựa · HÅG inBalance®": "Model 8010 · Saddle seat · HÅG inBalance®",
+  "HÅG Capisco Puls 8010 có thân nhựa và đệm ngồi tích hợp. Thiết kế yên ngựa hỗ trợ thay đổi tư thế khi làm việc; cơ chế HÅG inBalance® cho phép ngả linh hoạt.": "HÅG Capisco Puls 8010 combines a plastic shell with an integrated seat cushion. Its saddle shape supports varied working postures, with balanced movement from the HÅG inBalance® tilt mechanism.",
+  "Thương hiệu: HÅG / Flokk\nMẫu: 8010-STD\nThiết kế: Peter Opsvik\nCơ chế: HÅG inBalance®, điều chỉnh lực ngả và khóa ngả\nĐiều chỉnh: chiều cao ghế, độ sâu mặt ngồi, chiều cao tựa lưng\nCao mặt ngồi với trụ 150 / 200 / 265 mm: 390–525 / 455–640 / 540–795 mm\nMặt ngồi: rộng 460 mm; sâu 400–470 mm\nTựa lưng: cao 400 mm\nChân ghế: nhôm 5 nhánh, Ø730 mm\nTrụ nâng, màu vỏ, đệm và chân: xác nhận khi đặt hàng": "Brand: HÅG / Flokk\nModel: 8010-STD\nDesigner: Peter Opsvik\nMechanism: HÅG inBalance® with adjustable tilt tension and tilt lock\nAdjustments: seat height, seat depth and backrest height\nSeat height with 150 / 200 / 265 mm lift: 390–525 / 455–640 / 540–795 mm\nSeat: W460 mm; depth 400–470 mm\nBackrest: 400 mm high\nBase: five-star aluminium, Ø730 mm\nLift, shell colour, cushion and base: confirmed when ordering",
+  "Đệm ngồi tích hợp": "Integrated seat cushion",
+  "Điều chỉnh độ sâu mặt ngồi": "Adjustable seat depth",
+  "Ngả linh hoạt HÅG inBalance®": "Balanced HÅG inBalance® tilt",
   "Tủ di động MFC": "MFC Mobile Pedestal",
   "Tủ MFC 3 ngăn kéo · Khóa chìa · Bánh xe": "Three-drawer MFC pedestal · Key lock · Castors",
   "US-PD là tủ di động ba ngăn kéo thuộc bộ sưu tập thefirstworkshop, dùng để lưu trữ tài liệu, văn phòng phẩm và vật dụng cá nhân. Tủ bằng MFC dày 18 mm, có khóa chìa, tay nắm âm và bánh xe. Giá 3.000.000 VND đã gồm 10% VAT áp dụng cho cấu hình ba ngăn kéo trong ảnh.": "US-PD is a three-drawer mobile pedestal in thefirstworkshop collection for documents, stationery and personal items. Made from 18 mm MFC, it has a key lock, recessed handles and castors. The price of 3,000,000 VND including 10% VAT applies to the three-drawer configuration shown.",

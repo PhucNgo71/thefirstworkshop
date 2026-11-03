@@ -528,6 +528,13 @@
     "vatRate": 0,
     "vatAmount": 0
   },
+  "hag-capisco-puls": {
+    "name": "HÅG Capisco Puls 8010 / Flokk",
+    "basePrice": 17000000,
+    "price": 18700000,
+    "vatRate": 10,
+    "vatAmount": 1700000
+  },
   "wichair": {
     "name": "WiChair / Wilkhahn",
     "basePrice": 17000000,

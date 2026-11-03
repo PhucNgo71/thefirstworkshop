@@ -1,5 +1,44 @@
 // Product details compiled from public TFW and manufacturer product pages.
 window.productDetails={
+  "hag-capisco-puls": {
+  "brand": "HÅG / Flokk",
+  "productType": "Ghế yên ngựa có đệm tích hợp",
+  "imageScale": 94,
+  "swatches": ["#171717"],
+  "listingDetail": "Mẫu 8010 · Mặt ngồi yên ngựa · HÅG inBalance®",
+  "description": "HÅG Capisco Puls 8010 có thân nhựa và đệm ngồi tích hợp. Thiết kế yên ngựa hỗ trợ thay đổi tư thế khi làm việc; cơ chế HÅG inBalance® cho phép ngả linh hoạt.",
+  "specifications": "Thương hiệu: HÅG / Flokk\nMẫu: 8010-STD\nThiết kế: Peter Opsvik\nCơ chế: HÅG inBalance®, điều chỉnh lực ngả và khóa ngả\nĐiều chỉnh: chiều cao ghế, độ sâu mặt ngồi, chiều cao tựa lưng\nCao mặt ngồi với trụ 150 / 200 / 265 mm: 390–525 / 455–640 / 540–795 mm\nMặt ngồi: rộng 460 mm; sâu 400–470 mm\nTựa lưng: cao 400 mm\nChân ghế: nhôm 5 nhánh, Ø730 mm\nTrụ nâng, màu vỏ, đệm và chân: xác nhận khi đặt hàng",
+  "highlights": [
+    "Đệm ngồi tích hợp",
+    "Điều chỉnh độ sâu mặt ngồi",
+    "Ngả linh hoạt HÅG inBalance®"
+  ],
+  "images": [
+    "assets/products/hag-capisco-puls-8010-black-front_left.webp",
+    "assets/products/hag-capisco-puls-8010-black-front.webp",
+    "assets/products/hag-capisco-puls-8010-black-back.webp"
+  ],
+  "galleryModes": [
+    "cutout",
+    "cutout",
+    "cutout"
+  ],
+  "galleryLabels": [
+    [
+      "HÅG Capisco Puls 8010",
+      "Góc trước"
+    ],
+    [
+      "HÅG Capisco Puls 8010",
+      "Mặt trước"
+    ],
+    [
+      "HÅG Capisco Puls 8010",
+      "Góc sau"
+    ]
+  ],
+  "sourceUrl": "https://store.flokk.com/global/en-gb/products/hag-capisco-puls?model=8010-STD"
+},
   "us-pd": {
   "brand": "thefirstworkshop",
   "productType": "Tủ di động MFC",
@@ -190,7 +229,7 @@ window.productDetails={
   "productType": "Ghế đa năng",
   "description": "DM3-500 là dòng ghế đa năng thuộc bộ sưu tập thefirstworkshop với ba lựa chọn tựa lưng: lưới, bọc đệm hoặc dạng vỏ. Có phiên bản không tay và có tay. Giá hiển thị áp dụng cho DM3-500WM không tay; các phiên bản khác được xác nhận khi báo giá.",
   "specifications": "Thương hiệu: thefirstworkshop\nDòng sản phẩm: DM3-500\nCấu hình tiêu chuẩn: DM3-500WM, lưng lưới, không tay\nDM3-500WM / DM3-501WM: rộng 500 / 575 × sâu 580 × cao 875 mm\nDM3-500WF / DM3-501WF: rộng 500 / 575 × sâu 575 × cao 875 mm\nDM3-500W / DM3-501W: rộng 500 / 575 × sâu 575 × cao 875 mm\nTựa lưng: lưới (WM), bọc đệm (WF) hoặc dạng vỏ (W)\nTay vịn: không tay (500) hoặc có tay (501)\nChân ghế: bốn chân có bánh xe\nMàu sắc và cấu hình: xác nhận theo mẫu và báo giá",
-  "imageScale": 80,
+  "imageScale": 72,
   "variants": [],
   "swatches": [],
   "images": [
