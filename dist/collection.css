@@ -281,3 +281,7 @@
 
 /* Preserve full E60 brochure images and keep captions clear. */
 .detail-image img[src*="/spiralis-e60-"]{width:100%;height:84%;object-fit:contain;object-position:center;mix-blend-mode:normal}
+
+/* Preserve FA5C-D table proportions, full legs and gallery captions. */
+.product-image-button[data-product="fa5c-d-rectangle"] img{width:100%;height:100%;object-fit:contain;mix-blend-mode:normal}
+.detail-image img[src*="/fa5c-d-"]{width:100%;height:88%;object-fit:contain;mix-blend-mode:normal}

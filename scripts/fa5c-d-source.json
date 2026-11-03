@@ -1,0 +1,38 @@
+{
+  "sourceUrl": "https://tav.com.vn/ban/fa5c-d-rectangle-vi-18a65033-20f4-4914-ab17-55290769c230",
+  "images": [
+    {
+      "source": "https://media.tav.com.vn/tav/FA5C_D_Rectangle/FA5C_D_1407_BK02_475/Images/FA5C_D_1407_BK02_475_001.png",
+      "asset": "assets/products/fa5c-d-black-wood.webp",
+      "logoReview": "No visible logo; original image retained without logo removal."
+    },
+    {
+      "source": "https://media.tav.com.vn/tav/FA5C_D_Rectangle/FA5C_D_1407_WH02_101T/Images/FA5C_D_1407_WH02_101T_001.png",
+      "asset": "assets/products/fa5c-d-white.webp",
+      "logoReview": "No visible logo; original image retained without logo removal."
+    },
+    {
+      "source": "https://media.tav.com.vn/tav/FA5C_D_Rectangle/FA5C_D_1407_WH02_475/Images/FA5C_D_1407_WH02_475_001.png",
+      "asset": "assets/products/fa5c-d-white-wood.webp",
+      "logoReview": "No visible logo; original image retained without logo removal."
+    }
+  ],
+  "standardSize": "1400 × 700 × 750 mm",
+  "price": {
+    "grossVnd": 4500000,
+    "baseVnd": 4090909,
+    "vatVnd": 409091,
+    "includes": [
+      "tabletop",
+      "cable tray"
+    ],
+    "authority": "User-confirmed selling price and inclusions"
+  },
+  "technicalSource": "Supplier product page, FA5C_D_1407 configuration and attached_accessories material specifications",
+  "excludedImages": [
+    {
+      "asset": "assets/products/fa5c-d-workspace.webp",
+      "reason": "Workspace photo removed at user request"
+    }
+  ]
+}

@@ -309,6 +309,13 @@
     "vatRate": 0,
     "vatAmount": 0
   },
+  "fa5c-d-rectangle": {
+    "name": "FA5C-D Rectangle / thefirstworkshop",
+    "basePrice": 4090909,
+    "price": 4500000,
+    "vatRate": 10,
+    "vatAmount": 409091
+  },
   "cherry-pd-m1": {
     "name": "PD-M1",
     "basePrice": 3300000,

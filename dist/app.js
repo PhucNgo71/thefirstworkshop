@@ -54,6 +54,7 @@ const catalogEntries=[
  ['precinct-focus-lounge','PRECINCT FOCUS Lounge / Zenith','Loose Furniture',0,'assets/products/precinct-focus-lounge-main.jpg','precinct-focus-lounge'],
  ['precinct-meet-booth','PRECINCT MEET Booth / Zenith','Loose Furniture',0,'assets/products/precinct-meet-booth-main.jpg','precinct-meet-booth'],
  ['activity-stool','Activity Stool / Actiforce','Loose Furniture',0,'assets/cutouts/activity-stool-main.png','activity-stool'],
+ ['fa5c-d-rectangle','FA5C-D Rectangle / thefirstworkshop','System Furniture',4090909,'assets/products/fa5c-d-black-wood.webp','fa5c-d-rectangle'],
  ['cherry-pd-m1','PD-M1','Storage Solutions',3300000,'assets/products/cherry-pd-m1-main.png','cherry-pd-m1'],
  ['repo','REPO Pedestal','Storage Solutions',3500000,'https://cdn.hstatic.net/products/200000617147/1_2__708824e55ad84f00a73fe2a27a023ce5_large.png','repo-pedestal'],
  ['repo-tambour','REPO tambour','Storage Solutions',7700000,'https://cdn.hstatic.net/products/200000617147/2_1__7d76c51930304449acbf8a64137b77de_large.png','repo-tambour-2'],
@@ -116,7 +117,7 @@ const catalogEntries=[
  ['sw-series','SW Series','Accessories',0,'https://cdn.hstatic.net/products/200000617147/1_5__6c7fc71c2e0a48f0b5f274480b5507e6_large.png','sw'],
  ['zeus','Zeus','Accessories',0,'https://cdn.hstatic.net/products/200000617147/1_11__a6f0e40081ad4418a4b9669c5d4783dd_large.png','zeus']
 ];
-const products=catalogEntries.map(([id,name,scope,price,image,handle,badge])=>({id,name,category:scope,scope,...window.tfwPricing.productPrice(price),image:window.productImageUrl(window.productGalleryOverrides?.[id]?.images?.[0]||image),badge,contactOnly:price===0,detail:window.carpetCollection?.summaries?.[id]||window.slsListingDetails?.[id]||catalogDetails[scope],sourceUrl:`https://tfw.space/products/${handle}`,swatches:['#111312','#f4f5f3','#8b8f8c']}));
+const products=catalogEntries.map(([id,name,scope,price,image,handle,badge])=>({id,name,category:scope,scope,...window.tfwPricing.productPrice(price),image:window.productImageUrl(window.productGalleryOverrides?.[id]?.images?.[0]||image),badge,contactOnly:price===0,detail:window.productDetails?.[id]?.listingDetail||window.carpetCollection?.summaries?.[id]||window.slsListingDetails?.[id]||catalogDetails[scope],sourceUrl:`https://tfw.space/products/${handle}`,swatches:['#111312','#f4f5f3','#8b8f8c']}));
 const orderProducts=window.tfwProductOptions?.cartProducts(products)||products;
 const productLineProfiles={
  'Smart Pods':76,'Loose Furniture':84,'Storage Solutions':80,'System Furniture':86,'Seatings':80,

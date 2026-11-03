@@ -1,5 +1,58 @@
 // Product details compiled from public TFW and manufacturer product pages.
 window.productDetails={
+  "fa5c-d-rectangle": {
+  "brand": "thefirstworkshop",
+  "productType": "Bàn làm việc chữ nhật",
+  "imageScale": 100,
+  "swatches": [],
+  "listingDetail": "Gồm mặt bàn 1400 × 700 mm và máng điện",
+  "description": "FA5C-D Rectangle thuộc bộ sưu tập thefirstworkshop, với chân chữ A bằng thép tròn và mặt bàn MFC. Bộ tiêu chuẩn gồm bàn 1400 × 700 × 750 mm, mặt bàn và 01 máng điện. Giá 4.500.000 VND đã gồm 10% VAT. Ghế, vách ngăn và các phụ kiện khác trong ảnh không nằm trong bộ tiêu chuẩn.",
+  "specifications": "Bộ sưu tập: thefirstworkshop\nMẫu: FA5C-D Rectangle\nKích thước: rộng 1400 × sâu 700 × cao 750 mm\nMặt bàn: MFC dày 25 mm, dán cạnh PVC 1 mm\nChân bàn: dáng chữ A, ống thép tròn Ø50 mm\nThanh giằng: thép hộp 25 × 50 mm\nHoàn thiện khung: sơn tĩnh điện\nMàu tham khảo: chân đen / mặt vân gỗ; chân trắng / mặt trắng; chân trắng / mặt vân gỗ\nBộ tiêu chuẩn: khung bàn, mặt bàn 1400 × 700 mm và 01 máng điện\nGiá bộ tiêu chuẩn: 4.500.000 VND, đã gồm 10% VAT\nGhế, vách ngăn và các phụ kiện khác: báo giá riêng\nMàu hoàn thiện và thời gian giao hàng: xác nhận khi đặt hàng",
+  "highlights": [
+    "Mặt bàn 1400 × 700 mm",
+    "Mặt MFC 25 mm · Cạnh PVC 1 mm",
+    "Bao gồm 01 máng điện"
+  ],
+  "images": [
+    "assets/products/fa5c-d-black-wood.webp",
+    "assets/products/fa5c-d-white.webp",
+    "assets/products/fa5c-d-white-wood.webp"
+  ],
+  "galleryModes": [
+    "cutout",
+    "cutout",
+    "cutout"
+  ],
+  "galleryLabels": [
+    [
+      "FA5C-D",
+      "Chân đen · Mặt vân gỗ"
+    ],
+    [
+      "FA5C-D",
+      "Chân trắng · Mặt trắng"
+    ],
+    [
+      "FA5C-D",
+      "Chân trắng · Mặt vân gỗ"
+    ]
+  ],
+  "setTitle": "Bộ tiêu chuẩn",
+  "setSubtitle": "Đã bao gồm trong giá 4.500.000 VND",
+  "bundleItems": [
+    {
+      "label": "Mặt bàn MFC",
+      "detail": "1400 × 700 × 25 mm · Đã bao gồm",
+      "included": true
+    },
+    {
+      "label": "Máng điện",
+      "detail": "01 máng điện · Đã bao gồm",
+      "included": true
+    }
+  ],
+  "sourceUrl": "https://tav.com.vn/ban/fa5c-d-rectangle-vi-18a65033-20f4-4914-ab17-55290769c230"
+},
   "spiralis-e60": {
   "brand": "Spiralis",
   "productType": "Hệ vách kính văn phòng",
