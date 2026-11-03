@@ -237,7 +237,7 @@ window.productDetails={
     "assets/products/dm3-500-front-arms.webp"
   ],
   "galleryModes": [
-    "cutout",
+    "contain",
     "contain"
   ],
   "galleryLabels": [
