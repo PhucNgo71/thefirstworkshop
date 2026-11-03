@@ -1,0 +1,24 @@
+{
+  "source": "C:/Users/Admin/Desktop/Spiralis E60 20260326.pdf",
+  "reviewedPages": 9,
+  "photos": [
+    {
+      "image": "p7-0-Im128.jpg",
+      "output": "assets/products/spiralis-e60-room.webp"
+    },
+    {
+      "image": "p3-0-Im101.jpg",
+      "output": "assets/products/spiralis-e60-curved.webp"
+    },
+    {
+      "image": "p4-0-Im107.jpg",
+      "output": "assets/products/spiralis-e60-profile.webp"
+    },
+    {
+      "image": "p6-1-Im122.jpg",
+      "output": "assets/products/spiralis-e60-joint.webp"
+    }
+  ],
+  "technicalSource": "PDF page 5 (printed 04-05), dimensions as labelled in drawing; frame and joint descriptions on pages 4 and 6.",
+  "notes": "No numerical acoustic rating or verified product-specific certification claimed; brochure provides no applicable test report. Contact for quotation."
+}

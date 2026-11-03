@@ -90,6 +90,7 @@ const catalogEntries=[
  ['m2pro','M2 Pro','Monitor Arm & Docking',6900000,'https://product.hstatic.net/200000617147/product/6_4x-100_08ae60e989204f02be2cfd6cd012dd7e_large.jpg','monitor-arm-m21'],
  ['m8pro','M8 Pro','Monitor Arm & Docking',18000000,'https://product.hstatic.net/200000617147/product/m81_learnpage_3_f222591c3cd7473e89a1e88c3804ae22_large.jpg','m8-1-dual'],
  ['mflex','MFlex','Monitor Arm & Docking',15900000,'https://product.hstatic.net/200000617147/product/mflex_2_m2.1_3_654c4e8f2d864a8390954a03d26e1127_large.jpg','m-flex'],
+ ['spiralis-e60','SPIRALIS E60','Glass Partition',0,'assets/products/spiralis-e60-room.webp','spiralis-e60'],
  ['spiralis-e100','SPIRALIS E100','Glass Partition',0,'assets/spiralis-e100-01.jpg','spiralis-e100','Mới'],
  ['retrofit','Retrofit Collection','Flooring Solutions',0,'https://cdn.hstatic.net/products/200000617147/website_ergogen__10__6daea0acf8fb4baca08c60c391a7865d_large.png','retrofit-collection'],
  ['building-blocks','Building Blocks 2.0 Collection','Flooring Solutions',0,'https://cdn.hstatic.net/products/200000617147/website_ergogen__13__14f1b24192134cc5ab44ab138728ccd2_large.png','building-blocks-2-0-collection'],

@@ -1,5 +1,49 @@
 // Product details compiled from public TFW and manufacturer product pages.
 window.productDetails={
+  "spiralis-e60": {
+  "brand": "Spiralis",
+  "productType": "Hệ vách kính văn phòng",
+  "imageScale": 100,
+  "swatches": [],
+  "description": "E60 là hệ vách kính văn phòng với khung nhôm mảnh và đường nét tối giản, giúp phân chia không gian mà vẫn giữ độ thoáng và ánh sáng. Có cấu hình kính đơn, kính đôi và nhiều loại cửa đồng bộ. Kích thước, kính và hoàn thiện được xác nhận theo từng dự án.",
+  "specifications": "Hệ vách: Spiralis E60\nCấu hình: kính đơn hoặc kính đôi\nBề rộng profile theo bản vẽ: 61 mm\nProfile trên / dưới theo bản vẽ: cao 35 / 25 mm\nKính vách theo bản vẽ: kính cường lực trong 10 hoặc 12 mm\nKhung: nhôm định hình mảnh\nMối nối kính: nẹp polycarbonate đùn định hình, liên kết khô\nLiên kết: nối góc và nối ba hướng\nCửa tương thích: kính đơn không khung / có khung; kính đôi khung 60 mm; kính đôi phẳng 100 mm; cửa đặc\nLắp đặt: profile sàn và trần; thanh khung giao theo chiều dài\nKích thước: xác nhận theo dự án\nMàu khung và cấu hình kính: xác nhận khi báo giá\nHiệu năng cách âm: xác nhận theo cấu hình và báo cáo thử nghiệm\nGiá: liên hệ báo giá theo dự án",
+  "highlights": [
+    "Khung nhôm mảnh",
+    "Kính đơn hoặc kính đôi",
+    "Mối nối kính khô bằng polycarbonate"
+  ],
+  "images": [
+    "assets/products/spiralis-e60-room.webp",
+    "assets/products/spiralis-e60-curved.webp",
+    "assets/products/spiralis-e60-profile.webp",
+    "assets/products/spiralis-e60-joint.webp"
+  ],
+  "galleryModes": [
+    "contain",
+    "contain",
+    "contain",
+    "contain"
+  ],
+  "galleryLabels": [
+    [
+      "E60",
+      "Không gian văn phòng"
+    ],
+    [
+      "E60",
+      "Cấu hình vách cong"
+    ],
+    [
+      "E60",
+      "Chi tiết khung nhôm"
+    ],
+    [
+      "E60",
+      "Chi tiết mối nối kính"
+    ]
+  ],
+  "sourceUrl": "assets/spiralis-e60-catalogue.pdf"
+},
   "cherry-pd-m1": {
   "brand": "thefirstworkshop",
   "productType": "Tủ di động kim loại",

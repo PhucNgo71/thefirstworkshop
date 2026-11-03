@@ -278,3 +278,6 @@
 .product-image-button[data-product="daeha-dm3-500"] img{width:88%;height:86%;object-fit:contain;object-position:center;mix-blend-mode:normal}
 .detail-image img[src$="/dm3-500-studio-cutout.webp"]{width:88%;height:82%;object-fit:contain;object-position:center;mix-blend-mode:normal}
 .detail-image img[src$="/dm3-500-front-arms.webp"]{width:84%;height:80%;object-fit:contain}
+
+/* Preserve full E60 brochure images and keep captions clear. */
+.detail-image img[src*="/spiralis-e60-"]{width:100%;height:84%;object-fit:contain;object-position:center;mix-blend-mode:normal}

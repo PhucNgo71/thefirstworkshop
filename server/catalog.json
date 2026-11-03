@@ -570,6 +570,13 @@
     "vatRate": 10,
     "vatAmount": 1590000
   },
+  "spiralis-e60": {
+    "name": "SPIRALIS E60",
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
+  },
   "spiralis-e100": {
     "name": "SPIRALIS E100",
     "basePrice": 0,
