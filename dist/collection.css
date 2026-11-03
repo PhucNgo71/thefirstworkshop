@@ -291,4 +291,5 @@
 
 .detail-image img[src*="/hag-capisco-puls-8020-"]{width:100%;height:84%;object-fit:contain;object-position:center;mix-blend-mode:normal}
 
-.whatsapp-contact{bottom:calc(90px + env(safe-area-inset-bottom));color:#126b3e;border-color:#d0e8db}.whatsapp-contact .zalo-bubble{background:#128c4e}.whatsapp-contact:hover{background:#eef9f2}.whatsapp-contact:focus-visible{outline-color:#128c4e}@media(max-width:580px){.whatsapp-contact{bottom:calc(74px + env(safe-area-inset-bottom))}}
+.zalo-contact:not(.whatsapp-contact){bottom:calc(90px + env(safe-area-inset-bottom))}
+.whatsapp-contact{bottom:calc(20px + env(safe-area-inset-bottom));color:#126b3e;border-color:#d0e8db}.whatsapp-contact .zalo-bubble{background:#128c4e}.whatsapp-contact:hover{background:#eef9f2}.whatsapp-contact:focus-visible{outline-color:#128c4e}@media(max-width:580px){.zalo-contact:not(.whatsapp-contact){bottom:calc(74px + env(safe-area-inset-bottom))}.whatsapp-contact{bottom:calc(12px + env(safe-area-inset-bottom))}}
