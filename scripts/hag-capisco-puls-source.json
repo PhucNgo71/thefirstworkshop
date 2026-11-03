@@ -1,25 +1,26 @@
 {
-  "sourceUrl": "https://store.flokk.com/global/en-gb/products/hag-capisco-puls?model=8010-STD",
+  "sourceUrl": "https://store.flokk.com/global/en-gb/products/hag-capisco-puls?model=8020-STD",
   "factsheet": "https://flokkplatformprod.blob.core.windows.net/catalog/hag-capisco-puls/Factsheet_HAG_Capisco_Puls_ENG.pdf",
   "price": {
-    "baseVnd": 17000000,
-    "grossVnd": 18700000,
-    "authority": "User: same as WiChair"
+    "baseVnd": 23181818,
+    "grossVnd": 25500000,
+    "vatVnd": 2318182,
+    "authority": "User-confirmed 8020 selling price: 25,500,000 VND including VAT"
   },
   "images": [
     {
-      "source": "Official Flokk download: Flokk-chair-0E5NVX.zip / 0E5NVX_front_left.png",
-      "asset": "assets/products/hag-capisco-puls-8010-black-front_left.webp"
+      "source": "Official Flokk download: Flokk-chair-0E1KW6.zip / 0E1KW6_front_left.png",
+      "asset": "assets/products/hag-capisco-puls-8020-black-front_left.webp"
     },
     {
-      "source": "Official Flokk download: Flokk-chair-0E5NVX.zip / 0E5NVX_front.png",
-      "asset": "assets/products/hag-capisco-puls-8010-black-front.webp"
+      "source": "Official Flokk download: Flokk-chair-0E1KW6.zip / 0E1KW6_front.png",
+      "asset": "assets/products/hag-capisco-puls-8020-black-front.webp"
     },
     {
-      "source": "Official Flokk download: Flokk-chair-0E5NVX.zip / 0E5NVX_back.png",
-      "asset": "assets/products/hag-capisco-puls-8010-black-back.webp"
+      "source": "Official Flokk download: Flokk-chair-0E1KW6.zip / 0E1KW6_back.png",
+      "asset": "assets/products/hag-capisco-puls-8020-black-back.webp"
     }
   ],
-  "configurationUrl": "https://store.flokk.com/global/code/0E5NVX",
+  "configurationUrl": "https://store.flokk.com/global/code/0E1KW6",
   "finish": "Black PL100 shell; Black MC011 base; Black Xtreme EXR009 seat cushion; 200 mm lift"
 }

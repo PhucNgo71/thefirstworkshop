@@ -2,21 +2,23 @@
 window.productDetails={
   "hag-capisco-puls": {
   "brand": "HÅG / Flokk",
-  "productType": "Ghế yên ngựa có đệm tích hợp",
+  "productType": "Ghế yên ngựa bọc đệm toàn mặt ngồi",
   "imageScale": 94,
-  "swatches": ["#171717"],
-  "listingDetail": "Mẫu 8010 · Mặt ngồi yên ngựa · HÅG inBalance®",
-  "description": "HÅG Capisco Puls 8010 có thân nhựa và đệm ngồi tích hợp. Thiết kế yên ngựa hỗ trợ thay đổi tư thế khi làm việc; cơ chế HÅG inBalance® cho phép ngả linh hoạt.",
-  "specifications": "Thương hiệu: HÅG / Flokk\nMẫu: 8010-STD\nThiết kế: Peter Opsvik\nCơ chế: HÅG inBalance®, điều chỉnh lực ngả và khóa ngả\nĐiều chỉnh: chiều cao ghế, độ sâu mặt ngồi, chiều cao tựa lưng\nCao mặt ngồi với trụ 150 / 200 / 265 mm: 390–525 / 455–640 / 540–795 mm\nMặt ngồi: rộng 460 mm; sâu 400–470 mm\nTựa lưng: cao 400 mm\nChân ghế: nhôm 5 nhánh, Ø730 mm\nTrụ nâng, màu vỏ, đệm và chân: xác nhận khi đặt hàng",
+  "swatches": [
+    "#171717"
+  ],
+  "listingDetail": "Mẫu 8020 · Mặt ngồi bọc đệm · HÅG inBalance®",
+  "description": "HÅG Capisco Puls 8020 có thân nhựa và đệm bọc toàn bộ mặt ngồi yên ngựa. Cấu hình màu đen gồm vỏ PL100, chân MC011, vải Xtreme EXR009 và trụ nâng 200 mm. Ghế hỗ trợ thay đổi tư thế với cơ chế ngả HÅG inBalance®.",
+  "specifications": "Thương hiệu: HÅG / Flokk\nMẫu: 8020-STD\nThiết kế: Peter Opsvik\nMặt ngồi: dạng yên ngựa, bọc đệm toàn bộ\nCơ chế: HÅG inBalance®, điều chỉnh lực ngả và khóa ngả\nĐiều chỉnh: chiều cao ghế, độ sâu mặt ngồi, chiều cao tựa lưng\nTrụ nâng: 200 mm; cao mặt ngồi 470–650 mm\nMặt ngồi: rộng 460 mm; sâu 400–470 mm\nTựa lưng: cao 400 mm\nChân ghế: nhôm sơn đen 5 nhánh, Ø730 mm\nVỏ: nhựa đen PL100\nĐệm ngồi: vải Xtreme EXR009 màu đen\nBánh xe: Ø50 mm, dùng cho sàn cứng, hãm khi không có người ngồi\nMàu và thời gian giao hàng: xác nhận khi đặt hàng",
   "highlights": [
-    "Đệm ngồi tích hợp",
+    "Mặt ngồi bọc đệm toàn bộ",
     "Điều chỉnh độ sâu mặt ngồi",
     "Ngả linh hoạt HÅG inBalance®"
   ],
   "images": [
-    "assets/products/hag-capisco-puls-8010-black-front_left.webp",
-    "assets/products/hag-capisco-puls-8010-black-front.webp",
-    "assets/products/hag-capisco-puls-8010-black-back.webp"
+    "assets/products/hag-capisco-puls-8020-black-front_left.webp",
+    "assets/products/hag-capisco-puls-8020-black-front.webp",
+    "assets/products/hag-capisco-puls-8020-black-back.webp"
   ],
   "galleryModes": [
     "cutout",
@@ -25,19 +27,19 @@ window.productDetails={
   ],
   "galleryLabels": [
     [
-      "HÅG Capisco Puls 8010",
+      "HÅG Capisco Puls 8020",
       "Góc trước"
     ],
     [
-      "HÅG Capisco Puls 8010",
+      "HÅG Capisco Puls 8020",
       "Mặt trước"
     ],
     [
-      "HÅG Capisco Puls 8010",
+      "HÅG Capisco Puls 8020",
       "Góc sau"
     ]
   ],
-  "sourceUrl": "https://store.flokk.com/global/en-gb/products/hag-capisco-puls?model=8010-STD"
+  "sourceUrl": "https://store.flokk.com/global/en-gb/products/hag-capisco-puls?model=8020-STD"
 },
   "us-pd": {
   "brand": "thefirstworkshop",
