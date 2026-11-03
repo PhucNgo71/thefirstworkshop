@@ -52,41 +52,23 @@ window.productDetails={
   "variants": [],
   "swatches": [],
   "images": [
-    "assets/products/daeha-dm3-500wm.jpg",
-    "assets/products/daeha-dm3-501wm.jpg",
-    "assets/products/daeha-dm3-500wf.jpg",
-    "assets/products/daeha-dm3-501wf.jpg",
-    "assets/products/daeha-dm3-500w.jpg",
+    "assets/products/dm3-500-studio.webp",
+    "assets/products/dm3-500-front-arms.webp",
     "assets/products/daeha-dm3-501w.jpg"
   ],
   "galleryModes": [
-    "contain",
-    "contain",
-    "contain",
-    "contain",
+    "photo",
     "contain",
     "contain"
   ],
   "galleryLabels": [
     [
-      "DM3-500WM",
-      "Lưng lưới · Không tay"
+      "DM3-500",
+      "Không tay và có tay · Ảnh tham khảo"
     ],
     [
-      "DM3-501WM",
-      "Lưng lưới · Có tay"
-    ],
-    [
-      "DM3-500WF",
-      "Lưng bọc đệm · Không tay"
-    ],
-    [
-      "DM3-501WF",
-      "Lưng bọc đệm · Có tay"
-    ],
-    [
-      "DM3-500W",
-      "Lưng dạng vỏ · Không tay"
+      "DM3-500",
+      "Lưng lưới · Phiên bản có tay"
     ],
     [
       "DM3-501W",

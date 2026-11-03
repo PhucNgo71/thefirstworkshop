@@ -37,5 +37,23 @@
       "asset": "assets/products/daeha-dm3-501w.jpg"
     }
   ],
-  "notes": "Only DM3-500/501 models are included. The tilting DM3-510/511 and swivel DM3-520/521 models on page 181 are not included."
+  "notes": "Only DM3-500/501 models are included. The tilting DM3-510/511 and swivel DM3-520/521 models on page 181 are not included.",
+  "additionalPhotoSource": {
+    "sourceFile": "DM3-500.pdf",
+    "pdfPage": 1,
+    "printedPages": "176–177",
+    "photos": [
+      {
+        "pdfImage": "Im5.jpg",
+        "asset": "assets/products/dm3-500-studio.webp",
+        "description": "Studio photo of armless and armrest mesh versions"
+      },
+      {
+        "pdfImage": "Im4.jpg",
+        "asset": "assets/products/dm3-500-front-arms.webp",
+        "description": "Front view of mesh armrest version"
+      }
+    ],
+    "processing": "Native PDF images extracted, encoded as WebP; studio framing uses CSS. No page logos included."
+  }
 }

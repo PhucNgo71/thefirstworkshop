@@ -209,5 +209,7 @@ window.detailTranslations = {
   "Mặt trước": "Front view",
   "Mặt bên": "Side view",
   "Ngăn kéo mở": "Open drawer",
-  "rộng 302 × sâu 482 × cao 592 mm": "W302 × D482 × H592 mm"
+  "rộng 302 × sâu 482 × cao 592 mm": "W302 × D482 × H592 mm",
+  "Lưng lưới · Phiên bản có tay": "Mesh back · Armrest version",
+  "Không tay và có tay · Ảnh tham khảo": "Armless and armrest versions · Reference photo"
 };
