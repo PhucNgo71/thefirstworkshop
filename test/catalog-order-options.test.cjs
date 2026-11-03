@@ -16,7 +16,7 @@ vm.runInContext(app.slice(app.indexOf('function featuredBrandPriority('),app.ind
 const evaluate=source=>JSON.parse(JSON.stringify(vm.runInContext(source,ctx)));
 const anchor={id:'anchor',name:'Anchor Staff Chair',...productPrice(4700000)};
 const request=(items=[{id:'anchor-headrest',quantity:1}],expectedSubtotal=5775000)=>({
-  requestId:'12345678-1234-4234-8234-123456789abc',
+  requestId:'12345678-1234-4234-8234-123456789abc',privacyConsent:{accepted:true,noticeVersion:'2026-11-03-order-v1'},
   customer:{name:'TEST Headrest',email:'test@example.com',phone:'0909000000',address:'TEST ONLY'},
   items,expectedSubtotal,paymentMethod:'bank'
 });

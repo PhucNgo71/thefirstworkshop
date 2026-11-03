@@ -1,4 +1,13 @@
 const english = {
+ "Lựa chọn chia sẻ thông tin":"Information-sharing choice",
+ "Bạn có đồng ý cho thefirstworkshop xử lý thông tin liên hệ, giao hàng và đơn hàng; chia sẻ với Vercel (vận hành, lưu trữ), Resend (gửi email), Microsoft (email, quản lý đơn) và đơn vị giao/lắp đặt khi cần để thực hiện đơn hàng không?":"Do you agree to thefirstworkshop processing your contact, delivery and order details, and sharing them with Vercel (hosting and storage), Resend (email), Microsoft (email and order management), and delivery/installation providers as needed to fulfil your order?",
+ "Đồng ý":"Agree",
+ "Không đồng ý":"Do not agree",
+ "Chỉ phục vụ đơn hàng và hỗ trợ; không đăng ký quảng cáo. Không lựa chọn nào được chọn sẵn. Bạn vẫn có thể xem sản phẩm nếu không đồng ý.":"For order handling and support only; no marketing subscription. Neither option is preselected. You can still browse products if you do not agree.",
+ "Vui lòng chọn Đồng ý hoặc Không đồng ý trước khi gửi đơn.":"Please choose Agree or Do not agree before submitting an order.",
+ "Bạn đã chọn không đồng ý. Website sẽ không gửi đơn khi lựa chọn này đang được chọn. Bạn vẫn có thể xem sản phẩm hoặc liên hệ hi@tfw.space để được tư vấn.":"You chose not to agree. The website will not submit an order while this option is selected. You can still browse products or contact hi@tfw.space for assistance.",
+ "Bạn đã đồng ý xử lý và chia sẻ thông tin để thực hiện đơn hàng. Lựa chọn này chỉ áp dụng cho đơn bạn gửi.":"You agreed to processing and sharing information to fulfil your order. This choice applies only to the order you submit.",
+ "Đọc chính sách và cách rút lại sự đồng ý ↗":"Read the policy and how to withdraw consent ↗",
  "Chính sách bảo mật":"Privacy policy",
  "Thông tin của bạn được dùng để xử lý đơn hàng và hỗ trợ khách hàng.":"Your information is used to process orders and provide customer support.",
  "Xem Chính sách bảo mật ↗":"Read the Privacy policy ↗",

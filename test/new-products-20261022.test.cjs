@@ -35,12 +35,12 @@ test('Manufacturer products have unique routes, requested categories and current
     assert.equal(entry[4], details[id].images[0]);
     if (id === 'wichair') {
       assert.doesNotThrow(() => normalize({
-        requestId:'12345678-1234-4234-8234-123456789abc',
+        requestId:'12345678-1234-4234-8234-123456789abc',privacyConsent:{accepted:true,noticeVersion:'2026-11-03-order-v1'},
         customer:{name:'TEST Catalog',email:'test@example.com',phone:'0909000000',address:'TEST ONLY'},
         items:[{id,quantity:1}],expectedSubtotal:18700000,paymentMethod:'bank'
       }, catalog));
     } else assert.throws(() => normalize({
-      requestId:'12345678-1234-4234-8234-123456789abc',
+      requestId:'12345678-1234-4234-8234-123456789abc',privacyConsent:{accepted:true,noticeVersion:'2026-11-03-order-v1'},
       customer:{name:'TEST Catalog',email:'test@example.com',phone:'0909000000',address:'TEST ONLY'},
       items:[{id,quantity:1}],expectedSubtotal:0,paymentMethod:'bank'
     }, catalog));

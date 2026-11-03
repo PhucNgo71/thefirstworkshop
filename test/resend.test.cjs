@@ -3,7 +3,7 @@ const assert = require('node:assert/strict');
 const {resend} = require('../server/resend.cjs');
 const {normalize, makeOrder, mail} = require('../server/orders.cjs');
 const env = {RESEND_API_KEY:'test-only-placeholder', RESEND_FROM:'orders@notify.tfw.space'};
-const payload = () => mail(makeOrder(normalize({requestId:'12345678-1234-4234-8234-123456789abc',
+const payload = () => mail(makeOrder(normalize({requestId:'12345678-1234-4234-8234-123456789abc',privacyConsent:{accepted:true,noticeVersion:'2026-11-03-order-v1'},
   customer:{name:'Test Customer', email:'customer@example.com', phone:'0909000000',address:'Test address'},
   items:[{id:'anchor',quantity:1}],expectedSubtotal:4700000,paymentMethod:'bank'},
   {anchor:{name:'Anchor Staff Chair',price:4700000}}),new Date('2026-10-19T00:00:00Z')));

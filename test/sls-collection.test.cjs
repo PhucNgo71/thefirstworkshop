@@ -67,7 +67,7 @@ test('SLS family shares standard tabletop format without copying model-specific 
 });
 test('SLS checkout totals, PO and Excel use the updated server prices and tabletop package',()=>{
   const items=Object.keys(expected).map(id=>({id,quantity:1,options:sandbox.window.slsDefaultOrderOptions[id]}));
-  const order=makeOrder(normalize({requestId:'12345678-1234-4234-8234-123456789abc',customer:{name:'TEST SLS validation',email:'test@example.com',phone:'0000000000',address:'TEST ONLY'},items,expectedSubtotal:103400000,paymentMethod:'bank'},catalog));
+  const order=makeOrder(normalize({requestId:'12345678-1234-4234-8234-123456789abc',privacyConsent:{accepted:true,noticeVersion:'2026-11-03-order-v1'},customer:{name:'TEST SLS validation',email:'test@example.com',phone:'0000000000',address:'TEST ONLY'},items,expectedSubtotal:103400000,paymentMethod:'bank'},catalog));
   const row=excelRow(order);
   assert.equal(row.TotalVND,103400000);
   assert.equal(order.netSubtotal,94000000);

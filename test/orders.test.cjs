@@ -2,7 +2,7 @@ const test=require('node:test');
 const assert=require('node:assert/strict');
 const {normalize,makeOrder,excelRow,mail,submit}=require('../server/orders.cjs');
 const catalog={anchor:{name:'Anchor Staff Chair',price:4700000},quote:{name:'Quote only',price:0}};
-const input=()=>({requestId:'12345678-1234-4234-8234-123456789abc',customer:{name:'Test Customer',email:'test@example.com',phone:'0909000000',address:'Test address',notes:''},items:[{id:'anchor',quantity:2}],expectedSubtotal:9400000,paymentMethod:'bank'});
+const input=()=>({requestId:'12345678-1234-4234-8234-123456789abc',privacyConsent:{accepted:true,noticeVersion:'2026-11-03-order-v1'},customer:{name:'Test Customer',email:'test@example.com',phone:'0909000000',address:'Test address',notes:''},items:[{id:'anchor',quantity:2}],expectedSubtotal:9400000,paymentMethod:'bank'});
 function memory() {
   const rows=new Map(); let sends=0;
   return {rows,get sends(){return sends;},catalog,

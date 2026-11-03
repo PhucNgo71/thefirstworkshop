@@ -126,7 +126,7 @@ test('Escape closes only the topmost purchase panel before returning to the prod
 
 test('Every purchasable configuration passes server order validation at its displayed VAT-inclusive price', () => {
   for (const product of products.filter(p=>!p.contactOnly)) {
-    const input={requestId:'12345678-1234-4234-8234-123456789abc',customer:{name:'TEST ONLY',email:'test@example.com',phone:'0909000000',address:'TEST ONLY'},items:[{id:product.id,quantity:1}],paymentMethod:'bank',expectedSubtotal:product.price};
+    const input={requestId:'12345678-1234-4234-8234-123456789abc',privacyConsent:{accepted:true,noticeVersion:'2026-11-03-order-v1'},customer:{name:'TEST ONLY',email:'test@example.com',phone:'0909000000',address:'TEST ONLY'},items:[{id:product.id,quantity:1}],paymentMethod:'bank',expectedSubtotal:product.price};
     const order=normalize(input,catalog);
     assert.equal(order.subtotal,product.price,product.id);
     assert.equal(order.items[0].id,product.id);

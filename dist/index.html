@@ -235,7 +235,15 @@
           <p>Thanh toán chuyển khoản được xác nhận thủ công sau khi ngân hàng ghi có.</p>
         </section>
         <p class="demo-note">Không thu tiền trực tuyến. Đội ngũ của chúng tôi sẽ xác nhận phí giao hàng và cấu hình cuối cùng.</p>
-        <button class="primary-button full" type="submit">Xác nhận đơn hàng · <span id="checkoutTotal">0₫</span></button>
+        <fieldset id="orderPrivacyConsent" class="order-privacy-consent" aria-describedby="orderPrivacyDescription orderPrivacyHelp orderPrivacyStatus">
+          <legend>Lựa chọn chia sẻ thông tin</legend>
+          <p id="orderPrivacyDescription">Bạn có đồng ý cho thefirstworkshop xử lý thông tin liên hệ, giao hàng và đơn hàng; chia sẻ với Vercel (vận hành, lưu trữ), Resend (gửi email), Microsoft (email, quản lý đơn) và đơn vị giao/lắp đặt khi cần để thực hiện đơn hàng không?</p>
+          <p><a href="privacy.html" target="_blank" rel="noopener">Đọc chính sách và cách rút lại sự đồng ý ↗</a></p>
+          <div class="privacy-choices"><label><input type="radio" name="privacyChoice" value="agree" required><span>Đồng ý</span></label><label><input type="radio" name="privacyChoice" value="decline" required><span>Không đồng ý</span></label></div>
+          <p id="orderPrivacyHelp">Chỉ phục vụ đơn hàng và hỗ trợ; không đăng ký quảng cáo. Không lựa chọn nào được chọn sẵn. Bạn vẫn có thể xem sản phẩm nếu không đồng ý.</p>
+          <p id="orderPrivacyStatus" role="status" aria-live="polite">Vui lòng chọn Đồng ý hoặc Không đồng ý trước khi gửi đơn.</p>
+        </fieldset>
+        <button class="primary-button full" type="submit" disabled>Xác nhận đơn hàng · <span id="checkoutTotal">0₫</span></button>
       </form>
       <div class="success-state" id="successState" hidden><span class="success-mark">✓</span><h2>Đơn hàng đã được ghi nhận.</h2><p>Mã đơn <strong id="orderNumber"></strong>. Đội ngũ thefirstworkshop sẽ liên hệ để xác nhận giao hàng.</p><button class="primary-button" id="continueShopping" type="button">Tiếp tục mua sắm</button></div>
     </div>

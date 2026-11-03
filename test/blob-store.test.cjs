@@ -3,7 +3,7 @@ const assert=require('node:assert/strict');
 const {blobStore,APPROVED_STORE}=require('../server/blob-store.cjs');
 const {normalize,makeOrder,excelRow,submit}=require('../server/orders.cjs');
 const catalog={anchor:{name:'Anchor Staff Chair',price:4700000}};
-const input=()=>({requestId:'12345678-1234-4234-8234-123456789abc',customer:{name:'TEST Customer',email:'test@example.com',phone:'0909000000',address:'TEST ONLY'},items:[{id:'anchor',quantity:1}],expectedSubtotal:4700000,paymentMethod:'bank'});
+const input=()=>({requestId:'12345678-1234-4234-8234-123456789abc',privacyConsent:{accepted:true,noticeVersion:'2026-11-03-order-v1'},customer:{name:'TEST Customer',email:'test@example.com',phone:'0909000000',address:'TEST ONLY'},items:[{id:'anchor',quantity:1}],expectedSubtotal:4700000,paymentMethod:'bank'});
 function fixture(){
   const files=new Map(), calls=[];let sequence=0;
   class Conflict extends Error {}

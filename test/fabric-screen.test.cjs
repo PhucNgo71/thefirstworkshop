@@ -19,7 +19,7 @@ test('Fabric screen is a separate accessory at 2.5M net; modesty remains unchang
   assert.ok(fs.existsSync('dist/'+detail.images[0]));
 });
 test('Fabric screen VAT and quantity reach checkout, PO and Excel without sending an order',()=>{
-  const input={requestId:'12345678-1234-4234-8234-123456789abc',customer:{name:'TEST Screen',email:'test@example.com',phone:'0909000000',address:'TEST ONLY'},items:[{id:'screen-fabric-1400',quantity:2}],expectedSubtotal:5500000,paymentMethod:'bank'};
+  const input={requestId:'12345678-1234-4234-8234-123456789abc',privacyConsent:{accepted:true,noticeVersion:'2026-11-03-order-v1'},customer:{name:'TEST Screen',email:'test@example.com',phone:'0909000000',address:'TEST ONLY'},items:[{id:'screen-fabric-1400',quantity:2}],expectedSubtotal:5500000,paymentMethod:'bank'};
   const order=makeOrder(normalize(input,catalog));
   assert.equal(order.items[0].unitPrice,2750000);
   const row=excelRow(order);

@@ -7,7 +7,7 @@
   form.append(error);
   const extra = document.createElement('div');
   extra.innerHTML='<label>Company / Công ty<input name="company" maxlength="160"></label><label>Tax code / Mã số thuế<input name="taxCode" maxlength="40"></label><label>Notes / Ghi chú<textarea name="notes" maxlength="1500"></textarea></label><label style="display:none" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>';
-  form.insertBefore(extra,submitButton);
+  form.insertBefore(extra,document.getElementById('orderPrivacyConsent'));
   let busy=false, pending=null;
   try { pending=JSON.parse(sessionStorage.getItem('tfw-pending-order')||'null'); } catch {}
   const en=()=>document.documentElement.lang==='en';
@@ -33,7 +33,15 @@
     }
   };
   renderCart();
+  const privacyNoticeVersion='2026-11-03-order-v1';
+  function updatePrivacyChoice() {
+    const choice=form.elements.privacyChoice.value;
+    submitButton.disabled=busy||choice!=='agree';
+    const messages={agree:["Bạn đã đồng ý xử lý và chia sẻ thông tin để thực hiện đơn hàng. Lựa chọn này chỉ áp dụng cho đơn bạn gửi.","You agreed to processing and sharing information to fulfil your order. This choice applies only to the order you submit."],decline:["Bạn đã chọn không đồng ý. Website sẽ không gửi đơn khi lựa chọn này đang được chọn. Bạn vẫn có thể xem sản phẩm hoặc liên hệ hi@tfw.space để được tư vấn.","You chose not to agree. The website will not submit an order while this option is selected. You can still browse products or contact hi@tfw.space for assistance."],unset:["Vui lòng chọn Đồng ý hoặc Không đồng ý trước khi gửi đơn.","Please choose Agree or Do not agree before submitting an order."]};
+    document.getElementById('orderPrivacyStatus').textContent=messages[choice||'unset'][en()?1:0];
+  }
   function safePaymentUI() {
+    updatePrivacyChoice();
     form.querySelector('input[value="card"]')?.closest('label')?.remove();
     const cards=document.getElementById('cardFields');
     cards.replaceChildren(); cards.hidden=true;
@@ -44,13 +52,15 @@
   }
   safePaymentUI();
   document.addEventListener('tfw:languagechange',safePaymentUI);
-  form.onchange=event=>{if(event.target.name==='payment')safePaymentUI();};
+  form.onchange=event=>{if(event.target.name==='payment')safePaymentUI();if(event.target.name==='privacyChoice')updatePrivacyChoice();};
   form.onsubmit=async event=>{
-    event.preventDefault(); if(busy || !form.reportValidity()) return;
+    event.preventDefault(); if(busy) return;
+    if(form.elements.privacyChoice.value!=='agree'){updatePrivacyChoice();document.querySelector('#orderPrivacyConsent input').focus();return;}
+    if(!form.reportValidity())return;
     error.hidden=true;
     const items=cartData().map(p=>({id:p.id,quantity:p.qty,options:p.canonicalOptions||selectedOptions[p.id]||window.slsDefaultOrderOptions?.[p.id]||'Standard configuration — final details to be confirmed'}));
     if(!items.length) return;
-    const payload={customer:Object.fromEntries(['name','phone','email','address','company','taxCode','notes'].map(key=>[key,form.elements[key].value.trim()])),items,paymentMethod:form.elements.payment.value,expectedSubtotal:total(),website:form.elements.website.value};
+    const payload={privacyConsent:{accepted:true,noticeVersion:privacyNoticeVersion},customer:Object.fromEntries(['name','phone','email','address','company','taxCode','notes'].map(key=>[key,form.elements[key].value.trim()])),items,paymentMethod:form.elements.payment.value,expectedSubtotal:total(),website:form.elements.website.value};
     const signature=JSON.stringify(payload);
     // Preserve the same id across a timeout or reload. Changed customer/cart data
     // gets a new id, except ambiguous outcomes require reconciliation first.
@@ -79,10 +89,13 @@
       for(const item of items){cart[item.id]=Math.max(0,(cart[item.id]||0)-item.quantity);if(!cart[item.id])delete cart[item.id];}saveCart();
       pending=null;sessionStorage.removeItem('tfw-pending-order');
     } catch(err) {
+      if(err.message==='PRIVACY_CONSENT_REQUIRED'){
+        notify('Vui lòng tải lại trang, đọc thông báo quyền riêng tư mới nhất và chọn trước khi gửi đơn.','Please reload, read the latest privacy notice and choose before submitting.');return;
+      }
       const notReady=['CHECKOUT_NOT_READY','CHECKOUT_TEST_ONLY','ABUSE_PROTECTION_NOT_CONFIGURED','ORDER_STORAGE_NOT_CONFIGURED'].includes(err.message);
       if(notReady){pending=null;sessionStorage.removeItem('tfw-pending-order');}
       notify(notReady?'Đặt hàng trực tuyến chưa sẵn sàng. Vui lòng liên hệ hi@tfw.space. Giỏ hàng được giữ nguyên.':'Chưa xác nhận được kết quả. Giỏ hàng được giữ nguyên. Thử lại với cùng thông tin hoặc liên hệ hi@tfw.space.',notReady?'Online ordering is not ready. Contact hi@tfw.space. Your cart is unchanged.':'We could not confirm the result. Your cart is unchanged. Retry with the same details or contact hi@tfw.space.');
-    } finally {busy=false;submitButton.disabled=false;form.removeAttribute('aria-busy');}
+    } finally {busy=false;updatePrivacyChoice();form.removeAttribute('aria-busy');}
   };
   document.getElementById('continueShopping').onclick=()=>{closeCheckout();form.reset();safePaymentUI();form.hidden=false;document.getElementById('successState').hidden=true;error.hidden=true;location.hash='shop';};
 })();

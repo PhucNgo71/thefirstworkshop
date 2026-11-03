@@ -1,5 +1,6 @@
 const {createHash} = require('node:crypto');
 const ORDER_COPY_EMAIL = 'phuc.ngo@tfw.space';
+const PRIVACY_NOTICE_VERSION = '2026-11-03-order-v1';
 class OrderError extends Error {
   constructor(code, status = 400) { super(code); this.code = code; this.status = status; }
 }
@@ -16,6 +17,8 @@ function normalize(input, catalog) {
   if (!input || typeof input !== 'object' || Array.isArray(input)) throw new OrderError('INVALID_ORDER');
   if (!/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(input.requestId)) throw new OrderError('INVALID_REQUEST_ID');
   if (input.website) throw new OrderError('INVALID_ORDER');
+  if(input.privacyConsent?.accepted !== true || input.privacyConsent.noticeVersion !== PRIVACY_NOTICE_VERSION) throw new OrderError('PRIVACY_CONSENT_REQUIRED');
+  const privacyConsent = {accepted:true, noticeVersion:PRIVACY_NOTICE_VERSION, purpose:'order-processing-and-fulfilment'};
   const customer = input.customer || {};
   const details = {
     name: text(customer.name, 120), email: text(customer.email, 254).toLowerCase(),
@@ -42,17 +45,19 @@ function normalize(input, catalog) {
   if (!Number.isSafeInteger(subtotal) || subtotal > 10000000000) throw new OrderError('ORDER_TOO_LARGE');
   if (input.expectedSubtotal !== subtotal) throw new OrderError('PRICE_CHANGED', 409);
   const tax = items.every(item=>item.vatRate===10) ? {vatRate:10, netSubtotal:items.reduce((sum,item)=>sum+item.netLineTotal,0), vatIncluded:items.reduce((sum,item)=>sum+item.vatLineTotal,0)} : {};
-  return {requestId: input.requestId.toLowerCase(), customer: details, items, subtotal, ...tax, currency: 'VND', paymentMethod: input.paymentMethod};
+  return {requestId: input.requestId.toLowerCase(), privacyConsent, customer: details, items, subtotal, ...tax, currency: 'VND', paymentMethod: input.paymentMethod};
 }
 function makeOrder(normalized, now = new Date()) {
-  return {...normalized, orderNumber: 'TFW-' + normalized.requestId.replaceAll('-', '').toUpperCase(), orderDate: now.toISOString(), paymentStatus: 'Unpaid', orderStatus: 'Received', deliveryFee: null, discount: 0};
+  return {...normalized, privacyConsent:{...normalized.privacyConsent, recordedAt:now.toISOString()}, orderNumber: 'TFW-' + normalized.requestId.replaceAll('-', '').toUpperCase(), orderDate: now.toISOString(), paymentStatus: 'Unpaid', orderStatus: 'Received', deliveryFee: null, discount: 0};
 }
 function excelRow(order) {
   // Prefix formula-like strings before a connector writes them into Excel.
   const cell = value => /^[=+@\-\t\r\n]/.test(String(value)) ? "'" + value : value;
   // Preserve the existing 24-column Excel contract. Totals and unit prices are
   // gross; VAT details travel in OrderItems and Notes, never as a second charge.
-  const notes = order.vatRate===10 ? [order.customer.notes, `Prices include 10% VAT. Net products: ${order.netSubtotal} VND; VAT included: ${order.vatIncluded} VND; gross products: ${order.subtotal} VND. Delivery to be confirmed.`].filter(Boolean).join('\n') : order.customer.notes;
+  const orderNotes = order.vatRate===10 ? [order.customer.notes, `Prices include 10% VAT. Net products: ${order.netSubtotal} VND; VAT included: ${order.vatIncluded} VND; gross products: ${order.subtotal} VND. Delivery to be confirmed.`].filter(Boolean).join('\n') : order.customer.notes;
+  const consentNote = order.privacyConsent?.accepted === true ? `Order-data sharing: agreed; notice ${order.privacyConsent.noticeVersion}; recorded ${order.privacyConsent.recordedAt}.` : '';
+  const notes = [orderNotes,consentNote].filter(Boolean).join('\n');
   return {
     OrderNumber: order.orderNumber, OrderDate: order.orderDate, CustomerName: cell(order.customer.name),
     Email: cell(order.customer.email), Phone: cell(order.customer.phone), Company: cell(order.customer.company),
@@ -101,4 +106,4 @@ async function submit(input, {catalog, store, sendMail}) {
   }
   return {orderNumber: record.order.orderNumber, status: 'received', emailStatus: record.emailStatus, excelStatus: record.excelStatus || 'Pending'};
 }
-module.exports = {ORDER_COPY_EMAIL, OrderError, normalize, makeOrder, excelRow, mail, submit};
+module.exports = {PRIVACY_NOTICE_VERSION, ORDER_COPY_EMAIL, OrderError, normalize, makeOrder, excelRow, mail, submit};

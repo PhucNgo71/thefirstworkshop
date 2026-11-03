@@ -10,7 +10,7 @@ const catalog=require('../server/catalog.json');
 const read=file=>fs.readFileSync(path.join(__dirname,'..',file),'utf8');
 const app=read('dist/app.js');
 const entries=vm.runInNewContext(app.match(/const catalogEntries=(\[[\s\S]*?\n\]);/)[1]);
-const input=()=>({requestId:'12345678-1234-4234-8234-123456789abc',customer:{name:'VAT test',email:'test@example.com',phone:'0909000000',address:'TEST ONLY'},items:[{id:'sls-470-pro',quantity:2},{id:'anchor',quantity:1}],expectedSubtotal:40370000,paymentMethod:'bank'});
+const input=()=>({requestId:'12345678-1234-4234-8234-123456789abc',privacyConsent:{accepted:true,noticeVersion:'2026-11-03-order-v1'},customer:{name:'VAT test',email:'test@example.com',phone:'0909000000',address:'TEST ONLY'},items:[{id:'sls-470-pro',quantity:2},{id:'anchor',quantity:1}],expectedSubtotal:40370000,paymentMethod:'bank'});
 
 test('browser and server apply 10% VAT exactly once to every base catalog price',()=>{
   const context={window:{}};

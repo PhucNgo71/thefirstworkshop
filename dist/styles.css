@@ -10,3 +10,5 @@
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 
 .privacy-notice{font-size:.85rem;line-height:1.6;color:#4d584e;margin:0 0 1.5rem}.privacy-notice a{text-decoration:underline;text-underline-offset:3px}
+
+.order-privacy-consent{border:1px solid var(--line);padding:1rem;margin:1.5rem 0}.order-privacy-consent legend{padding:0 .35rem;font-size:.95rem}.order-privacy-consent p{font-size:.83rem;line-height:1.6}.order-privacy-consent a{text-decoration:underline;text-underline-offset:3px}.privacy-choices{display:flex;flex-wrap:wrap;gap:.75rem}.checkout .privacy-choices label{display:flex;align-items:center;gap:.6rem;padding:.8rem 1rem;border:1px solid var(--line);cursor:pointer;margin:0}.privacy-choices input{width:18px;height:18px;accent-color:#103d1c}.privacy-choices label:has(input:checked){border-color:#103d1c;background:#eaf0e8}#orderPrivacyStatus{margin-bottom:0}#paymentForm button[type=submit]:disabled{opacity:.5;cursor:not-allowed}
