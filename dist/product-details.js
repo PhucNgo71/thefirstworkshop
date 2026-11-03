@@ -1,5 +1,50 @@
 // Product details compiled from public TFW and manufacturer product pages.
 window.productDetails={
+  "us-pd": {
+  "brand": "thefirstworkshop",
+  "productType": "Tủ di động MFC",
+  "imageScale": 84,
+  "swatches": [],
+  "listingDetail": "Tủ MFC 3 ngăn kéo · Khóa chìa · Bánh xe",
+  "description": "US-PD là tủ di động ba ngăn kéo thuộc bộ sưu tập thefirstworkshop, dùng để lưu trữ tài liệu, văn phòng phẩm và vật dụng cá nhân. Tủ bằng MFC dày 18 mm, có khóa chìa, tay nắm âm và bánh xe. Giá 3.000.000 VND đã gồm 10% VAT áp dụng cho cấu hình ba ngăn kéo trong ảnh.",
+  "specifications": "Bộ sưu tập: thefirstworkshop\nMẫu: US-PD\nCấu hình: 3 ngăn kéo\nKích thước: rộng 400 × sâu 450 × cao 590 mm\nVật liệu: ván MFC dày 18 mm, cấp phát thải E1 theo thông tin nhà cung cấp\nỔ khóa: khóa chìa\nTay nắm: dạng âm\nDi chuyển: bánh xe\nMàu trong ảnh: trắng\nGiá: 3.000.000 VND, đã gồm 10% VAT\nMàu hoàn thiện và thời gian giao hàng: xác nhận khi đặt hàng",
+  "highlights": [
+    "3 ngăn kéo",
+    "MFC 18 mm",
+    "Khóa chìa và bánh xe"
+  ],
+  "images": [
+    "assets/products/us-pd-main.webp",
+    "assets/products/us-pd-front.webp",
+    "assets/products/us-pd-side.webp",
+    "assets/products/us-pd-open.webp"
+  ],
+  "galleryModes": [
+    "cutout",
+    "cutout",
+    "cutout",
+    "cutout"
+  ],
+  "galleryLabels": [
+    [
+      "US-PD",
+      "Góc nhìn tổng thể"
+    ],
+    [
+      "US-PD",
+      "Mặt trước"
+    ],
+    [
+      "US-PD",
+      "Mặt bên"
+    ],
+    [
+      "US-PD",
+      "Ngăn kéo mở"
+    ]
+  ],
+  "sourceUrl": "https://tav.com.vn/tu-ke/us-pd-vi-040af2bd-d210-446a-a462-90783f16ee20"
+},
   "fa5c-d-rectangle": {
   "brand": "thefirstworkshop",
   "productType": "Bàn làm việc chữ nhật",

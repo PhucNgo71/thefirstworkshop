@@ -55,6 +55,7 @@ const catalogEntries=[
  ['precinct-meet-booth','PRECINCT MEET Booth / Zenith','Loose Furniture',0,'assets/products/precinct-meet-booth-main.jpg','precinct-meet-booth'],
  ['activity-stool','Activity Stool / Actiforce','Loose Furniture',0,'assets/cutouts/activity-stool-main.png','activity-stool'],
  ['fa5c-d-rectangle','FA5C-D Rectangle / thefirstworkshop','System Furniture',4090909,'assets/products/fa5c-d-black-wood.webp','fa5c-d-rectangle'],
+ ['us-pd','US-PD / thefirstworkshop','Storage Solutions',2727273,'assets/products/us-pd-main.webp','us-pd'],
  ['cherry-pd-m1','PD-M1','Storage Solutions',3300000,'assets/products/cherry-pd-m1-main.png','cherry-pd-m1'],
  ['repo','REPO Pedestal','Storage Solutions',3500000,'https://cdn.hstatic.net/products/200000617147/1_2__708824e55ad84f00a73fe2a27a023ce5_large.png','repo-pedestal'],
  ['repo-tambour','REPO tambour','Storage Solutions',7700000,'https://cdn.hstatic.net/products/200000617147/2_1__7d76c51930304449acbf8a64137b77de_large.png','repo-tambour-2'],

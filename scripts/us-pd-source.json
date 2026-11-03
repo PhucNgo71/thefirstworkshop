@@ -1,0 +1,33 @@
+{
+  "sourceUrl": "https://tav.com.vn/tu-ke/us-pd-vi-040af2bd-d210-446a-a462-90783f16ee20",
+  "supplierSku": "230000092",
+  "standardConfiguration": "3 drawers; W400 × D450 × H590 mm; 18 mm MFC; E1 stated by supplier; key lock; recessed handles; castors.",
+  "images": [
+    {
+      "source": "https://media.tav.com.vn/tav/US_PD/230000092/Images/230000092_003.png",
+      "asset": "assets/products/us-pd-main.webp",
+      "review": "Original supplier image, no visible logo."
+    },
+    {
+      "source": "https://media.tav.com.vn/tav/US_PD/230000092/Images/230000092_001.png",
+      "asset": "assets/products/us-pd-front.webp",
+      "review": "Original supplier image, no visible logo."
+    },
+    {
+      "source": "https://media.tav.com.vn/tav/US_PD/230000092/Images/230000092_002.png",
+      "asset": "assets/products/us-pd-side.webp",
+      "review": "Original supplier image, no visible logo."
+    },
+    {
+      "source": "https://media.tav.com.vn/tav/US_PD/230000092/Images/230000092_004.png",
+      "asset": "assets/products/us-pd-open.webp",
+      "review": "Original supplier image, no visible logo."
+    }
+  ],
+  "price": {
+    "grossVnd": 3000000,
+    "baseVnd": 2727273,
+    "vatVnd": 272727,
+    "authority": "User-confirmed VAT-inclusive selling price"
+  }
+}

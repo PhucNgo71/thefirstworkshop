@@ -316,6 +316,13 @@
     "vatRate": 10,
     "vatAmount": 409091
   },
+  "us-pd": {
+    "name": "US-PD / thefirstworkshop",
+    "basePrice": 2727273,
+    "price": 3000000,
+    "vatRate": 10,
+    "vatAmount": 272727
+  },
   "cherry-pd-m1": {
     "name": "PD-M1",
     "basePrice": 3300000,
