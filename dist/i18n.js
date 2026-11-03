@@ -1,4 +1,7 @@
 const english = {
+ "Chính sách bảo mật":"Privacy policy",
+ "Thông tin của bạn được dùng để xử lý đơn hàng và hỗ trợ khách hàng.":"Your information is used to process orders and provide customer support.",
+ "Xem Chính sách bảo mật ↗":"Read the Privacy policy ↗",
  "Ghế yên ngựa bọc đệm":"Upholstered saddle chair",
  "HÅG Capisco 8106 là ghế yên ngựa dành cho tư thế làm việc linh hoạt.":"HÅG Capisco 8106 is an upholstered saddle-seat chair for varied working positions.",
  "Model: 8106-STD\nThiết kế: Peter Opsvik\nCơ chế: HÅG inBalance®\nĐiều chỉnh: chiều cao, độ sâu mặt ngồi; cao tựa lưng; lực ngả\nTrụ 200 mm: cao ghế 470–655 mm\nChân nhôm: Ø730 mm\nTrụ 265 mm: tùy chọn; báo giá riêng\nVải, màu và giao hàng: xác nhận khi tư vấn":"Model: 8106-STD\nDesign: Peter Opsvik\nMechanism: HÅG inBalance®\nAdjustments: seat height/depth, back height and tilt tension\n200 mm lift: seat height 470–655 mm\nAluminium base: Ø730 mm\n265 mm lift: optional; quoted separately\nUpholstery, colours and delivery: confirmed on enquiry",
