@@ -324,21 +324,21 @@
     "vatAmount": 272727
   },
   "cherry-pd-m1": {
-    "name": "PD-M1",
+    "name": "PD-M1 / thefirstworkshop",
     "basePrice": 3300000,
     "price": 3630000,
     "vatRate": 10,
     "vatAmount": 330000
   },
   "repo": {
-    "name": "REPO Pedestal",
+    "name": "REPO Pedestal / Zenith",
     "basePrice": 3500000,
     "price": 3850000,
     "vatRate": 10,
     "vatAmount": 350000
   },
   "repo-tambour": {
-    "name": "REPO tambour",
+    "name": "REPO Tambour / Zenith",
     "basePrice": 7700000,
     "price": 8470000,
     "vatRate": 10,
