@@ -45,10 +45,10 @@
   },
   "niro": {
     "name": "Niro / Zenith",
-    "basePrice": 0,
-    "price": 0,
-    "vatRate": 0,
-    "vatAmount": 0
+    "basePrice": 7000000,
+    "price": 7700000,
+    "vatRate": 10,
+    "vatAmount": 700000
   },
   "furnipower-pixel": {
     "name": "PIXEL Modular Socket EU / Furnipower",
