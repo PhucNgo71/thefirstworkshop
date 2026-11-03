@@ -52,13 +52,11 @@ window.productDetails={
   "variants": [],
   "swatches": [],
   "images": [
-    "assets/products/dm3-500-studio.webp",
-    "assets/products/dm3-500-front-arms.webp",
-    "assets/products/daeha-dm3-501w.jpg"
+    "assets/products/dm3-500-studio-cutout.webp",
+    "assets/products/dm3-500-front-arms.webp"
   ],
   "galleryModes": [
-    "photo",
-    "contain",
+    "cutout",
     "contain"
   ],
   "galleryLabels": [
@@ -69,10 +67,6 @@ window.productDetails={
     [
       "DM3-500",
       "Lưng lưới · Phiên bản có tay"
-    ],
-    [
-      "DM3-501W",
-      "Lưng dạng vỏ · Có tay"
     ]
   ]
 },

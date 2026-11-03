@@ -274,8 +274,7 @@
 /* Match cabinet heights across square and landscape supplier cutouts. */
 .detail-image img[src*="/cherry-pd-m1-"]{width:100%;height:80%;object-fit:contain;object-position:center}
 
-/* Frame the new brochure studio photo without altering the original chairs. */
-.product-image-button[data-product="daeha-dm3-500"] img{width:90%;height:90%;object-fit:cover;object-position:50% 82%;mix-blend-mode:normal}
-.detail-image img[src$="/dm3-500-studio.webp"]{width:100%;height:100%;object-fit:cover;object-position:50% 82%;mix-blend-mode:normal}
+/* Keep both DM3-500 chairs fully visible on transparent backgrounds. */
+.product-image-button[data-product="daeha-dm3-500"] img{width:88%;height:86%;object-fit:contain;object-position:center;mix-blend-mode:normal}
+.detail-image img[src$="/dm3-500-studio-cutout.webp"]{width:88%;height:82%;object-fit:contain;object-position:center;mix-blend-mode:normal}
 .detail-image img[src$="/dm3-500-front-arms.webp"]{width:84%;height:80%;object-fit:contain}
-.detail-image:has(img[src$="/dm3-500-studio.webp"]) figcaption{background:rgba(255,255,255,.88);padding:.35rem .5rem;border-radius:2px}

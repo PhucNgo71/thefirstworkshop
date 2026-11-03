@@ -83,7 +83,7 @@ const catalogEntries=[
  ['tori','Tori / Flokk','Seatings',8500000,'https://cdn.hstatic.net/products/200000617147/6_1__2010bc0bd11349439171e814c6546630_large.png','tori'],
  ['hag-capisco','HÅG Capisco 8106 / Flokk','Seatings',0,'assets/products/hag-capisco-8106-front.jpg','hag-capisco'],
  ['wichair','WiChair / Wilkhahn','Seatings',17000000,'assets/products/wilkhahn-wichair-oak-cutout.webp','wichair'],
- ['daeha-dm3-500','DM3-500 / thefirstworkshop','Seatings',6000000,'assets/products/dm3-500-studio.webp','daeha-dm3-500'],
+ ['daeha-dm3-500','DM3-500 / thefirstworkshop','Seatings',6000000,'assets/products/dm3-500-studio-cutout.webp','daeha-dm3-500'],
  ['ae5','AE5-FF100','Monitor Arm & Docking',2200000,'https://cdn.hstatic.net/products/200000617147/ae5-5_ad788b5f33704e3084cc3e2a1b8e05b8_large.png','ae5-100'],
  ['ct206','CT 206','Monitor Arm & Docking',5500000,'https://cdn.hstatic.net/products/200000617147/image_2025-08-25_144515_441_db419cce294f42dcb0d89b1bf861ea68_large.png','ct-206'],
  ['mconnect3','M/Connect 3','Monitor Arm & Docking',21000000,'https://product.hstatic.net/200000617147/product/mc3_environmental_6734634215824594bc15054d4c9d7dec_large.jpg','m-connect-3'],

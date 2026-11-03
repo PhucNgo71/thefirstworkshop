@@ -1,0 +1,6 @@
+{
+  "mode": "built-in image_gen",
+  "source": "dist/assets/products/dm3-500-studio.webp",
+  "output": "dist/assets/products/dm3-500-studio-cutout.webp",
+  "prompt": "Use case: background-extraction. Edit target: the supplied DM3-500 studio product photograph. Remove only the studio wall, floor and cast floor shadows, replacing all background with actual alpha transparency, including the gaps between legs and armrests. Preserve BOTH chairs exactly: the smaller rear-left chair with arms seen from behind and the larger foreground-right armless mesh chair. Keep their original relative arrangement, chair geometry, colours, mesh and fabric texture, lighting on the products, all eight casters, and complete edges. Do not add arms to the foreground chair or change any chair details. Reframe the pair tightly in a balanced landscape canvas with small even transparent margins, removing the large unused top area. No text, logos, watermark, floor or artificial checkerboard."
+}
