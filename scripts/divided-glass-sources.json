@@ -1,0 +1,40 @@
+{
+  "collection": "https://fcproductcatalog.milliken.com/en-my/search/colors?regionName=Asia+Pacific&marketName=Contract&catalogName=Products&regionId=77&marketId=73&catalogId=17&sort=recent&totalResults=18&collectionId=549&collectionName=Divided+Glass",
+  "brochure": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/documents/47/28/Divided%20Glass%20interactive%20brochure-Sep.pdf?v=2025.04.29.07.03.55",
+  "technicalPage": 50,
+  "photos": [
+    {
+      "image": "assets/products/milliken-divided-glass-34.webp",
+      "pdfPage": 34
+    },
+    {
+      "image": "assets/products/milliken-divided-glass-17.webp",
+      "pdfPage": 17
+    },
+    {
+      "image": "assets/products/milliken-divided-glass-21.webp",
+      "pdfPage": 21
+    },
+    {
+      "image": "assets/products/milliken-divided-glass-23.webp",
+      "pdfPage": 23
+    },
+    {
+      "image": "assets/products/milliken-divided-glass-28.webp",
+      "pdfPage": 28
+    },
+    {
+      "image": "assets/products/milliken-divided-glass-31.webp",
+      "pdfPage": 31
+    },
+    {
+      "image": "assets/products/milliken-divided-glass-41.webp",
+      "pdfPage": 41
+    },
+    {
+      "image": "assets/products/milliken-divided-glass-46.webp",
+      "pdfPage": 46
+    }
+  ],
+  "note": "Native room photographs from official Asia Pacific brochure. Specifications and certification marks from page 50. All 30 colour options from the current official catalogue."
+}

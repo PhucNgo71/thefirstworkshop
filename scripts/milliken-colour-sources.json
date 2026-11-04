@@ -4785,6 +4785,178 @@
           }
         ]
       }
+    ],
+    "divided-glass": [
+      {
+        "design": "Calm",
+        "colors": [
+          {
+            "name": "CAL153 Calm Sky",
+            "image": "assets/carpet-colours/divided-glass-0.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/18/51/CAL153-Calm-Sky_m.jpg?v=2024.08.05.22.52.57"
+          },
+          {
+            "name": "CAL174 Calm Lake",
+            "image": "assets/carpet-colours/divided-glass-1.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/AC/4E/CAL174-Calm-Lake_m.jpg?v=2024.08.05.22.52.58"
+          },
+          {
+            "name": "CAL209 Calm Moon",
+            "image": "assets/carpet-colours/divided-glass-2.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/AB/94/CAL209-Calm-Moon_m.jpg?v=2024.08.05.22.53.03"
+          },
+          {
+            "name": "CAL250 Calm Dusk",
+            "image": "assets/carpet-colours/divided-glass-3.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/7F/62/CAL250-Calm-Dusk_m.jpg?v=2024.08.06.00.07.56"
+          },
+          {
+            "name": "CAL271 Calm Dream",
+            "image": "assets/carpet-colours/divided-glass-4.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/A4/C9/CAL271-Calm-Dream_m.jpg?v=2024.08.05.22.53.10"
+          },
+          {
+            "name": "CAL48 Calm Forest",
+            "image": "assets/carpet-colours/divided-glass-5.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/DF/EC/CAL48-Calm-Forest_m.jpg?v=2024.08.06.00.07.56"
+          }
+        ]
+      },
+      {
+        "design": "Cascade",
+        "colors": [
+          {
+            "name": "CAS153-140 Sky Cascade",
+            "image": "assets/carpet-colours/divided-glass-6.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/89/14/CAS153-140-Sky-Cascade_m.jpg?v=2024.08.05.22.53.55"
+          },
+          {
+            "name": "CAS153-180 Cloud Cascade",
+            "image": "assets/carpet-colours/divided-glass-7.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/E6/4D/CAS153-180-Cloud-Cascade_m.jpg?v=2024.08.05.22.54.01"
+          },
+          {
+            "name": "CAS174-201 Lake Cascade",
+            "image": "assets/carpet-colours/divided-glass-8.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/C4/E6/CAS174-201-Lake-Cascade_m.jpg?v=2024.08.06.00.11.52"
+          },
+          {
+            "name": "CAS209-188 Moon Cascade",
+            "image": "assets/carpet-colours/divided-glass-9.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/F5/36/CAS209-188-Moon-Cascade_m.jpg?v=2024.08.05.22.54.16"
+          },
+          {
+            "name": "CAS250-261 Dusk Cascade",
+            "image": "assets/carpet-colours/divided-glass-10.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/5C/82/CAS250-261-Dust-Cascade_m.jpg?v=2024.08.05.22.54.17"
+          },
+          {
+            "name": "CAS271-168 Dream Cascade",
+            "image": "assets/carpet-colours/divided-glass-11.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/DC/50/CAS271-168-Dream-Cascade_m.jpg?v=2024.08.05.22.54.23"
+          },
+          {
+            "name": "CAS48-162 Forest Cascade",
+            "image": "assets/carpet-colours/divided-glass-12.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/85/AE/CAS48-162-Forest-Cascade_m.jpg?v=2024.08.05.22.54.25"
+          },
+          {
+            "name": "CAS48-251 Crystallized Cascade",
+            "image": "assets/carpet-colours/divided-glass-13.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/86/18/CAS48-251-Crystallized-Cascade_m.jpg?v=2024.08.05.22.54.32"
+          }
+        ]
+      },
+      {
+        "design": "Glimmer",
+        "colors": [
+          {
+            "name": "GLM140-249 Sky Glimmer",
+            "image": "assets/carpet-colours/divided-glass-14.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/6E/DE/GLM140-249-Sky-Glimmer_m.jpg?v=2024.08.06.01.37.34"
+          },
+          {
+            "name": "GLM162-275 Forest Glimmer",
+            "image": "assets/carpet-colours/divided-glass-15.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/87/31/GLM162-275-Forest-Glimmer_m.jpg?v=2024.08.06.03.12.13"
+          },
+          {
+            "name": "GLM168-110 Dream Glimmer",
+            "image": "assets/carpet-colours/divided-glass-16.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/F2/52/GLM168-110-Dream-Glimmer_m.jpg?v=2024.08.06.03.12.13"
+          },
+          {
+            "name": "GLM180-133 Cloud Glimmer",
+            "image": "assets/carpet-colours/divided-glass-17.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/12/FD/GLM180-133-Cloud-Glimmer_m.jpg?v=2024.08.06.03.12.13"
+          },
+          {
+            "name": "GLM188-231 Moon Glimmer",
+            "image": "assets/carpet-colours/divided-glass-18.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/48/97/GLM188-231-Moon-Glimmer_m.jpg?v=2024.08.06.03.12.33"
+          },
+          {
+            "name": "GLM201-140 Lake Glimmer",
+            "image": "assets/carpet-colours/divided-glass-19.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/8F/85/GLM201-140-Lake-Glimmer_m.jpg?v=2024.08.06.01.37.57"
+          },
+          {
+            "name": "GLM251-250 Crystallized Glimmer",
+            "image": "assets/carpet-colours/divided-glass-20.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/30/1E/GLM251-250-Crystallized-Glimmer_m.jpg?v=2024.08.06.03.12.39"
+          },
+          {
+            "name": "GLM261-237 Dusk Glimmer",
+            "image": "assets/carpet-colours/divided-glass-21.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/8B/1F/GLM261-237-Dusk-Glimmer_m.jpg?v=2024.08.06.01.38.04"
+          }
+        ]
+      },
+      {
+        "design": "Shadow",
+        "colors": [
+          {
+            "name": "SHD110-168 Dream Shadow",
+            "image": "assets/carpet-colours/divided-glass-22.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/68/EA/SHD110-168-Dream-Shadow_m.jpg?v=2024.08.06.07.43.24"
+          },
+          {
+            "name": "SHD133-180 Cloud Shadow",
+            "image": "assets/carpet-colours/divided-glass-23.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/D8/0F/SHD133-180-Cloud-Shadow_m.jpg?v=2024.08.06.06.20.18"
+          },
+          {
+            "name": "SHD140-201 Lake Shadow",
+            "image": "assets/carpet-colours/divided-glass-24.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/09/1A/SHD140-201-Lake-Shadow_m.jpg?v=2024.08.06.07.43.30"
+          },
+          {
+            "name": "SHD231-188 Moon Shadow",
+            "image": "assets/carpet-colours/divided-glass-25.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/52/EA/SHD231-188-Moon-Shadow_m.jpg?v=2024.08.06.06.20.19"
+          },
+          {
+            "name": "SHD237-261 Dusk Shadow",
+            "image": "assets/carpet-colours/divided-glass-26.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/A7/CC/SHD237-261-Dusk-Shadow_m.jpg?v=2024.08.06.06.20.19"
+          },
+          {
+            "name": "SHD249-140 Sky Shadow",
+            "image": "assets/carpet-colours/divided-glass-27.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/41/7E/SHD249-140-Sky-Shadow_m.jpg?v=2024.08.06.06.20.28"
+          },
+          {
+            "name": "SHD250-251 Crystallized Shadow",
+            "image": "assets/carpet-colours/divided-glass-28.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/E6/C0/SHD250-251-Crystallized-Shadow_m.jpg?v=2024.08.06.07.43.48"
+          },
+          {
+            "name": "SHD275-162 Forest Shadow",
+            "image": "assets/carpet-colours/divided-glass-29.webp",
+            "source": "https://fcprodcatfiles.milliken.com/fccatalogpublicfiles/images/D6/44/SHD275-162-Forest-Shadow_m.jpg?v=2024.08.06.06.20.29"
+          }
+        ]
+      }
     ]
   }
 }

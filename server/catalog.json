@@ -710,6 +710,13 @@
     "vatRate": 0,
     "vatAmount": 0
   },
+  "divided-glass": {
+    "name": "Divided Glass Collection",
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
+  },
   "fracture": {
     "name": "Fracture Two-Tone",
     "basePrice": 0,

@@ -20,15 +20,20 @@
   catalog.decorateGrid = function(filter) {
     oldDecorate(filter);
     document.getElementById('carpetBrowse')?.remove();
-    if (filter !== 'Flooring Solutions') return;
     const grid = document.getElementById('productGrid');
+    // Use the same photo framing in All products and the flooring catalogue.
+    grid.querySelectorAll('.product-card').forEach(card => {
+      const id = card.querySelector('.product-title')?.dataset.product;
+      if (!catalog.collectionLinks[id]) return;
+      const image = card.querySelector('.product-image-button img');
+      image.src = window.productDetails[id].images[0];
+      image.style.cssText = catalog.imageStyle(id, 0);
+    });
+    if (filter !== 'Flooring Solutions') return;
     const cards = [...grid.querySelectorAll('.product-card')];
     cards.forEach(card => {
       const trigger = card.querySelector('.product-title');
       const id = trigger.dataset.product, tech = catalog.technicalData[id];
-      const image = card.querySelector('.product-image-button img');
-      image.src = window.productDetails[id].images[0];
-      image.style.cssText = catalog.imageStyle(id, 0);
       const heading = document.createElement('div');
       heading.className = 'carpet-card-heading';
       heading.append(trigger);
