@@ -108,6 +108,8 @@ const catalogEntries=[
  ['passage','Passage Collection','Flooring Solutions',0,'assets/products/milliken-passage-1.png','passage'],
  ['topography-2','Topography 2.0 Collection','Flooring Solutions',0,'assets/products/milliken-topography-2-1.webp','topography-2'],
  ['warp-weft','Warp & Weft Collection','Flooring Solutions',0,'assets/products/milliken-warp-weft-7.webp','warp-weft'],
+ ['revelation','Revelation Collection','Flooring Solutions',0,'assets/products/milliken-revelation-3.webp','revelation'],
+ ['salt-lake','Salt Lake Collection','Flooring Solutions',0,'assets/products/milliken-salt-lake-8.webp','salt-lake'],
  ['fracture','Fracture Two-Tone','Acoustic Wall Panel',0,'https://product.hstatic.net/200000617147/product/acoufelt-n-w-panels-fracture-two-tone-shard-talc-amaryllis1_f9cfb5b1c7d2485dbdae56111a9ac4fe_large.jpg','fracture-two-tone'],
  ['pixel','Pixel','Acoustic Wall Panel',0,'https://product.hstatic.net/200000617147/product/acoufelt-n-w-panel-pixel-rectangle-limestone-balsam1_1d60d0cb353f477485d57b609496f858_large.jpg','pixel'],
  ['athena','Athena','Accessories',0,'https://cdn.hstatic.net/products/200000617147/1_8__506b7ec19007435ebe0c75447d52b5b1_large.png','athena'],

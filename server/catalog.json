@@ -696,6 +696,20 @@
     "vatRate": 0,
     "vatAmount": 0
   },
+  "revelation": {
+    "name": "Revelation Collection",
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
+  },
+  "salt-lake": {
+    "name": "Salt Lake Collection",
+    "basePrice": 0,
+    "price": 0,
+    "vatRate": 0,
+    "vatAmount": 0
+  },
   "fracture": {
     "name": "Fracture Two-Tone",
     "basePrice": 0,
