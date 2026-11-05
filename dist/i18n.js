@@ -1,4 +1,9 @@
 const english = {
+ "Xác nhận khi đặt hàng":"Confirmed when ordering",
+ "Tấm che chân bằng thép":"Steel Modesty Panel",
+ "Tấm che chân bằng thép đục lỗ màu đen, lắp dưới mặt bàn. Phụ kiện đặt thêm, bán theo tấm. Kích thước và khả năng lắp với bàn được xác nhận khi đặt hàng.":"Black perforated steel modesty panel for mounting below the tabletop. Optional accessory, sold per panel. Dimensions and desk compatibility are confirmed when ordering.",
+ "Vật liệu: Thép\nMàu sắc: Đen\nThiết kế: Đục lỗ\nVị trí lắp: Dưới mặt bàn\nĐơn vị bán: Tấm\nGiá: 2.750.000 VND/tấm, đã gồm 10% VAT\nKích thước: Xác nhận khi đặt hàng":"Material: Steel\nColour: Black\nDesign: Perforated\nMounting: Below the tabletop\nUnit: Per panel\nPrice: 2,750,000 VND per panel, including 10% VAT\nDimensions: Confirmed when ordering",
+ "Thép đục lỗ · Màu đen":"Perforated steel · Black",
  "Lựa chọn chia sẻ thông tin":"Information-sharing choice",
  "Bạn có đồng ý cho thefirstworkshop xử lý thông tin liên hệ, giao hàng và đơn hàng; chia sẻ với Vercel (vận hành, lưu trữ), Resend (gửi email), Microsoft (email, quản lý đơn) và đơn vị giao/lắp đặt khi cần để thực hiện đơn hàng không?":"Do you agree to thefirstworkshop processing your contact, delivery and order details, and sharing them with Vercel (hosting and storage), Resend (email), Microsoft (email and order management), and delivery/installation providers as needed to fulfil your order?",
  "Đồng ý":"Agree",

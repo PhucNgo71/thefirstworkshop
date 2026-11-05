@@ -27,6 +27,13 @@
     "vatRate": 10,
     "vatAmount": 136364
   },
+  "modesty-steel": {
+    "name": "Steel Modesty Panel",
+    "basePrice": 2500000,
+    "price": 2750000,
+    "vatRate": 10,
+    "vatAmount": 250000
+  },
   "anchor": {
     "name": "Anchor Staff Chair",
     "basePrice": 4700000,

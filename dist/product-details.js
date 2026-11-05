@@ -295,6 +295,17 @@ window.productDetails={
     "galleryModes": ["contain"],
     "swatches": []
   },
+  "modesty-steel": {
+    "brand": "thefirstworkshop",
+    "productType": "Tấm che chân bằng thép",
+    "imageScale": 86,
+    "description": "Tấm che chân bằng thép đục lỗ màu đen, lắp dưới mặt bàn. Phụ kiện đặt thêm, bán theo tấm. Kích thước và khả năng lắp với bàn được xác nhận khi đặt hàng.",
+    "specifications": "Vật liệu: Thép\nMàu sắc: Đen\nThiết kế: Đục lỗ\nVị trí lắp: Dưới mặt bàn\nĐơn vị bán: Tấm\nGiá: 2.750.000 VND/tấm, đã gồm 10% VAT\nKích thước: Xác nhận khi đặt hàng",
+    "images": ["assets/products/modesty-steel.png"],
+    "galleryLabels": [["Steel Modesty Panel", "Thép đục lỗ · Màu đen"]],
+    "galleryModes": ["contain"],
+    "swatches": []
+  },
   "hag-capisco": {
     "brand": "HÅG / Flokk",
     "productType": "Ghế yên ngựa bọc đệm",
