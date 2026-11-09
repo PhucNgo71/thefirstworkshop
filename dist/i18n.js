@@ -1,4 +1,5 @@
 const english = {
+ "Hàng có sẵn: giao trong 2–4 ngày. Hàng sản xuất trong nước: sản xuất 4 tuần. Hàng nhập khẩu: sản xuất 6–8 tuần; riêng Wilkhahn và Holmris: 14–16 tuần. Framery từ kho Singapore: 4–6 tuần; hàng tùy chỉnh từ Phần Lan: sản xuất 14–16 tuần. Lịch giao cụ thể được xác nhận khi đặt hàng.":"In-stock items: delivery in 2–4 days. Local manufacture: 4 weeks for production. Imports: 6–8 weeks for production; Wilkhahn and Holmris: 14–16 weeks. Framery from the Singapore stock hub: 4–6 weeks; customised orders from Finland: 14–16 weeks for production. The delivery schedule is confirmed when ordering.",
  "Xác nhận khi đặt hàng":"Confirmed when ordering",
  "Tấm che chân bằng thép":"Steel Modesty Panel",
  "Tấm che chân bằng thép đục lỗ màu đen, lắp dưới mặt bàn. Phụ kiện đặt thêm, bán theo tấm. Kích thước và khả năng lắp với bàn được xác nhận khi đặt hàng.":"Black perforated steel modesty panel for mounting below the tabletop. Optional accessory, sold per panel. Dimensions and desk compatibility are confirmed when ordering.",
