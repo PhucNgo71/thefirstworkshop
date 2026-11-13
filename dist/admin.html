@@ -11,7 +11,7 @@
 <main>
   <section id="login" class="login-panel">
     <p class="eyebrow">THEFIRSTWORKSHOP · NỘI BỘ</p><h1>Mọi đơn hàng.<br>Một nơi quản lý.</h1>
-    <p>Xem đơn đã lưu, kiểm tra thông tin khách hàng và tải danh sách về máy. Hoạt động độc lập với hộp thư Outlook.</p>
+    <p>Xem đơn, cập nhật trạng thái xử lý và thanh toán, tải danh sách về máy. Hoạt động độc lập với hộp thư Outlook.</p>
     <button id="signin" class="primary">Đăng nhập bằng GitHub</button><p class="small">Chỉ dành cho tài khoản quản trị PhucNgo71.</p>
     <p id="loginMessage" role="status"></p>
   </section>
@@ -21,7 +21,7 @@
     <div class="toolbar"><label class="search">Tìm trong đơn đã tải<input id="search" type="search" placeholder="Mã đơn, khách hàng, email, điện thoại"></label><label>Email<select id="emailFilter"><option value="all">Tất cả</option><option value="review">Cần kiểm tra</option><option value="Accepted">Dịch vụ gửi đã tiếp nhận</option></select></label><label>Loại đơn<select id="testFilter"><option value="all">Tất cả</option><option value="real">Đơn khách hàng</option><option value="test">Đơn kiểm tra</option></select></label><button id="export">Tải CSV đang hiển thị</button></div>
     <p class="notice">Đơn được lưu trước khi gửi email. “Dịch vụ gửi đã tiếp nhận” không xác nhận email đã vào hộp thư. Trang này không xác nhận đồng bộ Excel.</p>
     <p id="status" role="status" aria-live="polite"></p>
-    <div class="table-wrap"><table><caption class="sr-only">Danh sách đơn hàng đã tải</caption><thead><tr><th>Đơn hàng / Ngày đặt</th><th>Khách hàng</th><th>Giá trị sản phẩm</th><th>Email</th><th>Thanh toán</th><th><span class="sr-only">Chi tiết</span></th></tr></thead><tbody id="rows"></tbody></table></div>
+    <div class="table-wrap"><table><caption class="sr-only">Danh sách đơn hàng đã tải</caption><thead><tr><th>Đơn hàng / Ngày đặt</th><th>Khách hàng</th><th>Giá trị sản phẩm</th><th>Email</th><th>Trạng thái</th><th><span class="sr-only">Chi tiết</span></th></tr></thead><tbody id="rows"></tbody></table></div>
     <div class="list-footer"><span id="count"></span><button id="loadMore" hidden>Tải thêm đơn</button></div>
   </section>
 </main>

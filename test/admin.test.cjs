@@ -30,14 +30,14 @@ test('OAuth callbacks deny other accounts and do not trust a renamed login or cl
   const token=await c.callbacks.jwt({token:{},account:{provider:'github',access_token:'private'},profile:{id:ADMIN_ID}});
   assert.equal(token.access_token,undefined);
 });
-test('unauthenticated list, detail, session and export attempts never touch storage; APIs are read only',async()=>{
+test('unauthenticated reads never touch storage and unsupported methods are rejected',async()=>{
   let reads=0;const handler=createHandler({auth:async()=>null,reader:{list(){reads++},detail(){reads++}}});
   for(const query of [{},{id},{session:'1'},{export:'1'}]){const res=response();await handler({method:'GET',headers:{},query},res);assert.equal(res.statusCode,401);assert.equal(res.headers['Cache-Control'],'private, no-store, max-age=0');}
   const res=response();await handler({method:'POST',headers:{},query:{}},res);assert.equal(res.statusCode,405);assert.equal(reads,0);
 });
 test('list is paginated with private reads, hides internal fields, reports corrupt records',async()=>{
   const bad='22345678-1234-4234-8234-123456789abc';const calls=[];
-  const sdk={async list(options){calls.push(options);return {blobs:[{pathname:`orders/v1/${id}.json`},{pathname:`orders/v1/${bad}.json`},{pathname:'orders/v1/../../secret'}],hasMore:true,cursor:'next'}},async get(path,options){calls.push(options);return {statusCode:200,blob:{size:1000},stream:new Response(path.includes(bad)?'bad json':JSON.stringify(record)).body}}};
+  const sdk={async list(options){calls.push(options);return {blobs:[{pathname:`orders/v1/${id}.json`},{pathname:`orders/v1/${bad}.json`},{pathname:'orders/v1/../../secret'}],hasMore:true,cursor:'next'}},async get(path,options){calls.push(options);if(path.startsWith('order-status/'))return null;return {statusCode:200,blob:{size:1000},stream:new Response(path.includes(bad)?'bad json':JSON.stringify(record)).body}}};
   const reader=orderReader(env,sdk),result=await reader.list('previous');
   assert.equal(result.orders.length,1);assert.equal(result.unreadableCount,1);assert.equal(result.cursor,'next');
   assert.equal(calls[0].prefix,'orders/v1/');assert.equal(calls[0].cursor,'previous');assert.equal(calls[0].limit,50);

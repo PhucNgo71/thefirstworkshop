@@ -5,16 +5,18 @@
   const money = value => new Intl.NumberFormat('vi-VN').format(Number(value) || 0) + ' ₫';
   const date = value => {const d = new Date(value); return Number.isNaN(d.valueOf()) ? '—' : d.toLocaleString('vi-VN', {timeZone:'Asia/Ho_Chi_Minh'});};
   const emailLabels = {Accepted:'Dịch vụ gửi đã tiếp nhận',NeedsReview:'Cần kiểm tra',Sending:'Chưa xác định kết quả',Pending:'Chờ gửi'};
+  const orderLabels = {Received:'Đã tiếp nhận',Processing:'Đang xử lý',Delivering:'Đang giao hàng',Completed:'Hoàn tất',Cancelled:'Đã hủy'};
+  const paymentLabels = {Unpaid:'Chưa thanh toán',Paid:'Đã thanh toán'};
   function node(tag, text, className) {const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(className)el.className=className;return el;}
   function locked(message) {
     state.orders=[];state.cursor=null;state.hasMore=false;
     $('rows').replaceChildren();$('detailContent').replaceChildren();$('detail').close();
     $('dashboard').hidden=true;$('login').hidden=false;$('logout').hidden=true;$('accountName').textContent='';$('loginMessage').textContent=message;
   }
-  async function api(query='') {
-    const response=await fetch('/api/admin-orders'+query,{credentials:'same-origin',cache:'no-store'});
+  async function api(query='', options={}) {
+    const response=await fetch('/api/admin-orders'+query,{credentials:'same-origin',cache:'no-store',...options});
     if(response.status===401){locked('Vui lòng đăng nhập để xem đơn hàng.');throw Error('Phiên đăng nhập đã hết hạn.');}
-    if(!response.ok)throw Error('Không tải được đơn hàng. Vui lòng thử lại.');
+    if(!response.ok){const data=await response.json().catch(()=>({}));const messages={STATUS_CONFLICT:'Đơn đã được cập nhật ở nơi khác. Đóng và mở lại đơn để xem trạng thái mới.',STATUS_SAVE_UNCERTAIN:'Chưa xác nhận lưu thành công. Vui lòng thử lại hoặc mở lại đơn để kiểm tra.',STATUS_HISTORY_LIMIT:'Đơn đã đạt giới hạn lịch sử cập nhật. Vui lòng liên hệ quản trị kỹ thuật.'};throw Error(messages[data.error]||(options.method?'Chưa lưu được trạng thái. Vui lòng thử lại.':'Không tải được đơn hàng. Vui lòng thử lại.'));}
     return response.json();
   }
   function filtered() {
@@ -32,8 +34,8 @@
       customer.append(node('strong',o.customerName),node('small',o.email),node('small',o.phone));
       const amount=node('td',money(o.subtotal));amount.append(node('small',`${o.totalQuantity} sản phẩm`));
       const mail=node('td');mail.append(node('span',emailLabels[o.emailStatus]||'Chưa xác định','badge'+(o.emailStatus==='Accepted'?'':' warning')));
-      const payment=node('td',o.paymentStatus==='Unpaid'?'Chưa thanh toán':o.paymentStatus||'Chưa xác nhận');
-      const action=node('td'), button=node('button','Xem đơn');button.addEventListener('click',()=>detail(o.id));action.append(button);
+      const payment=node('td');payment.append(node('span',paymentLabels[o.paymentStatus]||o.paymentStatus||'Chưa xác nhận','badge'+(o.paymentStatus==='Paid'?' paid':'')),node('small',orderLabels[o.orderStatus]||o.orderStatus));
+      const action=node('td'), button=node('button','Xem / cập nhật');button.addEventListener('click',()=>detail(o.id));action.append(button);
       tr.append(order,customer,amount,mail,payment,action);$('rows').append(tr);
     }
     if(!items.length){const tr=node('tr'),td=node('td',state.orders.length?'Không có đơn phù hợp bộ lọc.':'Chưa có đơn trong dữ liệu đã tải.','empty');td.colSpan=6;tr.append(td);$('rows').append(tr);}
@@ -53,18 +55,34 @@
   }
   async function detail(id) {
     $('detailContent').replaceChildren(node('p','Đang tải chi tiết…'));$('detail').showModal();
-    try {
-      const data=await api('?id='+encodeURIComponent(id)),o=data.order,c=o.customer;
+    try {const data=await api('?id='+encodeURIComponent(id));if($('detail').open)renderDetail(data);}
+    catch(error){$('detailContent').replaceChildren(node('p',error.message));}
+  }
+  function renderDetail(data, saved=false) {
+      const o=data.order,c=o.customer;
       const content=$('detailContent');content.replaceChildren(node('h2',o.orderNumber),node('p',date(o.orderDate),'muted'));
+      const form=node('form',undefined,'status-editor'),controls=node('div',undefined,'status-controls');
+      function selectStatus(label,id,labels,value){const labelNode=node('label',label),select=node('select');select.id=id;for(const [key,text]of Object.entries(labels)){const option=node('option',text);option.value=key;select.append(option);}select.value=value;labelNode.append(select);controls.append(labelNode);return select;}
+      const orderSelect=selectStatus('Trạng thái đơn hàng','orderStatus',orderLabels,o.orderStatus),paymentSelect=selectStatus('Thanh toán','paymentStatus',paymentLabels,o.paymentStatus);
+      const noteLabel=node('label','Ghi chú cập nhật (không bắt buộc)'),note=node('input');note.id='statusNote';note.maxLength=300;note.placeholder='Ví dụ: Đã đối chiếu chuyển khoản';noteLabel.append(note);
+      const save=node('button','Cập nhật trạng thái','primary');save.type='submit';
+      const message=node('p',saved?'Đã lưu trạng thái thành công.':'','save-message');message.setAttribute('role','status');
+      form.append(node('h3','Cập nhật đơn hàng'),controls,noteLabel,node('p','Ghi nhận thanh toán thủ công sau khi đối chiếu. Thay đổi được lưu trên trang quản lý; không tự gửi email hoặc cập nhật Excel.','small'),save,message);content.append(form);
+      let pending=null;
+      form.addEventListener('submit',async event=>{event.preventDefault();const input={id:o.requestId,expectedVersion:data.statusVersion,orderStatus:orderSelect.value,paymentStatus:paymentSelect.value,note:note.value};const key=JSON.stringify(input);if(pending?.key!==key)pending={key,body:{...input,updateId:crypto.randomUUID()}};
+        save.disabled=true;orderSelect.disabled=true;paymentSelect.disabled=true;note.disabled=true;message.textContent='Đang lưu…';
+        try{const updated=await api('',{method:'PATCH',headers:{'Content-Type':'application/json','X-Admin-Action':'update-order-status'},body:JSON.stringify(pending.body)});const row=state.orders.find(item=>item.id===o.requestId);if(row){row.orderStatus=updated.order.orderStatus;row.paymentStatus=updated.order.paymentStatus;}render();if($('detail').open)renderDetail(updated,true);}
+        catch(error){message.textContent=error.message;save.disabled=false;orderSelect.disabled=false;paymentSelect.disabled=false;note.disabled=false;}
+      });
       const grid=node('div',undefined,'customer-grid');
       for(const [label,value] of [['Khách hàng',c.name],['Email',c.email],['Điện thoại',c.phone],['Công ty',c.company],['Mã số thuế',c.taxCode],['Địa chỉ giao hàng',c.address]]){const item=node('div');item.append(node('span',label),node('strong',value||'—'));grid.append(item);}
       content.append(grid,node('h3','Sản phẩm'));
       const wrap=node('div',undefined,'table-wrap'),table=node('table'),thead=node('thead'),head=node('tr');['Sản phẩm / Cấu hình','SL','Đơn giá','Thành tiền'].forEach(s=>head.append(node('th',s)));thead.append(head);table.append(thead);
       const tbody=node('tbody');for(const i of o.items){const row=node('tr'),name=node('td',i.name);name.append(node('small',i.options||''));row.append(name,node('td',i.quantity),node('td',money(i.unitPrice)),node('td',money(i.lineTotal)));tbody.append(row);}table.append(tbody);wrap.append(table);content.append(wrap);
-      const totals=node('div',undefined,'totals');totals.append(node('strong','Giá trị sản phẩm: '+money(o.subtotal)),node('div','Phí giao hàng: '+(o.deliveryFee===null?'Chờ xác nhận':money(o.deliveryFee))),node('div','Thanh toán: '+(o.paymentStatus==='Unpaid'?'Chưa thanh toán':o.paymentStatus||'Chưa xác nhận')),node('div','Hình thức: '+(o.paymentMethod==='bank'?'Chuyển khoản':'Thanh toán khi giao hàng')));
+      const totals=node('div',undefined,'totals');totals.append(node('strong','Giá trị sản phẩm: '+money(o.subtotal)),node('div','Phí giao hàng: '+(o.deliveryFee===null?'Chờ xác nhận':money(o.deliveryFee))),node('div','Thanh toán: '+(paymentLabels[o.paymentStatus]||o.paymentStatus||'Chưa xác nhận')),node('div','Hình thức: '+(o.paymentMethod==='bank'?'Chuyển khoản':'Thanh toán khi giao hàng')));
       if(o.vatIncluded!==undefined)totals.append(node('div','VAT đã bao gồm: '+money(o.vatIncluded)));
-      content.append(totals,node('h3','Ghi chú khách hàng'),node('p',c.notes||'Không có ghi chú.','notes'),node('h3','Trạng thái'),node('p','Đơn hàng: '+(o.orderStatus==='Received'?'Đã tiếp nhận':o.orderStatus||'Chưa xác nhận')),node('p','Email: '+(emailLabels[data.emailStatus]||'Chưa xác định')),node('p','Trạng thái email không xác nhận giao hàng, thanh toán hoặc đã ghi vào Excel.','notice'));
-    }catch(error){$('detailContent').replaceChildren(node('p',error.message));}
+      content.append(totals,node('h3','Ghi chú khách hàng'),node('p',c.notes||'Không có ghi chú.','notes'),node('h3','Trạng thái'),node('p','Đơn hàng: '+(orderLabels[o.orderStatus]||o.orderStatus||'Chưa xác nhận')),node('p','Email: '+(emailLabels[data.emailStatus]||'Chưa xác định')),node('p','Trạng thái email không xác nhận giao hàng, thanh toán hoặc đã ghi vào Excel.','notice'));
+      if(data.statusHistory?.length){const history=node('ol',undefined,'status-history');for(const entry of data.statusHistory.slice(-10).reverse()){const item=node('li');item.append(node('strong',`${orderLabels[entry.previousOrderStatus]||entry.previousOrderStatus} → ${orderLabels[entry.orderStatus]||entry.orderStatus} · ${paymentLabels[entry.previousPaymentStatus]||entry.previousPaymentStatus} → ${paymentLabels[entry.paymentStatus]||entry.paymentStatus}`),node('p',`${date(entry.at)} · PhucNgo71`,'muted'));if(entry.note)item.append(node('p',entry.note,'notes'));history.append(item);}content.append(node('h3','Lịch sử cập nhật gần nhất'),history);}
   }
   async function authAction(action) {
     const response=await fetch('/api/auth/csrf',{cache:'no-store',credentials:'same-origin'});
