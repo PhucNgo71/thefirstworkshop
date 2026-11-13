@@ -40,5 +40,5 @@ test('cron rejects missing/wrong secret and preview environment before reading o
  let calls=0;const reports={async generate(){calls++;return{week:'2026-11-16',orderCount:2}}};const handler=cronHandler({env,reports});for(const token of [undefined,'Bearer wrong']){const res=response();await handler({method:'GET',headers:{authorization:token}},res);assert.equal(res.statusCode,401);}assert.equal(calls,0);
  const ok=response();await handler({method:'GET',headers:{authorization:'Bearer '+env.CRON_SECRET}},ok);assert.equal(ok.statusCode,200);assert.equal(calls,1);
  const preview=response();await cronHandler({env:{...env,VERCEL_ENV:'preview'},reports})({method:'GET',headers:{authorization:'Bearer '+env.CRON_SECRET}},preview);assert.equal(preview.statusCode,401);
- const config=require('../vercel.json');assert.deepEqual(config.crons,[{path:'/api/weekly-report',schedule:'0 1 * * 1'}]);
+ const config=require('../vercel.json');assert.deepEqual(config.crons.find(job=>job.path==='/api/weekly-report'),{path:'/api/weekly-report',schedule:'0 1 * * 1'});
 });

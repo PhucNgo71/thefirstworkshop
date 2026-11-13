@@ -120,5 +120,5 @@
   // Do not retain order data in localStorage/sessionStorage or the browser back/forward cache.
   window.addEventListener('pagehide',()=>locked('Vui lòng đăng nhập để xem đơn hàng.'));
   window.addEventListener('pageshow',event=>{if(event.persisted)location.reload();});
-  (async()=>{if(new URLSearchParams(location.search).has('error'))$('loginMessage').textContent='Đăng nhập chưa thành công hoặc tài khoản không được cấp quyền.';try{const {user}=await api('?session=1');$('login').hidden=true;$('dashboard').hidden=false;$('logout').hidden=false;$('accountName').textContent=user.name;await Promise.all([load(true),loadReports()]);}catch{}})();
+  (async()=>{if(new URLSearchParams(location.search).has('error'))$('loginMessage').textContent='Đăng nhập chưa thành công hoặc tài khoản không được cấp quyền.';try{const {user}=await api('?session=1');$('login').hidden=true;$('dashboard').hidden=false;$('logout').hidden=false;$('accountName').textContent=user.name;document.dispatchEvent(new Event('admin-ready'));await Promise.all([load(true),loadReports()]);}catch{}})();
 })();

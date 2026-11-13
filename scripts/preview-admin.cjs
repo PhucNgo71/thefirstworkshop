@@ -2,6 +2,8 @@
 const http=require('node:http'),fs=require('node:fs'),path=require('node:path');
 const {createHandler}=require('../api/admin-orders.js');
 const {createHandler:createReportHandler}=require('../api/admin-reports.js');
+const {createHandler:createPushHandler}=require('../api/admin-push.js');
+const {pushService}=require('../server/admin-push.cjs');
 const {reportService}=require('../server/weekly-reports.cjs');
 const {orderReader}=require('../server/admin-orders.cjs');
 const {ADMIN_ID}=require('../server/admin-auth.cjs');
@@ -17,13 +19,15 @@ const sdk={async get(key){const f=files.get(key);return f?{statusCode:200,blob:{
 const reader=orderReader({VERCEL_ENV:'production',BLOB_STORE_ID:APPROVED_STORE},sdk);
 const handler=createHandler({origin:`http://127.0.0.1:${port}`,auth:async req=>req.headers.cookie?.includes('admin-preview=1')?{id:ADMIN_ID,name:'BẢN XEM TRƯỚC · DỮ LIỆU MẪU'}:null,reader});
 const reportsHandler=createReportHandler({origin:`http://127.0.0.1:${port}`,auth:async req=>req.headers.cookie?.includes('admin-preview=1')?{id:ADMIN_ID}:null,reports:reportService({VERCEL_ENV:'production',BLOB_STORE_ID:APPROVED_STORE},sdk,reader)});
+const demoKeys=require('web-push').generateVAPIDKeys();
+const pushHandler=createPushHandler({origin:`http://127.0.0.1:${port}`,auth:async req=>req.headers.cookie?.includes('admin-preview=1')?{id:ADMIN_ID}:null,push:pushService({VERCEL_ENV:'production',BLOB_STORE_ID:APPROVED_STORE,ADMIN_PUSH_PUBLIC_KEY:demoKeys.publicKey,ADMIN_PUSH_PRIVATE_KEY:demoKeys.privateKey},sdk,{async sendNotification(){throw Error('Preview never sends notifications');}})});
 http.createServer(async(req,res)=>{
  const url=new URL(req.url,'http://127.0.0.1');res.setHeader('Cache-Control','no-store');
  if(url.pathname==='/demo-login'){res.writeHead(302,{'Set-Cookie':'admin-preview=1; HttpOnly; SameSite=Strict; Path=/',Location:'/admin'}).end();return;}
- if(['/api/admin-orders','/api/admin-reports'].includes(url.pathname)){
-  req.query=Object.fromEntries(url.searchParams);if(req.method==='PATCH'){const chunks=[];for await(const chunk of req)chunks.push(chunk);req.body=Buffer.concat(chunks).toString();}
-  res.status=function(n){this.statusCode=n;return this};res.json=function(x){this.setHeader('Content-Type','application/json');this.end(JSON.stringify(x));return this};res.send=function(x){this.end(x);return this};return (url.pathname==='/api/admin-orders'?handler:reportsHandler)(req,res);
+ if(['/api/admin-orders','/api/admin-reports','/api/admin-push'].includes(url.pathname)){
+  req.query=Object.fromEntries(url.searchParams);if(['PATCH','POST'].includes(req.method)){const chunks=[];for await(const chunk of req)chunks.push(chunk);req.body=Buffer.concat(chunks).toString();}
+  res.status=function(n){this.statusCode=n;return this};res.json=function(x){this.setHeader('Content-Type','application/json');this.end(JSON.stringify(x));return this};res.send=function(x){this.end(x);return this};return (url.pathname==='/api/admin-orders'?handler:url.pathname==='/api/admin-push'?pushHandler:reportsHandler)(req,res);
  }
- const allowed={'/admin':'admin.html','/admin.css':'admin.css','/admin.js':'admin.js','/admin-csv.js':'admin-csv.js'};
- if(!allowed[url.pathname]){res.writeHead(404).end();return;}const file=allowed[url.pathname];res.setHeader('Content-Type',file.endsWith('.html')?'text/html; charset=utf-8':file.endsWith('.css')?'text/css':'text/javascript');res.end(fs.readFileSync(path.join(root,file)));
+ const allowed={'/admin':'admin.html','/admin.css':'admin.css','/admin.js':'admin.js','/admin-csv.js':'admin-csv.js','/admin-push.js':'admin-push.js','/admin-sw.js':'admin-sw.js','/admin.webmanifest':'admin.webmanifest','/admin-icon-192.png':'admin-icon-192.png','/admin-icon-512.png':'admin-icon-512.png'};
+ if(!allowed[url.pathname]){res.writeHead(404).end();return;}const file=allowed[url.pathname];res.setHeader('Content-Type',file.endsWith('.html')?'text/html; charset=utf-8':file.endsWith('.css')?'text/css':file.endsWith('.png')?'image/png':file.endsWith('.webmanifest')?'application/manifest+json':'text/javascript');res.end(fs.readFileSync(path.join(root,file)));
 }).listen(port,'127.0.0.1',()=>console.log(`Admin fixture: http://127.0.0.1:${port}/demo-login`));

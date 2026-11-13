@@ -4,7 +4,9 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="robots" content="noindex,nofollow,noarchive"><meta name="referrer" content="same-origin">
   <title>Quản lý đơn hàng · thefirstworkshop</title>
-  <link rel="stylesheet" href="/admin.css"><script src="/admin-csv.js" defer></script><script src="/admin.js" defer></script>
+  <meta name="theme-color" content="#123e2a"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="TFW Đơn hàng">
+  <link rel="manifest" href="/admin.webmanifest"><link rel="apple-touch-icon" href="/admin-icon-192.png">
+  <link rel="stylesheet" href="/admin.css"><script src="/admin-csv.js" defer></script><script src="/admin-push.js" defer></script><script src="/admin.js" defer></script>
 </head>
 <body>
 <header><a class="brand" href="/">the first<br>workshop<span>QUẢN LÝ ĐƠN HÀNG</span></a><div class="account"><span id="accountName"></span><button id="logout" hidden>Đăng xuất</button><a href="/">Về cửa hàng ↗</a></div></header>
@@ -18,6 +20,14 @@
   <section id="dashboard" hidden>
     <div class="page-heading"><div><p class="eyebrow">THEFIRSTWORKSHOP · NỘI BỘ</p><h1>Đơn hàng</h1><p id="updated" class="muted">Đang tải dữ liệu…</p></div><button id="refresh">↻ Làm mới</button></div>
     <div class="metrics"><article><span>Đơn đã tải</span><strong id="total">0</strong></article><article><span>Email cần kiểm tra</span><strong id="needsReview">0</strong></article><article><span>Giá trị sản phẩm · VND</span><strong id="value">0</strong><small>Không phải doanh thu đã thanh toán</small></article></div>
+    <section class="reports-panel push-panel" aria-labelledby="pushHeading">
+      <h2 id="pushHeading">Thông báo đơn mới trên điện thoại</h2>
+      <p>Nhận “Có đơn online mới” và mở trang quản lý để xem. Không gửi tới email cá nhân; không hiện thông tin khách hàng trên màn hình khóa.</p>
+      <div id="pushInstall"><p><strong>Trên iPhone (iOS 16.4 trở lên):</strong> mở trang này trong Safari → Chia sẻ → Thêm vào Màn hình chính. Mở biểu tượng <strong>TFW Đơn hàng</strong>, đăng nhập GitHub, rồi bấm “Bật thông báo”.</p></div>
+      <div class="report-actions"><button id="enablePush" disabled>Bật thông báo</button><button id="testPush" disabled>Gửi thử</button><button id="disablePush" disabled>Tắt trên thiết bị này</button></div>
+      <p id="pushMessage" role="status" aria-live="polite">Đang kiểm tra kết nối…</p>
+      <p class="small">Thông báo có thể đến khi đóng trang. Cần có mạng và quyền thông báo; chế độ Tập trung trên iPhone có thể làm im lặng tin. Đăng xuất không tắt thông báo — dùng “Tắt trên thiết bị này” khi không muốn nhận nữa.</p>
+    </section>
     <section class="reports-panel" aria-labelledby="reportsHeading">
       <h2 id="reportsHeading">Báo cáo Excel hằng tuần</h2>
       <p>Thứ Hai lúc 08:00 · giờ Việt Nam. Chốt toàn bộ đơn khách và trạng thái tại lúc tạo; không gồm đơn TEST. File tải trực tiếp, chưa đồng bộ SharePoint.</p>

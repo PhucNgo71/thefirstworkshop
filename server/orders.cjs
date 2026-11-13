@@ -86,12 +86,15 @@ function mail(order) {
     ]
   }, saveToSentItems: true};
 }
-async function submit(input, {catalog, store, sendMail}) {
+async function submit(input, {catalog, store, sendMail, notifyOrder}) {
   const normalized = normalize(input, catalog);
   const fingerprint = hash(normalized);
   const fresh = makeOrder(normalized);
   const record = await store.createOrGet(fresh, fingerprint, excelRow(fresh));
   if (record.fingerprint !== fingerprint) throw new OrderError('REQUEST_CONFLICT', 409);
+  // Notify only after durable storage, independently of the email outcome.
+  // Notification failure cannot reject an accepted order; the cron recovers it.
+  if(notifyOrder)await notifyOrder(record.order).catch(()=>{console.warn('order_push_pending');});
   // Only the winner of an atomic storage lease may send. Ambiguous sends are
   // retained for manual reconciliation, never automatically sent twice.
   if (record.emailStatus === 'Pending' && await store.claimEmail(record)) {

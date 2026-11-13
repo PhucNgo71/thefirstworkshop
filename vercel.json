@@ -5,10 +5,11 @@
   "installCommand": "pnpm install --frozen-lockfile",
   "cleanUrls": true,
   "trailingSlash": false,
-  "crons": [{"path": "/api/weekly-report", "schedule": "0 1 * * 1"}],
+  "crons": [{"path": "/api/weekly-report", "schedule": "0 1 * * 1"}, {"path": "/api/order-notifications", "schedule": "*/5 * * * *"}],
   "functions": {
     "api/weekly-report.js": {"maxDuration": 300},
-    "api/admin-reports.js": {"maxDuration": 300}
+    "api/admin-reports.js": {"maxDuration": 300},
+    "api/order-notifications.js": {"maxDuration": 300}
   },
   "rewrites": [
     {
@@ -17,6 +18,7 @@
     }
   ],
   "headers": [
+    {"source":"/admin-sw.js","headers":[{"key":"Cache-Control","value":"no-cache"},{"key":"Content-Type","value":"application/javascript; charset=utf-8"},{"key":"Service-Worker-Allowed","value":"/admin"}]},
     {
       "source": "/admin",
       "headers": [

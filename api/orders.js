@@ -2,7 +2,8 @@ const {submit, OrderError} = require('../server/orders.cjs');
 const {blobStore} = require('../server/blob-store.cjs');
 const {resend} = require('../server/resend.cjs');
 const catalog = require('../server/catalog.json');
-const service = {store:blobStore(), ...resend()};
+const push = require('../server/admin-push.cjs').pushService();
+const service = {store:blobStore(), ...resend(), notifyOrder:order=>push.notify(order)};
 module.exports = async function handler(req,res) {
   res.setHeader('Cache-Control','no-store');
   res.setHeader('X-Content-Type-Options','nosniff');
