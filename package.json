@@ -9,6 +9,7 @@
     "node": "22.x"
   },
   "dependencies": {
+    "@auth/core": "0.41.3",
     "@vercel/blob": "2.8.2"
   }
 }

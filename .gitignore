@@ -1,2 +1,4 @@
 .vercel/
 *.tar.gz
+.env
+.env*.local
