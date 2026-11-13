@@ -11,10 +11,11 @@
     if(!response.ok)throw Error('Chưa hoàn tất kết nối thông báo. Vui lòng thử lại.');
     return response.json();
   }
-  function buttons(active=false){$('enablePush').disabled=busy||!config?.configured||(ios&&!standalone());$('testPush').disabled=busy||!active;$('disablePush').disabled=busy||!active;}
+  function buttons(active=false){const needsInstall=ios&&!standalone();$('enablePush').textContent=needsInstall?'Cách bật trên iPhone':'Bật thông báo';$('enablePush').disabled=busy||(!needsInstall&&!config?.configured);$('testPush').disabled=busy||!active;$('disablePush').disabled=busy||!active;}
   function supported(){return 'serviceWorker' in navigator&&'PushManager' in window&&'Notification' in window;}
   async function init(){
     $('pushInstall').hidden=!ios||standalone();
+    if(ios&&!standalone()){$('pushInstall').hidden=false;message('Bạn đang mở trong Safari. Hãy thêm trang vào Màn hình chính, rồi mở biểu tượng TFW Đơn hàng để bật thông báo.');buttons();return;}
     try{
       config=await api();
       if(!config.configured){message('Kênh thông báo đang được thiết lập. Chưa có thông báo đẩy.');buttons();return;}
@@ -29,6 +30,7 @@
     }catch(e){message(e.message);buttons();}
   }
   async function enable(){
+    if(ios&&!standalone()){$('pushInstall').hidden=false;$('pushInstall').scrollIntoView({behavior:'smooth',block:'center'});$('pushInstall').focus({preventScroll:true});message('Safari → Chia sẻ (ô vuông có mũi tên lên) → Thêm vào Màn hình chính → Thêm. Sau đó mở biểu tượng TFW Đơn hàng trên Màn hình chính và đăng nhập lại.');return;}
     if(busy||!registration||!supported())return;
     // Call the permission prompt directly in the user's click, before network awaits.
     const permissionPromise=Notification.requestPermission();busy=true;buttons();

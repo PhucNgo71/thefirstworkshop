@@ -23,7 +23,7 @@
     <section class="reports-panel push-panel" aria-labelledby="pushHeading">
       <h2 id="pushHeading">Thông báo đơn mới trên điện thoại</h2>
       <p>Nhận “Có đơn online mới” và mở trang quản lý để xem. Không gửi tới email cá nhân; không hiện thông tin khách hàng trên màn hình khóa.</p>
-      <div id="pushInstall"><p><strong>Trên iPhone (iOS 16.4 trở lên):</strong> mở trang này trong Safari → Chia sẻ → Thêm vào Màn hình chính. Mở biểu tượng <strong>TFW Đơn hàng</strong>, đăng nhập GitHub, rồi bấm “Bật thông báo”.</p></div>
+      <div id="pushInstall" tabindex="-1"><p><strong>iPhone: cần mở từ Màn hình chính, không phải tab Safari.</strong></p><ol class="push-steps"><li>Trong Safari, bấm <strong>Chia sẻ</strong> (ô vuông có mũi tên lên).</li><li>Chọn <strong>Thêm vào Màn hình chính → Thêm</strong>.</li><li>Ra Màn hình chính, mở biểu tượng <strong>TFW Đơn hàng</strong> và đăng nhập GitHub.</li><li>Bấm <strong>Bật thông báo → Cho phép → Gửi thử</strong>.</li></ol><p>Cần iOS 16.4 trở lên. Không cần cài WebKit hay ứng dụng từ App Store.</p></div>
       <div class="report-actions"><button id="enablePush" disabled>Bật thông báo</button><button id="testPush" disabled>Gửi thử</button><button id="disablePush" disabled>Tắt trên thiết bị này</button></div>
       <p id="pushMessage" role="status" aria-live="polite">Đang kiểm tra kết nối…</p>
       <p class="small">Thông báo có thể đến khi đóng trang. Cần có mạng và quyền thông báo; chế độ Tập trung trên iPhone có thể làm im lặng tin. Đăng xuất không tắt thông báo — dùng “Tắt trên thiết bị này” khi không muốn nhận nữa.</p>
