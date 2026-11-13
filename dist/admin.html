@@ -18,6 +18,12 @@
   <section id="dashboard" hidden>
     <div class="page-heading"><div><p class="eyebrow">THEFIRSTWORKSHOP · NỘI BỘ</p><h1>Đơn hàng</h1><p id="updated" class="muted">Đang tải dữ liệu…</p></div><button id="refresh">↻ Làm mới</button></div>
     <div class="metrics"><article><span>Đơn đã tải</span><strong id="total">0</strong></article><article><span>Email cần kiểm tra</span><strong id="needsReview">0</strong></article><article><span>Giá trị sản phẩm · VND</span><strong id="value">0</strong><small>Không phải doanh thu đã thanh toán</small></article></div>
+    <section class="reports-panel" aria-labelledby="reportsHeading">
+      <h2 id="reportsHeading">Báo cáo Excel hằng tuần</h2>
+      <p>Thứ Hai lúc 08:00 · giờ Việt Nam. Chốt toàn bộ đơn khách và trạng thái tại lúc tạo; không gồm đơn TEST. File tải trực tiếp, chưa đồng bộ SharePoint.</p>
+      <div class="report-actions"><button id="currentExcel">Tải Excel hiện tại</button><button id="createWeekly">Chốt báo cáo tuần này</button><label>Báo cáo đã chốt<select id="reportWeek" disabled><option>Đang tải…</option></select></label><button id="downloadWeekly" disabled>Tải báo cáo đã chọn</button></div>
+      <p id="reportMessage" role="status"></p>
+    </section>
     <div class="toolbar"><label class="search">Tìm trong đơn đã tải<input id="search" type="search" placeholder="Mã đơn, khách hàng, email, điện thoại"></label><label>Email<select id="emailFilter"><option value="all">Tất cả</option><option value="review">Cần kiểm tra</option><option value="Accepted">Dịch vụ gửi đã tiếp nhận</option></select></label><label>Loại đơn<select id="testFilter"><option value="all">Tất cả</option><option value="real">Đơn khách hàng</option><option value="test">Đơn kiểm tra</option></select></label><button id="export">Tải CSV đang hiển thị</button></div>
     <p class="notice">Đơn được lưu trước khi gửi email. “Dịch vụ gửi đã tiếp nhận” không xác nhận email đã vào hộp thư. Trang này không xác nhận đồng bộ Excel.</p>
     <p id="status" role="status" aria-live="polite"></p>

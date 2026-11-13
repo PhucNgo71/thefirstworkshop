@@ -5,6 +5,11 @@
   "installCommand": "pnpm install --frozen-lockfile",
   "cleanUrls": true,
   "trailingSlash": false,
+  "crons": [{"path": "/api/weekly-report", "schedule": "0 1 * * 1"}],
+  "functions": {
+    "api/weekly-report.js": {"maxDuration": 300},
+    "api/admin-reports.js": {"maxDuration": 300}
+  },
   "rewrites": [
     {
       "source": "/api/auth/:authAction*",

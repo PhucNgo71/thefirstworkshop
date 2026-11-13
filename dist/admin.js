@@ -10,7 +10,7 @@
   function node(tag, text, className) {const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(className)el.className=className;return el;}
   function locked(message) {
     state.orders=[];state.cursor=null;state.hasMore=false;
-    $('rows').replaceChildren();$('detailContent').replaceChildren();$('detail').close();
+    $('rows').replaceChildren();$('detailContent').replaceChildren();$('detail').close();$('reportWeek').replaceChildren();$('reportMessage').textContent='';
     $('dashboard').hidden=true;$('login').hidden=false;$('logout').hidden=true;$('accountName').textContent='';$('loginMessage').textContent=message;
   }
   async function api(query='', options={}) {
@@ -92,6 +92,25 @@
     for(const [name,value] of Object.entries({csrfToken,callbackUrl:location.origin+'/admin'})){const input=node('input');input.type='hidden';input.name=name;input.value=value;form.append(input);}
     document.body.append(form);form.submit();
   }
+  let reporting=false;
+  async function reportRequest(query='',options={}){
+    const response=await fetch('/api/admin-reports'+query,{credentials:'same-origin',cache:'no-store',...options});
+    if(response.status===401){locked('Vui lòng đăng nhập để xem báo cáo.');throw Error('Phiên đăng nhập đã hết hạn.');}
+    if(!response.ok){const data=await response.json().catch(()=>({}));throw Error(data.error==='REPORT_INCOMPLETE'?'Có đơn chưa đọc được; chưa tạo báo cáo để tránh thiếu dữ liệu. Vui lòng thử lại.':'Không tạo hoặc tải được báo cáo. Vui lòng thử lại.');}
+    return response;
+  }
+  async function loadReports(){
+    try{const data=await(await reportRequest()).json();$('reportWeek').replaceChildren();for(const report of data.reports){const option=node('option',`Tuần ${report.week} · ${report.orderCount} đơn · chốt ${date(report.createdAt)}`);option.value=report.week;$('reportWeek').append(option);}if(!data.reports.length)$('reportWeek').append(node('option','Chưa có báo cáo đã chốt'));$('reportWeek').disabled=!data.reports.length;$('downloadWeekly').disabled=!data.reports.length;if(!data.reports.length)$('reportMessage').textContent='Báo cáo đầu tiên sẽ được chốt vào thứ Hai. Bạn cũng có thể chốt tuần này ngay.';}
+    catch(e){$('reportMessage').textContent=e.message;}
+  }
+  async function reportAction(action){
+    if(reporting)return;reporting=true;for(const id of ['currentExcel','createWeekly','downloadWeekly'])$(id).disabled=true;$('reportMessage').textContent='Đang chuẩn bị báo cáo…';
+    try{
+      if(action==='generate'){const data=await(await reportRequest('',{method:'POST',headers:{'X-Admin-Action':'generate-weekly-report'}})).json();await loadReports();$('reportMessage').textContent=data.existing?'Tuần này đã có báo cáo đã chốt. Dùng “Tải Excel hiện tại” để lấy trạng thái mới nhất.':'Đã chốt báo cáo tuần này. Bạn có thể tải file bên trên.';}
+      else{const query=action==='current'?'?action=current':'?action=download&week='+encodeURIComponent($('reportWeek').value);const response=await reportRequest(query);const filename=response.headers.get('content-disposition')?.match(/filename="([A-Za-z0-9_.-]+)"/)?.[1]||'TFW-Don-hang.xlsx';const url=URL.createObjectURL(await response.blob()),a=node('a');a.href=url;a.download=filename;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);$('reportMessage').textContent='Đã tải báo cáo Excel.';}
+    }catch(e){$('reportMessage').textContent=e.message;}finally{reporting=false;$('currentExcel').disabled=false;$('createWeekly').disabled=false;$('downloadWeekly').disabled=$('reportWeek').disabled;}
+  }
+  $('currentExcel').addEventListener('click',()=>reportAction('current'));$('createWeekly').addEventListener('click',()=>reportAction('generate'));$('downloadWeekly').addEventListener('click',()=>reportAction('download'));
   $('signin').addEventListener('click',async()=>{try{$('signin').disabled=true;await authAction('signin/github');}catch(e){$('loginMessage').textContent=e.message;$('signin').disabled=false;}});
   $('logout').addEventListener('click',async()=>{try{await authAction('signout');locked('Đang đăng xuất…');}catch(e){$('status').textContent=e.message;}});
   $('refresh').addEventListener('click',()=>load(true));$('loadMore').addEventListener('click',()=>load());
@@ -101,5 +120,5 @@
   // Do not retain order data in localStorage/sessionStorage or the browser back/forward cache.
   window.addEventListener('pagehide',()=>locked('Vui lòng đăng nhập để xem đơn hàng.'));
   window.addEventListener('pageshow',event=>{if(event.persisted)location.reload();});
-  (async()=>{if(new URLSearchParams(location.search).has('error'))$('loginMessage').textContent='Đăng nhập chưa thành công hoặc tài khoản không được cấp quyền.';try{const {user}=await api('?session=1');$('login').hidden=true;$('dashboard').hidden=false;$('logout').hidden=false;$('accountName').textContent=user.name;await load(true);}catch{}})();
+  (async()=>{if(new URLSearchParams(location.search).has('error'))$('loginMessage').textContent='Đăng nhập chưa thành công hoặc tài khoản không được cấp quyền.';try{const {user}=await api('?session=1');$('login').hidden=true;$('dashboard').hidden=false;$('logout').hidden=false;$('accountName').textContent=user.name;await Promise.all([load(true),loadReports()]);}catch{}})();
 })();
